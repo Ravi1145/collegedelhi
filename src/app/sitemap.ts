@@ -172,5 +172,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/cet-colleges-delhi`,            lastModified: new Date(), changeFrequency: "monthly", priority: 0.88 },
   ]
 
-  return [...staticPages, ...seoPages, ...ncrPages, ...collegePages, ...blogPages, ...examPages, ...coursePages]
+  // NEW: University-specific and high-traffic category pages
+  const universityPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/du-colleges-delhi`,       lastModified: new Date(), changeFrequency: "weekly",  priority: 0.95 },
+    { url: `${BASE_URL}/ipu-colleges-delhi`,      lastModified: new Date(), changeFrequency: "weekly",  priority: 0.95 },
+    { url: `${BASE_URL}/girls-colleges-delhi`,    lastModified: new Date(), changeFrequency: "monthly", priority: 0.92 },
+    { url: `${BASE_URL}/bcom-colleges-delhi`,     lastModified: new Date(), changeFrequency: "monthly", priority: 0.93 },
+    { url: `${BASE_URL}/mtech-colleges-delhi`,    lastModified: new Date(), changeFrequency: "monthly", priority: 0.92 },
+    { url: `${BASE_URL}/nursing-colleges-delhi`,  lastModified: new Date(), changeFrequency: "monthly", priority: 0.92 },
+  ]
+
+  return [...staticPages, ...seoPages, ...ncrPages, ...universityPages, ...collegePages, ...blogPages, ...examPages, ...coursePages]
 }
