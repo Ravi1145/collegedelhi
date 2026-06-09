@@ -1,0 +1,64 @@
+{
+  "name": "CollegeDelhi — Find Your College in Delhi",
+  "short_name": "CollegeDelhi",
+  "description": "AI-powered college discovery for Delhi NCR. Compare engineering, MBA, medical & arts colleges by fees, placements, cutoffs & NAAC grade.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#0A1628",
+  "categories": ["education", "reference"],
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1024x682",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "CollegeDelhi homepage showing top Delhi colleges"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Engineering Colleges",
+      "short_name": "Engineering",
+      "description": "Browse top engineering colleges in Delhi",
+      "url": "/engineering-colleges-delhi",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "MBA Colleges",
+      "short_name": "MBA",
+      "description": "Browse top MBA colleges in Delhi",
+      "url": "/mba-colleges-delhi",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "College Predictor",
+      "short_name": "Predictor",
+      "description": "Predict your college based on JEE/exam score",
+      "url": "/predictor",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

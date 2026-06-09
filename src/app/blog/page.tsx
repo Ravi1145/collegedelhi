@@ -1,0 +1,156 @@
+﻿import { Metadata } from "next"
+import Script from "next/script"
+import Link from "next/link"
+import { generateMetadata as genMeta, generateBreadcrumbSchema } from "@/lib/seo"
+import { getAllBlogs } from "@/lib/db"
+import { Clock, ArrowRight, Rss } from "lucide-react"
+
+export const revalidate = 300 // ISR — refresh every 5 min
+
+export const metadata: Metadata = genMeta({
+  title: "Delhi College Blog — Guides, Tips & Admission Advice 2026",
+  description: "Expert guides on Delhi college admissions, JEE Main preparation, MBA fees, NEET cutoffs, and career planning. Read the latest articles from CollegeDelhi.",
+  path: "/blog",
+  keywords: ["Delhi college guides", "JEE Main preparation", "mba admission Delhi", "best colleges Delhi blog"],
+})
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+
+interface Post {
+  id: number | string
+  slug: string
+  title: string
+  excerpt: string
+  author: string
+  date?: string
+  published_at?: string
+  readTime?: string
+  read_time?: string
+  category: string
+  tags: string[]
+}
+
+/** Filter out test/incomplete posts: title must be at least 10 chars */
+function isValidPost(p: { title: string; slug: string }): boolean {
+  return p.title.trim().length >= 10 && p.slug.length >= 5
+}
+
+async function fetchPosts(): Promise<Post[]> {
+  try {
+    const result = await getAllBlogs({ limit: 50 })
+    return (result.blogs as Post[]).filter(isValidPost)
+  } catch {
+    return []
+  }
+}
+
+export default async function BlogPage() {
+  const posts = await fetchPosts()
+
+  const breadcrumb = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: "Blog", url: `${BASE_URL}/blog` },
+  ])
+
+  const blogListSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "CollegeDelhi Blog",
+    description: "Expert guides on Delhi college admissions, JEE Main preparation, MBA fees, NEET cutoffs, and career planning.",
+    url: `${BASE_URL}/blog`,
+    publisher: {
+      "@type": "Organization",
+      name: "CollegeDelhi",
+      url: BASE_URL,
+    },
+    blogPost: posts.slice(0, 10).map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.excerpt,
+      url: `${BASE_URL}/blog/${post.slug}`,
+      author: { "@type": "Person", name: post.author ?? "CollegeDelhi" },
+      datePublished: post.published_at ?? post.date ?? new Date().toISOString(),
+      articleSection: post.category,
+    })),
+  }
+
+  return (
+    <div className="bg-surface min-h-screen">
+      <Script id="blog-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <Script id="blog-list-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListSchema) }} />
+
+      <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-3 mb-3">
+            <Rss className="w-5 h-5 text-red-400" />
+            <span className="text-red-400 text-sm font-medium uppercase tracking-wide">Latest Articles</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
+            College Guides & Insights
+          </h1>
+          <p className="text-gray-300 max-w-2xl">
+            Expert advice on Delhi college admissions, entrance exam preparation, fees, placements, and career planning.
+          </p>
+          <p className="text-gray-400 text-sm mt-2">{posts.length} {posts.length === 1 ? "article" : "articles"} published</p>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {posts.map((post, i) => {
+            const dateStr = post.published_at
+              ? new Date(post.published_at).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })
+              : (post.date ?? '')
+            const readTime = post.read_time ?? post.readTime ?? '5 min read'
+            return (
+              <Link key={post.id} href={`/blog/${post.slug}`} className="group">
+                <article className="bg-white rounded-2xl border border-gray-100 hover:border-red-200 hover:shadow-xl transition-all overflow-hidden h-full flex flex-col">
+                  <div className={`h-2 ${
+                    i % 3 === 0 ? "bg-gradient-to-r from-red-400 to-red-700" :
+                    i % 3 === 1 ? "bg-gradient-to-r from-blue-400 to-blue-600" :
+                    "bg-gradient-to-r from-green-400 to-green-600"
+                  }`} />
+                  <div className="p-6 flex-1 flex flex-col">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-xs bg-red-50 text-red-800 font-medium px-2.5 py-1 rounded-full">
+                        {post.category}
+                      </span>
+                      <div className="flex items-center gap-1 text-xs text-gray-400">
+                        <Clock className="w-3 h-3" />
+                        {readTime}
+                      </div>
+                    </div>
+                    <h2 className="text-base font-bold text-gray-900 mb-2 group-hover:text-red-700 transition-colors line-clamp-2">
+                      {post.title}
+                    </h2>
+                    <p className="text-sm text-gray-600 flex-1 line-clamp-3 mb-4">{post.excerpt}</p>
+                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                      <div className="flex items-center gap-2">
+                        <div className="w-7 h-7 bg-red-100 rounded-full flex items-center justify-center">
+                          <span className="text-xs font-bold text-red-800">{(post.author ?? 'C')[0]}</span>
+                        </div>
+                        <div>
+                          <p className="text-xs font-medium text-gray-700">{post.author ?? 'CollegeDelhi'}</p>
+                          <p className="text-xs text-gray-400">{dateStr}</p>
+                        </div>
+                      </div>
+                      <ArrowRight className="w-4 h-4 text-red-600 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </article>
+              </Link>
+            )
+          })}
+        </div>
+
+        {posts.length === 0 && (
+          <div className="text-center py-20 text-gray-400">
+            <Rss className="w-10 h-10 mx-auto mb-3 text-gray-300" />
+            <p>No articles published yet.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+

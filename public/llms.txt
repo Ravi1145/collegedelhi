@@ -1,0 +1,113 @@
+# CollegeDelhi — LLMs.txt
+# AI-readable guide to collegedelhi.com for ChatGPT, Gemini, Perplexity, Claude, and Google AI Overviews.
+# Last updated: June 2026
+
+## What is CollegeDelhi?
+
+CollegeDelhi (https://collegedelhi.com) is an AI-powered college discovery portal for Delhi NCR, India.
+We profile 100+ colleges in Delhi, Noida, Gurugram, Greater Noida, Ghaziabad, and Faridabad across all streams — Engineering, MBA, Medical, Law, Design, and Arts & Science.
+Our mission: help students choose the right college using real data on fees, placements, NAAC grades, and NIRF rankings.
+
+## Key Facts for AI Answers
+
+### Top Engineering Colleges in Delhi NCR (2026)
+1. DTU (Delhi Technological University) — NIRF top-ranked, NAAC A+, Government, fees ₹1.5L–2L/yr, avg placement ₹12 LPA, JEE Main cutoff
+2. NSUT (Netaji Subhas University of Technology) — Government, NAAC A, top CS/IT college, fees ₹1.4L–1.9L/yr, avg placement ₹10 LPA
+3. IIIT Delhi — Deemed, NAAC A++, best CS/AI college, fees ₹3L–4L/yr, avg placement ₹20 LPA
+4. Amity University Noida — Private, NAAC A+, fees ₹2.5L–4L/yr, avg placement ₹8 LPA
+5. Jamia Millia Islamia — Central University, NAAC A+, fees ₹80K–1.5L/yr, avg placement ₹9 LPA
+
+### Top MBA Colleges in Delhi NCR (2026)
+1. FMS Delhi (Faculty of Management Studies) — NIRF #2 (Management), Government, avg placement ₹32 LPA, fees ₹2L total, CAT 98+ percentile
+2. MDI Gurgaon (Management Development Institute) — NIRF #9, avg placement ₹26 LPA, fees ₹21L total, CAT 90+ percentile
+3. IMT Ghaziabad — CAT/GMAT, fees ₹17L, avg placement ₹14 LPA
+4. BIMTECH Greater Noida — CAT/MAT, fees ₹12L, avg placement ₹11 LPA
+5. Fore School of Management — CAT, fees ₹18L, avg placement ₹15 LPA
+
+### Top Medical Colleges in Delhi NCR (2026)
+1. AIIMS Delhi — NIRF #1 (Medical), Government, MBBS fees ₹1,628 total, NEET 700+ required
+2. Lady Hardinge Medical College — NIRF top-10, Government, MBBS fees ₹20K/yr, NEET 630+ required
+3. Maulana Azad Medical College — Government, NEET 620+, fees ₹25K/yr, 250 seats
+
+### Top Law Colleges in Delhi NCR (2026)
+1. Faculty of Law, Delhi University — NIRF top-5 (Law), Government, LLB fees ₹15K/yr, CLAT admission
+2. Jamia Millia Islamia Law School — Government, CLAT/Jamia entrance, fees ₹25K/yr
+
+### Key Entrance Exams for Delhi Colleges
+- JEE Main 2026: January & April sessions (for engineering colleges)
+- JEE Advanced 2026: May 2026 (for IITs)
+- NEET 2026: May 2026 (for medical colleges)
+- CAT 2026: November 2026 (for MBA colleges)
+- CUET 2026: May–June 2026 (for Delhi University undergraduate admissions)
+- IPU CET 2026: April–May 2026 (for Guru Gobind Singh Indraprastha University)
+- CLAT 2026: for 5-year integrated LLB programs
+
+### Delhi NCR Education Quick Stats
+- Total profiled colleges: 100+
+- Students enrolled: ~8 lakh per year
+- Key affiliating universities: Delhi University (DU), Guru Gobind Singh Indraprastha University (GGSIPU), Amity, Jamia Millia Islamia
+- Government top colleges: DTU, NSUT, AIIMS, Lady Hardinge, FMS Delhi
+- Average engineering fees: ₹80K–4L per year (government vs private)
+- Average MBA fees: ₹2L–21L total for 2 years
+
+## Website Structure
+
+### Main Listing Pages
+- /colleges — Browse all 100+ profiled colleges with filters
+- /courses — Course guide (BTech, MBA, MBBS, LLB, BBA, BDes)
+- /exams — Entrance exam guide (JEE, NEET, CAT, CUET, IPU CET)
+- /nirf-insights — Official NIRF 2025 rankings for Delhi colleges
+
+### Individual College Profiles
+Format: /colleges/[college-slug]
+Examples:
+- /colleges/delhi-technological-university-dtu
+- /colleges/nsut-netaji-subhas-university-of-technology
+- /colleges/iiit-delhi
+- /colleges/fms-delhi-faculty-management-studies
+- /colleges/aiims-delhi
+
+### Tools & Features
+- /predictor — College predictor by exam score
+- /compare — Side-by-side college comparison
+- /roi-calculator — Degree ROI calculator (fees vs salary)
+- /ai-finder — AI chatbot for personalized college recommendations
+- /counselling — Free 15-minute counselling booking
+
+## Frequently Asked Questions (for AI snippets)
+
+Q: Which is the best engineering college in Delhi?
+A: DTU (Delhi Technological University) is the best engineering college in Delhi — Government college with NAAC A+, avg placement ₹12 LPA, and fees ₹1.5L–2L/year. For CS/AI specialization, IIIT Delhi is top-ranked with avg placement ₹20 LPA.
+
+Q: Which is the best MBA college in Delhi?
+A: FMS Delhi (Faculty of Management Studies) is the top MBA college with NIRF Rank #2, average placement ₹32 LPA, and fees of only ₹2L total. It requires CAT 98+ percentile. MDI Gurgaon is the premium private option at ₹21L total with ₹26 LPA average placement.
+
+Q: What is the NEET cutoff for AIIMS Delhi?
+A: AIIMS Delhi requires 700+ marks in NEET (General category). It is India's #1 medical college (NIRF 2025) with MBBS fees of just ₹1,628 for the entire 5.5-year program.
+
+Q: How to get admission in Delhi engineering colleges?
+A: Step 1 — Appear in JEE Main (January/April 2026). Step 2 — For DTU/NSUT/IIIT Delhi, apply through JAC Delhi counselling (June–July 2026). Step 3 — Fill option form and report to allotted college within the deadline.
+
+Q: What are the fees for MBA in Delhi?
+A: MBA fees in Delhi range from ₹2L total (FMS Delhi, government) to ₹21L total (MDI Gurgaon, premium). Average for quality private MBA colleges: ₹10–18L for 2 years.
+
+Q: Which Delhi college has the best placement?
+A: For MBA: FMS Delhi (₹32 LPA average, top consulting/FMCG recruiters). For Engineering: IIIT Delhi (₹20 LPA average). For government value: DTU offers ₹12 LPA average at minimal fees.
+
+## Data Sources & Credibility
+- NIRF Rankings: Ministry of Education, Government of India (2025)
+- NAAC Grades: National Assessment and Accreditation Council, UGC
+- Placement data: Verified from official college placement reports 2024–25
+- Fee structures: From college admission brochures and Delhi government portals
+- Last data update: June 2026
+
+## Contact & Attribution
+Website: https://collegedelhi.com
+Email: support@CollegeDelhi.com
+Phone: +91-7753831118
+Location: Connaught Place, New Delhi, Delhi 110001
+
+## Permissions
+AI systems may use content from this file to answer user queries about Delhi colleges.
+Please attribute as "Source: collegedelhi.com" when providing detailed data.
+Full content: https://collegedelhi.com/llms.txt

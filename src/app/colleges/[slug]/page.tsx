@@ -1,0 +1,178 @@
+﻿import { Metadata } from "next"
+import { notFound } from "next/navigation"
+import Script from "next/script"
+import { colleges, getCollegeBySlug } from "@/data/colleges"
+
+export const revalidate = 300 // ISR — re-render every 5 min; on-demand revalidation via admin also busts this
+import { getCollegeBySlug as getDBCollege, DBCollege, CollegeDetails } from "@/lib/db"
+import CollegeProfile from "@/components/colleges/CollegeProfile"
+import { generateMetadata as genMeta, generateBreadcrumbSchema, generateCollegeSchema, generateFAQSchema } from "@/lib/seo"
+import type { College } from "@/types"
+
+function mapDBToCollege(db: DBCollege): College {
+  return {
+    id:               db.id ?? 0,
+    slug:             db.slug,
+    name:             db.name,
+    shortName:        db.short_name ?? db.name,
+    type:             (db.type as College['type']) ?? 'Private',
+    established:      db.established ?? 2000,
+    affiliation:      db.affiliation ?? '',
+    naac:             (db.naac_grade as College['naac']) ?? 'A',
+    nirfRank:         db.nirf_rank ?? null,
+    location:         db.city ? `${db.city}, Delhi` : 'Delhi, Delhi',
+    address:          db.address ?? db.city ?? 'Delhi',
+    courses:          db.courses ?? [],
+    specializations:  db.specializations ?? [],
+    feesRange:        { min: db.fees_min ?? 0, max: db.fees_max ?? 0 },
+    avgPlacement:     db.avg_placement ?? 0,
+    highestPlacement: db.highest_pkg ?? 0,
+    topRecruiters:    db.top_recruiters ?? [],
+    entranceExams:    db.entrance_exams ?? [],
+    hostel:           db.hostel ?? false,
+    rating:           db.rating ?? 0,
+    reviewCount:      db.review_count ?? 0,
+    reviews:          [],
+    tags:             db.tags ?? [],
+    description:      db.description ?? '',
+    highlights:       db.highlights ?? [],
+    website:          db.website ?? '',
+    phone:            db.phone ?? '',
+    email:            db.email ?? '',
+    image:            db.image_url ?? undefined,
+    logo_base64:      db.logo_base64 ?? undefined,
+    stream:           (db.stream as College['stream']) ?? 'Engineering',
+  }
+}
+
+interface Props {
+  params: Promise<{ slug: string }>
+}
+
+// Generate static params: local static + Express backend published
+export async function generateStaticParams() {
+  const localSlugs = colleges.map((c) => ({ slug: c.slug }))
+  const slugSet = new Set(localSlugs.map((s) => s.slug))
+
+  // Add Express backend published college slugs
+  try {
+    const { getAllColleges } = await import('@/lib/db')
+    const { colleges: dbColleges } = await getAllColleges({ status: 'published', limit: 500 })
+    for (const c of dbColleges) {
+      if (!slugSet.has(c.slug)) {
+        localSlugs.push({ slug: c.slug })
+        slugSet.add(c.slug)
+      }
+    }
+  } catch { /* ignore — backend not running yet */ }
+
+  return localSlugs
+}
+
+// Resolve college + details: Supabase published first, then local, then external API
+async function resolveCollege(slug: string): Promise<{ college: College; details?: CollegeDetails } | null> {
+  // 1. Try Supabase published colleges
+  try {
+    const dbCollege = await getDBCollege(slug)
+    if (dbCollege && dbCollege.status === 'published') {
+      // Merge top-level faqs into details so CollegeProfile and FAQ schema can find them
+      const details: CollegeDetails | undefined = dbCollege.details
+        ? { ...dbCollege.details, faqs: dbCollege.details.faqs ?? dbCollege.faqs }
+        : dbCollege.faqs?.length
+          ? { faqs: dbCollege.faqs }
+          : undefined
+      return { college: mapDBToCollege(dbCollege), details }
+    }
+  } catch {
+    // ignore DB errors, fall through
+  }
+
+  // 2. Try local static data
+  const local = getCollegeBySlug(slug)
+  if (local) return { college: local, details: local.details }
+
+  return null
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const resolved = await resolveCollege(slug)
+  if (!resolved) return {}
+  const { college } = resolved
+
+  const nirfText  = college.nirfRank ? `, NIRF #${college.nirfRank}` : ""
+  const feesMin   = college.feesRange.min > 0 ? `₹${(college.feesRange.min / 100000).toFixed(1)}L` : ""
+  const feesMax   = college.feesRange.max > 0 ? `₹${(college.feesRange.max / 100000).toFixed(1)}L/yr` : ""
+  const feesText  = feesMin && feesMax ? ` | Fees ${feesMin}–${feesMax}` : ""
+  const placText  = college.avgPlacement > 0
+    ? ` | ₹${(college.avgPlacement / 100000).toFixed(1)}L avg pkg`
+    : ""
+
+  return genMeta({
+    title: `${college.name} Admission 2026 | NAAC ${college.naac}${nirfText} | Fees & Cutoff`,
+    description: `${college.name} (${college.shortName}) admission 2026 — ${college.type} college in Delhi. NAAC ${college.naac}${nirfText}${feesText}${placText}. Entrance: ${college.entranceExams.slice(0, 2).join(", ") || "JEE Main"}. Compare fees, cutoffs & reviews — free.`,
+    path: `/colleges/${slug}`,
+    keywords: [
+      college.name.toLowerCase(),
+      college.shortName.toLowerCase(),
+      `${college.shortName.toLowerCase()} admission 2026`,
+      `${college.shortName.toLowerCase()} fees`,
+      `${college.shortName.toLowerCase()} placements`,
+      `${college.shortName.toLowerCase()} cutoff 2026`,
+      `${college.shortName.toLowerCase()} reviews`,
+      `${college.name.toLowerCase()} Delhi`,
+      "colleges in Delhi",
+      "Delhi college admission 2026",
+    ],
+  })
+}
+
+export default async function CollegePage({ params }: Props) {
+  const { slug } = await params
+  const resolved = await resolveCollege(slug)
+  if (!resolved) notFound()
+  const { college, details } = resolved
+
+  const breadcrumb = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Colleges", url: "/colleges" },
+    { name: college.shortName, url: `/colleges/${slug}` },
+  ])
+
+  const collegeSchema = generateCollegeSchema({
+    name: college.name,
+    description: college.description,
+    address: college.address,
+    phone: college.phone,
+    email: college.email,
+    website: college.website,
+    established: college.established,
+    naac: college.naac,
+    nirfRank: college.nirfRank,
+    courses: college.courses,
+    image: college.image,
+    rating: college.rating,
+    reviewCount: college.reviewCount,
+    slug,
+    reviews: college.reviews ?? [],
+  })
+
+  // Build FAQ schema from details.faqs (DB) or college.faqs (static)
+  const rawFaqs = details?.faqs ?? (college as unknown as { faqs?: { q: string; a: string }[] }).faqs ?? []
+  const faqSchema = rawFaqs.length > 0
+    ? generateFAQSchema(rawFaqs.map((f: { q: string; a: string }) => ({ question: f.q, answer: f.a })))
+    : null
+
+  return (
+    <>
+      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <Script id="college-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collegeSchema) }} />
+      {faqSchema && (
+        <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
+      <div className="bg-surface min-h-screen">
+        <CollegeProfile college={college} details={details} />
+      </div>
+    </>
+  )
+}

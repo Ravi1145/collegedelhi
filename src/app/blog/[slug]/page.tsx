@@ -1,0 +1,285 @@
+﻿import { Metadata } from "next"
+import { notFound } from "next/navigation"
+import Link from "next/link"
+import Script from "next/script"
+import { getBlogBySlug as getDBBlog, getAllBlogs } from "@/lib/db"
+import { generateMetadata as genMeta, generateBreadcrumbSchema } from "@/lib/seo"
+import { Clock, Calendar, ChevronRight, Tag } from "lucide-react"
+import LeadCapture from "@/components/leads/LeadCapture"
+
+export const revalidate = 300
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+
+interface Props {
+  params: Promise<{ slug: string }>
+}
+
+export async function generateStaticParams() {
+  try {
+    const { blogs: dbBlogs } = await getAllBlogs({ limit: 200 })
+    return dbBlogs.map((b) => ({ slug: b.slug }))
+  } catch { /* ignore */ }
+  return []
+}
+
+// Unified post type
+interface Post {
+  id: number | string
+  slug: string
+  title: string
+  excerpt: string
+  body: string
+  author: string
+  date?: string
+  published_at?: string
+  readTime?: string
+  read_time?: string
+  category: string
+  tags: string[]
+  meta_title?: string
+  meta_desc?: string
+}
+
+async function resolvePost(slug: string): Promise<Post | null> {
+  // Backend API only — no static fallback
+  try {
+    const db = await getDBBlog(slug)
+    if (db && db.title && db.title.trim().length >= 10) {
+      return {
+        id:           db.id ?? slug,
+        slug:         db.slug,
+        title:        db.title,
+        excerpt:      db.excerpt ?? '',
+        body:         db.body ?? '',
+        author:       db.author ?? 'CollegeDelhi',
+        published_at: db.published_at,
+        read_time:    db.read_time,
+        category:     db.category ?? 'General',
+        tags:         db.tags ?? [],
+        meta_title:   db.meta_title,
+        meta_desc:    db.meta_desc,
+      }
+    }
+  } catch { /* ignore */ }
+  return null
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const post = await resolvePost(slug)
+  if (!post) return {}
+  return genMeta({
+    title:       post.meta_title || post.title,
+    description: post.meta_desc  || post.excerpt,
+    path:        `/blog/${slug}`,
+    keywords:    post.tags,
+  })
+}
+
+export default async function BlogPostPage({ params }: Props) {
+  const { slug } = await params
+  const post = await resolvePost(slug)
+  if (!post) notFound()
+
+  const dateStr = post.published_at
+    ? new Date(post.published_at).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
+    : (post.date ?? '')
+  const readTime = post.read_time ?? post.readTime ?? '5 min read'
+
+  // Related posts — backend API only
+  let related: Post[] = []
+  try {
+    const { blogs: dbBlogs } = await getAllBlogs({ category: post.category, limit: 4 })
+    related = dbBlogs
+      .filter((b) => b.slug !== slug)
+      .slice(0, 3)
+      .map((b) => ({
+        id: b.id ?? b.slug, slug: b.slug, title: b.title,
+        excerpt: b.excerpt ?? '', body: '', author: b.author ?? 'CollegeDelhi',
+        published_at: b.published_at, read_time: b.read_time,
+        category: b.category ?? 'General', tags: b.tags ?? [],
+      }))
+  } catch { /* ignore */ }
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Blog", url: "/blog" },
+    { name: post.title.slice(0, 60), url: `/blog/${slug}` },
+  ])
+
+  // Ensure ISO 8601 dates — required for Google Article rich results
+  const rawDate = post.published_at ?? post.date ?? new Date().toISOString()
+  const isoDate = (() => {
+    try { return new Date(rawDate).toISOString() } catch { return new Date().toISOString() }
+  })()
+
+  // Estimate word count from body (plain text or HTML)
+  const wordCount = post.body
+    .replace(/<[^>]*>/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean).length
+
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    // Article is the parent type — broader eligibility for Google rich results
+    "@type": ["Article", "BlogPosting"],
+    "@id": `${BASE_URL}/blog/${slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/blog/${slug}`,
+    },
+    headline: post.title.slice(0, 110), // Google truncates at 110 chars
+    description: post.excerpt,
+    author: {
+      "@type": "Person",
+      name: post.author,
+      url: `${BASE_URL}/blog`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "CollegeDelhi",
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/logo.png`,
+        width: 200,
+        height: 60,
+      },
+    },
+    datePublished: isoDate,
+    dateModified: isoDate,
+    url: `${BASE_URL}/blog/${slug}`,
+    image: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/og-image.png`,
+      width: 1200,
+      height: 630,
+    },
+    keywords: post.tags.join(", "),
+    articleSection: post.category,
+    inLanguage: "en-IN",
+    wordCount,
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${BASE_URL}/blog`,
+      name: "CollegeDelhi Blog",
+      publisher: { "@type": "Organization", name: "CollegeDelhi", url: BASE_URL },
+    },
+  }
+
+  // Detect if body is HTML or plain text
+  const isHTML = post.body.trimStart().startsWith('<')
+
+  return (
+    <div className="bg-surface min-h-screen">
+      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }} />
+
+      {/* Breadcrumb */}
+      <div className="bg-white border-b border-gray-100 py-3">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center gap-2 text-sm text-gray-500">
+            <Link href="/" className="hover:text-orange-600">Home</Link>
+            <ChevronRight className="w-4 h-4" />
+            <Link href="/blog" className="hover:text-orange-600">Blog</Link>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-gray-900 truncate max-w-xs">{post.title.slice(0, 50)}{post.title.length > 50 ? 'â€¦' : ''}</span>
+          </nav>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <article className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                {post.category}
+              </span>
+              <div className="flex items-center gap-1 text-gray-400 text-sm">
+                <Clock className="w-4 h-4" />
+                {readTime}
+              </div>
+            </div>
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight">{post.title}</h1>
+            <div className="flex items-center gap-4 mt-5">
+              <div className="flex items-center gap-2">
+                <div className="w-9 h-9 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+                  {(post.author ?? 'C')[0]}
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-white">{post.author ?? 'CollegeDelhi'}</p>
+                  {dateStr && (
+                    <div className="flex items-center gap-1 text-xs text-gray-400">
+                      <Calendar className="w-3 h-3" />
+                      {dateStr}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Body */}
+          <div className="p-8">
+            <p className="text-gray-600 text-lg leading-relaxed mb-6 font-medium">{post.excerpt}</p>
+            <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-orange-600 prose-strong:text-gray-900">
+              {isHTML ? (
+                <div dangerouslySetInnerHTML={{ __html: post.body }} />
+              ) : (
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">{post.body}</p>
+              )}
+            </div>
+
+            {/* Tags */}
+            {post.tags.length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-gray-100">
+                {post.tags.map((tag) => (
+                  <Link
+                    key={tag}
+                    href={`/colleges?search=${encodeURIComponent(tag)}`}
+                    className="flex items-center gap-1 text-xs bg-gray-100 hover:bg-orange-50 hover:text-orange-700 text-gray-600 px-3 py-1.5 rounded-full transition-colors"
+                  >
+                    <Tag className="w-3 h-3" />
+                    {tag}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        </article>
+
+        {/* Lead capture after article */}
+        <div className="mt-10">
+          <div className="bg-orange-50 border border-orange-100 rounded-2xl p-6">
+            <LeadCapture
+              source="blog_page"
+              buttonText="Get Free Counselling"
+              title="Found this helpful?"
+              subtitle="Get personalised college guidance from our experts — free."
+              minimal
+            />
+          </div>
+        </div>
+
+        {/* Related */}
+        {related.length > 0 && (
+          <div className="mt-10">
+            <h2 className="text-xl font-bold text-gray-900 mb-5">More Articles</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {related.map((r) => (
+                <Link key={r.id} href={`/blog/${r.slug}`} className="group">
+                  <div className="bg-white rounded-xl border border-gray-100 hover:border-orange-200 p-4 h-full transition-all">
+                    <span className="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded-full">{r.category}</span>
+                    <h3 className="text-sm font-semibold text-gray-900 mt-2 group-hover:text-orange-600 transition-colors line-clamp-2">{r.title}</h3>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,62 @@
+﻿import { NextRequest, NextResponse } from 'next/server'
+import { getAllColleges, DBCollege } from '@/lib/db'
+import type { College } from '@/types'
+
+function mapDBToCollege(db: DBCollege, index: number): College {
+  return {
+    id:                db.id ?? index,
+    slug:              db.slug,
+    name:              db.name,
+    shortName:         db.short_name ?? db.name,
+    type:              (db.type as College['type']) ?? 'Private',
+    established:       db.established ?? 2000,
+    affiliation:       db.affiliation ?? '',
+    naac:              (db.naac_grade as College['naac']) ?? 'A',
+    nirfRank:          db.nirf_rank ?? null,
+    location:          db.city ? `${db.city}, Delhi` : 'Delhi, Delhi',
+    address:           db.address ?? db.city ?? 'Delhi',
+    courses:           db.courses ?? [],
+    specializations:   db.specializations ?? [],
+    feesRange:         { min: db.fees_min ?? 0, max: db.fees_max ?? 0 },
+    avgPlacement:      db.avg_placement ?? 0,
+    highestPlacement:  db.highest_pkg ?? 0,
+    topRecruiters:     db.top_recruiters ?? [],
+    entranceExams:     db.entrance_exams ?? [],
+    hostel:            db.hostel ?? false,
+    rating:            db.rating ?? 0,
+    reviewCount:       db.review_count ?? 0,
+    reviews:           [],
+    tags:              db.tags ?? [],
+    description:       db.description ?? '',
+    highlights:        db.highlights ?? [],
+    website:           db.website ?? '',
+    phone:             db.phone ?? '',
+    email:             db.email ?? '',
+    image:             db.image_url ?? undefined,
+    logo_base64:       db.logo_base64 ?? undefined,
+    stream:            (db.stream as College['stream']) ?? 'Engineering',
+    isFeatured:        db.isFeatured ?? false,
+  }
+}
+
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = request.nextUrl
+    const stream   = searchParams.get('stream')   ?? undefined
+    const city     = searchParams.get('city')     ?? undefined
+    const featured = searchParams.get('featured') ?? undefined
+    const limit    = Number(searchParams.get('limit') ?? '200')
+
+    const { colleges } = await getAllColleges({ status: 'published', stream, city, featured, limit })
+
+    const mapped = colleges.map((c, i) => mapDBToCollege(c, i))
+
+    return NextResponse.json(
+      { colleges: mapped, total: mapped.length },
+      { headers: { 'Cache-Control': 'public, s-maxage=30, stale-while-revalidate=60' } }
+    )
+  } catch (err) {
+    console.error('[GET /api/colleges]', err)
+    return NextResponse.json({ colleges: [], total: 0 })
+  }
+}
