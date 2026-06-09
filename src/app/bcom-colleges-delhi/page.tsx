@@ -79,6 +79,15 @@ export default function BComCollegesDelhiPage() {
           { title: "Gateway to Top MBA Programs", description: "IIM Ahmedabad, IIM Calcutta, and FMS Delhi preference candidates with strong commerce backgrounds. DU B.Com + CAT 99%ile is the most common profile at top IIM Finance cohorts." },
           { title: "Government Regulated Fees", description: "DU B.Com fees ₹12,000–₹25,000/yr — fraction of private universities charging ₹1–3L/yr. Same or better placement outcomes. World-class education at 1/10th the cost of private alternatives." },
         ]}
+        admissionHeading="B.Com Admission in Delhi 2026: Complete Process"
+        admissionSteps={[
+          { step: "1", title: "Appear for CUET 2026", description: "Take the Common University Entrance Test (CUET) with Business Studies or Accountancy as your domain subject. CUET is the only admission mode for all Delhi University B.Com programs." },
+          { step: "2", title: "Check Merit List & Cutoffs", description: "CUET scores published by June 15, 2026. DU releases merit lists by college and program. SRCC cutoff typically 98%+, Hansraj 90%+, others 82-88%. Prepare for multiple rounds." },
+          { step: "3", title: "Register & Choose College", description: "DU conducts choice filling through online portal. Shortlist colleges by CUET score. SRCC and Hansraj fill fast — apply strategic choices to maximize admission probability." },
+          { step: "4", title: "Complete Admission Formalities", description: "Document verification, fee payment (₹12-25K/yr), hostel allotment (if eligible). Admission finalized by August 2026. Classes typically start in September." },
+        ]}
+        ctaHeading="Find Your Perfect B.Com College"
+        ctaSubtext="Get personalized college recommendations based on your CUET score. Compare admission odds, cutoffs, placements, and fees. Chat with our college advisors for free guidance."
         faqs={faqs}
       />
     </>

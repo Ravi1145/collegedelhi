@@ -118,6 +118,7 @@ export default function RootLayout({
         <meta name="geo.placename" content="Delhi" />
         <meta name="geo.position" content="28.6139;77.2090" />
         <meta name="ICBM" content="28.6139, 77.2090" />
+        <link rel="llms" href="/llms.txt" />
       </head>
       <body className="min-h-full flex flex-col font-dm-sans bg-white">
         <LeadBar />
