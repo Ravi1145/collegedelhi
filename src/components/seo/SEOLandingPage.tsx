@@ -39,16 +39,16 @@ interface SEOLandingPageProps {
   whyHeading: string
   whyPoints: { title: string; description: string }[]
 
-  // Admission section
-  admissionHeading: string
-  admissionSteps: { step: string; title: string; description: string }[]
+  // Admission section (optional)
+  admissionHeading?: string
+  admissionSteps?: { step: string; title: string; description: string }[]
 
   // FAQs
   faqs: FAQ[]
 
-  // CTA
-  ctaHeading: string
-  ctaSubtext: string
+  // CTA (optional)
+  ctaHeading?: string
+  ctaSubtext?: string
 
   // Related Guides (optional cross-links)
   relatedGuides?: RelatedGuide[]
@@ -168,22 +168,24 @@ export default function SEOLandingPage({
         </section>
 
         {/* Admission Steps */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">{admissionHeading}</h2>
-          <div className="space-y-4">
-            {admissionSteps.map((s, i) => (
-              <div key={i} className="flex gap-4 items-start">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-[#0A1628] text-white flex items-center justify-center font-bold text-sm">
-                  {s.step}
+        {admissionHeading && admissionSteps && admissionSteps.length > 0 && (
+          <section>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">{admissionHeading}</h2>
+            <div className="space-y-4">
+              {admissionSteps.map((s, i) => (
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="shrink-0 w-10 h-10 rounded-full bg-[#0A1628] text-white flex items-center justify-center font-bold text-sm">
+                    {s.step}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">{s.title}</h3>
+                    <p className="text-gray-600 text-sm mt-1">{s.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-bold text-gray-900">{s.title}</h3>
-                  <p className="text-gray-600 text-sm mt-1">{s.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* FAQs */}
         <section>
@@ -218,8 +220,8 @@ export default function SEOLandingPage({
 
         {/* CTA */}
         <section className="bg-gradient-to-r from-red-600 to-red-700 rounded-3xl p-8 text-white text-center">
-          <h2 className="text-2xl font-extrabold mb-3">{ctaHeading}</h2>
-          <p className="text-white/85 mb-6 max-w-xl mx-auto">{ctaSubtext}</p>
+          <h2 className="text-2xl font-extrabold mb-3">{ctaHeading ?? "Find Your Perfect College in Delhi"}</h2>
+          <p className="text-white/85 mb-6 max-w-xl mx-auto">{ctaSubtext ?? "Get free expert counselling for Delhi & NCR college admissions 2026."}</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/ai-finder"
