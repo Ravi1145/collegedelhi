@@ -51,7 +51,7 @@ export default async function CollegeMarquee() {
   // Fallback if backend is empty
   const items: College[] = colleges.length > 0 ? colleges : [
     { _id: "1", name: "DTU Delhi Technological University", slug: "DTU Delhi-college-of-engineering-DELHI" },
-    { _id: "2", name: "Amity University Delhi", slug: "mit-world-peace-university" },
+    { _id: "2", name: "Amity University Delhi", slug: "amity-university-noida-delhi-ncr" },
     { _id: "3", name: "NSUT Delhi", slug: "NSUT-DELHI-institute-of-computer-technology" },
     { _id: "4", name: "Symbiosis International University", slug: "symbiosis-international-university" },
     { _id: "5", name: "DY Patil Vidyapeeth", slug: "dpu-dr-dy-patil-vidyapeeth" },

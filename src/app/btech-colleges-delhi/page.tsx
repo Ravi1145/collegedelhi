@@ -1,5 +1,4 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
@@ -13,11 +12,11 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg", slug: "DTU Delhi-college-of-engineering-Delhi" },
-  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "vit-Delhi-vishwakarma-institute-of-technology" },
-  { name: "Symbiosis Institute of Technology (SIT)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg", slug: "symbiosis-institute-of-technology-Delhi" },
-  { name: "Amity University Delhi (Amity University Delhi)", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "Amity University Delhi-mit-world-peace-university" },
-  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg", slug: "NSUT-Delhi-institute-of-computer-technology" },
+  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
+  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
+  { name: "Symbiosis Institute of Technology (SIT)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg", slug: "nit-delhi-national-institute-of-technology" },
+  { name: "Amity University Delhi (Amity University Delhi)", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "amity-university-noida-delhi-ncr" },
+  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg", slug: "nsut-netaji-subhas-university-of-technology" },
   { name: "NIET Noida", location: "Kennedy Road", naac: "A", fees: "₹1.1L-1.55L/yr", placement: "₹4.8 LPA avg", slug: "NIET Noida-college-of-engineering-Delhi" },
   { name: "Bennett University Delhi Dwarka", location: "Dwarka", naac: "A", fees: "₹1.05L-1.55L/yr", placement: "₹5.1 LPA avg", slug: "dy-patil-college-engineering-Dwarka-Delhi" },
   { name: "Amity University Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.45L-1.95L/yr", placement: "₹5.6 LPA avg", slug: "bharati-vidyapeeth-college-engineering-Delhi" },
@@ -46,15 +45,15 @@ export default function BtechCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "BTech colleges in Delhi", href: "/btech-colleges-Delhi" }]}
         h1="BTech colleges in Delhi 2026"
@@ -85,7 +84,7 @@ export default function BtechCollegesDELHIPage() {
         admissionSteps={[
           { step: "1", title: "Appear for JEE Main / JEE Main 2026", description: "Register and appear for JEE Main (April-May 2026) or JEE Main (January & April 2026). JEE Main is based on PCM at Class 12 level. Aim for 90+ percentile for mid-tier colleges, 95+ for top colleges." },
           { step: "2", title: "Check Results & Merit Position", description: "JEE Main results are declared in June 2026. Check your percentile and category rank. Use CollegeDelhi's College Predictor to see which BTech colleges you can target." },
-          { step: "3", title: "Register on CAP Portal", description: "Register on cetcell.mahacet.org, fill in personal details, upload documents (10th/12th marksheets, caste certificate, Aadhar), and get eligibility verified." },
+          { step: "3", title: "Register on CAP Portal", description: "Register on jacdelhi.admissions.nic.in, fill in personal details, upload documents (10th/12th marksheets, caste certificate, Aadhar), and get eligibility verified." },
           { step: "4", title: "Fill College Preferences", description: "Fill preferences for BTech colleges in Delhi in order of priority. You can list 50+ college-branch combinations. Seat allotment is strictly merit-based within category." },
           { step: "5", title: "Accept Allotment & Pay Fees", description: "Once a seat is allotted in JAC Delhi Round 1 (July), accept it online and pay seat confirmation fees. Collect original documents and report to the college within the specified deadline." },
         ]}

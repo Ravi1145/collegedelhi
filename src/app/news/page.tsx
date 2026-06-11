@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/seo"
 import { getAllBlogs } from "@/lib/db"
@@ -52,7 +51,7 @@ const latestNews = [
     excerpt: "JEE Main 2026 timetable announced. PCM paper: April 20 – May 5. PCB paper: May 6–15. Application deadline: February 28, 2026.",
     date: "2026-01-10",
     category: "Exams",
-    source: "CET Cell Delhi",
+    source: "NTA",
     link: "/exams/JEE Main",
     urgent: true,
   },
@@ -63,7 +62,7 @@ const latestNews = [
     date: "2026-01-05",
     category: "Engineering",
     source: "NIRF India",
-    link: "/colleges/DTU Delhi-college-of-engineering-Delhi",
+    link: "/colleges/dtu-delhi-delhi-technological-university",
     urgent: false,
   },
   {
@@ -124,15 +123,15 @@ export default async function NewsPage() {
   ])
 
   const faqSchema = generateFAQSchema([
-    { question: "When will JEE Main 2026 results be declared?", answer: "JEE Main 2026 results are expected in June 2026. PCM paper results typically come 3–4 weeks after the exam ends. CET Cell Delhi announces results at mahacet.org. Subscribe to our WhatsApp alerts to get notified the moment results are declared." },
+    { question: "When will JEE Main 2026 results be declared?", answer: "JEE Main 2026 results are expected in June 2026. PCM paper results typically come 3–4 weeks after the exam ends. NTA announces results at jeemain.nta.nic.in. Subscribe to our WhatsApp alerts to get notified the moment results are declared." },
     { question: "When does NEET 2026 happen?", answer: "NEET UG 2026 is scheduled for May 3, 2026 (Sunday). Application form deadline: March 10, 2026. Results: June 2026. AIIMS Delhi cutoff for 2026: 665+ NEET score. Maulana Azad Medical College Delhi: 625+ marks." },
     { question: "What is the JAC Delhi Round 2026 schedule for Delhi engineering colleges?", answer: "JEE Main 2026 JAC Delhi Rounds for Delhi engineering colleges: JAC Delhi Round 1 — July 2026, JAC Delhi Round 2 — August 2026, Institutional Round — August 2026. Dates will be confirmed by CET Cell after JEE Main 2026 results in June." },
   ])
 
   return (
     <>
-      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}
@@ -282,7 +281,7 @@ export default async function NewsPage() {
                 <h3 className="font-extrabold text-gray-900 text-sm mb-3">Quick Links</h3>
                 <div className="space-y-2 text-xs">
                   {[
-                    { label: "JEE Main Cutoffs 2026", href: "/cutoffs/JEE Main/DTU Delhi-college-of-engineering-Delhi" },
+                    { label: "JEE Main Cutoffs 2026", href: "/cutoffs/JEE Main/dtu-delhi-delhi-technological-university" },
                     { label: "College Predictor", href: "/predictor" },
                     { label: "Admission Deadlines", href: "/delhi-admission-deadline-tracker-2026" },
                     { label: "Scholarships 2026", href: "/scholarships" },

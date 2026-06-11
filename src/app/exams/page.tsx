@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateBreadcrumbSchema } from "@/lib/seo"
 
 import { Calendar, ExternalLink, Clock, Award, BookOpen, ChevronRight, Globe } from "lucide-react"
@@ -15,7 +14,7 @@ export const metadata: Metadata = genMeta({
   keywords: ["JEE Main 2026", "jee main 2026 Delhi", "neet 2026", "cat 2026", "snap 2026", "entrance exams Delhi"],
 })
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 
 const TYPE_COLOR: Record<string, string> = {
   National:    "bg-blue-100 text-blue-700",
@@ -91,7 +90,7 @@ export default async function ExamsPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      <Script id="exams-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
 
       {/* Hero */}
       <div className="bg-gradient-to-br from-[#0A1628] to-[#1E3A5F] text-white">

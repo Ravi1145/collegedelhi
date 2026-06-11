@@ -2,12 +2,13 @@
 import Link from "next/link"
 import { BookOpen, Building2, GraduationCap, MapPin, TrendingUp, Shield } from "lucide-react"
 import { seoPages } from "@/data/seoPages"
+import { generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "colleges in Delhi 2026 — Complete List, Fees & Rankings",
   description:
     "Explore all colleges in Delhi 2026. Filter by stream (Engineering, MBA, Medical, Law), type (Government, Private, Deemed), entrance exam, fees, and location. NAAC and NIRF ranked.",
-  alternates: { canonical: "https://collegedelhi.com/colleges-in-delhi" },
+  alternates: { canonical: "https://www.collegedelhi.com/colleges-in-delhi" },
 }
 export const revalidate = 300
 
@@ -69,8 +70,30 @@ const iconColorMap: Record<string, string> = {
 }
 
 export default function CollegesInDELHIPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Colleges in Delhi", url: "/colleges-in-delhi" },
+  ])
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Colleges in Delhi 2026",
+    description: "Complete list of colleges in Delhi by stream, type, entrance exam, location and fee range",
+    url: "https://www.collegedelhi.com/colleges-in-delhi",
+    numberOfItems: seoPages.length,
+    itemListElement: seoPages.slice(0, 20).map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: p.h1,
+      url: `https://www.collegedelhi.com/colleges-in-delhi/${p.slug}`,
+    })),
+  }
+
   return (
-    <div className="min-h-screen bg-surface">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+    <main className="min-h-screen bg-surface">
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
@@ -160,7 +183,8 @@ export default function CollegesInDELHIPage() {
           </div>
         </section>
       </div>
-    </div>
+    </main>
+    </>
   )
 }
 

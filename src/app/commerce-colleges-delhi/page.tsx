@@ -1,5 +1,4 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
@@ -14,12 +13,12 @@ export const revalidate = 300
 
 const colleges = [
   { name: "Brihan Delhi College of Commerce (BMCC)", location: "Connaught Place", naac: "A+", fees: "₹18K-45K/yr", placement: "₹5.5 LPA avg", slug: "bmcc-Delhi" },
-  { name: "Gargi College of Commerce", location: "Karve Road", naac: "A", fees: "₹15K-40K/yr", placement: "Govt. Aided", slug: "garware-college-of-commerce-Delhi" },
+  { name: "Gargi College of Commerce", location: "Azadpur, Delhi", naac: "A", fees: "₹15K-40K/yr", placement: "Govt. Aided", slug: "garware-college-of-commerce-Delhi" },
   { name: "Hindu College (Science & Commerce)", location: "Connaught Place", naac: "A+", fees: "₹20K-50K/yr", placement: "Government", slug: "sp-college-delhi" },
   { name: "Symbiosis College of Arts & Commerce (SCAC)", location: "Senapati Bapat Road", naac: "A+", fees: "₹45K-80K/yr", placement: "₹5 LPA avg", slug: "symbiosis-college-arts-commerce-Delhi" },
   { name: "Kirori Mal College of Arts Science & Commerce", location: "Connaught Place", naac: "A", fees: "₹22K-55K/yr", placement: "Govt. Aided", slug: "modern-college-delhi" },
   { name: "Nowrosjee Wadia College", location: "Delhi", naac: "A", fees: "₹18K-45K/yr", placement: "Government", slug: "nowrosjee-wadia-college-delhi" },
-  { name: "MIT College of Commerce - Amity University Delhi", location: "Rohini", naac: "A+", fees: "₹55K-1L/yr", placement: "₹4.8 LPA avg", slug: "Amity University Delhi-mit-world-peace-university" },
+  { name: "MIT College of Commerce - Amity University Delhi", location: "Rohini", naac: "A+", fees: "₹55K-1L/yr", placement: "₹4.8 LPA avg", slug: "amity-university-noida-delhi-ncr" },
   { name: "Abhinav Education Society's College of Commerce", location: "Narayan Peth", naac: "A", fees: "₹18K-38K/yr", placement: "Govt. Aided", slug: "abhinav-college-commerce-Delhi" },
 ]
 
@@ -46,15 +45,15 @@ export default function CommerceCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Commerce colleges in Delhi", href: "/commerce-colleges-Delhi" }]}
         h1="Commerce colleges in Delhi 2026"

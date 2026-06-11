@@ -1,11 +1,10 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "Best Nursing Colleges in Delhi 2026 | Top BSc Nursing Delhi",
-  description: "Complete list of best nursing colleges in Delhi 2026. AIIMS Delhi, MAMC, RML, GTB Hospital — compare BSc Nursing fees, NEET cutoffs, placements. Top 15 nursing colleges Delhi ranked.",
+  description: "Best nursing colleges in Delhi 2026. AIIMS Delhi, MAMC, RML, GTB Hospital — compare BSc Nursing fees, NEET cutoffs, and placement outcomes.",
   path: "/nursing-colleges-delhi",
   keywords: ["nursing colleges Delhi", "BSc nursing colleges Delhi 2026", "NEET nursing cutoff Delhi", "best nursing college Delhi", "GNM nursing Delhi"],
 })
@@ -46,15 +45,15 @@ export default function NursingCollegesDelhiPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Nursing Colleges Delhi", href: "/nursing-colleges-delhi" }]}
         h1="Best Nursing Colleges in Delhi 2026 – BSc Nursing Complete Guide"

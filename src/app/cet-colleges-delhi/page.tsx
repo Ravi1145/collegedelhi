@@ -1,5 +1,4 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
@@ -13,10 +12,10 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K/yr", placement: "₹12 LPA avg | Cutoff: 99.5%ile CSE", slug: "DTU Delhi-college-of-engineering-Delhi" },
-  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L/yr", placement: "₹7.5 LPA avg | Cutoff: 95-97%ile CS", slug: "NSUT-Delhi-institute-of-computer-technology" },
-  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L/yr", placement: "₹8.5 LPA avg | Cutoff: 88-92%ile", slug: "vit-Delhi-vishwakarma-institute-of-technology" },
-  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L/yr", placement: "₹5.2 LPA avg | Cutoff: 65-75%ile", slug: "GL Bajaj-rscoe-rajarshi-shahu-college-of-engineering" },
+  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K/yr", placement: "₹12 LPA avg | Cutoff: 99.5%ile CSE", slug: "dtu-delhi-delhi-technological-university" },
+  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L/yr", placement: "₹7.5 LPA avg | Cutoff: 95-97%ile CS", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L/yr", placement: "₹8.5 LPA avg | Cutoff: 88-92%ile", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
+  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L/yr", placement: "₹5.2 LPA avg | Cutoff: 65-75%ile", slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida" },
   { name: "Sharda University Engineering", location: "Vadgaon", naac: "A", fees: "₹1.15L/yr", placement: "₹4.9 LPA avg | Cutoff: 60-70%ile", slug: "Sharda-college-of-engineering-Delhi" },
   { name: "NIET Noida", location: "Kennedy Road", naac: "A", fees: "₹1.1L/yr", placement: "₹4.8 LPA avg | Cutoff: 60-70%ile", slug: "NIET Noida-college-of-engineering-Delhi" },
   { name: "Amity University Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.45L/yr", placement: "₹5.6 LPA avg | Cutoff: 68-78%ile", slug: "bharati-vidyapeeth-college-engineering-Delhi" },
@@ -26,8 +25,8 @@ const colleges = [
 const faqs = [
   { q: "What is JEE Main and which Delhi colleges accept it?", a: "JEE Main (Delhi Common Entrance Test) is conducted by Delhi State Common Entrance Test Cell. Almost all 50+ engineering colleges in Delhi accept JEE Main for state quota seats. Government engineering colleges like DTU Delhi exclusively use JEE Main/JEE for admissions." },
   { q: "What JEE Main percentile is needed for DTU Delhi?", a: "DTU Delhi Computer Engineering requires 99.5+ percentile in JEE Main. DTU Delhi Mechanical/Electronics requires 90-95 percentile. These cutoffs are for Open (General) category. OBC: 5-8 percentile relaxation. SC/ST: 15-20 percentile relaxation." },
-  { q: "What is the CAP (Centralized Admission Process) for JEE Main?", a: "CAP is the merit-based seat allotment process conducted by JEE Main Cell in 3 rounds (July-August). Students register on cetcell.mahacet.org, fill college preferences, and seats are allotted based on percentile and category. No direct admission in government/aided colleges - only through CAP." },
-  { q: "Can I use JEE Main score for MBA admission in Delhi?", a: "Yes. MAH-MBA-CET (different from PCM-based JEE Main) is the MBA entrance test for CAP in Delhi. Score required for FMS Delhi/MDI Gurgaon via IPU CET: 99+ percentile. For mid-tier MBA colleges: 80-90 percentile. Apply at cetcell.mahacet.org for MBA CAP." },
+  { q: "What is the CAP (Centralized Admission Process) for JEE Main?", a: "CAP is the merit-based seat allotment process conducted by JEE Main Cell in 3 rounds (July-August). Students register on jacdelhi.admissions.nic.in, fill college preferences, and seats are allotted based on percentile and category. No direct admission in government/aided colleges - only through CAP." },
+  { q: "Can I use JEE Main score for MBA admission in Delhi?", a: "Yes. MAH-MBA-CET (different from PCM-based JEE Main) is the MBA entrance test for CAP in Delhi. Score required for FMS Delhi/MDI Gurgaon via IPU CET: 99+ percentile. For mid-tier MBA colleges: 80-90 percentile. Apply at jacdelhi.admissions.nic.in for MBA CAP." },
   { q: "What happens if I don't get allotted in JAC Delhi Round 1?", a: "If Round 1 does not allot your preferred college, you can freeze (accept current allotment), float (upgrade if better seat opens in Round 2), or slide (upgrade only within same college). Round 2 and Round 3 fill remaining seats. After all rounds, vacant seats go for direct admission at colleges." },
 ]
 
@@ -46,15 +45,15 @@ export default function MhtCetCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "JEE Main colleges in Delhi", href: "/JEE Main-colleges-Delhi" }]}
         h1="JEE Main colleges in Delhi 2026"
@@ -83,9 +82,9 @@ export default function MhtCetCollegesDELHIPage() {
         ]}
         admissionHeading="JEE Main to Delhi College: Step-by-Step 2026"
         admissionSteps={[
-          { step: "1", title: "Register & Appear for JEE Main PCM 2026", description: "Register at mahacet.org (typically January-February 2026). Exam fee: ₹800 (general), ₹600 (reserved). Exam is conducted April-May 2026 in computer-based mode. Paper covers PCM (Class 11+12 syllabus)." },
-          { step: "2", title: "Check JEE Main Results (June 2026)", description: "Results declared on mahacet.org. Download your scorecard showing raw score, percentile, and All-India Rank. Use CollegeDelhi's predictor to estimate college chances based on your percentile." },
-          { step: "3", title: "Register on CAP Portal", description: "Visit cetcell.mahacet.org and register for engineering CAP. Upload documents: 10th/12th marksheets, CET scorecard, caste certificate, domicile certificate, income certificate. Registration is free." },
+          { step: "1", title: "Register & Appear for JEE Main PCM 2026", description: "Register at jeemain.nta.nic.in (typically January-February 2026). Exam fee: ₹800 (general), ₹600 (reserved). Exam is conducted April-May 2026 in computer-based mode. Paper covers PCM (Class 11+12 syllabus)." },
+          { step: "2", title: "Check JEE Main Results (June 2026)", description: "Results declared on jeemain.nta.nic.in. Download your scorecard showing raw score, percentile, and All-India Rank. Use CollegeDelhi's predictor to estimate college chances based on your percentile." },
+          { step: "3", title: "Register on CAP Portal", description: "Visit jacdelhi.admissions.nic.in and register for engineering CAP. Upload documents: 10th/12th marksheets, CET scorecard, caste certificate, domicile certificate, income certificate. Registration is free." },
           { step: "4", title: "Fill College Preferences for JAC Delhi Round 1", description: "Fill 50+ college-branch combinations in priority order. Use previous year cutoffs as reference. Put all government college-CS combinations first, then private autonomous colleges, then private unaided." },
           { step: "5", title: "Accept Allotment (Freeze/Float/Slide)", description: "After Round 1 allotment, choose: Freeze (accept current seat, no more rounds), Float (participate in next round for better seat, keep current as backup), or Slide (upgrade only within same college). Missing deadline forfeits the seat." },
         ]}

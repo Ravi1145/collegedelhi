@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { CheckCircle, MapPin, ExternalLink, BookOpen } from "lucide-react"
@@ -31,13 +30,13 @@ const colleges = [
     highestPackage: "₹45 LPA",
     placement: "92%",
     exam: "JEE Main / JEE",
-    slug: "DTU Delhi-college-of-engineering-Delhi",
+    slug: "dtu-delhi-delhi-technological-university",
     highlight: "Best Govt. | Lowest Fees",
     location: "Connaught Place, Delhi",
   },
   {
     rank: 2,
-    name: "Delhi Institute of Computer Technology (NSUT)",
+    name: "NSUT (Netaji Subhas University of Technology)",
     type: "Autonomous",
     nirf: null,
     naac: "A",
@@ -46,7 +45,7 @@ const colleges = [
     highestPackage: "₹35 LPA",
     placement: "89%",
     exam: "JEE Main / JEE",
-    slug: "NSUT-Delhi-institute-of-computer-technology",
+    slug: "nsut-netaji-subhas-university-of-technology",
     highlight: "Best for CS/IT",
     location: "Rohini Sector 17, Delhi",
   },
@@ -61,13 +60,13 @@ const colleges = [
     highestPackage: "₹40 LPA",
     placement: "88%",
     exam: "JEE Main / JEE",
-    slug: "vit-Delhi-vishwakarma-institute-of-technology",
+    slug: "iiit-delhi-indraprastha-institute-of-information-technology",
     highlight: "NIRF #101",
     location: "Dwarka Sector 3, Delhi",
   },
   {
     rank: 4,
-    name: "Symbiosis Institute of Technology (IMI Delhi)",
+    name: "NIT Delhi (National Institute of Technology Delhi)",
     type: "Deemed University",
     nirf: null,
     naac: "A+",
@@ -75,14 +74,14 @@ const colleges = [
     avgPackage: "₹9.8 LPA",
     highestPackage: "₹42 LPA",
     placement: "91%",
-    exam: "SET / JEE",
-    slug: "symbiosis-institute-of-technology-Delhi",
+    exam: "JEE Main",
+    slug: "nit-delhi-national-institute-of-technology",
     highlight: "Best Deemed | Top Recruiters",
-    location: "Knowledge Park Greater Noida, Delhi",
+    location: "Dwarka Sector 3, Delhi",
   },
   {
     rank: 5,
-    name: "Amity University Delhi (Amity University Delhi)",
+    name: "Amity University Delhi",
     type: "Deemed University",
     nirf: null,
     naac: "A+",
@@ -91,7 +90,7 @@ const colleges = [
     highestPackage: "₹38 LPA",
     placement: "85%",
     exam: "JEE Main / JEE",
-    slug: "Amity University Delhi-mit-world-peace-university",
+    slug: "amity-university-noida-delhi-ncr",
     highlight: "Best Infrastructure",
     location: "North Delhi",
   },
@@ -106,9 +105,9 @@ const colleges = [
     highestPackage: "₹28 LPA",
     placement: "84%",
     exam: "JEE Main / JEE",
-    slug: "cummins-college-of-engineering-Delhi",
+    slug: "igdtuw-delhi-indira-gandhi-technical-university",
     highlight: "Best Women's College",
-    location: "Karve Nagar, Delhi",
+    location: "Kashmere Gate, Delhi",
   },
   {
     rank: 7,
@@ -121,7 +120,7 @@ const colleges = [
     highestPackage: "₹22 LPA",
     placement: "78%",
     exam: "JEE Main",
-    slug: "GL Bajaj-rscoe-rajarshi-shahu-college-of-engineering",
+    slug: "gl-bajaj-institute-technology-management-noida",
     highlight: "Best Private Budget",
     location: "Knowledge Park, Delhi",
   },
@@ -136,9 +135,9 @@ const colleges = [
     highestPackage: "₹20 LPA",
     placement: "75%",
     exam: "JEE Main",
-    slug: "NIET Noida-college-of-engineering-Delhi",
+    slug: "niet-noida-institute-engineering-technology",
     highlight: "Affordable & Reliable",
-    location: "Kennedy Road, Delhi",
+    location: "Greater Noida, NCR",
   },
   {
     rank: 9,
@@ -151,13 +150,13 @@ const colleges = [
     highestPackage: "₹18 LPA",
     placement: "74%",
     exam: "JEE Main",
-    slug: "Sharda-college-of-engineering-Delhi",
+    slug: "sharda-university-greater-noida",
     highlight: "Large Campus",
-    location: "Vadgaon, Delhi",
+    location: "Greater Noida, NCR",
   },
   {
     rank: 10,
-    name: "Amity University Engineering (BVP)",
+    name: "BPIT Delhi (Bhagwan Parshuram Institute of Technology)",
     type: "Deemed University",
     nirf: null,
     naac: "A",
@@ -166,7 +165,7 @@ const colleges = [
     highestPackage: "₹22 LPA",
     placement: "76%",
     exam: "JEE Main / JEE",
-    slug: "bharati-vidyapeeth-college-engineering-Delhi",
+    slug: "bvp-cet-delhi-bharati-vidyapeeth",
     highlight: "Strong Alumni Network",
     location: "Rohini Sector 17, Delhi",
   },
@@ -178,7 +177,7 @@ const topFiveDetails = [
     emoji: "🥇",
     badge: "bg-yellow-100 text-yellow-700",
     name: "Delhi Technological University (DTU)",
-    slug: "DTU Delhi-college-of-engineering-Delhi",
+    slug: "dtu-delhi-delhi-technological-university",
     location: "Connaught Place, Delhi · Est. 1854",
     nirf: 49,
     naac: "A+",
@@ -197,8 +196,8 @@ const topFiveDetails = [
     rank: 2,
     emoji: "🥈",
     badge: "bg-gray-100 text-gray-700",
-    name: "Delhi Institute of Computer Technology (NSUT)",
-    slug: "NSUT-Delhi-institute-of-computer-technology",
+    name: "NSUT (Netaji Subhas University of Technology)",
+    slug: "nsut-netaji-subhas-university-of-technology",
     location: "Rohini Sector 17, Delhi · Est. 1983",
     nirf: null,
     naac: "A",
@@ -218,7 +217,7 @@ const topFiveDetails = [
     emoji: "🥉",
     badge: "bg-red-100 text-red-800",
     name: "Indraprastha Institute of Information Technology (IIIT Delhi)",
-    slug: "vit-Delhi-vishwakarma-institute-of-technology",
+    slug: "iiit-delhi-indraprastha-institute-of-information-technology",
     location: "Dwarka Sector 3, Delhi · Est. 1983",
     nirf: 101,
     naac: "A+",
@@ -237,8 +236,8 @@ const topFiveDetails = [
     rank: 4,
     emoji: "4️⃣",
     badge: "bg-blue-100 text-blue-700",
-    name: "Symbiosis Institute of Technology (IMI Delhi)",
-    slug: "symbiosis-institute-of-technology-Delhi",
+    name: "NIT Delhi (National Institute of Technology Delhi)",
+    slug: "nit-delhi-national-institute-of-technology",
     location: "Knowledge Park Greater Noida, Delhi · Est. 2008",
     nirf: null,
     naac: "A+",
@@ -257,8 +256,8 @@ const topFiveDetails = [
     rank: 5,
     emoji: "5️⃣",
     badge: "bg-green-100 text-green-700",
-    name: "Amity University Delhi (Amity University Delhi)",
-    slug: "Amity University Delhi-mit-world-peace-university",
+    name: "Amity University Delhi",
+    slug: "amity-university-noida-delhi-ncr",
     location: "North Delhi · Est. 1983",
     nirf: null,
     naac: "A+",
@@ -332,15 +331,15 @@ export default function Top10EngineeringCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}

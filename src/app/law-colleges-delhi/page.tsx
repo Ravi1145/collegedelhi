@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
@@ -7,7 +6,7 @@ import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
   title: "Best Law colleges in Delhi 2026 | LLB, LLM Fees, CLAT Cutoff & Placements",
-  description: "Top law colleges in Delhi 2026 — ILS Law College, NLU Delhi, MNLU Delhi, BVDU Law College. Compare LLB fees (₹20K–₹2.5L/yr), CLAT cutoffs, placement packages & admission process.",
+  description: "Top law colleges in Delhi 2026 — NLU Delhi, Jamia Law, IP University Law. Compare LLB fees, CLAT cutoffs, placement packages and admission process.",
   path: "/law-colleges-delhi",
   keywords: [
     "law colleges in Delhi 2026",
@@ -41,9 +40,9 @@ const faqs = [
 ]
 
 const breadcrumb = [
-  { name: "Home", url: "https://collegedelhi.com" },
-  { name: "Colleges", url: "https://collegedelhi.com/colleges" },
-  { name: "Law Colleges Delhi", url: "https://collegedelhi.com/law-colleges-delhi" },
+  { name: "Home", url: "https://www.collegedelhi.com" },
+  { name: "Colleges", url: "https://www.collegedelhi.com/colleges" },
+  { name: "Law Colleges Delhi", url: "https://www.collegedelhi.com/law-colleges-delhi" },
 ]
 
 export const revalidate = 86400
@@ -51,8 +50,8 @@ export const revalidate = 86400
 export default function LawCollegesDELHI() {
   return (
     <>
-      <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
-      <Script id="schema-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}

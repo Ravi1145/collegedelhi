@@ -1,12 +1,11 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { Home, Shield, Star, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
   title: "colleges in Delhi with Hostel 2026 | Fees, Facilities & Availability",
-  description: "Top Delhi colleges with hostel facilities 2026. Hostel fees ₹40K–₹1.8L/yr for DTU Delhi, IIIT Delhi, Amity University Delhi, FMS Delhi, AFMC & more. Boys/girls hostel availability, food, and campus life guide.",
+  description: "Top Delhi colleges with hostel 2026. DTU Delhi, IIIT Delhi, FMS Delhi — hostel fees ₹40K–₹1.8L/yr, boys/girls availability, food, and campus life guide.",
   path: "/colleges-in-delhi-with-hostel",
   keywords: [
     "colleges in Delhi with hostel 2026",
@@ -34,7 +33,7 @@ const hostelColleges = [
     capacity: "400+ seats",
     availability: "Limited — Apply fast",
     highlight: "Government College | Cheapest Hostel | Central Delhi Location",
-    slug: "DTU Delhi-college-of-engineering-Delhi",
+    slug: "dtu-delhi-delhi-technological-university",
     note: "Apply within 1 week of admission — seats fill in days",
   },
   {
@@ -47,7 +46,7 @@ const hostelColleges = [
     capacity: "600+ seats",
     availability: "Good Availability",
     highlight: "NIRF #101 | Dwarka Sector 3 Campus | Modern Hostel Block",
-    slug: "vit-Delhi-vishwakarma-institute-of-technology",
+    slug: "iiit-delhi-indraprastha-institute-of-information-technology",
     note: "Boys and girls hostels separate",
   },
   {
@@ -60,7 +59,7 @@ const hostelColleges = [
     capacity: "2,000+ seats",
     availability: "Good Availability",
     highlight: "Huge Residential Campus | Knowledge Park Greater Noida | All Facilities On-Campus",
-    slug: "Amity University Delhi-mit-world-peace-university",
+    slug: "amity-university-noida-delhi-ncr",
     note: "Mandatory for some international programs",
   },
   {
@@ -162,8 +161,8 @@ export default function CollegesWithHostelDELHIPage() {
 
   return (
     <>
-      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}

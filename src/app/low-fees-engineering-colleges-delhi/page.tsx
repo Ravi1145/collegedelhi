@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { CheckCircle, TrendingUp, BookOpen, IndianRupee } from "lucide-react"
@@ -40,7 +39,7 @@ const under5LColleges = [
     total4Yr: "~₹4–7L",
     naac: "A+",
     exam: "JEE Main / JEE",
-    slug: "DTU Delhi-college-of-engineering-Delhi",
+    slug: "dtu-delhi-delhi-technological-university",
     note: "Best govt. — lowest fees overall",
   },
   {
@@ -70,7 +69,7 @@ const under5LColleges = [
     total4Yr: "~₹4.8–6.8L",
     naac: "A",
     exam: "JEE Main",
-    slug: "GL Bajaj-rscoe-rajarshi-shahu-college-of-engineering",
+    slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida",
     note: "Best private budget",
   },
 ]
@@ -83,7 +82,7 @@ const under10LColleges = [
     total4Yr: "~₹5.6–7.6L",
     naac: "A",
     exam: "JEE Main / JEE",
-    slug: "NSUT-Delhi-institute-of-computer-technology",
+    slug: "nsut-netaji-subhas-university-of-technology",
     note: "Best for CS/IT",
   },
   {
@@ -93,7 +92,7 @@ const under10LColleges = [
     total4Yr: "~₹6.4–8.8L",
     naac: "A+",
     exam: "JEE Main / JEE",
-    slug: "vit-Delhi-vishwakarma-institute-of-technology",
+    slug: "iiit-delhi-indraprastha-institute-of-information-technology",
     note: "NIRF #101",
   },
 ]
@@ -148,8 +147,8 @@ export default function LowFeesEngineeringCollegesDELHIPage() {
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}

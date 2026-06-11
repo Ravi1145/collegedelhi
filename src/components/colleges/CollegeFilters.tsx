@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 const STREAMS = ["Engineering", "MBA", "Medical", "Arts & Science", "Management", "Law", "Architecture"]
 const COLLEGE_TYPES = ["Government", "Private", "Deemed", "Autonomous"]
 const NAAC_GRADES = ["A++", "A+", "A", "B++", "B+"]
-const DELHI_AREAS = ["Connaught Place", "Rohini", "Hauz Khas", "Dwarka", "Knowledge Park", "Dwarka", "Bavdhan", "Karve Nagar", "Dwarka Sector 3", "Viman Nagar", "Rohini Sector 17", "Knowledge Park Greater Noida"]
+const DELHI_AREAS = ["Connaught Place", "Rohini", "Hauz Khas", "Dwarka", "Knowledge Park", "Dwarka", "Bavdhan", "Kashmere Gate", "Dwarka Sector 3", "Viman Nagar", "Rohini Sector 17", "Knowledge Park Greater Noida"]
 const EXAMS = ["JEE Main", "JEE Main", "JEE Advanced", "NEET", "CAT", "SNAP", "MAT", "CMAT", "NATA", "SET"]
 
 interface FiltersState {

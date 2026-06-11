@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
@@ -58,7 +57,7 @@ const colleges = [
     seats: 120,
     cutoff: "HSC 65%+",
     highlight: "MIT Brand | Modern IT Labs | Industry Projects",
-    slug: "Amity University Delhi-mit-world-peace-university",
+    slug: "amity-university-noida-delhi-ncr",
   },
   {
     rank: 4,
@@ -130,8 +129,8 @@ export default function BBIMTECHCollegesDELHIPage() {
 
   return (
     <>
-      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}

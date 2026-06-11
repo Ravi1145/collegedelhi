@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { CheckCircle, BookOpen, Award, ExternalLink } from "lucide-react"
@@ -30,7 +29,7 @@ const collegeScholarships = [
     scheme: "EBC / SC/ST / Merit Scholarship",
     eligibility: "EBC: Family income < ₹8L. SC/ST: Full waiver. Merit: Top 10% JEE Main",
     amount: "50–100% fee waiver",
-    slug: "DTU Delhi-college-of-engineering-Delhi",
+    slug: "dtu-delhi-delhi-technological-university",
   },
   {
     name: "IIIT Delhi (Indraprastha Institute of Information Technology)",
@@ -39,7 +38,7 @@ const collegeScholarships = [
     scheme: "Institutional Merit Scholarship",
     eligibility: "95+ percentile in JEE Main or 90%+ in 12th boards",
     amount: "₹25,000–₹50,000/year",
-    slug: "vit-Delhi-vishwakarma-institute-of-technology",
+    slug: "iiit-delhi-indraprastha-institute-of-information-technology",
   },
   {
     name: "Symbiosis Institute of Technology (IMI Delhi)",
@@ -48,7 +47,7 @@ const collegeScholarships = [
     scheme: "Symbiosis Scholarship & Merit Fellowship",
     eligibility: "Top 10 rank in SET exam or JEE Main 95+ percentile",
     amount: "₹50,000–₹2L/year",
-    slug: "symbiosis-institute-of-technology-Delhi",
+    slug: "nit-delhi-national-institute-of-technology",
   },
   {
     name: "NSUT Delhi",
@@ -57,7 +56,7 @@ const collegeScholarships = [
     scheme: "NSUT Merit Scholarship",
     eligibility: "92+ percentile JEE Main, 85%+ in 12th",
     amount: "₹20,000–₹40,000/year",
-    slug: "NSUT-Delhi-institute-of-computer-technology",
+    slug: "nsut-netaji-subhas-university-of-technology",
   },
   {
     name: "Sharda University Engineering",
@@ -75,7 +74,7 @@ const collegeScholarships = [
     scheme: "EBC / Government Scholarship + Institutional",
     eligibility: "EBC income below ₹8L; Merit: 80+ percentile JEE Main",
     amount: "₹15,000–₹50,000/year",
-    slug: "GL Bajaj-rscoe-rajarshi-shahu-college-of-engineering",
+    slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida",
   },
 ]
 
@@ -197,8 +196,8 @@ export default function EngineeringCollegesDELHIScholarshipPage() {
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}

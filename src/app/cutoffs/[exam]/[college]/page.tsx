@@ -1,6 +1,5 @@
 ﻿import { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/seo"
 import {
@@ -158,16 +157,16 @@ export default async function CutoffPage({ params }: Props) {
     "@type": "Dataset",
     name: `${data.college_short} ${examLabel} Cutoff 2020–2026`,
     description: `Year-wise ${examLabel} cutoff data for ${data.college_name} (${data.college_short}) in Delhi from 2020 to 2026. Data includes Open, OBC, SC, and ST category cutoffs.`,
-    publisher: { "@type": "Organization", name: "CollegeDelhi", url: "https://collegedelhi.com" },
+    publisher: { "@type": "Organization", name: "CollegeDelhi", url: "https://www.collegedelhi.com" },
     temporalCoverage: "2020/2026",
     keywords: [`${examLabel} cutoff`, data.college_short, "Delhi", "admissions 2026"],
   }
 
   return (
     <>
-      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="table-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(tableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(tableSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}

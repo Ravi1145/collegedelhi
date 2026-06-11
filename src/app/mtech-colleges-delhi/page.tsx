@@ -1,11 +1,10 @@
-import type { Metadata } from "next"
-import Script from "next/script"
+﻿import type { Metadata } from "next"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "Best M.Tech Colleges in Delhi 2026 | Top MTech Colleges Delhi",
-  description: "Complete list of best M.Tech colleges in Delhi 2026. IIT Delhi, DTU, NSUT, IIIT Delhi — compare GATE cutoffs, fees, research output, placements. Top 15 M.Tech colleges Delhi ranked.",
+  description: "Best M.Tech colleges in Delhi 2026. IIT Delhi, DTU, NSUT, IIIT Delhi — compare GATE cutoffs, fees, research output, and placements.",
   path: "/mtech-colleges-delhi",
   keywords: ["mtech colleges Delhi", "best MTech college Delhi 2026", "GATE cutoff Delhi colleges", "M.Tech admission Delhi 2026", "MTech fees Delhi colleges"],
 })
@@ -46,15 +45,15 @@ export default function MTechCollegesDelhiPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "M.Tech Colleges Delhi", href: "/mtech-colleges-delhi" }]}
         h1="Best M.Tech Colleges in Delhi 2026 – GATE Cutoffs, Fees & Placements"

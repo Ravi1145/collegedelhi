@@ -122,7 +122,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: page.title,
     description: page.description,
     keywords: page.keywords,
-    alternates: { canonical: `https://collegedelhi.com/colleges-in-delhi/${slug}` },
+    alternates: { canonical: `https://www.collegedelhi.com/colleges-in-delhi/${slug}` },
   }
 }
 

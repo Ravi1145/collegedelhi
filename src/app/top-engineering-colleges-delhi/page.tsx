@@ -1,11 +1,10 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "Top Engineering colleges in Delhi 2026 | Rankings, Fees & Placements",
-  description: "Discover the top engineering colleges in Delhi for 2026 admission. Ranked by NIRF, NAAC, fees (₹80K-4.8L/yr), and placement packages. DTU Delhi, NSUT, IIIT Delhi, IMI Delhi & more.",
+  description: "Top engineering colleges in Delhi 2026 ranked by NIRF and NAAC. DTU Delhi, NSUT, IIIT Delhi — compare fees (₹80K–4.8L/yr) and placement packages.",
   path: "/top-engineering-colleges-delhi",
   keywords: ["top engineering colleges Delhi", "best engineering colleges in Delhi 2026", "top btech colleges Delhi", "ranked engineering colleges Delhi"],
 })
@@ -13,13 +12,13 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg", slug: "DTU Delhi-college-of-engineering-Delhi" },
-  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg", slug: "NSUT-Delhi-institute-of-computer-technology" },
-  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "vit-Delhi-vishwakarma-institute-of-technology" },
-  { name: "Symbiosis Institute of Technology (SIT)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg", slug: "symbiosis-institute-of-technology-Delhi" },
-  { name: "Amity University Delhi (Amity University Delhi)", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "Amity University Delhi-mit-world-peace-university" },
-  { name: "IGDTUW Delhi", location: "Janakpuri", naac: "A+", fees: "₹1.3L-1.75L/yr", placement: "₹6.8 LPA avg", slug: "cummins-college-of-engineering-Delhi" },
-  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-rscoe-rajarshi-shahu-college-of-engineering" },
+  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
+  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
+  { name: "Symbiosis Institute of Technology (SIT)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg", slug: "nit-delhi-national-institute-of-technology" },
+  { name: "Amity University Delhi (Amity University Delhi)", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "amity-university-noida-delhi-ncr" },
+  { name: "IGDTUW Delhi", location: "Janakpuri", naac: "A+", fees: "₹1.3L-1.75L/yr", placement: "₹6.8 LPA avg", slug: "igdtuw-delhi-indira-gandhi-technical-university" },
+  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida" },
   { name: "Sharda University Engineering", location: "Vadgaon", naac: "A", fees: "₹1.15L-1.6L/yr", placement: "₹4.9 LPA avg", slug: "Sharda-college-of-engineering-Delhi" },
 ]
 
@@ -46,15 +45,15 @@ export default function TopEngineeringCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Top Engineering colleges in Delhi", href: "/top-engineering-colleges-delhi" }]}
         h1="Top Engineering colleges in Delhi 2026"
@@ -83,9 +82,9 @@ export default function TopEngineeringCollegesDELHIPage() {
         ]}
         admissionHeading="How to Get Admission in Top Engineering colleges in Delhi 2026"
         admissionSteps={[
-          { step: "1", title: "Register for JEE Main 2026", description: "Fill the JEE Main application form at mahacet.org between January-February 2026. Pay application fee of ₹800 (general) or ₹600 (reserved categories). Aim for 95+ percentile for DTU Delhi/NSUT." },
+          { step: "1", title: "Register for JEE Main 2026", description: "Fill the JEE Main application form at jeemain.nta.nic.in between January-February 2026. Pay application fee of ₹800 (general) or ₹600 (reserved categories). Aim for 95+ percentile for DTU Delhi/NSUT." },
           { step: "2", title: "Appear for Entrance Exam", description: "JEE Main is conducted in April-May 2026. JEE Main (January and April sessions) is also accepted at DTU Delhi, IIIT Delhi, IMI Delhi, and Amity University Delhi for management quota and some general seats." },
-          { step: "3", title: "Fill CAP Registration Form", description: "After results (June), register on the JEE Main CAP portal (cetcell.mahacet.org). Upload documents, verify eligibility, and fill college preferences in your preferred order." },
+          { step: "3", title: "Fill CAP Registration Form", description: "After results (June), register on the JEE Main CAP portal (jacdelhi.admissions.nic.in). Upload documents, verify eligibility, and fill college preferences in your preferred order." },
           { step: "4", title: "JAC Delhi Rounds & Seat Allotment", description: "Three JAC Delhi Rounds are conducted in July-August. Accept the allotment within the deadline and pay seat acceptance fee (₹5,000-15,000) to confirm. If not satisfied, wait for next round." },
           { step: "5", title: "Report to College", description: "Report to the allotted college with original documents (10th/12th marksheets, CET scorecard, caste/domicile certificates, Aadhar, photos) within the specified deadline and pay full fees." },
         ]}

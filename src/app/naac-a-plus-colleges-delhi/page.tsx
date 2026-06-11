@@ -1,11 +1,10 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "NAAC A+ colleges in Delhi 2026 | Top Accredited Institutions",
-  description: "Complete list of NAAC A+ and A++ graded colleges in Delhi 2026. DTU Delhi, Amity University Delhi, Symbiosis, Cummins, IIIT Delhi, DY Patil -- compare fees, programs, and accreditation details.",
+  description: "NAAC A+ and A++ colleges in Delhi 2026. DTU Delhi, IIIT Delhi, IGDTUW, Miranda House, SRCC — compare fees, programs, and NAAC accreditation grades.",
   path: "/naac-a-plus-colleges-delhi",
   keywords: ["naac a plus colleges Delhi", "naac a++ colleges Delhi", "naac accredited colleges Delhi 2026", "best naac rated colleges Delhi"],
 })
@@ -13,14 +12,14 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L", placement: "₹12 LPA avg", slug: "DTU Delhi-college-of-engineering-Delhi" },
-  { name: "Amity University Delhi (Amity University Delhi)", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L", placement: "₹7.2 LPA avg", slug: "Amity University Delhi-mit-world-peace-university" },
-  { name: "Symbiosis International University", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹4L-18L", placement: "₹28 LPA avg (MBA)", slug: "symbiosis-international-university-Delhi" },
-  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L", placement: "₹8.5 LPA avg", slug: "vit-Delhi-vishwakarma-institute-of-technology" },
-  { name: "IGDTUW Delhi", location: "Janakpuri", naac: "A+", fees: "₹1.3L-1.75L", placement: "₹6.8 LPA avg", slug: "cummins-college-of-engineering-Delhi" },
-  { name: "SNDT Women's University Delhi Campus", location: "Karve Road", naac: "A+", fees: "₹30K-1.2L", placement: "₹5.5 LPA avg", slug: "sndt-womens-university-Delhi" },
-  { name: "D.Y. Patil University (Pitampura)", location: "Pitampura", naac: "A+", fees: "₹1.5L-22L", placement: "Varies by program", slug: "dy-patil-university-Pitampura-Delhi" },
-  { name: "Miranda House College (Autonomous)", location: "Connaught Place", naac: "A+", fees: "₹25K-60K", placement: "Govt. College", slug: "fergusson-college-delhi" },
+  { name: "Delhi Technological University (DTU)", location: "Bawana Road, Rohini", naac: "A++", fees: "₹80K-1.8L", placement: "₹12 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
+  { name: "Jamia Millia Islamia", location: "Jamia Nagar, Okhla", naac: "A++", fees: "₹15K-1.2L", placement: "₹6.5 LPA avg", slug: "jamia-millia-islamia-delhi" },
+  { name: "Miranda House (University of Delhi)", location: "North Campus, Delhi", naac: "A++", fees: "₹20K-55K", placement: "Govt. College", slug: "miranda-house-college-delhi" },
+  { name: "SRCC (Shri Ram College of Commerce)", location: "North Campus, Delhi", naac: "A+", fees: "₹25K-60K", placement: "₹8 LPA avg", slug: "srcc-shri-ram-college-of-commerce-delhi" },
+  { name: "Hindu College (University of Delhi)", location: "North Campus, Delhi", naac: "A+", fees: "₹20K-55K", placement: "Govt. College", slug: "hindu-college-delhi-university" },
+  { name: "IIIT Delhi (Indraprastha Institute of IT)", location: "Okhla Phase III", naac: "A+", fees: "₹1.6L-2.2L", placement: "₹20 LPA avg", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
+  { name: "IGDTUW (Indira Gandhi Delhi Technical University for Women)", location: "Kashmere Gate", naac: "A+", fees: "₹1.3L-1.75L", placement: "₹6.8 LPA avg", slug: "igdtuw-delhi-indira-gandhi-delhi-technical-university" },
+  { name: "Amity University Delhi", location: "Sector 125, Noida", naac: "A+", fees: "₹2.0L-3.8L", placement: "₹7.2 LPA avg", slug: "amity-university-noida-delhi-ncr" },
 ]
 
 const faqs = [
@@ -46,15 +45,15 @@ export default function NaacAPlusCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi" }]}
         h1="NAAC A+ colleges in Delhi 2026"
@@ -85,7 +84,7 @@ export default function NaacAPlusCollegesDELHIPage() {
         admissionSteps={[
           { step: "1", title: "Identify Your Stream & Target College", description: "Choose your preferred program (Engineering, MBA, Arts, Science, Medical) and identify which NAAC A+ colleges offer it. Each stream has different entrance requirements." },
           { step: "2", title: "Appear for Relevant Entrance Exam", description: "Engineering: JEE Main/JEE. MBA: CAT/SNAP/IPU CET. Medical: NEET. Arts/Science: College entrance or HSC merit. Each NAAC A+ college specifies accepted entrance scores." },
-          { step: "3", title: "Register on CAP Portal or Apply Directly", description: "For JEE Main engineering or MBA IPU CET, register on cetcell.mahacet.org. For deemed universities (Amity University Delhi, Symbiosis), apply directly on the college's website." },
+          { step: "3", title: "Register on JAC Delhi Portal or Apply Directly", description: "For JEE Main engineering seats, register on jacdelhi.admissions.nic.in. For deemed universities (Amity University Delhi, Symbiosis Greater Noida), apply directly on the college's website." },
           { step: "4", title: "Verify NAAC Grade Certificate", description: "Always verify a college's current NAAC grade at the official NAAC website (naac.gov.in). Grades have validity periods; check that the A+ grade is current for the 2026 admission cycle." },
           { step: "5", title: "Complete Admission & Document Verification", description: "Upon allotment or offer letter, complete document verification at the college. Pay fees within the deadline. NAAC A+ colleges have structured orientation programs to welcome new students." },
         ]}

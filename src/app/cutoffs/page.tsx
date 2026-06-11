@@ -1,19 +1,18 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/seo"
 import { cutoffsData, examLabels, streamLabels } from "@/data/cutoffs"
 
 export const metadata: Metadata = genMeta({
   title: "JEE Main JEE NEET Cutoffs for Delhi Colleges 2026 | CollegeDelhi",
-  description: "Year-wise cutoffs (2020–2026) for top Delhi colleges. JEE Main, JEE Main, NEET, SNAP, CAT cutoffs for DTU Delhi, NSUT, VIT, FMS Delhi, AFMC, BJ Medical. Check your admission chances.",
+  description: "Year-wise cutoffs (2020–2026) for top Delhi colleges. JEE Main, NEET, CAT cutoffs for DTU Delhi, NSUT, IIIT Delhi, FMS Delhi, AIIMS. Check your admission chances.",
   path: "/cutoffs",
   keywords: [
     "JEE Main cutoff 2026 Delhi colleges",
     "jee main cutoff Delhi 2026",
     "neet cutoff Delhi colleges 2026",
     "DTU Delhi cutoff 2026",
-    "FMS Delhi snap cutoff 2026",
+    "FMS Delhi CAT cutoff 2026",
     "afmc neet cutoff 2026",
     "Delhi college admission cutoff",
     "engineering college cutoff Delhi",
@@ -26,7 +25,7 @@ const exams = [
   { key: "JEE Main", label: "JEE Main", desc: "State-level CET for Engineering — most Delhi colleges", icon: "⚙️", stream: "Engineering" },
   { key: "jee",     label: "JEE Main", desc: "National entrance for DTU Delhi, SIT, Amity University Delhi (state quota)", icon: "🔬", stream: "Engineering" },
   { key: "neet",    label: "NEET UG",  desc: "For MBBS/BDS — AFMC, BJ Medical, Lady Hardinge Medical", icon: "🏥", stream: "Medical" },
-  { key: "snap",    label: "SNAP",     desc: "Symbiosis entrance — FMS Delhi, MDI Gurgaon, SIIB, SIMS", icon: "💼", stream: "MBA" },
+  { key: "snap",    label: "SNAP",     desc: "Symbiosis entrance — Symbiosis Institute Noida, SIBM, SCIT", icon: "💼", stream: "MBA" },
   { key: "cat",     label: "CAT",      desc: "Top MBA colleges — IIM Delhi, FMS Delhi, MDI Gurgaon (CAT route)", icon: "📊", stream: "MBA" },
 ]
 
@@ -69,8 +68,8 @@ export default function CutoffsPage() {
 
   return (
     <>
-      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}

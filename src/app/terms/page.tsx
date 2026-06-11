@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Terms & Conditions — CollegeDelhi",
   description: "Terms and Conditions for using collegedelhi.com — India's college discovery portal for Delhi.",
-  alternates: { canonical: "https://collegedelhi.com/terms" },
+  alternates: { canonical: "https://www.collegedelhi.com/terms" },
   robots: { index: true, follow: true },
 }
 

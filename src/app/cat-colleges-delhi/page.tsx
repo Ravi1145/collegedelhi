@@ -1,11 +1,10 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "CAT colleges in Delhi 2026 | MBA Colleges Accepting CAT | Cutoffs & Fees",
-  description: "Top MBA colleges in Delhi accepting CAT 2025 scores for 2026 admission. FMS Delhi, MDI Gurgaon, FLAME, Amity University Delhi - CAT cutoffs (percentile-wise), fees, placement packages.",
+  description: "Top MBA colleges in Delhi accepting CAT 2025 scores. FMS Delhi, MDI Gurgaon, IMI Delhi — CAT cutoffs, fees, and placement packages for 2026 admission.",
   path: "/cat-colleges-delhi",
   keywords: ["cat colleges Delhi", "mba colleges Delhi cat 2025", "cat cutoff Delhi mba", "cat accepting colleges Delhi 2026"],
 })
@@ -46,15 +45,15 @@ export default function CatCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "CAT colleges in Delhi", href: "/cat-colleges-delhi" }]}
         h1="CAT MBA colleges in Delhi 2026"

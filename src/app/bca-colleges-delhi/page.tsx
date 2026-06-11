@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
@@ -61,7 +60,7 @@ const colleges = [
     seats: 60,
     cutoff: "HSC 65%+",
     highlight: "Heritage + Tech | Most Affordable BCA",
-    slug: "fergusson-college-delhi",
+    slug: "miranda-house-college-delhi",
   },
   {
     rank: 4,
@@ -137,9 +136,9 @@ const faqs = [
 ]
 
 const breadcrumb = [
-  { name: "Home", url: "https://collegedelhi.com" },
-  { name: "Colleges", url: "https://collegedelhi.com/colleges" },
-  { name: "BCA Colleges Delhi", url: "https://collegedelhi.com/bca-colleges-delhi" },
+  { name: "Home", url: "https://www.collegedelhi.com" },
+  { name: "Colleges", url: "https://www.collegedelhi.com/colleges" },
+  { name: "BCA Colleges Delhi", url: "https://www.collegedelhi.com/bca-colleges-delhi" },
 ]
 
 export const revalidate = 86400
@@ -147,8 +146,8 @@ export const revalidate = 86400
 export default function BCACollegesDELHI() {
   return (
     <>
-      <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
-      <Script id="schema-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}

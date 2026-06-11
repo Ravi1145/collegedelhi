@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
@@ -135,9 +134,9 @@ const faqs = [
 ]
 
 const breadcrumb = [
-  { name: "Home", url: "https://collegedelhi.com" },
-  { name: "Colleges", url: "https://collegedelhi.com/colleges" },
-  { name: "Pharmacy Colleges Delhi", url: "https://collegedelhi.com/pharmacy-colleges-delhi" },
+  { name: "Home", url: "https://www.collegedelhi.com" },
+  { name: "Colleges", url: "https://www.collegedelhi.com/colleges" },
+  { name: "Pharmacy Colleges Delhi", url: "https://www.collegedelhi.com/pharmacy-colleges-delhi" },
 ]
 
 export const revalidate = 86400
@@ -145,8 +144,8 @@ export const revalidate = 86400
 export default function PharmacyCollegesDELHI() {
   return (
     <>
-      <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
-      <Script id="schema-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}

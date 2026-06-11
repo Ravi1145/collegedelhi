@@ -1,11 +1,10 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
   title: "Delhi College Admission Calendar 2026 — All Important Dates",
-  description: "Complete Delhi college admission calendar 2026: JEE Main, NEET, CUET, JAC Delhi, DU CSAS, IPU CET, CAT, CLAT, JEE Advanced — all exam and counselling dates for Delhi colleges in one place.",
+  description: "Delhi college admission calendar 2026: JEE Main, NEET, CUET, JAC Delhi, DU CSAS, IPU CET, CAT, CLAT — all exam and counselling dates in one place.",
   path: "/delhi-college-admission-calendar-2026",
   keywords: [
     "delhi college admission calendar 2026",
@@ -93,8 +92,8 @@ export default function DelhiAdmissionCalendarPage() {
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="bg-[#0A1628] py-12 px-4">
         <div className="max-w-4xl mx-auto">

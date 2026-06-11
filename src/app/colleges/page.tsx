@@ -1,7 +1,6 @@
 ﻿import { Metadata } from "next"
 import { Suspense } from "react"
 import { generateMetadata as genMeta, generateBreadcrumbSchema, generateFAQSchema, generateItemListSchema } from "@/lib/seo"
-import Script from "next/script"
 import Link from "next/link"
 import CollegeGrid from "@/components/colleges/CollegeGrid"
 import { getAllColleges } from "@/lib/db"
@@ -39,9 +38,9 @@ export default async function CollegesPage() {
 
   return (
     <>
-      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="item-list" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList) }} />
       <div className="bg-surface min-h-screen">
         {/* Page Header */}
         <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] py-12">

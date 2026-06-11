@@ -1,6 +1,5 @@
 ﻿import { Metadata } from "next"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import { colleges, getCollegeBySlug } from "@/data/colleges"
 
 export const revalidate = 300 // ISR — re-render every 5 min; on-demand revalidation via admin also busts this
@@ -165,10 +164,10 @@ export default async function CollegePage({ params }: Props) {
 
   return (
     <>
-      <Script id="breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="college-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collegeSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collegeSchema) }} />
       {faqSchema && (
-        <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       )}
       <div className="bg-surface min-h-screen">
         <CollegeProfile college={college} details={details} />

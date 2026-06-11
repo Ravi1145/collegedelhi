@@ -16,7 +16,7 @@ export async function GET() {
       },
     })
   } catch {
-    return new NextResponse("# CollegeDelhi LLMs.txt\nSee https://collegedelhi.com/llms.txt", {
+    return new NextResponse("# CollegeDelhi LLMs.txt\nSee https://www.collegedelhi.com/llms.txt", {
       headers: { "Content-Type": "text/plain" },
     })
   }

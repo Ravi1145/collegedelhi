@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Privacy Policy — CollegeDelhi",
   description: "CollegeDelhi Privacy Policy — how we collect, use, and protect your personal information. Read our commitment to your data privacy.",
-  alternates: { canonical: "https://collegedelhi.com/privacy" },
+  alternates: { canonical: "https://www.collegedelhi.com/privacy" },
   robots: { index: true, follow: true },
 }
 

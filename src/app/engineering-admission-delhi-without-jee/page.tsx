@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { CheckCircle, BookOpen } from "lucide-react"
@@ -59,7 +58,7 @@ const faqs = [
   },
   {
     question: "How to apply for JEE Main 2026?",
-    answer: "Register on cetcell.mahacet.org. JEE Main 2026 registration: January–February 2026. Exam: April 15 – May 15, 2026 (PCM group for engineering). Results: June 2026. JAC Delhi Round 1 counselling: July 2026. Eligibility: 12th pass with Physics, Chemistry, Mathematics (PCM), minimum 45% marks (40% for reserved categories).",
+    answer: "Register on jacdelhi.admissions.nic.in. JEE Main 2026 registration: January–February 2026. Exam: April 15 – May 15, 2026 (PCM group for engineering). Results: June 2026. JAC Delhi Round 1 counselling: July 2026. Eligibility: 12th pass with Physics, Chemistry, Mathematics (PCM), minimum 45% marks (40% for reserved categories).",
   },
   {
     question: "Can I get management quota BTech in Delhi without JEE or JEE Main?",
@@ -84,8 +83,8 @@ export default function EngineeringAdmissionWithoutJEEPage() {
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}
@@ -264,7 +263,7 @@ export default function EngineeringAdmissionWithoutJEEPage() {
                 </thead>
                 <tbody className="divide-y divide-gray-50">
                   {[
-                    { event: "JEE Main Registration", date: "Jan–Feb 2026", detail: "cetcell.mahacet.org · ₹800 fee (Gen) · ₹600 (Reserved)" },
+                    { event: "JEE Main Registration", date: "Jan–Feb 2026", detail: "jacdelhi.admissions.nic.in · ₹800 fee (Gen) · ₹600 (Reserved)" },
                     { event: "Admit Card", date: "April 2026", detail: "Download from official portal" },
                     { event: "JEE Main Exam (PCM)", date: "Apr 15–May 15, 2026", detail: "Online CBT mode · 100 MCQ · 180 min" },
                     { event: "Result Declaration", date: "June 2026", detail: "Percentile score released on portal" },

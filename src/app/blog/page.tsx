@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateBreadcrumbSchema } from "@/lib/seo"
 import { getAllBlogs } from "@/lib/db"
@@ -14,7 +13,7 @@ export const metadata: Metadata = genMeta({
   keywords: ["Delhi college guides", "JEE Main preparation", "mba admission Delhi", "best colleges Delhi blog"],
 })
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 
 interface Post {
   id: number | string
@@ -76,8 +75,8 @@ export default async function BlogPage() {
 
   return (
     <div className="bg-surface min-h-screen">
-      <Script id="blog-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <Script id="blog-list-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListSchema) }} />
 
       <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

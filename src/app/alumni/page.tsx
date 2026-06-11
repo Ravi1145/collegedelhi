@@ -7,7 +7,7 @@ export const revalidate = 3600
 
 export const metadata: Metadata = genMeta({
   title: "Delhi College Alumni Network 2026 | Ask Graduates Directly | CollegeDelhi",
-  description: "Connect with verified alumni from DTU Delhi, FMS Delhi, AFMC, NSUT, IIIT Delhi and 20+ colleges. Get honest answers about placements, hostel, campus life and admission from real graduates.",
+  description: "Connect with verified alumni from DTU Delhi, FMS Delhi, NSUT, IIIT Delhi and 20+ colleges. Get honest answers about placements, campus life and admission.",
   path: "/alumni",
   keywords: [
     "Delhi college alumni", "DTU Delhi alumni", "FMS Delhi alumni",

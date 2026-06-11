@@ -1,11 +1,10 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "Computer Engineering colleges in Delhi 2026 | CS/IT BTech Admission",
-  description: "Best computer engineering colleges in Delhi 2026. NSUT, DTU Delhi, IIIT Delhi, SIT - compare CS fees, JEE Main cutoffs, placement packages up to ₹45 LPA. Free admission guidance.",
+  description: "Best computer engineering colleges in Delhi 2026. NSUT, DTU Delhi, IIIT Delhi — compare CS fees, JEE Main cutoffs, placement packages up to ₹45 LPA.",
   path: "/computer-engineering-colleges-delhi",
   keywords: ["computer engineering colleges Delhi", "cs colleges Delhi", "it engineering colleges Delhi 2026", "best cs College Delhi"],
 })
@@ -13,13 +12,13 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg | ₹35 LPA highest", slug: "NSUT-Delhi-institute-of-computer-technology" },
-  { name: "Delhi Technological University (DTU) - CSE", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg | ₹45 LPA highest", slug: "DTU Delhi-college-of-engineering-Delhi" },
-  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "vit-Delhi-vishwakarma-institute-of-technology" },
-  { name: "Symbiosis Institute of Technology (SIT)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg", slug: "symbiosis-institute-of-technology-Delhi" },
-  { name: "Amity University Delhi - CSE/AIML", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "Amity University Delhi-mit-world-peace-university" },
-  { name: "IGDTUW Delhi", location: "Janakpuri", naac: "A+", fees: "₹1.3L-1.75L/yr", placement: "₹6.8 LPA avg", slug: "cummins-college-of-engineering-Delhi" },
-  { name: "GL Bajaj NIET - Computer Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-rscoe-rajarshi-shahu-college-of-engineering" },
+  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg | ₹35 LPA highest", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "Delhi Technological University (DTU) - CSE", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg | ₹45 LPA highest", slug: "dtu-delhi-delhi-technological-university" },
+  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
+  { name: "Symbiosis Institute of Technology (SIT)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg", slug: "nit-delhi-national-institute-of-technology" },
+  { name: "Amity University Delhi - CSE/AIML", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "amity-university-noida-delhi-ncr" },
+  { name: "IGDTUW Delhi", location: "Janakpuri", naac: "A+", fees: "₹1.3L-1.75L/yr", placement: "₹6.8 LPA avg", slug: "igdtuw-delhi-indira-gandhi-technical-university" },
+  { name: "GL Bajaj NIET - Computer Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida" },
   { name: "NIET Noida - CS/IT", location: "Kennedy Road", naac: "A", fees: "₹1.1L-1.55L/yr", placement: "₹4.8 LPA avg", slug: "NIET Noida-college-of-engineering-Delhi" },
 ]
 
@@ -46,15 +45,15 @@ export default function ComputerEngineeringCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Computer Engineering colleges in Delhi", href: "/computer-engineering-colleges-delhi" }]}
         h1="Computer Engineering colleges in Delhi 2026"
@@ -84,7 +83,7 @@ export default function ComputerEngineeringCollegesDELHIPage() {
         admissionHeading="Computer Engineering Admission Process in Delhi 2026"
         admissionSteps={[
           { step: "1", title: "Target JEE Main PCM Score", description: "CS/IT is the most competitive branch. Target 95+ percentile for NSUT, 99+ for DTU Delhi CSE, 85+ for VIT/Amity University Delhi CS. JEE Main above 90 percentile also qualifies for premium college management quota." },
-          { step: "2", title: "Apply on CAP Portal After Results", description: "Register on cetcell.mahacet.org after JEE Main results. Verify documents and fill college-branch preferences. Put CS as first preference at all target colleges." },
+          { step: "2", title: "Apply on CAP Portal After Results", description: "Register on jacdelhi.admissions.nic.in after JEE Main results. Verify documents and fill college-branch preferences. Put CS as first preference at all target colleges." },
           { step: "3", title: "Research Colleges Before JAC Delhi Round 1", description: "Visit college campuses, attend open days, research placement data on LinkedIn, and talk to current students before locking preferences. Use CollegeDelhi's comparison tool for data-driven decisions." },
           { step: "4", title: "Fill 50+ Preferences Strategically", description: "Fill preferences across tiers: dream colleges first (DTU Delhi/NSUT), then realistic targets (IIIT Delhi, Amity University Delhi), then safe options (GL Bajaj, NIET Noida). Never leave preferences blank." },
           { step: "5", title: "Accept Allotment or Upgrade in Next Round", description: "If Round 1 allots a lower-preference college, decide: accept to secure a seat (safer) or freeze/upgrade to wait for better options in Round 2. Floating option allows upgrades if better seat opens." },

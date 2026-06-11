@@ -1,6 +1,5 @@
 ﻿"use client"
 import { useState, useEffect, useCallback } from "react"
-import Script from "next/script"
 import { Star, ThumbsUp, ThumbsDown, PenLine, ChevronDown, ChevronUp, Loader2, CheckCircle } from "lucide-react"
 
 interface Review {
@@ -392,11 +391,7 @@ export default function ReviewSection({ collegeSlug, collegeName, staticReviews 
   return (
     <>
       {aggregateRatingSchema && (
-        <Script
-          id={`schema-aggregate-rating-${collegeSlug}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }} />
       )}
 
       <div className="space-y-6">

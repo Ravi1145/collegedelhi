@@ -34,6 +34,17 @@ const socialLinks = [
     ),
   },
   {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/collegedelhi",
+    icon: (
+      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect x="2" y="9" width="4" height="12" />
+        <circle cx="4" cy="4" r="2" />
+      </svg>
+    ),
+  },
+  {
     label: "WhatsApp",
     href: "https://wa.me/917753831118",
     icon: (
@@ -241,10 +252,12 @@ export default function Footer() {
             &copy; 2026 collegedelhi.com &middot; All rights reserved &middot; AI-powered college discovery for Delhi
           </p>
           <div className="flex items-center gap-5 text-xs text-gray-500">
-            <Link href="/privacy"     className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
-            <Link href="/terms"       className="hover:text-gray-300 transition-colors">Terms of Use</Link>
-            <Link href="/disclaimer"  className="hover:text-gray-300 transition-colors">Disclaimer</Link>
-            <Link href="/sitemap.xml" className="hover:text-gray-300 transition-colors">Sitemap</Link>
+            <Link href="/privacy"           className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
+            <Link href="/terms"             className="hover:text-gray-300 transition-colors">Terms of Use</Link>
+            <Link href="/disclaimer"        className="hover:text-gray-300 transition-colors">Disclaimer</Link>
+            <Link href="/editorial-policy"  className="hover:text-gray-300 transition-colors">Editorial Policy</Link>
+            <Link href="/about"             className="hover:text-gray-300 transition-colors">About Us</Link>
+            <Link href="/sitemap.xml"       className="hover:text-gray-300 transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

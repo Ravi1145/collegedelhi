@@ -1,5 +1,4 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
@@ -13,11 +12,11 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Miranda House College (Autonomous)", location: "Connaught Place", naac: "A+", fees: "₹25K-60K/yr", placement: "Research & Govt", slug: "fergusson-college-delhi" },
+  { name: "Miranda House College (Autonomous)", location: "Connaught Place", naac: "A+", fees: "₹25K-60K/yr", placement: "Research & Govt", slug: "miranda-house-college-delhi" },
   { name: "Hindu College of Science & Commerce", location: "Connaught Place", naac: "A+", fees: "₹20K-50K/yr", placement: "Government Aided", slug: "sp-college-delhi" },
   { name: "Kirori Mal College of Arts Science & Commerce", location: "Connaught Place", naac: "A", fees: "₹22K-55K/yr", placement: "Government Aided", slug: "modern-college-delhi" },
   { name: "Wadia College of Science", location: "Delhi", naac: "A", fees: "₹18K-40K/yr", placement: "Government", slug: "wadia-college-science-Delhi" },
-  { name: "MIT College of Science - Amity University Delhi", location: "Rohini", naac: "A+", fees: "₹60K-1.2L/yr", placement: "₹4.5 LPA avg", slug: "Amity University Delhi-mit-world-peace-university" },
+  { name: "MIT College of Science - Amity University Delhi", location: "Rohini", naac: "A+", fees: "₹60K-1.2L/yr", placement: "₹4.5 LPA avg", slug: "amity-university-noida-delhi-ncr" },
   { name: "Symbiosis College of Arts & Commerce", location: "Senapati Bapat Road", naac: "A+", fees: "₹45K-80K/yr", placement: "₹5 LPA avg", slug: "symbiosis-college-arts-commerce-Delhi" },
   { name: "Marathwada Mitra Mandal College of Science", location: "South Delhi", naac: "A", fees: "₹20K-50K/yr", placement: "Govt. Aided", slug: "mmmcs-Delhi" },
   { name: "Sir Parashurambhau College (Hindu College)", location: "Connaught Place", naac: "A+", fees: "₹20K-48K/yr", placement: "Research", slug: "sir-parashurambhau-college-delhi" },
@@ -46,15 +45,15 @@ export default function ScienceCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Science colleges in Delhi", href: "/science-colleges-Delhi" }]}
         h1="Science colleges in Delhi 2026"

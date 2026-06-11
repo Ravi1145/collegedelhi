@@ -1,5 +1,4 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
@@ -13,10 +12,10 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K/yr", placement: "₹12 LPA avg", slug: "DTU Delhi-college-of-engineering-Delhi" },
-  { name: "Miranda House College (Autonomous)", location: "Connaught Place", naac: "A+", fees: "₹25K-60K/yr", placement: "Govt. College", slug: "fergusson-college-delhi" },
+  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K/yr", placement: "₹12 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
+  { name: "Miranda House College (Autonomous)", location: "Connaught Place", naac: "A+", fees: "₹25K-60K/yr", placement: "Govt. College", slug: "miranda-house-college-delhi" },
   { name: "Hindu College of Science & Commerce", location: "Connaught Place", naac: "A+", fees: "₹20K-50K/yr", placement: "Govt. Aided", slug: "sp-college-delhi" },
-  { name: "Gargi College of Commerce", location: "Karve Road", naac: "A", fees: "₹15K-40K/yr", placement: "Govt. Aided", slug: "garware-college-of-commerce-Delhi" },
+  { name: "Gargi College of Commerce", location: "Azadpur, Delhi", naac: "A", fees: "₹15K-40K/yr", placement: "Govt. Aided", slug: "garware-college-of-commerce-Delhi" },
   { name: "BMCC (Brihan Delhi College of Commerce)", location: "Connaught Place", naac: "A+", fees: "₹18K-45K/yr", placement: "₹5.5 LPA avg", slug: "bmcc-Delhi" },
   { name: "Kirori Mal College of Arts Science & Commerce", location: "Connaught Place", naac: "A", fees: "₹22K-55K/yr", placement: "Govt. Aided", slug: "modern-college-delhi" },
   { name: "Wadia College of Science", location: "Delhi", naac: "A", fees: "₹18K-40K/yr", placement: "Government", slug: "wadia-college-science-Delhi" },
@@ -46,15 +45,15 @@ export default function LowFeeCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi" }]}
         h1="Low Fee colleges in Delhi 2026"
@@ -85,7 +84,7 @@ export default function LowFeeCollegesDELHIPage() {
         admissionSteps={[
           { step: "1", title: "Check HSC Results (for Arts/Science/Commerce)", description: "Arts, Science, and Commerce colleges in Delhi admit based on HSC (12th) merit. Track results at mahahsscboard.in. Most government colleges publish merit cutoffs in June-July 2026." },
           { step: "2", title: "Apply Online on College/University Portal", description: "DU online admission portal opens after HSC results. Apply to 5-10 government and aided colleges simultaneously. Application fees are minimal (₹50-200 per application)." },
-          { step: "3", title: "Engineering: Register for JEE Main CAP", description: "For low-fee engineering seats (DTU Delhi government quota, state quota at private colleges), register on cetcell.mahacet.org after JEE Main results. Fill college preferences prioritizing government colleges." },
+          { step: "3", title: "Engineering: Register for JEE Main CAP", description: "For low-fee engineering seats (DTU Delhi government quota, state quota at private colleges), register on jacdelhi.admissions.nic.in after JEE Main results. Fill college preferences prioritizing government colleges." },
           { step: "4", title: "Apply for Scholarship Simultaneously", description: "Apply for EBC, OBC, and other scholarships on scholarships.gov.in (NSP) and Delhi scholarships portal (mahaeschol.Delhi.gov.in) immediately after admission. Deadlines are strict." },
           { step: "5", title: "Report to College with Documents", description: "After merit list selection, report to the college within the deadline. Bring original documents: HSC marksheet, caste/income certificate, Aadhar, migration certificate, and passport photos." },
         ]}

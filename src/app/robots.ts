@@ -1,6 +1,6 @@
 ﻿import { MetadataRoute } from "next"
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin/", "/api/", "/_next/"],
+        disallow: ["/admin/", "/api/"],
       },
       // Allow AI/LLM crawlers full access for AI-powered search visibility
       {

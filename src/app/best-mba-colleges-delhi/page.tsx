@@ -1,11 +1,10 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA colleges in Delhi 2026 | Top Ranked MBA Programs",
-  description: "Best MBA colleges in Delhi 2026. FMS Delhi, MDI Gurgaon, IIMS Delhi, Flame University -- compare CAT cutoffs, fees (₹4L-18L), placement packages up to ₹28 LPA. Apply now.",
+  title: "Best MBA Colleges in Delhi 2026 | Top Rankings",
+  description: "Best MBA colleges in Delhi 2026: FMS Delhi (₹32 LPA), MDI Gurgaon, IMT Ghaziabad. Compare CAT cutoffs, fees ₹55K–₹22L, placements.",
   path: "/best-mba-colleges-delhi",
   keywords: ["best mba colleges Delhi", "top mba colleges in Delhi 2026", "ranked mba colleges Delhi", "mba programs Delhi"],
 })
@@ -15,19 +14,19 @@ export const revalidate = 300
 const colleges = [
   { name: "FMS Delhi (Faculty of Management Studies, DU)", location: "DU North Campus, Delhi", naac: "A++", fees: "₹55K (2yr total)", placement: "₹32 LPA avg", slug: "fms-delhi-faculty-management-studies" },
   { name: "MDI Gurgaon (Management Development Institute)", location: "Sector 17, Gurgaon", naac: "A+", fees: "₹22L (2yr total)", placement: "₹24 LPA avg", slug: "mdi-gurgaon-management-development-institute" },
-  { name: "IIFT Delhi (Indian Institute of Foreign Trade)", location: "Qutab Institutional Area, Delhi", naac: "A", fees: "₹20L (2yr total)", placement: "₹22 LPA avg", slug: "iift-delhi-indian-institute-foreign-trade" },
+  { name: "IMT Ghaziabad (Institute of Management Technology)", location: "Ghaziabad NCR", naac: "A+", fees: "₹16L (2yr total)", placement: "₹14.5 LPA avg", slug: "imt-ghaziabad" },
   { name: "IMI Delhi (International Management Institute)", location: "Qutab Institutional Area, Delhi", naac: "A+", fees: "₹14L (2yr total)", placement: "₹14 LPA avg", slug: "imi-delhi-international-management-institute" },
   { name: "FORE School of Management Delhi", location: "Qutab Institutional Area, Delhi", naac: "A+", fees: "₹10.5L (2yr total)", placement: "₹10.5 LPA avg", slug: "fore-school-management-delhi" },
   { name: "BIMTECH Greater Noida (Birla Institute of Management Technology)", location: "Greater Noida", naac: "A+", fees: "₹9.2L (2yr total)", placement: "₹9.2 LPA avg", slug: "bimtech-birla-institute-management-technology-noida" },
-  { name: "DSM DTU (Delhi School of Management, DTU)", location: "Rohini, Delhi", naac: "A+", fees: "₹2.5L (2yr total)", placement: "₹8.5 LPA avg", slug: "dsm-dtu-delhi-school-management" },
-  { name: "LBSIM Delhi (Lal Bahadur Shastri Institute of Management)", location: "Dwarka Sector 7, Delhi", naac: "A", fees: "₹8.8L (2yr total)", placement: "₹8.8 LPA avg", slug: "lbsim-lal-bahadur-shastri-institute-management-delhi" },
+  { name: "DSM DTU (Delhi School of Management, DTU)", location: "Rohini, Delhi", naac: "A+", fees: "₹2.5L (2yr total)", placement: "₹8.5 LPA avg", slug: "delhi-school-of-management-dtu" },
+  { name: "LBSIM Delhi (Lal Bahadur Shastri Institute of Management)", location: "Dwarka Sector 7, Delhi", naac: "A", fees: "₹8.8L (2yr total)", placement: "₹8.8 LPA avg", slug: "lbsim-lal-bahadur-shastri-institute-management" },
 ]
 
 const faqs = [
-  { q: "Which is the best MBA college in Delhi?", a: "FMS Delhi (Faculty of Management Studies, Delhi University) is the best MBA college in Delhi — India's #1 MBA value with ₹55K total fees and ₹32 LPA average placement. MDI Gurgaon ranks #2 with ₹24 LPA average. IIFT Delhi (₹22 LPA) is best for international business." },
-  { q: "What is the CAT cutoff for top MBA colleges in Delhi?", a: "FMS Delhi: 98+ CAT percentile. MDI Gurgaon: 99+ percentile. IIFT Delhi: 95+ percentile. IMI Delhi: 85+ percentile. FORE School: 80+ percentile. BIMTECH: 75+ percentile. DSM DTU: 70+ percentile. LBSIM: 70+ percentile." },
-  { q: "What is the fee for MBA in Delhi?", a: "MBA fees in Delhi 2026: FMS Delhi ₹55K total (government), DSM DTU ₹2.5L total (government), LBSIM ₹8.8L, FORE School ₹10.5L, BIMTECH ₹9.2L, IMI Delhi ₹14L, IIFT Delhi ₹20L, MDI Gurgaon ₹22L. Government college FMS Delhi offers India's best MBA ROI." },
-  { q: "What is the average placement package from MBA colleges in Delhi?", a: "FMS Delhi: ₹32 LPA avg, ₹72 LPA highest. MDI Gurgaon: ₹24 LPA avg. IIFT Delhi: ₹22 LPA avg. IMI Delhi: ₹14 LPA avg. FORE School: ₹10.5 LPA avg. BIMTECH: ₹9.2 LPA avg. DSM DTU: ₹8.5 LPA avg. Consulting and BFSI roles command highest packages." },
+  { q: "Which is the best MBA college in Delhi?", a: "FMS Delhi (Faculty of Management Studies, Delhi University) is the best MBA college in Delhi — India's #1 MBA value with ₹55K total fees and ₹32 LPA average placement. MDI Gurgaon ranks #2 with ₹24 LPA average. IMT Ghaziabad (₹14.5 LPA) is a strong NCR option." },
+  { q: "What is the CAT cutoff for top MBA colleges in Delhi?", a: "FMS Delhi: 98+ CAT percentile. MDI Gurgaon: 99+ percentile. IMI Delhi: 85+ percentile. FORE School: 80+ percentile. BIMTECH: 75+ percentile. IMT Ghaziabad: 75+ percentile. DSM DTU: 70+ percentile. LBSIM: 70+ percentile." },
+  { q: "What is the fee for MBA in Delhi?", a: "MBA fees in Delhi 2026: FMS Delhi ₹55K total (government), DSM DTU ₹2.5L total (government), LBSIM ₹8.8L, FORE School ₹10.5L, BIMTECH ₹9.2L, IMI Delhi ₹14L, IMT Ghaziabad ₹16L, MDI Gurgaon ₹22L. Government college FMS Delhi offers India's best MBA ROI." },
+  { q: "What is the average placement package from MBA colleges in Delhi?", a: "FMS Delhi: ₹32 LPA avg, ₹72 LPA highest. MDI Gurgaon: ₹24 LPA avg. IMI Delhi: ₹14 LPA avg. IMT Ghaziabad: ₹14.5 LPA avg. FORE School: ₹10.5 LPA avg. BIMTECH: ₹9.2 LPA avg. DSM DTU: ₹8.5 LPA avg. Consulting and BFSI roles command highest packages." },
   { q: "Is Delhi a good city for MBA?", a: "Yes. Delhi NCR has India's top MBA value (FMS Delhi), second-best private MBA (MDI Gurgaon), international trade specialist (IIFT Delhi), and 20+ other quality programs. Combined with Delhi's corporate ecosystem (Gurgaon tech hub, Delhi BFSI, Noida IT), it offers unmatched industry exposure." },
 ]
 
@@ -46,15 +45,15 @@ export default function BestMbaCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Best MBA colleges in Delhi", href: "/best-mba-colleges-delhi" }]}
         h1="Best MBA colleges in Delhi 2026"

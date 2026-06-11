@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import HeroSection from "@/components/home/HeroSection"
 import CollegeMarquee from "@/components/home/CollegeMarquee"
@@ -21,7 +20,7 @@ import type { NewsArticle } from "@/components/home/HomepageNewsSection"
 
 export const metadata: Metadata = genMeta({
   title: "Best colleges in Delhi 2026 | CollegeDelhi",
-  description: "Find the best engineering, MBA, medical and arts colleges in Delhi 2026. Compare DTU (NIRF #49), FMS Delhi (NIRF #13), AFMC (NIRF #4) and 25+ colleges by fees (₹15K–25L/yr), placements (₹12–65 LPA), NAAC grade & reviews. Free AI counselor.",
+  description: "Best colleges in Delhi 2026: IIT Delhi, FMS Delhi, AIIMS, DTU, Miranda House. Compare fees (₹15K–25L/yr), placements, NAAC grades & CAT/JEE/NEET cutoffs. Free AI counselor.",
   path: "/",
   keywords: [
     "colleges in Delhi 2026",
@@ -58,19 +57,19 @@ export const metadata: Metadata = genMeta({
 
 const faqData = [
   { question: "Which is the best BTech college in Delhi in 2026?", answer: "DTU (Delhi Technological University) is the best B.Tech college in Delhi in 2026 — NIRF Rank 49, NAAC A+, fees ₹80K–1.8L/yr, average placement ₹12 LPA, highest ₹45 LPA. JEE Main cutoff: 97+ percentile for CSE. Followed by NSUT (best for CS/IT), IIIT Delhi (NIRF #101), and IMI Delhi (₹9.8 LPA avg placement)." },
-  { question: "What is the best MBA college in Delhi in 2026?", answer: "FMS Delhi (Symbiosis Institute of Business Management) is the best MBA college in Delhi with NIRF Rank 13 and average placement of ₹28 LPA. Admission via SNAP 2026 (60+ percentile). Fees: ₹16–22L total. Recruiters include McKinsey, BCG, Deloitte, and P&G." },
-  { question: "Which is the best medical college in Delhi?", answer: "AIIMS Delhi (NIRF Rank 4, NAAC A++) is the best medical college in Delhi with near-zero fees (₹50,000 total). Requires 650+ NEET score + AFMC entrance test. Maulana Azad Medical College (NIRF #18) is the best government option for state quota at 625+ NEET score and fees ₹60K–1.2L/yr." },
-  { question: "What are the fees for engineering colleges in Delhi 2026?", answer: "Engineering fees in Delhi 2026: Government (DTU Delhi) ₹80K–1.8L/yr; Autonomous private (NSUT, IIIT Delhi) ₹1.4L–2.2L/yr; Deemed universities (IMI Delhi, Amity University Delhi) ₹2L–4.8L/yr; Private colleges ₹95K–1.7L/yr. SC/ST/OBC categories get full fee waiver/concession at government colleges under EBC and government scholarship schemes." },
-  { question: "What entrance exam is required for Delhi colleges in 2026?", answer: "JEE Main 2026 (April–May) for engineering at DU-affiliated colleges; JEE Main 2026 for DTU Delhi, SIT, Amity University Delhi; NEET 2026 (May 3) for AFMC and Maulana Azad Medical College; CAT 2026 (November) and SNAP 2026 (December) for MBA at FMS Delhi; SET 2026 (May) for Symbiosis programs." },
+  { question: "What is the best MBA college in Delhi in 2026?", answer: "FMS Delhi (Faculty of Management Studies, Delhi University) is the best MBA college in Delhi with NIRF Rank 13 and average placement of ₹32 LPA. Admission via CAT 2025 (98+ percentile). Fees: ₹55K total — India's best MBA value. Top recruiters: McKinsey, BCG, Goldman Sachs, Deloitte, and P&G." },
+  { question: "Which is the best medical college in Delhi?", answer: "AIIMS Delhi (All India Institute of Medical Sciences, NIRF Rank 1, NAAC A++) is the best medical college in Delhi with fees of just ₹1,628 for the full MBBS program. Requires 700+ NEET score. Maulana Azad Medical College (NIRF #18) is the best government option at 625+ NEET score and ₹60K–1.2L/yr fees." },
+  { question: "What are the fees for engineering colleges in Delhi 2026?", answer: "Engineering fees in Delhi 2026: IIT Delhi ₹2.24L/yr; Government colleges (DTU, NSUT) ₹1.4L–2L/yr; Central university (Jamia Millia) ₹80K–1.5L/yr; Autonomous (IIIT Delhi) ₹2.5L–3L/yr; Private deemed (Amity, Bennett) ₹2.5L–5L/yr. SC/ST students at government colleges get full fee waiver under state/central scholarship schemes." },
+  { question: "What entrance exam is required for Delhi colleges in 2026?", answer: "JEE Advanced for IIT Delhi; JEE Main (via JAC Delhi) for DTU, NSUT, IIIT Delhi, IGDTUW; NEET for AIIMS Delhi and Maulana Azad Medical College; CAT 2025 (November) for FMS Delhi, MDI Gurgaon, IMI Delhi; CUET 2026 for Delhi University colleges (Miranda House, SRCC, Hindu College); IPU CET for IP University-affiliated colleges." },
   { question: "Which Delhi college has the highest placement package in 2026?", answer: "FMS Delhi leads with ₹28 LPA average MBA placement and McKinsey/BCG offers. For engineering, DTU Delhi has the highest average (₹12 LPA) with individual offers reaching ₹45 LPA from Goldman Sachs and Google. NSUT's CS branch sees highest median salary of ₹10 LPA with product company offers reaching ₹40+ LPA." },
   { question: "How to get admission in DTU Delhi 2026?", answer: "For DTU Delhi 2026 admission: Score 97+ percentile in JEE Main (April–May 2026) or qualify JEE Main Session 1/2. Register on JEE Main CAP portal after results (June 2026). Fill document verification at facilitation centre. Choose DTU Delhi in preference list during JAC Delhi Round 1 (July 2026). DTU Delhi is a government college — fees are just ₹80,000–1.8L/year." },
   { question: "What is the difference between DTU Delhi, NSUT, and IIIT Delhi?", answer: "DTU Delhi: Government, NIRF #49, NAAC A+, fees ₹80K–1.8L/yr, avg placement ₹12 LPA — best overall value. NSUT: Autonomous private, NAAC A, fees ₹1.4L–1.9L/yr, avg placement ₹7.5 LPA — best for CS/IT focus. IIIT Delhi: Autonomous, NIRF #101, NAAC A+, fees ₹1.6L–2.2L/yr, avg placement ₹8.5 LPA — best for Mechanical and Electronics. For CS/IT, DTU Delhi > NSUT > IIIT Delhi. For Mechanical, DTU Delhi > IIIT Delhi > GL Bajaj." },
   { question: "Which is the No. 1 college in Delhi in 2026?", answer: "AIIMS Delhi holds the highest NIRF rank among Delhi colleges at #4 nationally. Among engineering colleges, DTU Delhi is #1 in Delhi (NIRF #49). Among MBA colleges, FMS Delhi is #1 (NIRF #13). For arts and science, Miranda House College (Est. 1885) is the most prestigious. For design, Pearl Academy Delhi (SID) is ranked among India's top 5." },
-  { question: "Which colleges in Delhi are NAAC A+ accredited in 2026?", answer: "NAAC A+ colleges in Delhi (2026): AFMC (A++), DTU Delhi, Amity University Delhi, IMI Delhi, IIIT Delhi, IGDTUW Delhi, Miranda House College, Hindu College, Gargi College, FMS Delhi, SID (Pearl Academy Delhi), and MIT-ADT University. NAAC A+ is the second-highest grade and indicates excellent academic quality, infrastructure, and student outcomes." },
+  { question: "Which colleges in Delhi are NAAC A+ accredited in 2026?", answer: "NAAC A++ colleges in Delhi (2026): IIT Delhi, AIIMS Delhi, Jamia Millia Islamia. NAAC A+ colleges: DTU Delhi, NSUT, IIIT Delhi, IGDTUW, Amity University Delhi, IMI Delhi, Miranda House, Hindu College, Gargi College, FMS Delhi, Bennett University. NAAC A++ is the highest grade indicating world-class academic standards." },
   { question: "When does college admission start in Delhi for 2026?", answer: "Delhi college admissions 2026 timeline: JEE Main exam — April 20–May 15, 2026. NEET — May 3, 2026. JEE Main results — June 2026. JAC Delhi Round 1 (engineering) — July 2026. Arts, Commerce, Science (CUET-based) — June–July 2026. MBA (CAT/SNAP-based) — December 2026 for the 2027 batch. Direct admissions (management quota) open in July–August 2026 after JAC Delhi Rounds." },
-  { question: "Which colleges in Delhi have hostel facilities in 2026?", answer: "Top Delhi colleges with hostel in 2026: DTU Delhi (₹55K–70K/yr), IIIT Delhi (₹80K–1L/yr), IMI Delhi (₹1.1L–1.4L/yr), Amity University Delhi (₹90K–1.2L/yr), FMS Delhi MBA (₹1.2L–1.6L/yr), AFMC (free hostel for all students), Maulana Azad Medical College (₹60K–75K/yr), Miranda House College (₹40K–55K/yr), SMCW (₹1.85L/yr, mandatory for outstation). Apply immediately after admission — government college hostels fill within days." },
+  { question: "Which colleges in Delhi have hostel facilities in 2026?", answer: "Top Delhi colleges with hostel in 2026: IIT Delhi (₹1.1L–1.4L/yr), DTU Delhi (₹55K–70K/yr), IIIT Delhi (₹80K–1L/yr), IMI Delhi (₹1.1L–1.4L/yr), Amity University Delhi (₹90K–1.2L/yr), FMS Delhi (limited hostel), AIIMS Delhi (₹10K–20K/yr), Maulana Azad Medical College (₹60K–75K/yr), Miranda House (₹40K–55K/yr). Apply immediately after admission — government college hostels fill within days." },
   { question: "What is the cheapest college in Delhi for engineering in 2026?", answer: "The cheapest engineering colleges in Delhi 2026: DTU Delhi (₹80,000/year — government), NIET Noida COE (₹1.1L/year), GL Bajaj NIET (₹1.2L/year), HMR Institute Delhi (₹95K/year). SC/ST/OBC students at government colleges get full fee waiver through state government scholarships. EBC (Economically Backward Class) scholarship available for annual family income below ₹8 lakh." },
-  { question: "Which areas of Delhi have the most colleges?", answer: "Major college hubs in Delhi 2026: Connaught Place / South Delhi — DTU Delhi, Hindu College, Miranda House College, Gargi College. Rohini / Rohini Sector 17 — NSUT, Sharda COE. Dwarka Sector 3 — IIIT Delhi. Dwarka / Rohini — DY Patil Engineering, NIET Noida. Knowledge Park Greater Noida / Mulshi — Symbiosis campus (FMS Delhi, SIT, SID, SMCW). Noida Sector 62 — MIT-ADT campus (MITAOE, MIT ACS). Hauz Khas / Okhla Phase III — MIT-ID, MITWPU satellite. Hauz Khas — SCACS, other Sharda colleges." },
+  { question: "Which areas of Delhi have the most colleges?", answer: "Major college hubs in Delhi NCR 2026: North Campus DU (Miranda House, SRCC, Hindu College, Kirori Mal). Hauz Khas / South Delhi (IIT Delhi, JNU, Jamia Millia Islamia). Rohini Sector 22–27 (DTU). Dwarka Sector 3–12 (NSUT, IIIT Delhi, IGDTUW, LBSIM). Connaught Place area (FMS Delhi, IMI Delhi, FORE). Gurgaon Sector 17 (MDI Gurgaon). Greater Noida Knowledge Park (BIMTECH, Bennett University, Galgotias)." },
 ]
 
 export default async function HomePage() {
@@ -92,26 +91,11 @@ export default async function HomePage() {
 
   return (
     <>
-      <Script
-        id="org-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateOrganizationSchema()) }}
-      />
-      <Script
-        id="website-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebSiteSchema()) }}
-      />
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqData)) }}
-      />
-      <Script
-        id="local-business"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateLocalBusinessSchema()) }}
-      />
+      {/* JSON-LD as plain <script> — server-rendered, visible in raw HTML for crawlers */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateOrganizationSchema()) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebSiteSchema()) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqData)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateLocalBusinessSchema()) }} />
 
       <main>
         {/* Hero Section */}

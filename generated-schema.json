@@ -1,0 +1,196 @@
+{
+  "_note": "Ready-to-use JSON-LD schemas for collegedelhi.com. Replace [PLACEHOLDERS] before deploying.",
+
+  "homepage_remove_localBusiness": {
+    "_instruction": "Remove the LocalBusiness schema block from src/app/page.tsx — Organization + WebSite is sufficient. LocalBusiness is for physical storefronts.",
+    "_action": "DELETE the generateLocalBusinessSchema() script tag from page.tsx"
+  },
+
+  "aboutPage_team_person": {
+    "_instruction": "Add to src/app/about/page.tsx for each team member. Repeat for each founder/editor.",
+    "_file": "src/app/about/page.tsx",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://www.collegedelhi.com/about#founder",
+        "name": "[Founder Name]",
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "CollegeDelhi",
+          "url": "https://www.collegedelhi.com"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "[University Name]"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/[linkedin-handle]",
+          "https://twitter.com/[twitter-handle]"
+        ],
+        "knowsAbout": ["Higher Education in India", "Delhi College Admissions", "Education Technology"]
+      }
+    ]
+  },
+
+  "alumniProfile_profilePage": {
+    "_instruction": "Add to src/app/alumni/[slug]/page.tsx — add below the existing BreadcrumbList schema.",
+    "_file": "src/app/alumni/[slug]/page.tsx",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "[alumni.name]",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "[alumni.college]",
+          "sameAs": "https://www.collegedelhi.com/colleges/[alumni.collegeSlug]"
+        },
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "educationalLevel": "[alumni.course]"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "[alumni.company]"
+        }
+      }
+    }
+  },
+
+  "admissionCalendar_events": {
+    "_instruction": "Add to src/app/delhi-college-admission-calendar-2026/page.tsx. Generate one Event per calendar row.",
+    "_file": "src/app/delhi-college-admission-calendar-2026/page.tsx",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Delhi College Admission Calendar 2026",
+      "description": "Key dates for college admissions in Delhi 2026 — JEE, NEET, CAT, CUET, JAC Delhi",
+      "url": "https://www.collegedelhi.com/delhi-college-admission-calendar-2026",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Event",
+            "name": "JEE Main 2026 Session 1",
+            "startDate": "2026-01-22",
+            "endDate": "2026-01-30",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "location": {
+              "@type": "VirtualLocation",
+              "url": "https://jeemain.nta.nic.in"
+            },
+            "organizer": {
+              "@type": "Organization",
+              "name": "NTA (National Testing Agency)",
+              "url": "https://nta.ac.in"
+            },
+            "description": "JEE Main January 2026 session for engineering admissions to NITs, IIITs, and Delhi colleges (DTU, NSUT, IIIT Delhi via JAC Delhi)."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Event",
+            "name": "NEET UG 2026",
+            "startDate": "2026-05-03",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "organizer": {
+              "@type": "Organization",
+              "name": "NTA (National Testing Agency)",
+              "url": "https://nta.ac.in"
+            },
+            "description": "NEET UG 2026 for medical admissions — required for AIIMS Delhi, Maulana Azad Medical College, and all Delhi MBBS seats."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Event",
+            "name": "CAT 2025 (MBA Admissions)",
+            "startDate": "2025-11-23",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "organizer": {
+              "@type": "Organization",
+              "name": "IIMs",
+              "url": "https://iimcat.ac.in"
+            },
+            "description": "CAT 2025 for MBA admissions to FMS Delhi (98+ percentile), MDI Gurgaon (99+ percentile), and all Delhi NCR B-schools."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Event",
+            "name": "CUET UG 2026 (DU Admissions)",
+            "startDate": "2026-05-07",
+            "endDate": "2026-05-20",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "organizer": {
+              "@type": "Organization",
+              "name": "NTA (National Testing Agency)",
+              "url": "https://cuet.samarth.ac.in"
+            },
+            "description": "CUET UG 2026 for Delhi University admissions — Miranda House, SRCC, Hindu College, Lady Shri Ram College and 200+ DU colleges."
+          }
+        }
+      ]
+    }
+  },
+
+  "courseDetail_educationalProgram": {
+    "_instruction": "Add to src/app/courses/[slug]/page.tsx. Replace placeholders with course data from DB.",
+    "_file": "src/app/courses/[slug]/page.tsx",
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "EducationalOccupationalProgram",
+      "@id": "https://www.collegedelhi.com/courses/[course.slug]",
+      "name": "[course.name]",
+      "description": "[course.description]",
+      "provider": {
+        "@type": "Organization",
+        "name": "CollegeDelhi",
+        "url": "https://www.collegedelhi.com"
+      },
+      "educationalProgramMode": "full-time",
+      "timeToComplete": "[course.duration]",
+      "occupationalCategory": "[course.category]",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "price": "[course.feesMin]",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": "[course.feesMin]",
+          "maxPrice": "[course.feesMax]",
+          "priceCurrency": "INR"
+        }
+      },
+      "url": "https://www.collegedelhi.com/courses/[course.slug]"
+    }
+  },
+
+  "articleAuthor_improved": {
+    "_instruction": "Replace the author block in generateArticleSchema() in src/lib/seo.ts. Requires /authors/[slug] pages to be built first.",
+    "_note": "Current: { @type: Person, name: post.author, url: /blog }  →  Should be:",
+    "improved_author_block": {
+      "@type": "Person",
+      "name": "[Author Full Name]",
+      "url": "https://www.collegedelhi.com/authors/[author-slug]",
+      "sameAs": "https://www.linkedin.com/in/[author-linkedin]",
+      "jobTitle": "Education Editor",
+      "knowsAbout": ["Delhi College Admissions", "Engineering Colleges", "MBA Programs India"]
+    }
+  }
+}

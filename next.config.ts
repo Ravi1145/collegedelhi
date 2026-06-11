@@ -56,7 +56,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/admissions", destination: "/counselling", permanent: true },
       { source: "/admission", destination: "/counselling", permanent: true },
-      { source: "/about", destination: "/", permanent: true },
+      { source: "/about-us", destination: "/about", permanent: true },
       { source: "/contact", destination: "/counselling", permanent: true },
     ]
   },
@@ -68,6 +68,10 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "X-Robots-Tag", value: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
           { key: "Last-Modified", value: new Date().toUTCString() },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
         ],
       },
       // Block indexing of admin

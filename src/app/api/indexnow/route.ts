@@ -1,6 +1,6 @@
-import { NextRequest, NextResponse } from "next/server"
+﻿import { NextRequest, NextResponse } from "next/server"
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY || "CollegeDelhi2026indexnow"
 
 const INDEXNOW_ENDPOINTS = [

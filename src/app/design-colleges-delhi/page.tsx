@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
@@ -29,7 +28,7 @@ const colleges = [
   { rank: 3, name: "MAEER's MIT College of Engineering — Architecture", type: "Private", naac: "A+", fees: "₹1.8L–₹2.5L/yr", program: "B.Arch", seats: 40, nata: "NATA 80+", slug: "mit-college-engineering-Delhi", highlight: "Best B.Arch | NATA approved" },
   { rank: 4, name: "HMR Institute Delhi — Architecture", type: "Private", naac: "A", fees: "₹1.2L–₹1.8L/yr", program: "B.Arch", seats: 40, nata: "NATA 70+", slug: "indira-college-architecture-Delhi", highlight: "Affordable B.Arch option" },
   { rank: 5, name: "Sharda Institute of Design (SID)", type: "Private", naac: "A", fees: "₹2.5L–₹3.5L/yr", program: "B.Des", seats: 60, nata: "Portfolio based", slug: "sid-Sharda-institute-design-Delhi", highlight: "Growing design school | Strong faculty" },
-  { rank: 6, name: "Miranda House College — Fine Arts & Design", type: "Government", naac: "A+", fees: "₹15K–₹30K/yr", program: "B.A. Fine Arts", seats: 60, nata: "Merit based", slug: "fergusson-college-delhi", highlight: "Heritage college | Lowest fees" },
+  { rank: 6, name: "Miranda House College — Fine Arts & Design", type: "Government", naac: "A+", fees: "₹15K–₹30K/yr", program: "B.A. Fine Arts", seats: 60, nata: "Merit based", slug: "miranda-house-college-delhi", highlight: "Heritage college | Lowest fees" },
 ]
 
 const faqs = [
@@ -41,9 +40,9 @@ const faqs = [
 ]
 
 const breadcrumb = [
-  { name: "Home", url: "https://collegedelhi.com" },
-  { name: "Colleges", url: "https://collegedelhi.com/colleges" },
-  { name: "Design Colleges Delhi", url: "https://collegedelhi.com/design-colleges-delhi" },
+  { name: "Home", url: "https://www.collegedelhi.com" },
+  { name: "Colleges", url: "https://www.collegedelhi.com/colleges" },
+  { name: "Design Colleges Delhi", url: "https://www.collegedelhi.com/design-colleges-delhi" },
 ]
 
 export const revalidate = 86400
@@ -51,8 +50,8 @@ export const revalidate = 86400
 export default function DesignCollegesDELHI() {
   return (
     <>
-      <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
-      <Script id="schema-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}

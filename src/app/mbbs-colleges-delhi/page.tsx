@@ -1,5 +1,4 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
@@ -46,15 +45,15 @@ export default function MbbsCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "MBBS colleges in Delhi", href: "/mbbs-colleges-Delhi" }]}
         h1="MBBS colleges in Delhi 2026"
@@ -85,7 +84,7 @@ export default function MbbsCollegesDELHIPage() {
         admissionSteps={[
           { step: "1", title: "Qualify NEET UG 2026", description: "NEET UG is conducted in May 2026. Target 650+ for government MBBS colleges in Delhi. AFMC requires NEET + separate AFMC written exam. Register on nta.ac.in for NEET and afmc.nic.in for AFMC." },
           { step: "2", title: "Register for MCC Counselling (All India Quota)", description: "15% seats in MAMC fall under All India Quota, counselled by Medical Counselling Committee (MCC) at mcc.nic.in. Register, pay fees, and lock choices during Round 1 counselling (July 2026)." },
-          { step: "3", title: "Delhi DMER State Quota (85% Seats)", description: "85% of government MBBS seats are allocated by Delhi DMER (Directorate of Medical Education and Research). Register on cetcell.mahacet.org. Domicile certificate is required for state quota." },
+          { step: "3", title: "Delhi DMER State Quota (85% Seats)", description: "85% of government MBBS seats are allocated by Delhi DMER (Directorate of Medical Education and Research). Register on jacdelhi.admissions.nic.in. Domicile certificate is required for state quota." },
           { step: "4", title: "Private College Direct/Management Quota", description: "If state quota NEET cutoff is too high, apply to private MBBS colleges like DY Patil, Bharati Vidyapeeth directly. Management quota seats cost more but have lower NEET cutoffs (530-580)." },
           { step: "5", title: "Document Verification & Reporting", description: "After seat allotment, report to the college with original documents (NEET scorecard, class 10/12 certificates, caste certificate, medical fitness certificate, migration certificate). Pay fees and begin MBBS." },
         ]}

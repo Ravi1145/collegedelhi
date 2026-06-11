@@ -1,5 +1,4 @@
-import { Metadata } from "next"
-import Script from "next/script"
+﻿import { Metadata } from "next"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
 
@@ -309,22 +308,22 @@ export default function CollegesGreaterNoidaPage() {
     "@type": "WebPage",
     name: "Best Colleges in Greater Noida 2026",
     description: "Complete guide to top colleges in Greater Noida — Galgotias, Sharda, Shiv Nadar, BIMTECH, Bennett, GL Bajaj, Gautam Buddha University.",
-    url: "https://collegedelhi.com/colleges-greater-noida",
+    url: "https://www.collegedelhi.com/colleges-greater-noida",
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://collegedelhi.com" },
-        { "@type": "ListItem", position: 2, name: "Colleges Greater Noida", item: "https://collegedelhi.com/colleges-greater-noida" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.collegedelhi.com" },
+        { "@type": "ListItem", position: 2, name: "Colleges Greater Noida", item: "https://www.collegedelhi.com/colleges-greater-noida" },
       ],
     },
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
-      <Script id="org-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
 
       {/* Hero */}
       <div className="bg-[#0A1628] py-12 px-4">

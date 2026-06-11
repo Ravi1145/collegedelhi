@@ -1,11 +1,10 @@
 ﻿import type { Metadata } from "next"
-import Script from "next/script"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "Mechanical Engineering colleges in Delhi 2026 | Fees, Placements & Cutoffs",
-  description: "Top mechanical engineering colleges in Delhi 2026. DTU Delhi, IIIT Delhi, Amity University Delhi - compare fees (₹80K-3.8L), JEE Main cutoffs, and placement data for Mech BTech admission.",
+  description: "Top mechanical engineering colleges in Delhi 2026. DTU Delhi, NSUT, IIIT Delhi — compare fees (₹80K–3.8L), JEE Main cutoffs, and placements for Mech BTech.",
   path: "/mechanical-engineering-colleges-delhi",
   keywords: ["mechanical engineering colleges Delhi", "mech engineering colleges Delhi 2026", "best mechanical College Delhi", "mechanical btech Delhi"],
 })
@@ -13,11 +12,11 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU) - Mech", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹10 LPA avg", slug: "DTU Delhi-college-of-engineering-Delhi" },
-  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "vit-Delhi-vishwakarma-institute-of-technology" },
-  { name: "Amity University Delhi - Mech", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹6.8 LPA avg", slug: "Amity University Delhi-mit-world-peace-university" },
-  { name: "Symbiosis Institute of Technology - Mech", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹7.5 LPA avg", slug: "symbiosis-institute-of-technology-Delhi" },
-  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-rscoe-rajarshi-shahu-college-of-engineering" },
+  { name: "Delhi Technological University (DTU) - Mech", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹10 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
+  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
+  { name: "Amity University Delhi - Mech", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹6.8 LPA avg", slug: "amity-university-noida-delhi-ncr" },
+  { name: "Symbiosis Institute of Technology - Mech", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹7.5 LPA avg", slug: "nit-delhi-national-institute-of-technology" },
+  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida" },
   { name: "Sharda University Engineering - Mech", location: "Vadgaon", naac: "A", fees: "₹1.15L-1.6L/yr", placement: "₹4.5 LPA avg", slug: "Sharda-college-of-engineering-Delhi" },
   { name: "Amity University Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.45L-1.95L/yr", placement: "₹5.2 LPA avg", slug: "bharati-vidyapeeth-college-engineering-Delhi" },
   { name: "Bennett University Delhi Dwarka", location: "Dwarka", naac: "A", fees: "₹1.05L-1.55L/yr", placement: "₹4.8 LPA avg", slug: "dy-patil-college-engineering-Dwarka-Delhi" },
@@ -46,15 +45,15 @@ export default function MechanicalEngineeringCollegesDELHIPage() {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "Mechanical Engineering colleges in Delhi", href: "/mechanical-engineering-colleges-delhi" }]}
         h1="Mechanical Engineering colleges in Delhi 2026"
@@ -85,7 +84,7 @@ export default function MechanicalEngineeringCollegesDELHIPage() {
         admissionSteps={[
           { step: "1", title: "Target JEE Main PCM Percentile", description: "Mechanical is less competitive than CS in JEE Main. DTU Delhi Mech: aim 90-95 percentile. IIIT Delhi Mech: 80-88 percentile. Private colleges: 55-70 percentile. Start JEE Main prep from November 2025." },
           { step: "2", title: "Research College Labs & Industry Connections", description: "Before CAP, visit mechanical engineering labs at shortlisted colleges. Check their industry MoUs (Bajaj Auto, Tata Motors, Cummins), placement records, and alumni working in core mechanical roles." },
-          { step: "3", title: "Register on CAP Portal Post-Results", description: "After JEE Main results in June 2026, register on cetcell.mahacet.org. Submit documents including 10th/12th marksheets, caste certificate, and domicile proof for Delhi seat eligibility." },
+          { step: "3", title: "Register on CAP Portal Post-Results", description: "After JEE Main results in June 2026, register on jacdelhi.admissions.nic.in. Submit documents including 10th/12th marksheets, caste certificate, and domicile proof for Delhi seat eligibility." },
           { step: "4", title: "Fill Preferences (Mech First at Top Colleges)", description: "List college-branch combinations with Mechanical Engineering at DTU Delhi, IIIT Delhi, Amity University Delhi as first preferences, followed by realistic targets. Include non-Delhi options as safety nets." },
           { step: "5", title: "Explore Management Quota if CAP Does Not Work", description: "If CAP allotment is unsatisfactory, approach private colleges for management quota seats. These require direct applications to colleges and typically cost 20-30% more than government-controlled fees." },
         ]}

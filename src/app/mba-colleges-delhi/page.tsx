@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { CheckCircle, TrendingUp, Award, BookOpen, Users, Star } from "lucide-react"
@@ -8,8 +7,8 @@ import { getCutoff } from "@/data/cutoffs"
 import GatedCutoffChartClient from "@/components/ui/GatedCutoffChartClient"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA colleges in Delhi 2026 | Fees, SNAP/CAT Cutoff & Placements",
-  description: "Top 10 MBA colleges in Delhi 2026 with NIRF ranks, SNAP/CAT cutoffs, annual fees (₹4.2L–₹22L), and average placements (₹7–28 LPA). Compare FMS Delhi, IMI Delhi, Fore School Delhi, Indira Institute & more.",
+  title: "Best MBA Colleges in Delhi 2026 | CAT Cutoff & Fees",
+  description: "Top MBA colleges in Delhi 2026. FMS Delhi, MDI Gurgaon, IMI Delhi, FORE School — CAT cutoffs, fees (₹55K–₹22L), and placements (₹7–32 LPA) compared.",
   path: "/mba-colleges-delhi",
   keywords: [
     "best mba college in Delhi",
@@ -17,11 +16,11 @@ export const metadata: Metadata = genMeta({
     "top mba colleges Delhi 2026",
     "mba colleges Delhi fees",
     "FMS Delhi admission 2026",
-    "snap 2026 cutoff Delhi",
-    "cat colleges Delhi 2026",
+    "cat cutoff Delhi mba 2026",
+    "mdi gurgaon admission 2026",
+    "imi delhi mba 2026",
+    "fore school delhi mba",
     "mba placements Delhi",
-    "mit som Delhi mba",
-    "symbiosis mba Delhi 2026",
     "mba colleges Delhi with fees and placements",
     "pgdm colleges Delhi 2026",
   ],
@@ -29,27 +28,27 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { rank: 1, name: "FMS Delhi – Symbiosis Institute of Business Management", type: "Deemed", nirf: 13, naac: "A+", fees: "₹16L–₹22L total", placement: "₹28 LPA avg | ₹65 LPA highest", exam: "SNAP 2026 (60+ %ile)", slug: "FMS Delhi-symbiosis-institute-business-management-Delhi", highlight: "NIRF #13 | McKinsey, BCG Recruiters" },
-  { rank: 2, name: "MIT School of Management (IMI Delhi)", type: "Autonomous", nirf: null, naac: "A+", fees: "₹7L–₹11L total", placement: "₹12 LPA avg | ₹32 LPA highest", exam: "CAT / MAT / CMAT", slug: "mit-school-of-management-Delhi", highlight: "Best Value | Strong Alumni" },
-  { rank: 3, name: "Balaji Institute of Modern Management (Fore School Delhi)", type: "Autonomous", nirf: null, naac: "A", fees: "₹5L–₹7.5L total", placement: "₹8.5 LPA avg | ₹22 LPA highest", exam: "CAT / MAT / CMAT", slug: "balaji-institute-of-modern-management-Delhi", highlight: "Best Budget MBA" },
-  { rank: 4, name: "Jaipuria Institute of Management Noida Delhi (IIMP)", type: "Autonomous", nirf: null, naac: "A", fees: "₹4.2L–₹6.5L total", placement: "₹7.2 LPA avg | ₹18 LPA highest", exam: "CAT / MAT / CMAT", slug: "indira-institute-of-management-Delhi", highlight: "Best ROI in Delhi" },
-  { rank: 5, name: "BIMTECH – Symbiosis Centre for Information Technology", type: "Deemed", nirf: null, naac: "A+", fees: "₹14L–₹18L total", placement: "₹18 LPA avg | ₹45 LPA highest", exam: "SNAP 2026 (50+ %ile)", slug: "symbiosis-centre-information-technology-Delhi", highlight: "Best for IT+MBA" },
-  { rank: 6, name: "MDI Gurgaon – Symbiosis Centre for Management & HRD", type: "Deemed", nirf: null, naac: "A+", fees: "₹12L–₹16L total", placement: "₹22 LPA avg | ₹55 LPA highest", exam: "SNAP 2026 (55+ %ile)", slug: "MDI Gurgaon-symbiosis-centre-management-hrd", highlight: "Best for Operations/HR" },
-  { rank: 7, name: "GL Bajaj – Indian Institute of Materials Management", type: "Autonomous", nirf: null, naac: "B++", fees: "₹3.8L–₹5.5L total", placement: "₹6.5 LPA avg | ₹16 LPA highest", exam: "CAT / MAT / CMAT", slug: "delhi-school-of-management-dtu", highlight: "Specialization in Supply Chain" },
-  { rank: 8, name: "IMS Ghaziabad of Management", type: "Private", nirf: null, naac: "B+", fees: "₹2.8L–₹4.5L total", placement: "₹5.8 LPA avg | ₹14 LPA highest", exam: "MAT / CMAT / XAT", slug: "suryadatta-institute-management-Delhi", highlight: "Most Affordable Delhi MBA" },
-  { rank: 9, name: "BATU – Bharati Vidyapeeth Institute of Management", type: "Deemed", nirf: null, naac: "A", fees: "₹4L–₹6.8L total", placement: "₹6.8 LPA avg | ₹16 LPA highest", exam: "CAT / MAT / CMAT", slug: "bharati-vidyapeeth-institute-management-Delhi", highlight: "Part of Deemed University" },
-  { rank: 10, name: "MAEER MIT College of Management", type: "Autonomous", nirf: null, naac: "A", fees: "₹4.5L–₹7L total", placement: "₹7.5 LPA avg | ₹20 LPA highest", exam: "CAT / MAT / CMAT", slug: "mit-school-of-management-Delhi", highlight: "MIT Group – Strong Placements" },
+  { rank: 1, name: "FMS Delhi (Faculty of Management Studies, DU)", type: "Central University", nirf: 13, naac: "A+", fees: "₹55K total (2-yr MBA)", placement: "₹32 LPA avg | ₹75 LPA highest", exam: "CAT 2025 (98+ %ile)", slug: "fms-delhi-faculty-management-studies", highlight: "NIRF #13 | India's Best MBA Value" },
+  { rank: 2, name: "MDI Gurgaon (Management Development Institute)", type: "Autonomous", nirf: 9, naac: "A+", fees: "₹22L total (PGPM)", placement: "₹24 LPA avg | ₹60 LPA highest", exam: "CAT 2025 (99+ %ile)", slug: "mdi-gurgaon-management-development-institute", highlight: "NIRF #9 | Top 10 B-School India" },
+  { rank: 3, name: "IMI Delhi (International Management Institute)", type: "Autonomous", nirf: 42, naac: "A+", fees: "₹17.5L total (PGDM)", placement: "₹16 LPA avg | ₹40 LPA highest", exam: "CAT / XAT (85+ %ile)", slug: "imi-delhi-international-management-institute", highlight: "NIRF #42 | Strong Industry Connect" },
+  { rank: 4, name: "FORE School of Management, Delhi", type: "Autonomous", nirf: 50, naac: "A+", fees: "₹14.5L total (PGDM)", placement: "₹13.5 LPA avg | ₹32 LPA highest", exam: "CAT / XAT / GMAT (80+ %ile)", slug: "fore-school-of-management-delhi", highlight: "NIRF #50 | Great ROI" },
+  { rank: 5, name: "LBSIM Delhi (Lal Bahadur Shastri Institute of Management)", type: "Autonomous", nirf: null, naac: "A+", fees: "₹7.5L total (PGDM)", placement: "₹10.5 LPA avg | ₹22 LPA highest", exam: "CAT / XAT / CMAT (70+ %ile)", slug: "lbsim-lal-bahadur-shastri-institute-management", highlight: "Best Budget PGDM Delhi" },
+  { rank: 6, name: "BIMTECH Greater Noida (Birla Institute of Management Technology)", type: "Autonomous", nirf: null, naac: "A+", fees: "₹13.5L total (PGDM)", placement: "₹12 LPA avg | ₹28 LPA highest", exam: "CAT / XAT / GMAT (75+ %ile)", slug: "bimtech-birla-institute-management-technology", highlight: "Best for Marketing | Birla Group" },
+  { rank: 7, name: "DSM DTU (Delhi School of Management, DTU)", type: "Government", nirf: null, naac: "A+", fees: "₹2.8L total (MBA)", placement: "₹9.5 LPA avg | ₹20 LPA highest", exam: "CAT / CMAT (70+ %ile)", slug: "delhi-school-of-management-dtu", highlight: "Best Govt MBA in Delhi | Low Fees" },
+  { rank: 8, name: "IMT Ghaziabad (Institute of Management Technology)", type: "Autonomous", nirf: 40, naac: "A+", fees: "₹18.5L total (PGDM)", placement: "₹14.5 LPA avg | ₹38 LPA highest", exam: "CAT / XAT / GMAT (85+ %ile)", slug: "imt-ghaziabad", highlight: "NIRF #40 | Strong NCR Placements" },
+  { rank: 9, name: "Jaipuria Institute of Management, Noida", type: "Private", nirf: null, naac: "A", fees: "₹6.5L total (PGDM)", placement: "₹7.5 LPA avg | ₹18 LPA highest", exam: "CAT / MAT / CMAT (60+ %ile)", slug: "jaipuria-institute-management-noida", highlight: "Best Budget MBA NCR | Low Cutoff" },
+  { rank: 10, name: "IILM University, Gurugram", type: "Private", nirf: null, naac: "A", fees: "₹5.5L total (MBA)", placement: "₹7 LPA avg | ₹16 LPA highest", exam: "CAT / MAT / CMAT / Management Quota", slug: "iilm-university-gurugram", highlight: "Delhi NCR | Most Accessible MBA" },
 ]
 
 const faqs = [
-  { question: "Which is the best MBA college in Delhi in 2026?", answer: "FMS Delhi (Symbiosis Institute of Business Management) is the best MBA college in Delhi in 2026 with NIRF Rank 13, NAAC A+, average placement of ₹28 LPA, and top recruiters like McKinsey, BCG, P&G, Deloitte. Admission is through SNAP 2026 with 60+ percentile required. Total fees: ₹16–22L." },
-  { question: "What is the SNAP 2026 cutoff for FMS Delhi?", answer: "The expected SNAP 2026 cutoff for FMS Delhi is 60+ percentile. SNAP is conducted 3 times (December 6, 13, 20, 2026) — best score is considered. Application open August–November 2026. FMS Delhi also accepts CAT scores for direct admission to some programs." },
-  { question: "What are the fees for MBA colleges in Delhi 2026?", answer: "MBA fees in Delhi 2026 range from ₹2.8L (Suryadatta) to ₹22L (FMS Delhi) for the full program. FMS Delhi: ₹16–22L. MDI Gurgaon: ₹12–16L. BIMTECH: ₹14–18L. IMI Delhi: ₹7–11L. Fore School Delhi: ₹5–7.5L. Indira Institute: ₹4.2–6.5L (best ROI). All Symbiosis institutes require SNAP score." },
-  { question: "Can I get MBA in Delhi with low SNAP score?", answer: "Yes. With SNAP score below 60 percentile, you can apply to IMI Delhi (no SNAP cutoff, accepts CAT/MAT/CMAT), Fore School Delhi (₹5–7.5L fees, ₹8.5 LPA avg placement), Jaipuria Institute of Management Noida (₹4.2–6.5L fees, best ROI), and GL Bajaj Noida. MAT and CMAT scores are widely accepted by 7+ Delhi MBA colleges." },
-  { question: "Which Delhi MBA college has the best placements in 2026?", answer: "FMS Delhi leads with ₹28 LPA average MBA placement. Top individual offers from McKinsey, BCG, Goldman Sachs reach ₹55–65 LPA. MDI Gurgaon is second with ₹22 LPA avg. BIMTECH Delhi is best for IT-MBA with ₹18 LPA avg. IMI Delhi offers ₹12 LPA avg at much lower fees (₹7–11L total) — best ROI after FMS Delhi." },
-  { question: "Is FMS Delhi better than IIM Nagpur for MBA?", answer: "FMS Delhi (NIRF 13) vs IIM Nagpur depends on goals. FMS Delhi has stronger industry connections in the Delhi NCR corridor, better mass placements (₹28 LPA avg) but costs ₹16–22L. IIM Nagpur has IIM brand recognition but smaller batch. For North India placement geography, FMS Delhi is preferred by most recruiters." },
-  { question: "What is the difference between CAT and SNAP for Delhi MBA colleges?", answer: "CAT 2026 (November 23) is accepted by FMS Delhi, IMI Delhi, Fore School Delhi, Indira Institute, and most Delhi MBA colleges. SNAP 2026 (December 6, 13, 20) is mandatory ONLY for Symbiosis group colleges (FMS Delhi, MDI Gurgaon, BIMTECH). For non-Symbiosis colleges like IMI Delhi, Fore School Delhi, Indira — CAT/MAT/CMAT is enough." },
-  { question: "How to get admission in FMS Delhi 2026?", answer: "Step 1: Register for SNAP 2026 at snaptest.org (August 2026). Step 2: Appear for SNAP (Dec 6/13/20, 2026) — target 60+ percentile. Step 3: Apply to FMS Delhi separately (collegium.siu.edu.in). Step 4: Attend Written Ability Test (WAT) and Personal Interview (PI) in Jan–Feb 2027. Step 5: Accept admission offer. Fees: ₹16–22L total." },
+  { question: "Which is the best MBA college in Delhi in 2026?", answer: "FMS Delhi (Faculty of Management Studies, Delhi University) is the best MBA college in Delhi in 2026 with NIRF Rank 13, NAAC A+, average placement of ₹32 LPA, and top recruiters like McKinsey, BCG, Goldman Sachs, P&G, Deloitte. Admission is through CAT 2025 with 98+ percentile required. Total fees: just ₹55,000 — India's best MBA value." },
+  { question: "What is the CAT 2025 cutoff for FMS Delhi?", answer: "The expected CAT 2025 cutoff for FMS Delhi is 98+ percentile overall. However, sectional cutoffs matter: 85+ percentile in each section (VARC, DILR, QA). FMS Delhi shortlists candidates for Written Ability Test (WAT) and Personal Interview (PI) held in Jan–Feb 2026. Apply at fms.edu between November and December 2025." },
+  { question: "What are the fees for MBA colleges in Delhi 2026?", answer: "MBA fees in Delhi NCR 2026 range from ₹55K (FMS Delhi — India's cheapest top MBA) to ₹22L (MDI Gurgaon). FMS Delhi: ₹55K total. DSM DTU: ₹2.8L total. LBSIM: ₹7.5L. FORE School Delhi: ₹14.5L. IMI Delhi: ₹17.5L. MDI Gurgaon: ₹22L. IMT Ghaziabad: ₹18.5L. BIMTECH: ₹13.5L. Jaipuria Noida: ₹6.5L (best ROI at affordable budget)." },
+  { question: "Can I get MBA in Delhi NCR with a low CAT score?", answer: "Yes. With CAT score below 80 percentile, you can apply to Jaipuria Noida (60+ %ile, ₹6.5L fees), IILM Gurugram (management quota available), DSM DTU (70+ %ile, ₹2.8L fees — best government option), and LBSIM Delhi (70+ %ile, ₹7.5L fees). MAT and CMAT scores are widely accepted by 5+ Delhi NCR MBA colleges." },
+  { question: "Which Delhi MBA college has the best placements in 2026?", answer: "FMS Delhi leads with ₹32 LPA average MBA placement and individual offers reaching ₹75 LPA from McKinsey, BCG, Goldman Sachs. MDI Gurgaon (NIRF #9) is second with ₹24 LPA average. IMT Ghaziabad (NIRF #40) offers ₹14.5 LPA avg. FORE School Delhi gives ₹13.5 LPA avg at ₹14.5L total fees. IMI Delhi offers ₹16 LPA avg." },
+  { question: "Is FMS Delhi better than MDI Gurgaon for MBA?", answer: "FMS Delhi (NIRF #13) vs MDI Gurgaon (NIRF #9): MDI Gurgaon has a slightly better NIRF rank but charges ₹22L vs FMS Delhi's ₹55K. FMS Delhi has better average placements (₹32 LPA vs ₹24 LPA). For pure ROI, FMS Delhi is unmatched anywhere in India. MDI Gurgaon wins for brand prestige and corporate campus culture. Both require CAT 95+ percentile." },
+  { question: "Which exam is required for MBA admission in Delhi 2026?", answer: "CAT 2025 (November 2025) is the primary exam for FMS Delhi (98+ %ile), MDI Gurgaon (99+ %ile), IMI Delhi (85+ %ile), FORE School (80+ %ile), LBSIM, DSM DTU, and most Delhi NCR colleges. XAT (January 2026) is accepted at FORE School, BIMTECH, and IMI Delhi. MAT and CMAT are accepted at Jaipuria, IILM, and lower-tier colleges." },
+  { question: "How to get admission in FMS Delhi 2026?", answer: "Step 1: Appear for CAT 2025 (November 2025) — target 98+ overall percentile. Step 2: Register and apply at fms.edu (December 2025). Step 3: If shortlisted, attend Written Ability Test (WAT) and Personal Interview (PI) in January–February 2026 at DU North Campus. Step 4: Accept admission offer and pay ₹55K fees. FMS Delhi is the most competitive MBA admission in Delhi by CAT percentile cutoff." },
 ]
 
 const breadcrumbs = [
@@ -65,21 +64,21 @@ export default function MBACollegesDELHIPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Best MBA colleges in Delhi 2026",
-    description: "List of top 10 MBA colleges in Delhi ranked by NIRF, placements, fees, and SNAP/CAT cutoffs",
+    description: "List of top 10 MBA colleges in Delhi NCR ranked by NIRF, placements, fees, and CAT/XAT cutoffs",
     numberOfItems: colleges.length,
     itemListElement: colleges.map((c, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      url: `https://collegedelhi.com/colleges/${c.slug}`,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="itemlist-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
       <main className="bg-white min-h-screen">
         {/* Breadcrumb */}
@@ -107,12 +106,12 @@ export default function MBACollegesDELHIPage() {
                 Best MBA colleges in Delhi 2026
               </h1>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Compare top MBA colleges in Delhi by NIRF ranking, SNAP/CAT cutoff, total fees (₹4.2L–₹22L), average placements (₹7–28 LPA), and recruiter quality for 2026 admissions.
+                Compare top MBA colleges in Delhi NCR by NIRF ranking, CAT/XAT cutoff, total fees (₹55K–₹22L), average placements (₹7–32 LPA), and recruiter quality for 2026 admissions.
               </p>
               <div className="flex flex-wrap gap-4 text-sm">
                 <span className="flex items-center gap-1 text-green-400"><CheckCircle className="w-4 h-4" /> NIRF &amp; NAAC Verified</span>
                 <span className="flex items-center gap-1 text-green-400"><CheckCircle className="w-4 h-4" /> 2026 Fees &amp; Placements</span>
-                <span className="flex items-center gap-1 text-green-400"><CheckCircle className="w-4 h-4" /> SNAP/CAT/MAT Cutoffs</span>
+                <span className="flex items-center gap-1 text-green-400"><CheckCircle className="w-4 h-4" /> CAT/XAT/MAT Cutoffs</span>
               </div>
             </div>
           </div>
@@ -123,8 +122,8 @@ export default function MBACollegesDELHIPage() {
           <div className="bg-green-50 border-l-4 border-green-500 rounded-xl p-5 sm:p-6">
             <h2 className="text-lg font-bold text-green-800 mb-2">Quick Answer: Best MBA College in Delhi 2026</h2>
             <p className="text-green-900 text-sm leading-relaxed">
-              <strong>FMS Delhi</strong> (NIRF Rank 13, NAAC A+) is the best MBA college in Delhi in 2026 with ₹28 LPA average placement, recruiters McKinsey/BCG/P&amp;G, and 60+ SNAP percentile requirement. Total fees ₹16–22L.{" "}
-              <strong>Best value:</strong> IMI Delhi (₹7–11L fees, ₹12 LPA avg). <strong>Best ROI:</strong> Indira Institute (₹4.2–6.5L fees, ₹7.2 LPA avg).
+              <strong>FMS Delhi</strong> (Faculty of Management Studies, NIRF Rank 13) is the best MBA college in Delhi in 2026 with ₹32 LPA average placement, recruiters McKinsey/BCG/Goldman Sachs, and total fees of just ₹55,000. Admission via CAT 2025 (98+ percentile).{" "}
+              <strong>Best premium option:</strong> MDI Gurgaon (NIRF #9, ₹24 LPA avg, ₹22L fees). <strong>Best budget:</strong> DSM DTU (₹2.8L fees, government college).
             </p>
           </div>
         </section>
@@ -139,15 +138,15 @@ export default function MBACollegesDELHIPage() {
                 <span className="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">#1 Best MBA</span>
                 <span className="text-xs text-gray-500">NIRF 13</span>
               </div>
-              <h3 className="font-bold text-gray-900 text-base mb-3">FMS Delhi – Symbiosis Institute of Business Management</h3>
+              <h3 className="font-bold text-gray-900 text-base mb-3">FMS Delhi (Faculty of Management Studies, DU)</h3>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li className="flex gap-2"><TrendingUp className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Avg Placement: <strong>₹28 LPA</strong></span></li>
-                <li className="flex gap-2"><Award className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>NAAC Grade: <strong>A+</strong></span></li>
-                <li className="flex gap-2"><BookOpen className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Total Fees: <strong>₹16L–₹22L</strong></span></li>
-                <li className="flex gap-2"><Star className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Exam: <strong>SNAP 2026 (60+ %ile)</strong></span></li>
-                <li className="flex gap-2"><Users className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Recruiters: McKinsey, BCG, P&amp;G, Deloitte</span></li>
+                <li className="flex gap-2"><TrendingUp className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Avg Placement: <strong>₹32 LPA</strong></span></li>
+                <li className="flex gap-2"><Award className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>NAAC Grade: <strong>A+</strong> | NIRF #13</span></li>
+                <li className="flex gap-2"><BookOpen className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Total Fees: <strong>₹55,000</strong> (2-yr MBA)</span></li>
+                <li className="flex gap-2"><Star className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Exam: <strong>CAT 2025 (98+ %ile)</strong></span></li>
+                <li className="flex gap-2"><Users className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" /><span>Recruiters: McKinsey, BCG, Goldman Sachs</span></li>
               </ul>
-              <Link href="/colleges/FMS Delhi-symbiosis-institute-business-management-Delhi" className="mt-4 block text-center bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors">
+              <Link href="/colleges/fms-delhi-faculty-management-studies" className="mt-4 block text-center bg-red-600 hover:bg-red-700 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors">
                 View Full Profile →
               </Link>
             </div>
@@ -157,15 +156,15 @@ export default function MBACollegesDELHIPage() {
                 <span className="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">#2 Best Value</span>
                 <span className="text-xs text-gray-500">NAAC A+</span>
               </div>
-              <h3 className="font-bold text-gray-900 text-base mb-3">MIT School of Management (IMI Delhi)</h3>
+              <h3 className="font-bold text-gray-900 text-base mb-3">MDI Gurgaon (Management Development Institute)</h3>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li className="flex gap-2"><TrendingUp className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Avg Placement: <strong>₹12 LPA</strong></span></li>
-                <li className="flex gap-2"><Award className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>NAAC Grade: <strong>A+</strong></span></li>
-                <li className="flex gap-2"><BookOpen className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Total Fees: <strong>₹7L–₹11L</strong></span></li>
-                <li className="flex gap-2"><Star className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Exam: <strong>CAT / MAT / CMAT</strong></span></li>
-                <li className="flex gap-2"><Users className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Recruiters: TCS, Wipro, HDFC, Amazon</span></li>
+                <li className="flex gap-2"><TrendingUp className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Avg Placement: <strong>₹24 LPA</strong></span></li>
+                <li className="flex gap-2"><Award className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>NAAC Grade: <strong>A+</strong> | NIRF #9</span></li>
+                <li className="flex gap-2"><BookOpen className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Total Fees: <strong>₹22L</strong> (PGPM)</span></li>
+                <li className="flex gap-2"><Star className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Exam: <strong>CAT 2025 (99+ %ile)</strong></span></li>
+                <li className="flex gap-2"><Users className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" /><span>Recruiters: Bain, Deloitte, Amazon, BCG</span></li>
               </ul>
-              <Link href="/colleges/mit-school-of-management-Delhi" className="mt-4 block text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors">
+              <Link href="/colleges/mdi-gurgaon-management-development-institute" className="mt-4 block text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors">
                 View Full Profile →
               </Link>
             </div>
@@ -175,15 +174,15 @@ export default function MBACollegesDELHIPage() {
                 <span className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">#3 Best ROI</span>
                 <span className="text-xs text-gray-500">NAAC A</span>
               </div>
-              <h3 className="font-bold text-gray-900 text-base mb-3">Jaipuria Institute of Management Noida Delhi</h3>
+              <h3 className="font-bold text-gray-900 text-base mb-3">IMI Delhi (International Management Institute)</h3>
               <ul className="space-y-1.5 text-sm text-gray-700">
-                <li className="flex gap-2"><TrendingUp className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Avg Placement: <strong>₹7.2 LPA</strong></span></li>
-                <li className="flex gap-2"><Award className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>NAAC Grade: <strong>A</strong></span></li>
-                <li className="flex gap-2"><BookOpen className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Total Fees: <strong>₹4.2L–₹6.5L</strong></span></li>
-                <li className="flex gap-2"><Star className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Exam: <strong>CAT / MAT / CMAT</strong></span></li>
-                <li className="flex gap-2"><Users className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Recruiters: ICICI, HDFC, Kotak, Reliance</span></li>
+                <li className="flex gap-2"><TrendingUp className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Avg Placement: <strong>₹16 LPA</strong></span></li>
+                <li className="flex gap-2"><Award className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>NAAC Grade: <strong>A+</strong> | NIRF #42</span></li>
+                <li className="flex gap-2"><BookOpen className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Total Fees: <strong>₹17.5L</strong> (PGDM)</span></li>
+                <li className="flex gap-2"><Star className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Exam: <strong>CAT / XAT (85+ %ile)</strong></span></li>
+                <li className="flex gap-2"><Users className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" /><span>Recruiters: EY, KPMG, HUL, ITC, Nestle</span></li>
               </ul>
-              <Link href="/colleges/indira-institute-of-management-Delhi" className="mt-4 block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors">
+              <Link href="/colleges/imi-delhi-international-management-institute" className="mt-4 block text-center bg-green-500 hover:bg-green-600 text-white font-semibold py-2.5 rounded-xl text-sm transition-colors">
                 View Full Profile →
               </Link>
             </div>
@@ -201,8 +200,8 @@ export default function MBACollegesDELHIPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">MBA Admission Process 2026 — Delhi Colleges</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { step: "1", title: "Entrance Exam", desc: "Appear for CAT 2026 (Nov 23) or SNAP 2026 (Dec 6/13/20) or MAT/CMAT 2026.", color: "bg-red-50 border-red-200" },
-                { step: "2", title: "Apply to Colleges", desc: "Submit applications to shortlisted Delhi colleges. FMS Delhi needs SNAP; others accept CAT/MAT.", color: "bg-blue-50 border-blue-200" },
+                { step: "1", title: "Entrance Exam", desc: "Appear for CAT 2025 (November) for FMS Delhi / MDI Gurgaon / IMI Delhi. XAT (January 2026) or MAT/CMAT for budget options.", color: "bg-red-50 border-red-200" },
+                { step: "2", title: "Apply to Colleges", desc: "Submit applications to shortlisted Delhi NCR colleges after results. FMS Delhi: fms.edu. MDI Gurgaon: mdi.ac.in. IMI Delhi: imi.edu.", color: "bg-blue-50 border-blue-200" },
                 { step: "3", title: "GD / WAT / PI", desc: "Attend Group Discussion, Written Ability Test, and Personal Interview in Jan–Feb 2027.", color: "bg-purple-50 border-purple-200" },
                 { step: "4", title: "Merit List & Admission", desc: "Final selection based on exam score + GD/WAT/PI performance. Confirm by paying first-year fees.", color: "bg-green-50 border-green-200" },
               ].map(({ step, title, desc, color }) => (
@@ -231,11 +230,11 @@ export default function MBACollegesDELHIPage() {
               </thead>
               <tbody>
                 {[
-                  { exam: "CAT 2026", date: "Nov 23, 2026", colleges: "FMS Delhi, IMI Delhi, Fore School Delhi, Indira Inst., GL Bajaj, Suryadatta, MIT CoM", cutoff: "50–70 %ile" },
-                  { exam: "SNAP 2026", date: "Dec 6, 13, 20, 2026", colleges: "FMS Delhi, MDI Gurgaon, BIMTECH, all Symbiosis B-schools", cutoff: "50–60 %ile" },
-                  { exam: "MAT 2026", date: "Feb/May/Sep/Dec", colleges: "IMI Delhi, Fore School Delhi, Indira Inst., GL Bajaj, Suryadatta", cutoff: "600+ score" },
-                  { exam: "CMAT 2026", date: "Mar 20, 2026", colleges: "IMI Delhi, Fore School Delhi, Indira Inst., GL Bajaj, most Delhi MBA", cutoff: "200+ score" },
-                  { exam: "XAT 2026", date: "Jan 5, 2026", colleges: "Symbiosis colleges (partial), select Delhi institutes", cutoff: "75+ %ile" },
+                  { exam: "CAT 2025", date: "Nov 2025", colleges: "FMS Delhi (98+), MDI Gurgaon (99+), IMI Delhi (85+), FORE School (80+), LBSIM, DSM DTU, BIMTECH, IMT Ghaziabad", cutoff: "70–99 %ile" },
+                  { exam: "XAT 2026", date: "Jan 5, 2026", colleges: "IMI Delhi, FORE School Delhi, BIMTECH, IMT Ghaziabad, LBSIM (select programs)", cutoff: "75+ %ile" },
+                  { exam: "MAT 2026", date: "Feb/May/Sep/Dec", colleges: "Jaipuria Noida, IILM Gurugram, LBSIM Delhi, DSM DTU, most lower-tier NCR colleges", cutoff: "600+ score" },
+                  { exam: "CMAT 2026", date: "Mar 2026", colleges: "DSM DTU, Jaipuria Noida, IILM, most budget MBA colleges in Delhi NCR", cutoff: "200+ score" },
+                  { exam: "GMAT", date: "Year-round", colleges: "IMI Delhi, FORE School, MDI Gurgaon (Executive MBA), BIMTECH (for working professionals)", cutoff: "600+ score" },
                 ].map((row, i) => (
                   <tr key={row.exam} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                     <td className="px-4 py-3 font-semibold text-red-700">{row.exam}</td>
@@ -249,9 +248,9 @@ export default function MBACollegesDELHIPage() {
           </div>
         </section>
 
-        {/* SNAP Cutoff Chart — FMS Delhi (gated) */}
+        {/* CAT Cutoff Chart — FMS Delhi (gated) */}
         {(() => {
-          const fmsDelhiData = getCutoff("FMS Delhi-symbiosis-institute-business-management-Delhi", "snap")
+          const fmsDelhiData = getCutoff("fms-delhi-faculty-management-studies", "cat")
           if (!fmsDelhiData) return null
           return (
             <section className="py-10 bg-white">
@@ -259,14 +258,14 @@ export default function MBACollegesDELHIPage() {
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                     <div>
-                      <h2 className="text-xl font-bold text-gray-900">FMS Delhi SNAP Cutoff Trend 2020–2026</h2>
+                      <h2 className="text-xl font-bold text-gray-900">FMS Delhi CAT Cutoff Trend 2020–2026</h2>
                       <p className="text-sm text-gray-500 mt-1">Open & OBC category percentile trends. Unlock full data free.</p>
                     </div>
                     <Link href="/cutoffs" className="text-xs text-red-700 hover:underline font-semibold shrink-0">
                       All college cutoffs →
                     </Link>
                   </div>
-                  <GatedCutoffChartClient data={fmsDelhiData} slug="FMS Delhi-symbiosis-institute-business-management-Delhi" height={240} />
+                  <GatedCutoffChartClient data={fmsDelhiData} slug="fms-delhi-faculty-management-studies" height={240} />
                 </div>
               </div>
             </section>

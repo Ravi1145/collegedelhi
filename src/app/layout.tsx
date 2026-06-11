@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { Plus_Jakarta_Sans, DM_Sans } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/layout/Header"
@@ -25,7 +25,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"),
   title: {
     default: "Best Colleges in Delhi 2026 | CollegeDelhi - AI-Powered Discovery",
     template: "%s | CollegeDelhi",
@@ -121,11 +121,14 @@ export default function RootLayout({
         <link rel="llms" href="/llms.txt" />
       </head>
       <body className="min-h-full flex flex-col font-dm-sans bg-white">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-700 text-white px-4 py-2 rounded z-50 font-semibold text-sm">
+          Skip to main content
+        </a>
         <LeadBar />
         <Header />
-        <div className="flex-1 pt-14 lg:pt-24">
+        <main id="main-content" className="flex-1 pt-14 lg:pt-24">
           {children}
-        </div>
+        </main>
         <Footer />
         <AIChatWidget />
         <CompareFloatingBar />

@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 import { Award, BookOpen, TrendingUp, Users, ShieldCheck } from "lucide-react"
@@ -30,7 +29,7 @@ const categories = [
     type: "Government Engineering",
     emoji: "⚙️",
     colleges: [
-      { name: "DTU Delhi Technological University", fees: "₹80K–₹1.8L/yr", naac: "A+", nirf: 49, program: "BTech, MTech, PhD", slug: "DTU Delhi-college-of-engineering-Delhi", note: "Best Govt Engineering | Est. 1854 | NIRF #49" },
+      { name: "DTU Delhi Technological University", fees: "₹80K–₹1.8L/yr", naac: "A+", nirf: 49, program: "BTech, MTech, PhD", slug: "dtu-delhi-delhi-technological-university", note: "Best Govt Engineering | Est. 1854 | NIRF #49" },
       { name: "Army Institute of Technology (AIT)", fees: "₹1.5L–₹2L/yr", naac: "A", nirf: null, program: "BTech (4 branches)", slug: "army-institute-of-technology-Delhi", note: "Defence-backed | Delhi Cantonment | Very selective" },
       { name: "Government Polytechnic, Delhi", fees: "₹15K–₹25K/yr", naac: "–", nirf: null, program: "Diploma Engineering", slug: "government-polytechnic-Delhi", note: "Cheapest Technical | JEE Main Diploma" },
     ],
@@ -39,7 +38,7 @@ const categories = [
     type: "Government Arts & Science",
     emoji: "📚",
     colleges: [
-      { name: "Miranda House College", fees: "₹10K–₹30K/yr", naac: "A+", nirf: null, program: "BA, BSc, BCom, BCA", slug: "fergusson-college-delhi", note: "Est. 1885 | Most Prestigious Arts College Delhi" },
+      { name: "Miranda House College", fees: "₹10K–₹30K/yr", naac: "A+", nirf: null, program: "BA, BSc, BCom, BCA", slug: "miranda-house-college-delhi", note: "Est. 1885 | Most Prestigious Arts College Delhi" },
       { name: "Hindu College (Sir Parashurambhau)", fees: "₹12K–₹28K/yr", naac: "A+", nirf: null, program: "BA, BSc, BCom", slug: "sp-college-delhi-sir-parashurambhau-college", note: "Top Science Stream | NAAC A+" },
       { name: "BMCC — Brihan Delhi College of Commerce", fees: "₹8K–₹20K/yr", naac: "A", nirf: null, program: "BCom, MCom, BBA", slug: "bmcc-brihan-Delhi-college-of-commerce-Delhi", note: "Cheapest BCom in Delhi | Govt-aided" },
       { name: "Kirori Mal College of Arts, Science & Commerce", fees: "₹10K–₹25K/yr", naac: "A", nirf: null, program: "BA, BSc, BCom", slug: "modern-college-of-arts-science-commerce-Delhi", note: "Connaught Place | Large intake" },
@@ -100,9 +99,9 @@ const faqs = [
 ]
 
 const breadcrumb = [
-  { name: "Home", url: "https://collegedelhi.com" },
-  { name: "Colleges", url: "https://collegedelhi.com/colleges" },
-  { name: "Government Colleges Delhi", url: "https://collegedelhi.com/government-colleges-delhi" },
+  { name: "Home", url: "https://www.collegedelhi.com" },
+  { name: "Colleges", url: "https://www.collegedelhi.com/colleges" },
+  { name: "Government Colleges Delhi", url: "https://www.collegedelhi.com/government-colleges-delhi" },
 ]
 
 export const revalidate = 86400
@@ -110,8 +109,8 @@ export const revalidate = 86400
 export default function GovernmentCollegesDELHI() {
   return (
     <>
-      <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
-      <Script id="schema-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}

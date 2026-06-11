@@ -1,12 +1,11 @@
 ﻿"use client"
 import { useState, useMemo, useEffect } from "react"
-import Script from "next/script"
 import { Award, TrendingUp, MapPin, ExternalLink, Filter, ChevronUp, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import type { College } from "@/types"
 import { cn } from "@/lib/utils"
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 
 type SortKey = "nirfRank" | "avgPlacement" | "naac" | "name"
 type StreamFilter = "All" | "Engineering" | "MBA" | "Medical"
@@ -118,7 +117,7 @@ export default function NIRFInsightsPage() {
 
   return (
     <div className="bg-surface min-h-screen">
-      <Script id="nirf-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(nirfPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(nirfPageSchema) }} />
       {/* Hero */}
       <div className="bg-gradient-to-br from-[#0A1628] to-[#1E3A5F] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">

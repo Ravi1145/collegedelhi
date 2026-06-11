@@ -9,7 +9,7 @@
  * The existing file at /public/CollegeDelhi2026indexnow.txt already satisfies this.
  */
 
-const BASE_URL     = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL     = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY || "CollegeDelhi2026indexnow"
 
 const ENDPOINTS = [

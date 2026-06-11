@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
@@ -37,7 +36,7 @@ const colleges = [
     programs: "BA, BSc, BCom, BCA",
     seats: 2400,
     highlight: "Est. 1885 | Most Prestigious | NAAC A+",
-    slug: "fergusson-college-delhi",
+    slug: "miranda-house-college-delhi",
     strengths: ["Heritage campus", "Affordable fees", "Strong alumni", "150+ years"],
   },
   {
@@ -120,7 +119,7 @@ const colleges = [
     fees: "₹12K–₹24K/yr",
     programs: "BA, BSc, BCom",
     seats: 1400,
-    highlight: "Karve Road | Good Science Labs",
+    highlight: "Kashmere Gate | Good Science Labs",
     slug: "mes-abasaheb-garware-college-delhi",
     strengths: ["Science labs", "Library resources", "Sports facilities", "Affordable"],
   },
@@ -174,9 +173,9 @@ const faqs = [
 ]
 
 const breadcrumb = [
-  { name: "Home", url: "https://collegedelhi.com" },
-  { name: "Colleges", url: "https://collegedelhi.com/colleges" },
-  { name: "Arts Colleges Delhi", url: "https://collegedelhi.com/arts-colleges-delhi" },
+  { name: "Home", url: "https://www.collegedelhi.com" },
+  { name: "Colleges", url: "https://www.collegedelhi.com/colleges" },
+  { name: "Arts Colleges Delhi", url: "https://www.collegedelhi.com/arts-colleges-delhi" },
 ]
 
 export const revalidate = 86400
@@ -184,8 +183,8 @@ export const revalidate = 86400
 export default function ArtsCollegesDELHI() {
   return (
     <>
-      <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
-      <Script id="schema-breadcrumb" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}

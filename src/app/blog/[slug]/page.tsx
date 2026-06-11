@@ -1,7 +1,6 @@
 ﻿import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import Script from "next/script"
 import { getBlogBySlug as getDBBlog, getAllBlogs } from "@/lib/db"
 import { generateMetadata as genMeta, generateBreadcrumbSchema } from "@/lib/seo"
 import { Clock, Calendar, ChevronRight, Tag } from "lucide-react"
@@ -9,7 +8,7 @@ import LeadCapture from "@/components/leads/LeadCapture"
 
 export const revalidate = 300
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -173,8 +172,8 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <div className="bg-surface min-h-screen">
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }} />
 
       {/* Breadcrumb */}
       <div className="bg-white border-b border-gray-100 py-3">

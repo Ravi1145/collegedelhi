@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://collegedelhi.com"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 const SITE_NAME = "CollegeDelhi"
 const DEFAULT_OG_IMAGE = `${BASE_URL}/api/og`
 
@@ -57,7 +57,6 @@ export function generateMetadata({
       canonical: canonicalUrl,
       languages: {
         "en-IN": canonicalUrl,
-        "hi-IN": canonicalUrl,
         "x-default": canonicalUrl,
       },
     },
@@ -103,6 +102,8 @@ export function generateOrganizationSchema() {
       "https://twitter.com/CollegeDelhi",
       "https://www.facebook.com/CollegeDelhi",
       "https://www.instagram.com/CollegeDelhi",
+      "https://www.linkedin.com/company/collegedelhi",
+      "https://www.youtube.com/@CollegeDelhi",
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -353,6 +354,41 @@ export function generateArticleSchema(article: {
       "@id": `${BASE_URL}/blog`,
       name: "CollegeDelhi Blog",
       publisher: { "@type": "Organization", name: "CollegeDelhi", url: BASE_URL },
+    },
+  }
+}
+
+export function generateHowToSchema(howTo: {
+  name: string
+  description: string
+  url: string
+  steps: { name: string; text: string }[]
+  totalTime?: string
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howTo.name,
+    description: howTo.description,
+    url: `${BASE_URL}${howTo.url}`,
+    ...(howTo.totalTime ? { totalTime: howTo.totalTime } : {}),
+    step: howTo.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  }
+}
+
+export function generateSpeakableSchema(url: string, cssSelectors: string[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url: `${BASE_URL}${url}`,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: cssSelectors,
     },
   }
 }

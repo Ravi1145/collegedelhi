@@ -1,5 +1,4 @@
 ﻿import { Metadata } from "next"
-import Script from "next/script"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
@@ -24,10 +23,10 @@ export const metadata: Metadata = genMeta({
 
 const engineeringTimeline = [
   { event: "JEE Main Session 1 Result", date: "Feb 2026", status: "upcoming", detail: "Check jeemain.nta.nic.in", link: "https://jeemain.nta.nic.in" },
-  { event: "JEE Main 2026 Registration Opens", date: "Jan–Feb 2026", status: "upcoming", detail: "Register at cetcell.mahacet.org · ₹800 fee (Gen)", link: "https://cetcell.mahacet.org" },
+  { event: "JEE Main 2026 Registration Opens", date: "Jan–Feb 2026", status: "upcoming", detail: "Register at jacdelhi.admissions.nic.in · ₹800 fee (Gen)", link: "https://jacdelhi.admissions.nic.in" },
   { event: "JEE Main Session 2", date: "Apr 2026", status: "upcoming", detail: "NTA conducts JEE Main · Results in May", link: "https://jeemain.nta.nic.in" },
-  { event: "JEE Main 2026 Exam (PCM)", date: "Apr 15 – May 15, 2026", status: "upcoming", detail: "Computer-Based Test · PCM for Engineering", link: "https://cetcell.mahacet.org" },
-  { event: "JEE Main Result Declaration", date: "June 2026", status: "upcoming", detail: "Percentile scores released on MahaCET portal", link: "https://cetcell.mahacet.org" },
+  { event: "JEE Main 2026 Exam (PCM)", date: "Apr 15 – May 15, 2026", status: "upcoming", detail: "Computer-Based Test · PCM for Engineering", link: "https://jacdelhi.admissions.nic.in" },
+  { event: "JEE Main Result Declaration", date: "June 2026", status: "upcoming", detail: "Percentile scores released on MahaCET portal", link: "https://jacdelhi.admissions.nic.in" },
   { event: "CAP (BTech) Registration", date: "Jun–Jul 2026", status: "upcoming", detail: "Register at dteDelhi.gov.in · Document verification", link: "https://dteDelhi.gov.in" },
   { event: "JAC Delhi Round 1 — Seat Allotment", date: "July 2026", status: "upcoming", detail: "Freeze/Float/Slide — accept your seat", link: "https://dteDelhi.gov.in" },
   { event: "JAC Delhi Round 2 — Upgrade Round", date: "Aug 2026", status: "upcoming", detail: "Option to upgrade if better seat available", link: "https://dteDelhi.gov.in" },
@@ -52,7 +51,7 @@ const mbaTimeline = [
 ]
 
 const importantLinks = [
-  { name: "JEE Main Official Portal", url: "https://cetcell.mahacet.org", desc: "Registration, admit card, result" },
+  { name: "JEE Main Official Portal", url: "https://jacdelhi.admissions.nic.in", desc: "Registration, admit card, result" },
   { name: "DTE Delhi (CAP)", url: "https://dteDelhi.gov.in", desc: "BTech JAC Delhi Rounds, documents" },
   { name: "JEE Main NTA", url: "https://jeemain.nta.nic.in", desc: "JEE registration & results" },
   { name: "SNAP Test", url: "https://snaptest.org", desc: "SNAP registration for Symbiosis" },
@@ -65,7 +64,7 @@ const importantLinks = [
 const faqs = [
   {
     question: "When does JEE Main 2026 registration start?",
-    answer: "JEE Main 2026 registration is expected to start in January–February 2026 on the official portal cetcell.mahacet.org. The exam is scheduled for April 15 – May 15, 2026 (PCM group for engineering). Results are expected in June 2026. The registration fee is ₹800 for General category and ₹600 for Reserved categories.",
+    answer: "JEE Main 2026 registration is expected to start in January–February 2026 on the official portal jacdelhi.admissions.nic.in. The exam is scheduled for April 15 – May 15, 2026 (PCM group for engineering). Results are expected in June 2026. The registration fee is ₹800 for General category and ₹600 for Reserved categories.",
   },
   {
     question: "What is the last date for engineering admission in Delhi colleges?",
@@ -96,8 +95,8 @@ export default function DELHIAdmissionDeadlineTrackerPage() {
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}
