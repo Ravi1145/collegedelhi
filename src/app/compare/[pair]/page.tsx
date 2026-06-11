@@ -57,10 +57,11 @@ function verdict(a: CollegeEntry, b: CollegeEntry): string {
   return `${winner.name.split("—")[0].trim()} has a stronger overall profile ${winner.nirf ? `(NIRF #${winner.nirf})` : ""} with ${winner.avgPlacement.split("|")[0].trim()} placement average, making it the safer choice for most students. ${loser.name.split("—")[0].trim()} is worth considering if you prefer ${loser.city !== winner.city ? `the ${loser.city} location or` : ""} lower fees — at ${loser.fees} it is more budget-friendly.`
 }
 
-type Props = { params: { pair: string } }
+type Props = { params: Promise<{ pair: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slugs = parsePair(params.pair)
+  const { pair } = await params
+  const slugs = parsePair(pair)
   if (!slugs) return {}
   const [aSlug, bSlug] = slugs
   const a = findCollege(aSlug)
@@ -71,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${aShort} vs ${bShort} 2026 — Fees, Placements, Cutoff Compared`,
     description: `${aShort} vs ${bShort} 2026: NAAC grade, NIRF rank, fees, placement data, cutoff and admission process compared side-by-side. Which is better for you?`,
-    alternates: { canonical: `/compare/${params.pair}` },
+    alternates: { canonical: `/compare/${pair}` },
     keywords: [
       `${aShort} vs ${bShort}`,
       `${aShort} vs ${bShort} which is better`,
@@ -102,8 +103,9 @@ function cellVal(col: CollegeEntry, row: typeof COMPARE_ROWS[number]): string {
   return String(v)
 }
 
-export default function ComparePage({ params }: Props) {
-  const slugs = parsePair(params.pair)
+export default async function ComparePage({ params }: Props) {
+  const { pair } = await params
+  const slugs = parsePair(pair)
   if (!slugs) notFound()
   const [aSlug, bSlug] = slugs
   const colA = findCollege(aSlug)
@@ -124,7 +126,7 @@ export default function ComparePage({ params }: Props) {
   const breadcrumb = generateBreadcrumbSchema([
     { name: "Home", url: "/" },
     { name: "Compare Colleges", url: "/compare" },
-    { name: `${aShort} vs ${bShort}`, url: `/compare/${params.pair}` },
+    { name: `${aShort} vs ${bShort}`, url: `/compare/${pair}` },
   ])
   const faqSchema = generateFAQSchema(faqs)
 
