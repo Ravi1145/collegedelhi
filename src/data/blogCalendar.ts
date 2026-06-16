@@ -83,7 +83,7 @@ export const blogCalendar: BlogCalendarEntry[] = [
       "Our recommendation by student profile (budget, career goal, city preference)",
     ],
     cta: "Compare these colleges side-by-side on CollegeDelhi",
-    internalLinks: ["/compare", "/colleges/dtu-delhi-delhi-technological-university", "/colleges/amity-university-noida-delhi-ncr", "/colleges/nsut-netaji-subhas-university-of-technology"],
+    internalLinks: ["/compare", "/colleges/dtu-delhi-delhi-technological-university", "/colleges/amity-university-noida-delhi-ncr", "/colleges/nsut-delhi"],
     estimatedMonthlySearches: "25,000+",
     publishMonth: "May 2026",
   },

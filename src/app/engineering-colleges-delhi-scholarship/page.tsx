@@ -56,7 +56,7 @@ const collegeScholarships = [
     scheme: "NSUT Merit Scholarship",
     eligibility: "92+ percentile JEE Main, 85%+ in 12th",
     amount: "₹20,000–₹40,000/year",
-    slug: "nsut-netaji-subhas-university-of-technology",
+    slug: "nsut-delhi",
   },
   {
     name: "Sharda University Engineering",

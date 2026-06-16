@@ -37,7 +37,7 @@ const colleges = [
     fees: "₹1.5L–₹2L/yr",
     placement: "₹16 LPA avg | ₹65 LPA highest",
     exam: "JEE Main (JAC Delhi)",
-    slug: "nsut-netaji-subhas-university-of-technology",
+    slug: "nsut-delhi",
     highlight: "NIRF #52 | Strong CS Placements",
   },
   {
@@ -48,7 +48,7 @@ const colleges = [
     fees: "₹1.2L–₹1.8L/yr",
     placement: "₹14 LPA avg | ₹55 LPA highest",
     exam: "JEE Main (JAC Delhi)",
-    slug: "igdtuw-indira-gandhi-delhi-technical-university-women",
+    slug: "igdtuw-delhi",
     highlight: "Best Women's Engineering College India",
   },
   {

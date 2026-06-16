@@ -2,6 +2,7 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { GraduationCap, Clock, IndianRupee, TrendingUp, BookOpen, Users, CheckCircle, Building2, Briefcase, Star, ChevronRight, Award, Target } from "lucide-react"
+import { generateMetadata as genMeta } from "@/lib/seo"
 
 export const revalidate = 300
 
@@ -35,12 +36,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const course = await getCourse(slug)
   if (!course) return { title: "Course Not Found" }
-  return {
-    title: course.meta_title || `${course.fullName || course.name} in Delhi 2026 — Fees, Colleges, Scope`,
+  // Long fullName values (e.g. "Bachelor of Technology in Computer Science &
+  // Engineering") push the title past the ~580px SERP truncation threshold.
+  // Swap the degree-type prefix for its short form (name) to keep it scannable.
+  const subject = course.fullName?.replace(
+    /^(Bachelor|Master) of (Technology|Science|Business Administration|Computer Applications)\s+(in|of)\s+/i,
+    ""
+  )
+  const titleSubject = subject && course.name ? `${course.name} ${subject}` : course.fullName || course.name
+  return genMeta({
+    title: course.meta_title || `${titleSubject} in Delhi 2026 — Fees, Colleges, Scope`,
     description: course.meta_desc || course.description,
-    keywords: course.seo_keywords?.join(", "),
-    openGraph: { title: course.fullName || course.name, description: course.description }
-  }
+    path: `/courses/${slug}`,
+    keywords: course.seo_keywords ?? [],
+  })
 }
 
 const fmt = (n: number) => n >= 100000 ? `₹${(n / 100000).toFixed(1)} LPA` : n >= 1000 ? `₹${(n / 1000).toFixed(0)}K` : `₹${n}`

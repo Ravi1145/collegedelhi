@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "DTU – Delhi Technological University (Main Campus)", location: "Shahbad Daulatpur, Rohini", naac: "A+", fees: "₹1.5L–2L/yr", placement: "₹18 LPA avg | ₹72 LPA highest", exam: "JEE Main (JAC Delhi)", slug: "delhi-technological-university-dtu" },
+  { name: "DTU – Delhi Technological University (Main Campus)", location: "Shahbad Daulatpur, Rohini", naac: "A+", fees: "₹1.5L–2L/yr", placement: "₹18 LPA avg | ₹72 LPA highest", exam: "JEE Main (JAC Delhi)", slug: "dtu-delhi" },
   { name: "MAIT – Maharaja Agrasen Institute of Technology", location: "Sector 22, Rohini", naac: "A", fees: "₹1.6L–2.1L/yr", placement: "₹7.5 LPA avg", exam: "IPU CET / JEE Main", slug: "mait-maharaja-agrasen-institute-technology" },
   { name: "BPIT – Bhagwan Parshuram Institute of Technology", location: "Sector 17, Rohini", naac: "A", fees: "₹1.5L–2L/yr", placement: "₹7 LPA avg", exam: "IPU CET", slug: "bpit-bhagwan-parshuram-institute-technology" },
   { name: "GTBIT – Guru Tegh Bahadur Institute of Technology", location: "G.T. Karnal Road, near Rohini", naac: "B+", fees: "₹1.5L–2L/yr", placement: "₹6.5 LPA avg", exam: "IPU CET", slug: "gtbit-guru-tegh-bahadur-institute-technology" },
@@ -119,7 +119,7 @@ export default function CollegesRohiniDelhiPage() {
 
         <div className="flex flex-wrap gap-2 mb-8">
           {[
-            { label: "DTU Admission 2026", href: "/colleges/delhi-technological-university-dtu" },
+            { label: "DTU Admission 2026", href: "/colleges/dtu-delhi" },
             { label: "DTU vs NSUT", href: "/dtu-vs-nsut" },
             { label: "Colleges in North Delhi", href: "/colleges-north-delhi" },
             { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi" },

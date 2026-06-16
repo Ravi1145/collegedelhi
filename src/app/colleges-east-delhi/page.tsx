@@ -107,7 +107,7 @@ export default function CollegesEastDelhiPage() {
         ctaHeading="Get Free Guidance for East Delhi Colleges"
         ctaSubtext="NSUT East Campus, MAIT, BPIT, or JIMS MBA — our counsellors will guide you through IPU CET, JAC Delhi, and direct admission processes for East Delhi colleges. Free counselling."
         relatedGuides={[
-          { label: "NSUT Delhi — Full Profile", href: "/colleges/nsut-netaji-subhas-university-of-technology", icon: "N" },
+          { label: "NSUT Delhi — Full Profile", href: "/colleges/nsut-delhi", icon: "N" },
           { label: "Colleges in North Delhi", href: "/colleges-north-delhi", icon: "N" },
           { label: "DTU vs NSUT Comparison", href: "/dtu-vs-nsut", icon: "=" },
           { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi", icon: "E" },

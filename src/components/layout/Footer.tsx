@@ -59,8 +59,8 @@ const socialLinks = [
 
 const footerLinks = {
   "Top Colleges": [
-    { label: "DTU Delhi",              href: "/colleges/delhi-technological-university-dtu" },
-    { label: "NSUT Delhi",             href: "/colleges/nsut-netaji-subhas-university-of-technology" },
+    { label: "DTU Delhi",              href: "/colleges/dtu-delhi" },
+    { label: "NSUT Delhi",             href: "/colleges/nsut-delhi" },
     { label: "IIIT Delhi",             href: "/colleges/iiit-delhi" },
     { label: "FMS Delhi",              href: "/colleges/fms-delhi-faculty-management-studies" },
     { label: "AIIMS Delhi",            href: "/colleges/aiims-delhi" },

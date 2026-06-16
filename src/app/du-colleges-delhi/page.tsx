@@ -13,7 +13,7 @@ export const revalidate = 300
 
 const colleges = [
   { name: "Miranda House, Delhi University", location: "North Campus, Delhi", naac: "A++", fees: "₹18K/yr", placement: "₹6 LPA avg", slug: "miranda-house-delhi-university" },
-  { name: "Lady Shri Ram College (LSR)", location: "Lajpat Nagar, Delhi", naac: "A++", fees: "₹20K/yr", placement: "₹7 LPA avg", slug: "lsr-lady-shri-ram-college-delhi" },
+  { name: "Lady Shri Ram College (LSR)", location: "Lajpat Nagar, Delhi", naac: "A++", fees: "₹20K/yr", placement: "₹7 LPA avg", slug: "lsr-lsr-delhi" },
   { name: "SRCC (Shri Ram College of Commerce)", location: "North Campus, Delhi", naac: "A++", fees: "₹23K/yr", placement: "₹12 LPA avg", slug: "srcc-sri-ram-college-commerce-du" },
   { name: "Hindu College, Delhi University", location: "North Campus, Delhi", naac: "A+", fees: "₹16K/yr", placement: "₹5.5 LPA avg", slug: "hindu-college-delhi-university" },
   { name: "Hansraj College, Delhi University", location: "North Campus, Delhi", naac: "A+", fees: "₹17K/yr", placement: "₹5 LPA avg", slug: "hansraj-college-delhi-university" },

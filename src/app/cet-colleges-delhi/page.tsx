@@ -13,7 +13,7 @@ export const revalidate = 300
 
 const colleges = [
   { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K/yr", placement: "₹12 LPA avg | Cutoff: 99.5%ile CSE", slug: "dtu-delhi-delhi-technological-university" },
-  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L/yr", placement: "₹7.5 LPA avg | Cutoff: 95-97%ile CS", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L/yr", placement: "₹7.5 LPA avg | Cutoff: 95-97%ile CS", slug: "nsut-delhi" },
   { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L/yr", placement: "₹8.5 LPA avg | Cutoff: 88-92%ile", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
   { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L/yr", placement: "₹5.2 LPA avg | Cutoff: 65-75%ile", slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida" },
   { name: "Sharda University Engineering", location: "Vadgaon", naac: "A", fees: "₹1.15L/yr", placement: "₹4.9 LPA avg | Cutoff: 60-70%ile", slug: "Sharda-college-of-engineering-Delhi" },

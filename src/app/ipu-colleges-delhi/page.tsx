@@ -12,9 +12,9 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "DTU (Delhi Technological University)", location: "Rohini, Delhi", naac: "A+", fees: "₹1.6L/yr", placement: "₹12 LPA avg", slug: "delhi-technological-university-dtu" },
-  { name: "NSUT (Netaji Subhas University of Technology)", location: "Dwarka, Delhi", naac: "A", fees: "₹1.5L/yr", placement: "₹10 LPA avg", slug: "nsut-netaji-subhas-university-of-technology" },
-  { name: "IGDTUW (Indira Gandhi Delhi Technical University for Women)", location: "Kashmere Gate, Delhi", naac: "A+", fees: "₹1.4L/yr", placement: "₹9 LPA avg", slug: "igdtuw-indira-gandhi-delhi-technical-university-women" },
+  { name: "DTU (Delhi Technological University)", location: "Rohini, Delhi", naac: "A+", fees: "₹1.6L/yr", placement: "₹12 LPA avg", slug: "dtu-delhi" },
+  { name: "NSUT (Netaji Subhas University of Technology)", location: "Dwarka, Delhi", naac: "A", fees: "₹1.5L/yr", placement: "₹10 LPA avg", slug: "nsut-delhi" },
+  { name: "IGDTUW (Indira Gandhi Delhi Technical University for Women)", location: "Kashmere Gate, Delhi", naac: "A+", fees: "₹1.4L/yr", placement: "₹9 LPA avg", slug: "igdtuw-delhi" },
   { name: "Bharati Vidyapeeth College of Engineering", location: "Paschim Vihar, Delhi", naac: "A", fees: "₹1.3L/yr", placement: "₹7 LPA avg", slug: "bharati-vidyapeeth-college-engineering-delhi" },
   { name: "VIPS (Vivekananda Institute of Professional Studies)", location: "Pitampura, Delhi", naac: "A+", fees: "₹1.2L/yr", placement: "₹6.5 LPA avg", slug: "vips-vivekananda-institute-professional-studies-delhi" },
   { name: "Maharaja Agrasen Institute of Technology", location: "Rohini, Delhi", naac: "A+", fees: "₹1.4L/yr", placement: "₹7 LPA avg", slug: "mait-maharaja-agrasen-institute-technology-delhi" },

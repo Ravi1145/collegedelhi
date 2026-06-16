@@ -37,9 +37,9 @@ export default function TopPlacementPage() {
   const itemList = generateItemListSchema([
     { name: "IIT Delhi", url: "/colleges/iit-delhi", description: "₹25 LPA avg BTech, ₹2.5 Cr highest" },
     { name: "FMS Delhi", url: "/colleges/fms-delhi-faculty-management-studies", description: "₹28 LPA avg MBA, ₹72 LPA highest" },
-    { name: "DTU Delhi", url: "/colleges/delhi-technological-university-dtu", description: "₹18 LPA avg BTech, ₹72 LPA highest" },
+    { name: "DTU Delhi", url: "/colleges/dtu-delhi", description: "₹18 LPA avg BTech, ₹72 LPA highest" },
     { name: "IIIT Delhi", url: "/colleges/iiit-delhi", description: "₹20 LPA avg BTech, ₹1.2 Cr highest" },
-    { name: "NSUT Delhi", url: "/colleges/nsut-netaji-subhas-university-of-technology", description: "₹16 LPA avg BTech, ₹65 LPA highest" },
+    { name: "NSUT Delhi", url: "/colleges/nsut-delhi", description: "₹16 LPA avg BTech, ₹65 LPA highest" },
   ])
 
   return (
@@ -67,9 +67,9 @@ export default function TopPlacementPage() {
           { name: "IIT Delhi (BTech + MBA)", location: "South Delhi", naac: "A++", fees: "₹2.2L/yr", placement: "₹25 LPA avg · ₹2.5 Cr highest", slug: "iit-delhi" },
           { name: "FMS Delhi — MBA", location: "North Campus, Delhi", naac: "A+", fees: "₹55K total (govt)", placement: "₹28 LPA avg · ₹72 LPA highest", slug: "fms-delhi-faculty-management-studies" },
           { name: "IIIT Delhi — BTech", location: "South Delhi", naac: "A+", fees: "₹2.5–3L/yr", placement: "₹20 LPA avg · ₹1.2 Cr highest", slug: "iiit-delhi" },
-          { name: "DTU Delhi — BTech", location: "North Delhi", naac: "A+", fees: "₹1.5–2L/yr", placement: "₹18 LPA avg · ₹72 LPA highest", slug: "delhi-technological-university-dtu" },
+          { name: "DTU Delhi — BTech", location: "North Delhi", naac: "A+", fees: "₹1.5–2L/yr", placement: "₹18 LPA avg · ₹72 LPA highest", slug: "dtu-delhi" },
           { name: "MDI Gurgaon — PGPM", location: "Gurugram", naac: "A", fees: "₹22–28L total", placement: "₹26 LPA avg · ₹60 LPA highest", slug: "mdi-gurgaon-management-development-institute" },
-          { name: "NSUT Delhi — BTech", location: "Dwarka", naac: "A+", fees: "₹1.5–2L/yr", placement: "₹16 LPA avg · ₹65 LPA highest", slug: "nsut-netaji-subhas-university-of-technology" },
+          { name: "NSUT Delhi — BTech", location: "Dwarka", naac: "A+", fees: "₹1.5–2L/yr", placement: "₹16 LPA avg · ₹65 LPA highest", slug: "nsut-delhi" },
           { name: "IMT Ghaziabad — PGDM", location: "Ghaziabad NCR", naac: "A+", fees: "₹17–22L total", placement: "₹14.5 LPA avg · ₹40 LPA highest", slug: "imt-ghaziabad" },
           { name: "IMI Delhi — PGDM", location: "South Delhi", naac: "A+", fees: "₹18–22L total", placement: "₹18 LPA avg · ₹42 LPA highest", slug: "imi-delhi-international-management-institute" },
         ]}
@@ -113,7 +113,7 @@ const colleges = [
   { name: "DTU Delhi - Engineering", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg | ₹45 LPA highest", slug: "dtu-delhi-delhi-technological-university" },
   { name: "IMI Delhi - Engineering (Symbiosis)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg | ₹42 LPA highest", slug: "nit-delhi-national-institute-of-technology" },
   { name: "IIIT Delhi - Engineering", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg | ₹40 LPA highest", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
-  { name: "NSUT Delhi - CS Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg | ₹35 LPA highest", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "NSUT Delhi - CS Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg | ₹35 LPA highest", slug: "nsut-delhi" },
   { name: "Amity University Delhi Delhi - Engineering/MBA", location: "Rohini", naac: "A+", fees: "₹2L-6.5L", placement: "₹7.2 LPA avg | ₹38 LPA highest", slug: "amity-university-noida-delhi-ncr" },
   { name: "IIMS Delhi - MBA", location: "Kashmere Gate", naac: "A", fees: "₹5.5L (2yr)", placement: "₹12 LPA avg | ₹28 LPA highest", slug: "iims-Delhi" },
 ]

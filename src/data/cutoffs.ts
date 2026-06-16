@@ -19,7 +19,7 @@ export interface CollegeCutoff {
 export const cutoffsData: CollegeCutoff[] = [
   // ── ENGINEERING – JEE Main (JAC Delhi) ──────────────────────────────────
   {
-    college_slug: "delhi-technological-university-dtu",
+    college_slug: "dtu-delhi",
     college_name: "Delhi Technological University",
     college_short: "DTU",
     exam: "JEE Main",
@@ -36,7 +36,7 @@ export const cutoffsData: CollegeCutoff[] = [
     ],
   },
   {
-    college_slug: "nsut-netaji-subhas-university-of-technology",
+    college_slug: "nsut-delhi",
     college_name: "Netaji Subhas University of Technology",
     college_short: "NSUT",
     exam: "JEE Main",
@@ -53,7 +53,7 @@ export const cutoffsData: CollegeCutoff[] = [
     ],
   },
   {
-    college_slug: "igdtuw-indira-gandhi-delhi-technical-university-women",
+    college_slug: "igdtuw-delhi",
     college_name: "IGDTUW – Indira Gandhi Delhi Technical University for Women",
     college_short: "IGDTUW",
     exam: "JEE Main",
@@ -122,7 +122,7 @@ export const cutoffsData: CollegeCutoff[] = [
 
   // ── ENGINEERING – JEE Main rank (JOSAA) ─────────────────────────────────
   {
-    college_slug: "delhi-technological-university-dtu",
+    college_slug: "dtu-delhi",
     college_name: "Delhi Technological University – CSE",
     college_short: "DTU",
     exam: "jee",

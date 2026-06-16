@@ -22,8 +22,8 @@ export const metadata: Metadata = genMeta({
 })
 
 const placementData = [
-  { rank: 1, name: "Delhi Technological University (DTU)", type: "Government", avg: "₹12 LPA", highest: "₹45 LPA", rate: "92%", slug: "delhi-technological-university-dtu", recruiters: "TCS Digital, Bajaj Auto, Mercedes-Benz, Siemens, L&T, Volkswagen" },
-  { rank: 2, name: "Netaji Subhas University of Technology (NSUT)", type: "Government", avg: "₹9.8 LPA", highest: "₹42 LPA", rate: "94%", slug: "nsut-netaji-subhas-university-of-technology", recruiters: "Google, Microsoft, Goldman Sachs, Amazon, Deutsche Bank, JPMC" },
+  { rank: 1, name: "Delhi Technological University (DTU)", type: "Government", avg: "₹12 LPA", highest: "₹45 LPA", rate: "92%", slug: "dtu-delhi", recruiters: "TCS Digital, Bajaj Auto, Mercedes-Benz, Siemens, L&T, Volkswagen" },
+  { rank: 2, name: "Netaji Subhas University of Technology (NSUT)", type: "Government", avg: "₹9.8 LPA", highest: "₹42 LPA", rate: "94%", slug: "nsut-delhi", recruiters: "Google, Microsoft, Goldman Sachs, Amazon, Deutsche Bank, JPMC" },
   { rank: 3, name: "IIIT Delhi (Indraprastha Institute of Information Technology)", type: "Autonomous", avg: "₹18 LPA", highest: "₹55 LPA", rate: "96%", slug: "iiit-delhi", recruiters: "Google, Microsoft, Flipkart, Samsung R&D, Qualcomm, Adobe" },
   { rank: 4, name: "IGDTUW (Indira Gandhi Delhi Technical Univ for Women)", type: "Government", avg: "₹7.2 LPA", highest: "₹32 LPA", rate: "87%", slug: "igdtuw-delhi", recruiters: "TCS, Infosys, Wipro, HCL, Capgemini, Tech Mahindra" },
   { rank: 5, name: "Amity University Delhi (Engineering)", type: "Deemed", avg: "₹6.8 LPA", highest: "₹28 LPA", rate: "85%", slug: "amity-university-noida-engineering", recruiters: "TCS, Wipro, Capgemini, Tech Mahindra, Accenture, Mindtree" },

@@ -30,7 +30,7 @@ const colleges = [
   { name: "Sri Ram College of Commerce (SRCC) – DU", location: "North Campus, Delhi University", naac: "A+", fees: "₹15K–40K/yr", placement: "₹15 LPA avg | Top B-school firms", slug: "srcc-sri-ram-college-commerce-du" },
   { name: "Ramjas College – Delhi University", location: "North Campus, Civil Lines", naac: "A+", fees: "₹12K–35K/yr", placement: "Strong in Arts & Science streams", slug: "ramjas-college-delhi-university" },
   { name: "GTBIT – Guru Tegh Bahadur Institute of Technology", location: "G.T. Karnal Road, Rohini", naac: "B+", fees: "₹1.5L–2L/yr", placement: "₹6.5 LPA avg", slug: "gtbit-guru-tegh-bahadur-institute-technology" },
-  { name: "DTU – Delhi Technological University (Main Campus)", location: "Shahbad Daulatpur, Rohini", naac: "A+", fees: "₹1.5L–2L/yr", placement: "₹18 LPA avg | ₹72 LPA highest", slug: "delhi-technological-university-dtu" },
+  { name: "DTU – Delhi Technological University (Main Campus)", location: "Shahbad Daulatpur, Rohini", naac: "A+", fees: "₹1.5L–2L/yr", placement: "₹18 LPA avg | ₹72 LPA highest", slug: "dtu-delhi" },
 ]
 
 const faqs = [

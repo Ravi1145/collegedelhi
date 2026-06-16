@@ -185,7 +185,7 @@ export const keywordClusters: KeywordCluster[] = [
       { url: "/fms-delhi-vs-mdi-gurgaon",     keyword: "fms delhi vs mdi gurgaon",         msv: 3200 },
       { url: "/miranda-house-vs-lsr",         keyword: "miranda house vs lsr",             msv: 4100 },
       { url: "/srcc-vs-hindu-college",        keyword: "srcc vs hindu college",            msv: 5800 },
-      { url: "/compare/dtu-delhi-technological-university-vs-nsut-netaji-subhas-university-of-technology", keyword: "dtu vs nsut comparison", msv: 2000 },
+      { url: "/compare/dtu-delhi-technological-university-vs-nsut-delhi", keyword: "dtu vs nsut comparison", msv: 2000 },
       { url: "/compare/iit-delhi-vs-dtu-delhi-technological-university", keyword: "iit delhi vs dtu",         msv: 5000 },
       { url: "/compare/fms-delhi-faculty-management-studies-vs-mdi-gurgaon-management-development-institute", keyword: "fms vs mdi", msv: 1500 },
     ],

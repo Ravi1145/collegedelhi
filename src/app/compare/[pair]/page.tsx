@@ -8,19 +8,19 @@ export const revalidate = 300
 
 // ── Top comparison pairs for static pre-generation ──────────────────────────
 const TOP_PAIRS = [
-  ["dtu-delhi-technological-university","nsut-netaji-subhas-university-of-technology"],
+  ["dtu-delhi-technological-university","nsut-delhi"],
   ["iit-delhi","dtu-delhi-technological-university"],
   ["fms-delhi-faculty-management-studies","mdi-gurgaon-management-development-institute"],
-  ["iiit-delhi","nsut-netaji-subhas-university-of-technology"],
+  ["iiit-delhi","nsut-delhi"],
   ["aiims-delhi","maulana-azad-medical-college-delhi"],
   ["miranda-house-du","lady-shri-ram-college-du"],
   ["srcc-du","hindu-college-du"],
   ["imt-ghaziabad","bimtech-birla-institute-management-technology-noida"],
   ["fore-school-management-delhi","lbsim-lal-bahadur-shastri-institute-management"],
   ["amity-university-noida-engineering","bennett-university-delhi-engineering"],
-  ["igdtuw-indira-gandhi-delhi-technical-university-women","nsut-netaji-subhas-university-of-technology"],
+  ["igdtuw-delhi","nsut-delhi"],
   ["dms-iit-delhi-management-studies","fms-delhi-faculty-management-studies"],
-  ["jamia-millia-islamia-engineering","dtu-delhi-technological-university"],
+  ["jmi-delhi","dtu-delhi-technological-university"],
 ]
 
 export async function generateStaticParams() {

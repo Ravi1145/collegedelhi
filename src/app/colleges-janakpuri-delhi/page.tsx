@@ -17,7 +17,7 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "IGDTUW – Indira Gandhi Delhi Technical University for Women", location: "Kashmere Gate / Shastri Park area (near Janakpuri zone)", naac: "A+", fees: "₹1.2L–1.8L/yr", placement: "₹14 LPA avg", exam: "JEE Main (JAC Delhi)", slug: "igdtuw-indira-gandhi-delhi-technical-university-women", highlight: "Best Women's Engineering College Delhi" },
+  { name: "IGDTUW – Indira Gandhi Delhi Technical University for Women", location: "Kashmere Gate / Shastri Park area (near Janakpuri zone)", naac: "A+", fees: "₹1.2L–1.8L/yr", placement: "₹14 LPA avg", exam: "JEE Main (JAC Delhi)", slug: "igdtuw-delhi", highlight: "Best Women's Engineering College Delhi" },
   { name: "Vivekananda College – Delhi University", location: "Vivek Vihar, West Delhi (Janakpuri belt)", naac: "A", fees: "₹10K–35K/yr", placement: "DU programs", exam: "CUET", slug: "vivekananda-college-delhi-university", highlight: "DU College | Affordable" },
   { name: "VIPS – Vivekananda Institute of Professional Studies", location: "AU Block, Pitampura (near Janakpuri)", naac: "A", fees: "₹80K–1.5L/yr", placement: "₹5.5 LPA avg", exam: "IPU CET", slug: "vips-vivekananda-institute-professional-studies", highlight: "IP University | Law + Engg" },
   { name: "Swami Shraddhanand College – Delhi University", location: "Alipur Road, North West Delhi", naac: "A", fees: "₹10K–30K/yr", placement: "DU programs", exam: "CUET", slug: "swami-shraddhanand-college-delhi-university", highlight: "DU Men's College | Science" },

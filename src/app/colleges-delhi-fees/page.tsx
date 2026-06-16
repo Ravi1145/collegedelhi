@@ -12,7 +12,7 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "DTU (Delhi Technological University) — Engineering Govt", location: "Rohini, Delhi", naac: "A+", fees: "₹80K–₹1.8L/yr", placement: "₹12 LPA avg", slug: "delhi-technological-university-dtu" },
+  { name: "DTU (Delhi Technological University) — Engineering Govt", location: "Rohini, Delhi", naac: "A+", fees: "₹80K–₹1.8L/yr", placement: "₹12 LPA avg", slug: "dtu-delhi" },
   { name: "Miranda House College — Arts/Science (DU Govt)", location: "North Delhi", naac: "A++", fees: "₹20K–₹50K/yr", placement: "₹5–8 LPA avg", slug: "miranda-house-delhi-university" },
   { name: "FMS Delhi (Faculty of Management Studies) — MBA Govt", location: "DU North Campus, Delhi", naac: "A++", fees: "₹55K (2yr total)", placement: "₹32 LPA avg", slug: "fms-delhi-faculty-management-studies" },
   { name: "IIIT Delhi (Indraprastha Institute of IT) — Engineering Autonomous", location: "Okhla Phase III, Delhi", naac: "A+", fees: "₹1.6L–₹2.2L/yr", placement: "₹18 LPA avg", slug: "iiit-delhi" },

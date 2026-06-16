@@ -107,8 +107,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? ` | ₹${(college.avgPlacement / 100000).toFixed(1)}L avg pkg`
     : ""
 
+  // Use the short name in the title when the full name is long, so the
+  // rendered title stays under the ~580px SERP truncation threshold.
+  const titleName = college.name.length > 30 && college.shortName ? college.shortName : college.name
+
   return genMeta({
-    title: `${college.name} Admission 2026 | NAAC ${college.naac}${nirfText} | Fees & Cutoff`,
+    title: `${titleName} Admission 2026 | NAAC ${college.naac}${nirfText} | Fees & Cutoff`,
     description: `${college.name} (${college.shortName}) admission 2026 — ${college.type} college in Delhi. NAAC ${college.naac}${nirfText}${feesText}${placText}. Entrance: ${college.entranceExams.slice(0, 2).join(", ") || "JEE Main"}. Compare fees, cutoffs & reviews — free.`,
     path: `/colleges/${slug}`,
     keywords: [

@@ -22,7 +22,7 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "NSUT – Netaji Subhas University of Technology (Dwarka Campus)", location: "Sector 3, Dwarka, Delhi", naac: "A+", fees: "₹1.5L–2L/yr", placement: "₹16 LPA avg | ₹65 LPA highest", exam: "JEE Main (JAC Delhi)", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "NSUT – Netaji Subhas University of Technology (Dwarka Campus)", location: "Sector 3, Dwarka, Delhi", naac: "A+", fees: "₹1.5L–2L/yr", placement: "₹16 LPA avg | ₹65 LPA highest", exam: "JEE Main (JAC Delhi)", slug: "nsut-delhi" },
   { name: "BM Institute of Engineering & Technology", location: "Sector 10, Dwarka", naac: "B+", fees: "₹1.2L–1.7L/yr", placement: "₹5.5 LPA avg", exam: "IPU CET", slug: "bm-institute-engineering-technology-dwarka" },
   { name: "Sri Aurobindo College – Delhi University", location: "Sector 9, Dwarka (near Brar Square)", naac: "A", fees: "₹10K–35K/yr", placement: "DU programs", exam: "CUET", slug: "sri-aurobindo-college-delhi-university" },
   { name: "Vivekananda Institute of Professional Studies", location: "AU Block, Pitampura (Dwarka belt)", naac: "A", fees: "₹80K–1.5L/yr", placement: "₹5.5 LPA avg", exam: "IPU CET", slug: "vips-vivekananda-institute-professional-studies" },

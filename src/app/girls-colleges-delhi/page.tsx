@@ -13,11 +13,11 @@ export const revalidate = 300
 
 const colleges = [
   { name: "Miranda House (DU)", location: "North Campus, Delhi", naac: "A++", fees: "₹18K/yr", placement: "₹6 LPA avg", slug: "miranda-house-delhi-university" },
-  { name: "Lady Shri Ram College (LSR)", location: "Lajpat Nagar, Delhi", naac: "A++", fees: "₹20K/yr", placement: "₹7 LPA avg", slug: "lsr-lady-shri-ram-college-delhi" },
+  { name: "Lady Shri Ram College (LSR)", location: "Lajpat Nagar, Delhi", naac: "A++", fees: "₹20K/yr", placement: "₹7 LPA avg", slug: "lsr-lsr-delhi" },
   { name: "Gargi College (DU)", location: "South Delhi", naac: "A+", fees: "₹15K/yr", placement: "₹5.5 LPA avg", slug: "gargi-college-delhi-university" },
   { name: "Indraprastha College for Women (DU)", location: "North Campus, Delhi", naac: "A+", fees: "₹14K/yr", placement: "₹5 LPA avg", slug: "indraprastha-college-women-delhi-university" },
   { name: "Daulat Ram College (DU)", location: "North Campus, Delhi", naac: "A+", fees: "₹15K/yr", placement: "₹5 LPA avg", slug: "daulat-ram-college-delhi-university" },
-  { name: "IGDTUW (Women's Tech University)", location: "Kashmere Gate, Delhi", naac: "A+", fees: "₹1.4L/yr", placement: "₹9 LPA avg", slug: "igdtuw-indira-gandhi-delhi-technical-university-women" },
+  { name: "IGDTUW (Women's Tech University)", location: "Kashmere Gate, Delhi", naac: "A+", fees: "₹1.4L/yr", placement: "₹9 LPA avg", slug: "igdtuw-delhi" },
   { name: "Lady Irwin College (DU)", location: "Sikandra Road, Delhi", naac: "A+", fees: "₹16K/yr", placement: "₹5 LPA avg", slug: "lady-irwin-college-delhi-university" },
   { name: "Maitreyi College (DU)", location: "South Delhi", naac: "A+", fees: "₹14K/yr", placement: "₹5 LPA avg", slug: "maitreyi-college-delhi-university" },
 ]

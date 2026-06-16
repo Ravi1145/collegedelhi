@@ -20,7 +20,7 @@ const FEATURED_COMPARISONS = [
   { label: "IIT Delhi vs DTU", href: "/compare/iit-delhi-vs-dtu-delhi-technological-university", tag: "Engineering" },
   { label: "AIIMS vs Maulana Azad Medical", href: "/compare/aiims-delhi-vs-maulana-azad-medical-college-delhi", tag: "Medical" },
   { label: "IMI Delhi vs FORE School", href: "/compare/imi-delhi-international-management-institute-vs-fore-school-management-delhi", tag: "MBA" },
-  { label: "IGDTUW vs NSUT", href: "/compare/igdtuw-indira-gandhi-delhi-technical-university-women-vs-nsut-netaji-subhas-university-of-technology", tag: "Engineering" },
+  { label: "IGDTUW vs NSUT", href: "/compare/igdtuw-delhi-vs-nsut-delhi", tag: "Engineering" },
   { label: "FMS vs IIT Delhi MBA", href: "/compare/fms-delhi-faculty-management-studies-vs-dms-iit-delhi-management-studies", tag: "MBA" },
   { label: "BIMTECH vs IMT Ghaziabad", href: "/compare/bimtech-birla-institute-management-technology-noida-vs-imt-ghaziabad", tag: "MBA" },
   { label: "Amity vs Bennett University", href: "/compare/amity-university-noida-engineering-vs-bennett-university-delhi-engineering", tag: "Engineering" },

@@ -219,8 +219,8 @@ export default function DTUvsNSUTPage() {
             { label: "Engineering Colleges Delhi — Full List", href: "/engineering-colleges-delhi" },
             { label: "JEE Main College Predictor Delhi", href: "/predictor" },
             { label: "Government Colleges Delhi", href: "/government-colleges-delhi" },
-            { label: "DTU Admission 2026", href: "/colleges/delhi-technological-university-dtu" },
-            { label: "NSUT Admission 2026", href: "/colleges/nsut-netaji-subhas-university-of-technology" },
+            { label: "DTU Admission 2026", href: "/colleges/dtu-delhi" },
+            { label: "NSUT Admission 2026", href: "/colleges/nsut-delhi" },
             { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon" },
           ].map(l => (
             <Link key={l.href} href={l.href} className="text-xs bg-gray-100 hover:bg-red-50 hover:text-red-700 text-gray-700 px-3 py-1.5 rounded-full border border-gray-200 transition-colors">

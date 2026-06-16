@@ -123,11 +123,16 @@ export default function MBACollegesNoidaPage() {
 
         <div className="flex flex-wrap gap-2 mb-8">
           {[
+            { label: "MBA Colleges Delhi 2026", href: "/mba-colleges-delhi" },
+            { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi" },
+            { label: "IIFT Delhi — MBA IB", href: "/iift-delhi" },
+            { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon" },
+            { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi" },
+            { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi" },
+            { label: "Executive MBA Delhi", href: "/executive-mba-delhi" },
+            { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida" },
             { label: "Best MBA Colleges Delhi", href: "/best-mba-colleges-delhi" },
-            { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon" },
             { label: "MBA Placement Delhi", href: "/mba-colleges-delhi-placement" },
-            { label: "Engineering Colleges Noida", href: "/engineering-colleges-noida" },
-            { label: "MBA without CAT Delhi", href: "/mba-admission-delhi-without-cat" },
           ].map(l => (
             <Link key={l.href} href={l.href} className="text-xs bg-gray-100 hover:bg-red-50 hover:text-red-700 text-gray-700 px-3 py-1.5 rounded-full border border-gray-200 transition-colors">{l.label}</Link>
           ))}

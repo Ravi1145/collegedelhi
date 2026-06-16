@@ -177,19 +177,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Programmatic comparison pairs
   const comparisonPairs = [
-    "dtu-delhi-technological-university-vs-nsut-netaji-subhas-university-of-technology",
+    "dtu-delhi-technological-university-vs-nsut-delhi",
     "iit-delhi-vs-dtu-delhi-technological-university",
     "fms-delhi-faculty-management-studies-vs-mdi-gurgaon-management-development-institute",
-    "iiit-delhi-vs-nsut-netaji-subhas-university-of-technology",
+    "iiit-delhi-vs-nsut-delhi",
     "aiims-delhi-vs-maulana-azad-medical-college-delhi",
     "miranda-house-du-vs-lady-shri-ram-college-du",
     "srcc-du-vs-hindu-college-du",
     "imt-ghaziabad-vs-bimtech-birla-institute-management-technology-noida",
     "fore-school-management-delhi-vs-lbsim-lal-bahadur-shastri-institute-management",
     "amity-university-noida-engineering-vs-bennett-university-delhi-engineering",
-    "igdtuw-indira-gandhi-delhi-technical-university-women-vs-nsut-netaji-subhas-university-of-technology",
+    "igdtuw-delhi-vs-nsut-delhi",
     "dms-iit-delhi-management-studies-vs-fms-delhi-faculty-management-studies",
-    "jamia-millia-islamia-engineering-vs-dtu-delhi-technological-university",
+    "jmi-delhi-vs-dtu-delhi-technological-university",
   ]
   const comparisonPages: MetadataRoute.Sitemap = comparisonPairs.map(pair => ({
     url: `${BASE_URL}/compare/${pair}`,

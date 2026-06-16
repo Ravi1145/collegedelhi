@@ -82,7 +82,7 @@ const under10LColleges = [
     total4Yr: "~₹5.6–7.6L",
     naac: "A",
     exam: "JEE Main / JEE",
-    slug: "nsut-netaji-subhas-university-of-technology",
+    slug: "nsut-delhi",
     note: "Best for CS/IT",
   },
   {

@@ -13,7 +13,7 @@ export const revalidate = 300
 
 const colleges = [
   { name: "SRCC (Shri Ram College of Commerce)", location: "North Campus, Delhi", naac: "A++", fees: "₹23K/yr", placement: "₹12 LPA avg", slug: "srcc-sri-ram-college-commerce-du" },
-  { name: "Lady Shri Ram College (LSR) — Commerce", location: "Lajpat Nagar, Delhi", naac: "A++", fees: "₹20K/yr", placement: "₹8 LPA avg", slug: "lsr-lady-shri-ram-college-delhi" },
+  { name: "Lady Shri Ram College (LSR) — Commerce", location: "Lajpat Nagar, Delhi", naac: "A++", fees: "₹20K/yr", placement: "₹8 LPA avg", slug: "lsr-lsr-delhi" },
   { name: "Hansraj College — B.Com Hons", location: "North Campus, Delhi", naac: "A+", fees: "₹17K/yr", placement: "₹6 LPA avg", slug: "hansraj-college-delhi-university" },
   { name: "Kamala Nehru College — B.Com", location: "South Delhi", naac: "A+", fees: "₹14K/yr", placement: "₹5.5 LPA avg", slug: "kamala-nehru-college-delhi-university" },
   { name: "Dyal Singh College — B.Com Hons", location: "Lodhi Road, Delhi", naac: "A+", fees: "₹14K/yr", placement: "₹5 LPA avg", slug: "dyal-singh-college-delhi-university" },

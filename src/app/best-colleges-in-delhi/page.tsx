@@ -28,13 +28,13 @@ const colleges = [
   { name: "IIT Delhi (Indian Institute of Technology Delhi)", location: "Hauz Khas, South Delhi", naac: "A++", fees: "₹2.24L/yr", placement: "₹28 LPA avg", slug: "iit-delhi" },
   { name: "FMS Delhi (Faculty of Management Studies, DU)", location: "DU North Campus, Delhi", naac: "A++", fees: "₹55K (MBA total)", placement: "₹32 LPA avg", slug: "fms-delhi-faculty-management-studies" },
   { name: "AIIMS Delhi (All India Institute of Medical Sciences)", location: "Ansari Nagar, South Delhi", naac: "A+", fees: "₹1,628/yr (MBBS)", placement: "Best medical", slug: "aiims-delhi" },
-  { name: "DTU Delhi (Delhi Technological University)", location: "Rohini, North Delhi", naac: "A+", fees: "₹1.5L/yr", placement: "₹17 LPA avg", slug: "delhi-technological-university-dtu" },
-  { name: "NSUT Delhi (Netaji Subhas University of Technology)", location: "Dwarka, West Delhi", naac: "A+", fees: "₹1.4L/yr", placement: "₹14 LPA avg", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "DTU Delhi (Delhi Technological University)", location: "Rohini, North Delhi", naac: "A+", fees: "₹1.5L/yr", placement: "₹17 LPA avg", slug: "dtu-delhi" },
+  { name: "NSUT Delhi (Netaji Subhas University of Technology)", location: "Dwarka, West Delhi", naac: "A+", fees: "₹1.4L/yr", placement: "₹14 LPA avg", slug: "nsut-delhi" },
   { name: "SRCC (Shri Ram College of Commerce, DU)", location: "DU North Campus, Delhi", naac: "A+", fees: "₹24K/yr", placement: "₹12 LPA avg", slug: "srcc-sri-ram-college-commerce-du" },
   { name: "Miranda House (DU)", location: "DU North Campus, Delhi", naac: "A+", fees: "₹22K/yr", placement: "₹8 LPA avg", slug: "miranda-house-delhi-university" },
   { name: "IIIT Delhi (Indraprastha Institute of Information Technology)", location: "Okhla, South Delhi", naac: "A+", fees: "₹3.5L/yr", placement: "₹22 LPA avg", slug: "iiit-delhi" },
   { name: "MDI Gurgaon (Management Development Institute)", location: "Sector 17, Gurgaon NCR", naac: "A+", fees: "₹22L (MBA total)", placement: "₹24 LPA avg", slug: "mdi-gurgaon-management-development-institute" },
-  { name: "Jamia Millia Islamia (JMI) Engineering", location: "Okhla, South Delhi", naac: "A++", fees: "₹42K/yr", placement: "₹9 LPA avg", slug: "jamia-millia-islamia-engineering" },
+  { name: "Jamia Millia Islamia (JMI) Engineering", location: "Okhla, South Delhi", naac: "A++", fees: "₹42K/yr", placement: "₹9 LPA avg", slug: "jmi-delhi" },
 ]
 
 const faqs = [

@@ -13,10 +13,10 @@ export const revalidate = 300
 
 const colleges = [
   { name: "IIT Delhi", location: "Hauz Khas, Delhi", naac: "Institute of Eminence", fees: "₹17K/yr + stipend", placement: "₹22 LPA avg", slug: "iit-delhi" },
-  { name: "DTU (Delhi Technological University)", location: "Rohini, Delhi", naac: "A+", fees: "₹1.3L/yr", placement: "₹12 LPA avg", slug: "delhi-technological-university-dtu" },
-  { name: "NSUT (Netaji Subhas University of Technology)", location: "Dwarka, Delhi", naac: "A", fees: "₹1.2L/yr", placement: "₹10 LPA avg", slug: "nsut-netaji-subhas-university-of-technology" },
+  { name: "DTU (Delhi Technological University)", location: "Rohini, Delhi", naac: "A+", fees: "₹1.3L/yr", placement: "₹12 LPA avg", slug: "dtu-delhi" },
+  { name: "NSUT (Netaji Subhas University of Technology)", location: "Dwarka, Delhi", naac: "A", fees: "₹1.2L/yr", placement: "₹10 LPA avg", slug: "nsut-delhi" },
   { name: "IIIT Delhi", location: "Okhla, Delhi", naac: "A+", fees: "₹1.8L/yr", placement: "₹14 LPA avg", slug: "iiit-delhi" },
-  { name: "IGDTUW — M.Tech", location: "Kashmere Gate, Delhi", naac: "A+", fees: "₹1.1L/yr", placement: "₹9 LPA avg", slug: "igdtuw-indira-gandhi-delhi-technical-university-women" },
+  { name: "IGDTUW — M.Tech", location: "Kashmere Gate, Delhi", naac: "A+", fees: "₹1.1L/yr", placement: "₹9 LPA avg", slug: "igdtuw-delhi" },
   { name: "NIT Delhi", location: "Narela, Delhi", naac: "A", fees: "₹1.0L/yr", placement: "₹10 LPA avg", slug: "nit-delhi" },
   { name: "Jamia Millia Islamia — M.Tech", location: "Okhla, Delhi", naac: "A+", fees: "₹60K/yr", placement: "₹8 LPA avg", slug: "jamia-millia-islamia-delhi" },
   { name: "MAIT — M.Tech (IPU Affiliated)", location: "Rohini, Delhi", naac: "A+", fees: "₹90K/yr", placement: "₹7 LPA avg", slug: "mait-maharaja-agrasen-institute-technology-delhi" },

@@ -1,17 +1,21 @@
-﻿import { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
-import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
+import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BBA Colleges Delhi 2026 | Fees, Cutoff & Placement",
-  description: "Top BBA colleges in Delhi NCR 2026 — Amity University, IP University, JIMS, Shaheed Sukhdev College. Fees ₹40K–₹2.5L/yr, DU/IPU cutoffs, average placement ₹3.5–8 LPA and complete admission guide.",
+  title: "Best BBA Colleges in Delhi 2026 | Fees, CUET Cutoff & Placements",
+  description: "Top BBA colleges in Delhi 2026: SSCBS DU (₹18K/yr), Amity Noida, JIMS, BPIT. CUET & IPU CET cutoffs, fees ₹18K–₹2.5L/yr, placements ₹3.5–15 LPA.",
   path: "/bba-colleges-delhi",
   keywords: [
     "bba colleges in Delhi 2026",
     "best bba college Delhi",
+    "bba admission Delhi 2026",
     "bba fees Delhi 2026",
-    "bba admission Delhi",
+    "bba cutoff Delhi 2026",
+    "cuet bba colleges Delhi",
+    "ipu cet bba Delhi",
+    "sscbs du bba admission",
     "amity university bba Delhi",
     "ip university bba Delhi",
     "du bba colleges Delhi",
@@ -19,256 +23,103 @@ export const metadata: Metadata = genMeta({
     "bba vs bcom Delhi",
     "bachelor of business administration Delhi",
     "bba colleges Delhi NCR 2026",
+    "government bba college Delhi",
+    "top bba college Delhi ncr",
   ],
 })
+
 export const revalidate = 300
 
 const colleges = [
-  {
-    rank: 1,
-    name: "Shaheed Sukhdev College of Business Studies (SSCBS), DU",
-    type: "Government (DU)",
-    naac: "A+",
-    fees: "₹18K–₹25K/yr",
-    placement: "₹8–15 LPA",
-    seats: 270,
-    cutoff: "DU CUET 2026 (Very High)",
-    highlight: "Best BBA College India | NAAC A+ | Top DU Placements",
-    slug: "shaheed-sukhdev-college-business-studies-du",
-  },
-  {
-    rank: 2,
-    name: "Deen Dayal Upadhyaya College (BMS/BBA), DU",
-    type: "Government (DU)",
-    naac: "A+",
-    fees: "₹20K–₹30K/yr",
-    placement: "₹6–12 LPA",
-    seats: 120,
-    cutoff: "DU CUET (High Merit)",
-    highlight: "Top DU BMS Programme | Excellent Placements",
-    slug: "deen-dayal-upadhyaya-college-du-delhi",
-  },
-  {
-    rank: 3,
-    name: "Amity University Noida — BBA Programme",
-    type: "Deemed University",
-    naac: "A+",
-    fees: "₹1.8L–₹2.5L/yr",
-    placement: "₹5–8 LPA",
-    seats: 240,
-    cutoff: "Own Entrance / 12th 60%+",
-    highlight: "NAAC A+ | Industry Mentors | Strong Placement Cell",
-    slug: "amity-university-noida-engineering",
-  },
-  {
-    rank: 4,
-    name: "JIMS (Jagan Institute of Management Studies) — BBA",
-    type: "Autonomous (IP University)",
-    naac: "A",
-    fees: "₹75K–₹1.1L/yr",
-    placement: "₹4–7 LPA",
-    seats: 120,
-    cutoff: "IPU CET / 12th Merit",
-    highlight: "Top IPU BBA | Industry-Linked Curriculum",
-    slug: "jims-jagan-institute-management-studies-delhi",
-  },
-  {
-    rank: 5,
-    name: "BPIT — Bhagwan Parshuram Institute of Technology (BBA)",
-    type: "Private (IP University)",
-    naac: "A",
-    fees: "₹60K–₹90K/yr",
-    placement: "₹3.5–6 LPA",
-    seats: 60,
-    cutoff: "IPU CET / 12th 55%+",
-    highlight: "Affordable | North Delhi | Good Faculty",
-    slug: "bpit-bhagwan-parshuram-institute-technology",
-  },
-  {
-    rank: 6,
-    name: "Rukmini Devi Institute of Advanced Studies — BBA",
-    type: "Private (IP University)",
-    naac: "A",
-    fees: "₹55K–₹80K/yr",
-    placement: "₹3–5 LPA",
-    seats: 60,
-    cutoff: "IPU CET / 12th 50%+",
-    highlight: "Budget BBA | Practical Training | Good Campus",
-    slug: "rukmini-devi-institute-advanced-studies-delhi",
-  },
+  { name: "SSCBS — Shaheed Sukhdev College of Business Studies, DU", location: "Rohini, North Delhi", naac: "A+", fees: "₹18K–₹25K/yr", placement: "₹8–15 LPA avg", slug: "shaheed-sukhdev-college-business-studies-du" },
+  { name: "Deen Dayal Upadhyaya College — BMS, DU", location: "Dwarka, South-West Delhi", naac: "A+", fees: "₹20K–₹30K/yr", placement: "₹6–12 LPA avg", slug: "deen-dayal-upadhyaya-college-du-delhi" },
+  { name: "Amity University Noida — BBA", location: "Sector 125, Noida (Delhi NCR)", naac: "A+", fees: "₹1.8L–₹2.5L/yr", placement: "₹5–8 LPA avg", slug: "amity-university-noida-delhi-ncr" },
+  { name: "JIMS — Jagan Institute of Management Studies, BBA", location: "Rohini, North Delhi", naac: "A", fees: "₹75K–₹1.1L/yr", placement: "₹4–7 LPA avg", slug: "jims-jagan-institute-management-studies-delhi" },
+  { name: "BPIT — Bhagwan Parshuram Institute of Technology, BBA", location: "Rohini, North Delhi", naac: "A", fees: "₹60K–₹90K/yr", placement: "₹3.5–6 LPA avg", slug: "bpit-bhagwan-parshuram-institute-technology" },
+  { name: "Rukmini Devi Institute of Advanced Studies — BBA", location: "Pitampura, North Delhi", naac: "A", fees: "₹55K–₹80K/yr", placement: "₹3–5 LPA avg", slug: "rukmini-devi-institute-advanced-studies-delhi" },
 ]
 
 const faqs = [
-  {
-    question: "What is the eligibility for BBA in Delhi 2026?",
-    answer: "BBA eligibility in Delhi 2026: 10+2 (any stream) with minimum 45–60% marks depending on college. DU colleges (SSCBS) require CUET 2026 scores. IP University colleges require IPU CET. Amity University requires own entrance + PI. Government-affiliated colleges: merit based on Class 12 marks. No specific stream restriction — Science, Commerce, or Arts students can apply for BBA.",
-  },
-  {
-    question: "What is the average salary after BBA from Delhi?",
-    answer: "Average salary after BBA from top Delhi colleges: SSCBS DU ₹8–15 LPA, Amity Noida BBA ₹5–8 LPA, JIMS BBA ₹4–7 LPA, BPIT BBA ₹3.5–6 LPA. Top recruiters: HDFC Bank, ICICI Bank, Deloitte, KPMG, Infosys BPO, and marketing firms. Many students pursue MBA after BBA for ₹15–25 LPA packages from FMS Delhi, MDI Gurgaon.",
-  },
-  {
-    question: "Is BBA better than BCom in Delhi?",
-    answer: "BBA vs BCom in Delhi: BBA focuses on management, entrepreneurship, and business skills — better for MBA pathway and corporate roles. BCom focuses on accounting, finance, and taxation — better for CA, banking, and finance careers. BBA fees are higher (₹40K–2.5L/yr vs BCom ₹15K–50K/yr). For MBA aspirants: BBA is the better foundation. For CA/CPA: BCom is preferred.",
-  },
-  {
-    question: "What entrance exam is required for BBA in Delhi?",
-    answer: "BBA entrance exams for Delhi 2026: DU colleges (SSCBS, DDU) require CUET 2026 scores. IP University BBA colleges require IPU CET. Amity University requires own entrance test. Private colleges like JIMS, BPIT use IPU CET + merit. CUET registration opens at cuet.samarth.ac.in. IPU CET registration at ipu.ac.in.",
-  },
-  {
-    question: "What are the scope and career options after BBA Delhi?",
-    answer: "Career options after BBA from Delhi: MBA/PGDM (most popular — FMS Delhi, MDI Gurgaon, IMT Ghaziabad for ₹18–32 LPA), Banking & Finance (₹4–8 LPA), Marketing Executive (₹3.5–6 LPA), HR Executive (₹3–5 LPA), Entrepreneurship, Sales Management. BBA from SSCBS DU is widely recognized for direct entry into top MBA programs.",
-  },
+  { q: "What is BBA and what is the scope in Delhi 2026?", a: "BBA (Bachelor of Business Administration) is a 3-year undergraduate management degree. In Delhi, BBA has excellent scope — top companies recruit from SSCBS DU at ₹8–15 LPA. Most BBA graduates pursue MBA from FMS Delhi (CAT 99+ %ile) or MDI Gurgaon for ₹18–32 LPA packages. Sectors hiring BBA grads: Banking (HDFC, ICICI), Consulting (Deloitte, KPMG), E-commerce, Marketing, and Startups." },
+  { q: "What entrance exam is needed for BBA in Delhi?", a: "BBA entrance exams for Delhi 2026: (1) CUET 2026 — required for Delhi University BBA colleges like SSCBS DU and DDU College. Register at cuet.samarth.ac.in. (2) IPU CET — required for IP University-affiliated BBA colleges like JIMS, BPIT, Rukmini Devi. Register at ipu.ac.in. (3) Own Entrance — Amity University Noida conducts its own AUAT test + Personal Interview. No common entrance required for management quota seats in private colleges." },
+  { q: "What is the CUET cutoff for SSCBS DU BBA 2026?", a: "SSCBS Delhi University BBA CUET 2026 cutoff (estimated): Open category — 99+ percentile in CUET Business Studies. OBC-NCL — 97+ percentile. SC — 92+ percentile. ST — 85+ percentile. SSCBS has the highest CUET cutoff among all BBA colleges in India. Only 270 seats are available across all categories. Apply early as CUET 2026 registration closes in March 2026." },
+  { q: "What is the eligibility for BBA in Delhi 2026?", a: "BBA eligibility in Delhi 2026: 10+2 (any stream — Science, Commerce, or Arts) with minimum 45–60% aggregate marks. DU colleges require CUET 2026 scores. IP University colleges require IPU CET. No stream restriction — PCM, PCB, Commerce, and Humanities students all eligible for BBA. Minimum age: 17 years. Note: SSCBS DU requires English as a subject in Class 12." },
+  { q: "Is BBA better than BCom in Delhi?", a: "BBA vs BCom in Delhi: BBA focuses on management, marketing, and entrepreneurship — better for MBA pathway and corporate management roles. BCom covers accounting, taxation, and finance — better for CA, CPA, and banking careers. BBA fees are higher (₹40K–2.5L/yr vs BCom ₹15K–50K/yr). For MBA aspirants: BBA from SSCBS DU is the strongest foundation. For CA/CFA: BCom from SRCC or Hindu College is preferred." },
+  { q: "What are the top recruiters for BBA from Delhi colleges?", a: "Top recruiters for BBA from Delhi colleges: HDFC Bank, ICICI Bank, Axis Bank (Banking), Deloitte, KPMG, EY, PwC (Consulting), Amazon, Flipkart, Meesho (E-commerce), Infosys BPO, Wipro BPS (IT Services), and various FMCG companies (HUL, ITC, P&G). SSCBS DU highest package 2024: ₹28 LPA. Amity Noida BBA average: ₹5–8 LPA." },
 ]
 
 export default function BBACollegesDELHIPage() {
-  const breadcrumb = generateBreadcrumbSchema([
+  const faqSchema = generateFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))
+  const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "/" },
-    { name: "BBA Colleges Delhi", url: "/bba-colleges-delhi" },
+    { name: "BBA Colleges in Delhi", url: "/bba-colleges-delhi" },
   ])
-  const faqSchema = generateFAQSchema(faqs)
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Best BBA Colleges in Delhi 2026",
+    numberOfItems: colleges.length,
+    itemListElement: colleges.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      url: `https://www.collegedelhi.com/colleges/${c.slug}`,
+    })),
+  }
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-
-      <div className="bg-surface min-h-screen">
-        {/* Hero */}
-        <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <nav className="text-xs text-blue-300 mb-4 flex gap-1 items-center">
-              <Link href="/" className="hover:text-white">Home</Link>
-              <span>›</span>
-              <span className="text-white">BBA Colleges Delhi</span>
-            </nav>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">
-              Best BBA colleges in Delhi 2026
-            </h1>
-            <p className="text-gray-300 text-lg max-w-2xl mb-6">
-              Top Bachelor of Business Administration colleges in Delhi with fees, SET/HSC cutoffs, placement data, and complete admission guidance.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {[
-                { icon: "💼", label: "6 Top BBA Colleges" },
-                { icon: "📝", label: "SET / HSC Cutoff" },
-                { icon: "💰", label: "Fees ₹40K–₹2.5L/yr" },
-                { icon: "📈", label: "Placement ₹3.5–8 LPA" },
-              ].map(({ icon, label }) => (
-                <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
-                  <span>{icon}</span><span>{label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Colleges Table */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <h2 className="text-2xl font-extrabold text-gray-900 mb-6">Top BBA colleges in Delhi 2026</h2>
-          <div className="space-y-4">
-            {colleges.map((c) => (
-              <div key={c.rank} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
-                    <span className="font-extrabold text-red-700 text-sm">#{c.rank}</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex flex-wrap items-center gap-2 mb-1">
-                      <Link href={`/colleges/${c.slug}`} className="font-bold text-gray-900 hover:text-red-700 transition-colors text-base">
-                        {c.name}
-                      </Link>
-                      <span className="text-[11px] bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-semibold">{c.type}</span>
-                      <span className="text-[11px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-semibold">NAAC {c.naac}</span>
-                    </div>
-                    <p className="text-xs text-red-700 font-semibold mb-2">{c.highlight}</p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-gray-600">
-                      <div><span className="font-semibold">Fees:</span> {c.fees}</div>
-                      <div><span className="font-semibold">Placement:</span> {c.placement}</div>
-                      <div><span className="font-semibold">Seats:</span> {c.seats}</div>
-                      <div><span className="font-semibold">Cutoff:</span> {c.cutoff}</div>
-                    </div>
-                  </div>
-                  <Link href={`/colleges/${c.slug}`}
-                    className="shrink-0 text-xs font-semibold text-red-700 hover:text-red-800 border border-red-200 hover:border-red-400 px-3 py-1.5 rounded-lg transition-colors">
-                    View →
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Info Cards */}
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { icon: BookOpen, title: "3-Year Programme", desc: "BBA is a 3-year undergraduate degree. Choose specializations in Marketing, Finance, HR, or International Business." },
-              { icon: Award, title: "CUET for DU Colleges", desc: "CUET 2026 required for SSCBS and other DU BBA colleges. Register at cuet.samarth.ac.in before April 2026." },
-              { icon: TrendingUp, title: "MBA Gateway", desc: "BBA from SSCBS or Amity gives a strong foundation for CAT-based MBA programs at FMS Delhi (₹32 LPA avg) and MDI Gurgaon (₹24 LPA avg)." },
-              { icon: Users, title: "Any Stream Eligible", desc: "Science, Commerce, or Arts students from 10+2 can apply for BBA. No specific stream restriction." },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="bg-white rounded-2xl border border-gray-100 p-5">
-                <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center mb-3">
-                  <Icon className="w-5 h-5 text-red-700" />
-                </div>
-                <h3 className="font-bold text-gray-900 text-sm mb-1">{title}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* FAQ */}
-          <div className="mt-10">
-            <h2 className="text-xl font-extrabold text-gray-900 mb-5">Frequently Asked Questions — BBA in Delhi</h2>
-            <div className="space-y-4">
-              {faqs.map((faq) => (
-                <details key={faq.question} className="bg-white rounded-2xl border border-gray-100 px-5 py-4 group">
-                  <summary className="font-semibold text-gray-900 text-sm cursor-pointer list-none flex items-center justify-between gap-2">
-                    {faq.question}
-                    <span className="text-red-600 text-lg group-open:rotate-45 transition-transform">+</span>
-                  </summary>
-                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">{faq.answer}</p>
-                </details>
-              ))}
-            </div>
-          </div>
-
-          {/* Related Guides */}
-          <div className="mb-8">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">Related BBA & Commerce Guides</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {[
-              { label: "Arts & Science colleges in Delhi", href: "/arts-colleges-delhi", icon: "📚" },
-              { label: "Commerce colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "📊" },
-              { label: "Science colleges in Delhi", href: "/science-colleges-Delhi", icon: "🔬" },
-              { label: "BCA colleges in Delhi", href: "/bca-colleges-delhi", icon: "💻" },
-              { label: "BSc IT colleges in Delhi", href: "/bsc-it-colleges-Delhi", icon: "🖥️" },
-              { label: "Law colleges in Delhi", href: "/law-colleges-delhi", icon: "⚖️" },
-              { label: "Design colleges in Delhi", href: "/design-colleges-delhi", icon: "🎨" },
-              ].map(({ label, href, icon }) => (
-                <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
-                  <span className="text-xl">{icon}</span>
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-red-700 transition-colors">{label}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="mt-10 bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] rounded-2xl p-6 text-center">
-            <h2 className="text-xl font-extrabold text-white mb-2">Need Help Choosing a BBA College in Delhi?</h2>
-            <p className="text-gray-300 text-sm mb-4">Our counselors help you pick the right BBA college, prepare for SET, and plan your MBA pathway.</p>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <Link href="/counselling" className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
-                Book Free Counselling
-              </Link>
-              <Link href="/bba-colleges-noida" className="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors border border-white/20">
-                BBA Colleges Noida →
-              </Link>
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <SEOLandingPage
+        breadcrumb={[{ label: "BBA Colleges in Delhi", href: "/bba-colleges-delhi" }]}
+        h1="Best BBA Colleges in Delhi 2026"
+        subtitle="BBA (Bachelor of Business Administration) is a 3-year management degree. Compare top BBA colleges in Delhi — fees ₹18K–₹2.5L/yr, CUET & IPU CET cutoffs, NAAC grades, and placements up to ₹15 LPA for 2026 admission."
+        heroStats={[
+          { value: "30+", label: "BBA Colleges in Delhi NCR" },
+          { value: "₹18K–₹2.5L", label: "Annual Fees Range" },
+          { value: "₹15 LPA", label: "Highest Avg (SSCBS DU)" },
+          { value: "CUET / IPU CET", label: "Entrance Exams" },
+        ]}
+        introHeading="BBA Colleges in Delhi: CUET & IPU CET Admission Guide 2026"
+        introParagraphs={[
+          "Delhi offers India's best BBA colleges, from the highly sought-after SSCBS Delhi University (India's #1 BBA college) to affordable IP University-affiliated colleges like JIMS and BPIT. BBA (Bachelor of Business Administration) is a 3-year undergraduate degree covering management, marketing, finance, human resources, and entrepreneurship across 6 semesters.",
+          "BBA admission in Delhi runs through two main routes: (1) CUET 2026 for Delhi University colleges — SSCBS DU requires 99+ percentile, the highest cutoff in India. (2) IPU CET for Guru Gobind Singh Indraprastha University-affiliated colleges like JIMS Rohini, BPIT, and Rukmini Devi Institute. Deemed universities like Amity Noida conduct their own entrance tests.",
+          "Choosing the right BBA college in Delhi depends on your CUET/IPU CET score, budget, and MBA goals. Government-aided DU colleges (SSCBS, DDU) offer unmatched value at ₹18K–30K/year and exceptional placement. Private GGSIPU colleges offer industry-linked programmes at ₹55K–1.1L/year. Deemed universities (Amity) offer modern campuses and strong placement cells at ₹1.8L–2.5L/year.",
+        ]}
+        colleges={colleges}
+        whyHeading="Why Pursue BBA in Delhi?"
+        whyPoints={[
+          { title: "India's Best BBA College", description: "SSCBS Delhi University is consistently ranked India's #1 BBA college (NIRF Management) with ₹8–28 LPA placements. Getting a BBA from Delhi is equivalent to a top MBA from tier-2 cities in terms of industry recognition." },
+          { title: "Strong MBA Gateway", description: "BBA from Delhi's top colleges gives an excellent foundation for CAT-based MBA programs. SSCBS DU alumni regularly crack FMS Delhi (₹32 LPA avg), MDI Gurgaon (₹24 LPA avg), and IIM-Calcutta through CAT." },
+          { title: "Dual Admission Routes", description: "CUET 2026 for DU colleges and IPU CET for GGSIPU-affiliated colleges offer structured merit-based admission. Any stream (Science, Commerce, Arts) students are eligible — no stream restriction for BBA." },
+          { title: "Industry Capital Access", description: "Delhi's position as India's business capital means BBA students intern and get placed at headquarters of top banks, FMCG companies, consulting firms, and startups — giving unmatched real-world exposure." },
+          { title: "Specialization Options", description: "Delhi BBA colleges offer specializations in Marketing, Finance, HR, International Business, Digital Marketing, Retail, and Entrepreneurship — letting students build domain expertise from Year 2." },
+          { title: "Affordable Government Option", description: "SSCBS DU charges just ₹18,000–25,000/year for India's best BBA programme. DDU College charges ₹20,000–30,000/year. These government-aided colleges deliver exceptional ROI compared to private universities." },
+        ]}
+        admissionHeading="BBA Admission Process in Delhi 2026"
+        admissionSteps={[
+          { step: "1", title: "Register for CUET 2026 / IPU CET", description: "For DU BBA colleges (SSCBS, DDU): Register for CUET 2026 at cuet.samarth.ac.in (December 2025–March 2026). Choose BBA/BMS as your programme. For IP University BBA colleges (JIMS, BPIT): Register for IPU CET at ipu.ac.in. For Amity Noida: Register for AUAT at amity.edu." },
+          { step: "2", title: "Appear for Entrance Exam", description: "CUET 2026 exam: April–May 2026. The test covers English, General Awareness, Quantitative Aptitude, and domain subjects. For BBA, Business Studies or Economics as domain subject helps. IPU CET: May 2026. Prepare with mock tests — IPU CET covers English, Logical Reasoning, GK, and Mathematics." },
+          { step: "3", title: "Check Merit Lists & Apply", description: "CUET results declared in June 2026. DU BBA merit lists published at admission.uod.ac.in. Apply for your preferred DU college — SSCBS first, DDU next. For IPU CET: Results in June 2026. Apply at ipu.ac.in for your preferred IP University BBA college." },
+          { step: "4", title: "Complete Document Verification", description: "Shortlisted candidates must submit Class 10 & 12 marksheets, Delhi domicile certificate (for reservation), CUET/IPU CET scorecard, category certificate (SC/OBC/EWS), Aadhaar, and 4 passport photos. Physical document verification at college." },
+          { step: "5", title: "Pay Fees & Confirm Admission", description: "Pay semester fees online within the specified window (typically 3 days after allotment). SSCBS DU fees: ₹18,000–25,000/year. JIMS/BPIT: ₹75,000–1.1L/year. Amity Noida: ₹1.8L–2.5L/year. Collect your admission letter and report for orientation in late July 2026." },
+        ]}
+        faqs={faqs}
+        ctaHeading="Get Personalized BBA Admission Guidance for Delhi"
+        ctaSubtext="Tell us your CUET/IPU CET score and budget — our counsellors will shortlist the best BBA colleges in Delhi matching your profile and MBA goals."
+        relatedGuides={[
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🎓" },
+          { label: "BCA Colleges in Delhi 2026", href: "/bca-colleges-delhi", icon: "💻" },
+          { label: "BTech Colleges in Delhi 2026", href: "/btech-colleges-delhi", icon: "⚙️" },
+          { label: "Commerce Colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "📊" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
+          { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "📝" },
+          { label: "Government Colleges Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
+          { label: "Best Colleges in Delhi 2026", href: "/best-colleges-in-delhi", icon: "⭐" },
+        ]}
+      />
     </>
   )
 }
