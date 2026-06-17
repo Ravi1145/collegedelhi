@@ -207,16 +207,17 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title} className="col-span-1">
-              <h3 className="text-white font-bold text-sm mb-4 border-b border-white/10 pb-2">
+              <h3 className="text-white font-bold text-xs uppercase tracking-wider mb-3 border-b border-white/10 pb-2">
                 {title}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-1">
                 {links.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-xs text-gray-400 hover:text-white transition-colors leading-snug"
+                      className="flex items-center gap-1 text-xs text-gray-400 hover:text-white transition-colors py-0.5 group"
                     >
+                      <span className="text-gray-600 group-hover:text-red-400 transition-colors">›</span>
                       {link.label}
                     </Link>
                   </li>

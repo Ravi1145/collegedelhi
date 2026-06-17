@@ -14,6 +14,7 @@ const withPWA = withPWAInit({
 
 const nextConfig: NextConfig = {
   turbopack: {},
+  compress: true,
   // ✅ Keep nodemailer server-side only — prevents 'fs' error in client bundles
   serverExternalPackages: ['nodemailer'],
   webpack: (config, { isServer }) => {
@@ -84,17 +85,11 @@ const nextConfig: NextConfig = {
       // NOTE: /_next/static cache headers intentionally omitted — Vercel sets
       // immutable cache-control on /_next/static automatically. Adding it here
       // triggers a Next.js warning and can break dev HMR.
-      // Cache college & blog pages with ISR
+      // Cache all public content pages (keyword pages, colleges, blog, tools)
       {
-        source: "/colleges/:path*",
+        source: "/((?!api|admin|_next).*)",
         headers: [
-          { key: "Cache-Control", value: "public, s-maxage=300, stale-while-revalidate=600" },
-        ],
-      },
-      {
-        source: "/blog/:path*",
-        headers: [
-          { key: "Cache-Control", value: "public, s-maxage=300, stale-while-revalidate=600" },
+          { key: "Cache-Control", value: "public, s-maxage=300, stale-while-revalidate=3600" },
         ],
       },
     ]

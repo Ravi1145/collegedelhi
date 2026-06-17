@@ -147,6 +147,45 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Scholarships
     { url: `${BASE_URL}/engineering-colleges-delhi-scholarship`,      lastModified: CONTENT_DATE },
     { url: `${BASE_URL}/mba-colleges-delhi-scholarship`,              lastModified: CONTENT_DATE },
+    // MBA specialisation pages
+    { url: `${BASE_URL}/mba-in-banking-finance-delhi`,               lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-business-analytics-delhi`,            lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-healthcare-management-delhi`,         lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-digital-marketing-delhi`,             lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-finance-delhi`,                       lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-hr-delhi`,                            lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-information-technology-delhi`,        lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-international-business-delhi`,        lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-marketing-delhi`,                     lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-in-operations-delhi`,                    lastModified: CONTENT_DATE },
+    // College-specific MBA pages
+    { url: `${BASE_URL}/lbsim-delhi`,                                lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/amity-university-mba-delhi`,                 lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/jamia-millia-islamia-mba-delhi`,             lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/fore-school-management-delhi`,               lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/iift-delhi`,                                 lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mdi-gurgaon`,                                lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/imt-ghaziabad`,                              lastModified: CONTENT_DATE },
+    // MBA comparison pages
+    { url: `${BASE_URL}/fms-delhi-vs-iift-delhi`,                    lastModified: CONTENT_DATE },
+    // New gap pages vs competitors
+    { url: `${BASE_URL}/hotel-management-colleges-delhi`,            lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/cuet-colleges-delhi`,                        lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/ba-colleges-delhi`,                          lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mass-communication-colleges-delhi`,          lastModified: CONTENT_DATE },
+    // Tier 2 gap pages vs competitors
+    { url: `${BASE_URL}/journalism-colleges-delhi`,                  lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/llb-colleges-delhi`,                         lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/bms-colleges-delhi`,                         lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/paramedical-colleges-delhi`,                 lastModified: CONTENT_DATE },
+    // MBA format & mode pages
+    { url: `${BASE_URL}/executive-mba-delhi`,                        lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/online-mba-delhi`,                           lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/part-time-mba-delhi`,                        lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/government-mba-colleges-delhi`,              lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/ip-university-mba-delhi`,                    lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-colleges-gurgaon`,                       lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/mba-colleges-greater-noida`,                 lastModified: CONTENT_DATE },
   ]
 
   // NCR location pages

@@ -56,11 +56,18 @@ export default async function CollegesPage() {
             <p className="text-gray-300 text-lg max-w-2xl">
               Discover and compare 100+ top engineering, MBA, medical and arts colleges in Delhi. Real fees, placements, and NAAC data.
             </p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              {["Engineering", "MBA", "Medical", "Law", "Design", "Government"].map(s => (
-                <Link key={s} href={`/colleges-in-delhi/${s.toLowerCase()}-colleges-Delhi`}
-                  className="text-xs bg-white/10 text-blue-200 hover:bg-white/20 px-3 py-1.5 rounded-full transition-colors">
-                  {s} Colleges →
+            <div className="mt-4 flex flex-wrap gap-2">
+              {[
+                { label: "Engineering", href: "/engineering-colleges-delhi" },
+                { label: "MBA", href: "/mba-colleges-delhi" },
+                { label: "Medical", href: "/medical-colleges-delhi" },
+                { label: "Law", href: "/law-colleges-delhi" },
+                { label: "Design", href: "/design-colleges-delhi" },
+                { label: "Government", href: "/government-colleges-delhi" },
+              ].map(({ label, href }) => (
+                <Link key={label} href={href}
+                  className="text-xs bg-white/10 text-blue-200 hover:bg-white/20 px-3 py-1.5 rounded-full transition-colors whitespace-nowrap">
+                  {label} Colleges →
                 </Link>
               ))}
             </div>
@@ -88,19 +95,19 @@ export default async function CollegesPage() {
             <h2 className="text-base font-semibold text-gray-700 mb-4">Related Searches</h2>
             <div className="flex flex-wrap gap-2">
               {[
-                { label: "Engineering Colleges Delhi", href: "/colleges-in-delhi/engineering-colleges-delhi" },
-                { label: "MBA Colleges Delhi", href: "/colleges-in-delhi/mba-colleges-delhi" },
-                { label: "Government Colleges Delhi", href: "/colleges-in-delhi/government-colleges-delhi" },
-                { label: "NAAC A+ Colleges Delhi", href: "/colleges-in-delhi/naac-a-plus-colleges-delhi" },
-                { label: "NIRF Ranked Colleges Delhi", href: "/colleges-in-delhi/nirf-ranked-colleges-Delhi" },
-                { label: "Low Fee Colleges Delhi", href: "/colleges-in-delhi/low-fee-colleges-Delhi" },
-                { label: "JEE Main Colleges Delhi", href: "/colleges-in-delhi/JEE Main-colleges-Delhi" },
-                { label: "Top Placement Colleges Delhi", href: "/colleges-in-delhi/top-placement-colleges-delhi" },
-                { label: "Colleges with Hostel Delhi", href: "/colleges-in-delhi/hostel-facility-colleges-Delhi" },
-                { label: "Medical Colleges Delhi", href: "/colleges-in-delhi/medical-colleges-delhi" },
+                { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi" },
+                { label: "MBA Colleges Delhi", href: "/mba-colleges-delhi" },
+                { label: "Government Colleges Delhi", href: "/government-colleges-delhi" },
+                { label: "NAAC A+ Colleges Delhi", href: "/naac-a-plus-colleges-delhi" },
+                { label: "NIRF Insights Delhi", href: "/nirf-insights" },
+                { label: "Low Fee Colleges Delhi", href: "/low-fee-colleges-delhi" },
+                { label: "JEE Colleges Delhi", href: "/jee-colleges-delhi" },
+                { label: "Top Placement Colleges", href: "/top-placement-colleges-delhi" },
+                { label: "Colleges with Hostel", href: "/colleges-in-delhi-with-hostel" },
+                { label: "Medical Colleges Delhi", href: "/medical-colleges-delhi" },
               ].map(link => (
                 <Link key={link.href} href={link.href}
-                  className="px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 text-sm hover:bg-gray-50 transition-colors">
+                  className="px-3 py-1.5 rounded-full border border-gray-200 text-gray-600 text-sm hover:bg-gray-50 transition-colors whitespace-nowrap">
                   {link.label}
                 </Link>
               ))}
