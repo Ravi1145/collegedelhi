@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateCourseSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
@@ -67,9 +67,21 @@ export default function BBACollegesDELHIPage() {
     })),
   }
 
-  return (
+  const courseSchemaData = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: "Bachelor of Business Administration (BBA) in Delhi",
+  description: "3-year undergraduate management program covering business fundamentals, marketing, HR, and finance. Admits via IPU CET, DU JAT, or direct admission.",
+  provider: { '@type': 'Organization', name: 'CollegeDelhi.com', sameAs: 'https://www.collegedelhi.com' },
+  timeRequired: "P3Y",
+  url: 'https://www.collegedelhi.com' + "/bba-colleges-delhi",
+  offers: { '@type': 'Offer', priceCurrency: 'INR', price: 30000, priceSpecification: { '@type': 'PriceSpecification', minPrice: 30000, maxPrice: 350000, priceCurrency: 'INR' } },
+}
+
+return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage

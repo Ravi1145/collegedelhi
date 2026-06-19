@@ -32,7 +32,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   let collegeSlugs: string[] = []
   try {
     const { colleges } = await getAllColleges({ status: 'published', limit: 500 })
-    collegeSlugs = colleges.map(c => c.slug)
+    collegeSlugs = colleges.map(c => c.slug).filter(s => !s.includes('test'))
   } catch { /* fall through */ }
   const collegePages: MetadataRoute.Sitemap = collegeSlugs.map(slug => ({
     url: `${BASE_URL}/colleges/${slug}`,
@@ -94,7 +94,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/top-10-mba-colleges-in-delhi`,                lastModified: CONTENT_DATE },
     { url: `${BASE_URL}/top-10-medical-colleges-in-delhi`,            lastModified: CONTENT_DATE },
     { url: `${BASE_URL}/naac-a-plus-colleges-delhi`,                  lastModified: CONTENT_DATE },
-    { url: `${BASE_URL}/top-engineering-colleges-delhi`,              lastModified: CONTENT_DATE },
     // Placement guides
     { url: `${BASE_URL}/engineering-colleges-delhi-placement`,        lastModified: CONTENT_DATE },
     { url: `${BASE_URL}/mba-colleges-delhi-placement`,                lastModified: CONTENT_DATE },
@@ -239,7 +238,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const newPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/pgdm-vs-mba-delhi`,         lastModified: STATIC_DATE },
     { url: `${BASE_URL}/colleges-in-delhi`,          lastModified: CONTENT_DATE },
-    { url: `${BASE_URL}/best-colleges-in-delhi`,     lastModified: STATIC_DATE },
+    { url: `${BASE_URL}/best-colleges-in-delhi`,     lastModified: CONTENT_DATE },
+    { url: `${BASE_URL}/top-colleges-in-delhi`,      lastModified: CONTENT_DATE },
     { url: `${BASE_URL}/about`,                      lastModified: STATIC_DATE },
     { url: `${BASE_URL}/editorial-policy`,           lastModified: STATIC_DATE },
   ]

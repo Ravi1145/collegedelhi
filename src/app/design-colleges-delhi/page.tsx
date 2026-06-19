@@ -1,7 +1,7 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateCourseSchema } from "@/lib/seo"
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
@@ -48,9 +48,21 @@ const breadcrumb = [
 export const revalidate = 86400
 
 export default function DesignCollegesDELHI() {
-  return (
+  const courseSchemaData = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: "B.Des / Design Courses in Delhi",
+  description: "4-year undergraduate design program in fashion, graphic, interior, product and UX design. Admitted via UCEED, NID DAT, or NIFT entrance exam.",
+  provider: { '@type': 'Organization', name: 'CollegeDelhi.com', sameAs: 'https://www.collegedelhi.com' },
+  timeRequired: "P4Y",
+  url: 'https://www.collegedelhi.com' + "/design-colleges-delhi",
+  offers: { '@type': 'Offer', priceCurrency: 'INR', price: 80000, priceSpecification: { '@type': 'PriceSpecification', minPrice: 80000, maxPrice: 500000, priceCurrency: 'INR' } },
+}
+
+return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
 
       <div className="min-h-screen bg-surface">

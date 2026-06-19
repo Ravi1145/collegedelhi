@@ -13,7 +13,7 @@ import TestimonialsSection from "@/components/home/TestimonialsSection"
 import QuickExploreSection from "@/components/home/QuickExploreSection"
 import HomepageNewsSection from "@/components/home/HomepageNewsSection"
 import AlumniQASection from "@/components/home/AlumniQASection"
-import { generateMetadata as genMeta, generateOrganizationSchema, generateWebSiteSchema, generateFAQSchema, generateLocalBusinessSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateOrganizationSchema, generateWebSiteSchema, generateFAQSchema, generateLocalBusinessSchema, generateSpeakableSchema } from "@/lib/seo"
 import LeadCapture from "@/components/leads/LeadCapture"
 import { getAllBlogs } from "@/lib/db"
 import type { NewsArticle } from "@/components/home/HomepageNewsSection"
@@ -96,6 +96,7 @@ export default async function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebSiteSchema()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqData)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateLocalBusinessSchema()) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateSpeakableSchema("https://www.collegedelhi.com", ["h1", "h2", "#faq"])) }} />
 
       <main>
         {/* Hero Section */}

@@ -133,7 +133,8 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       "@type": "Person",
       name: post.author,
-      url: `${BASE_URL}/blog`,
+      url: `${BASE_URL}/about`,
+      sameAs: `${BASE_URL}/about#team`,
     },
     publisher: {
       "@type": "Organization",

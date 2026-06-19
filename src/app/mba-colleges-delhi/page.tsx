@@ -1,6 +1,7 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema, generateCourseSchema } from "@/lib/seo"
+import TopicalHub from "@/components/seo/TopicalHub"
 import { CheckCircle, TrendingUp, Award, BookOpen, Users, Star } from "lucide-react"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
 import { getCutoff } from "@/data/cutoffs"
@@ -68,6 +69,10 @@ const breadcrumbs = [
 export default function MBACollegesDELHIPage() {
   const faqSchema = generateFAQSchema(faqs)
   const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs)
+  const speakableSchema = generateSpeakableSchema("https://www.collegedelhi.com/mba-colleges-delhi", [
+    "#quick-answer",
+    "#mba-ranking-table",
+  ])
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -82,11 +87,37 @@ export default function MBACollegesDELHIPage() {
     })),
   }
 
+  const courseSchema = generateCourseSchema({
+    name: "Master of Business Administration (MBA) in Delhi",
+    description: "2-year postgraduate management program covering finance, marketing, HR, operations, and strategy. Offered by top Delhi B-schools including FMS Delhi, IMI Delhi, MDI Gurgaon, and FORE School.",
+    provider: "CollegeDelhi.com",
+    duration: "P2Y",
+    url: "/mba-colleges-delhi",
+    fees: { min: 55000, max: 2200000 },
+  })
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Get Admission in FMS Delhi / MBA Colleges Delhi 2026",
+    description: "Step-by-step guide to MBA admission in top Delhi NCR business schools — FMS Delhi, MDI Gurgaon, IMI Delhi.",
+    totalTime: "P3M",
+    step: [
+      { "@type": "HowToStep", position: 1, name: "Appear for CAT 2025", text: "Register and appear for CAT 2025 (November 2025). Target 98+ percentile for FMS Delhi, 95+ for IMI Delhi/FORE School, 90+ for LBSIM/BIMTECH. CAT is the primary MBA entrance for all top Delhi B-schools." },
+      { "@type": "HowToStep", position: 2, name: "Apply to Target MBA Colleges (Dec 2025–Jan 2026)", text: "Apply directly to: FMS Delhi at fms.edu, MDI Gurgaon at mdi.ac.in, IMI Delhi at imi.edu, FORE School at fsm.ac.in. Application windows typically open in December 2025 after CAT results." },
+      { "@type": "HowToStep", position: 3, name: "Attend WAT-PI (Group Discussion, Written Test, Interview)", text: "Top Delhi MBA colleges shortlist candidates for WAT (Written Ability Test) and PI (Personal Interview) in Jan–March 2026. Prepare case studies, current affairs, and personal/work experience stories." },
+      { "@type": "HowToStep", position: 4, name: "Accept Offer & Pay Fees", text: "Upon selection, accept the admission offer within the deadline and pay the fees: FMS Delhi ₹55K total, IMI Delhi ₹17.5L, MDI Gurgaon ₹22L. Merit-based scholarships available at MDI, IMI, and FORE." },
+    ],
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
 
       <main className="bg-white min-h-screen">
         {/* Breadcrumb */}
@@ -334,6 +365,32 @@ export default function MBACollegesDELHIPage() {
             </div>
           </div>
         </section>
+
+        {/* Topical Hub — pillar→spoke interlinking */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <TopicalHub
+            pillarTitle="MBA Colleges in Delhi NCR — Complete Guide"
+            pillarKeyword="MBA colleges in Delhi"
+            spokeLinks={[
+              { label: "Top 10 MBA Colleges in Delhi", href: "/top-10-mba-colleges-in-delhi", description: "NIRF-ranked list with fees & placements" },
+              { label: "FMS Delhi MBA Admission 2026", href: "/fms-delhi-mba-admission", description: "CAT cutoff, selection process, fees" },
+              { label: "MDI Gurgaon MBA 2026", href: "/mdi-gurgaon-mba-admission", description: "PGPM admission, CAT 99+ cutoff" },
+              { label: "PGDM Colleges Delhi NCR", href: "/pgdm-colleges-delhi", description: "PGDM vs MBA, top institutes" },
+              { label: "Private MBA Colleges Delhi", href: "/private-mba-colleges-delhi", description: "IMI, FORE, LBSIM, BIMTECH" },
+              { label: "Online MBA Delhi Colleges", href: "/online-mba-delhi", description: "Distance learning MBA options" },
+              { label: "MBA Fees in Delhi 2026", href: "/mba-colleges-delhi-fees", description: "₹55K to ₹22L — all colleges compared" },
+              { label: "MBA Without CAT (MAT/CMAT)", href: "/mba-admission-delhi-without-cat", description: "Colleges accepting MAT, CMAT, XAT" },
+              { label: "Part-Time MBA Delhi", href: "/part-time-mba-delhi", description: "Weekend MBA for working professionals" },
+            ]}
+            relatedPillarLinks={[
+              { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi" },
+              { label: "Medical Colleges Delhi", href: "/medical-colleges-delhi" },
+              { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi" },
+              { label: "DU Colleges Delhi", href: "/du-colleges-delhi" },
+              { label: "Government Colleges Delhi", href: "/government-colleges-delhi" },
+            ]}
+          />
+        </div>
 
         {/* CTA */}
         <section className="bg-gradient-to-r from-red-600 to-red-700 py-10">

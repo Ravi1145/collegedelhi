@@ -127,7 +127,7 @@ export default function HeroSection() {
           India&apos;s AI-Powered College Portal 2026
         </div>
 
-        {/* H1 typewriter */}
+        {/* H1 — static text for SEO crawlers; typewriter animates in the accent span */}
         <motion.h1
           className="text-white font-extrabold leading-[1.1] tracking-tight mb-4"
           style={{ fontSize: "clamp(1.8rem, 4vw, 3rem)" }}
@@ -135,8 +135,9 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5, ease: EASE }}
         >
-          Find the Right{" "}
-          <span className="text-accent">
+          Find the Right College in Delhi 2026{" "}
+          <span className="sr-only">— Compare fees, rankings, and placements</span>
+          <span aria-hidden="true" className="block text-accent">
             {typewriterText}
             <span className="inline-block w-[2px] h-[1em] bg-accent align-middle ml-0.5 animate-pulse" />
           </span>

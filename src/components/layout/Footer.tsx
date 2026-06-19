@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Mail, Phone, MapPin } from "lucide-react"
-import LeadCapture from "@/components/leads/LeadCapture"
 
 const socialLinks = [
   {
@@ -59,6 +58,7 @@ const socialLinks = [
 
 const footerLinks = {
   "Top Colleges": [
+    { label: "IIT Delhi",              href: "/colleges/iit-delhi" },
     { label: "DTU Delhi",              href: "/colleges/dtu-delhi" },
     { label: "NSUT Delhi",             href: "/colleges/nsut-delhi" },
     { label: "IIIT Delhi",             href: "/colleges/iiit-delhi" },
@@ -66,83 +66,234 @@ const footerLinks = {
     { label: "AIIMS Delhi",            href: "/colleges/aiims-delhi" },
     { label: "Miranda House",          href: "/colleges/miranda-house-delhi-university" },
     { label: "SRCC Delhi",             href: "/colleges/srcc-sri-ram-college-commerce-du" },
-    { label: "Amity Noida",            href: "/colleges/amity-university-noida-engineering" },
+    { label: "MDI Gurgaon",            href: "/mdi-gurgaon" },
+    { label: "IIFT Delhi",             href: "/iift-delhi" },
+    { label: "FMS Delhi Admission",    href: "/fms-delhi" },
+    { label: "FORE School Delhi",      href: "/fore-school-management-delhi" },
   ],
-  "Engineering & MBA": [
-    { label: "Engineering Colleges Delhi",   href: "/engineering-colleges-delhi" },
-    { label: "Top 10 Engineering Colleges",  href: "/top-10-engineering-colleges-in-delhi" },
-    { label: "Engineering Placement Delhi",  href: "/engineering-colleges-delhi-placement" },
-    { label: "Low Fees Engineering Delhi",   href: "/low-fees-engineering-colleges-delhi" },
-    { label: "MBA Colleges Delhi",           href: "/mba-colleges-delhi" },
-    { label: "Top 10 MBA Colleges Delhi",    href: "/top-10-mba-colleges-in-delhi" },
-    { label: "MBA Placement Delhi",          href: "/mba-colleges-delhi-placement" },
-    { label: "MBA Without CAT Delhi",        href: "/mba-admission-delhi-without-cat" },
+  "Engineering Colleges": [
+    { label: "Engineering Colleges Delhi",         href: "/engineering-colleges-delhi" },
+    { label: "Top 10 Engineering Colleges",        href: "/top-10-engineering-colleges-in-delhi" },
+    { label: "Top Engineering Colleges Delhi",     href: "/top-engineering-colleges-delhi" },
+    { label: "Private Engineering Colleges Delhi", href: "/private-engineering-colleges-delhi" },
+    { label: "Engineering Placement Delhi",        href: "/engineering-colleges-delhi-placement" },
+    { label: "Low Fees Engineering Delhi",         href: "/low-fees-engineering-colleges-delhi" },
+    { label: "Direct Admission Engineering",       href: "/direct-admission-engineering-colleges-delhi" },
+    { label: "Engineering Without JEE Delhi",      href: "/engineering-admission-delhi-without-jee" },
+    { label: "Computer Engineering Delhi",         href: "/computer-engineering-colleges-delhi" },
+    { label: "Mechanical Engineering Delhi",       href: "/mechanical-engineering-colleges-delhi" },
+    { label: "BTech Colleges Delhi",               href: "/btech-colleges-delhi" },
+    { label: "MTech Colleges Delhi",               href: "/mtech-colleges-delhi" },
+  ],
+  "MBA Colleges": [
+    { label: "MBA Colleges Delhi",                 href: "/mba-colleges-delhi" },
+    { label: "Best MBA Colleges Delhi",            href: "/best-mba-colleges-delhi" },
+    { label: "Top 10 MBA Colleges Delhi",          href: "/top-10-mba-colleges-in-delhi" },
+    { label: "Government MBA Colleges Delhi",      href: "/government-mba-colleges-delhi" },
+    { label: "Private MBA Colleges Delhi",         href: "/private-mba-colleges-delhi" },
+    { label: "MBA Placement Delhi",                href: "/mba-colleges-delhi-placement" },
+    { label: "MBA Without CAT Delhi",              href: "/mba-admission-delhi-without-cat" },
+    { label: "Low Fees MBA Delhi",                 href: "/low-fees-mba-colleges-delhi" },
+    { label: "PGDM Colleges Delhi",                href: "/pgdm-colleges-delhi" },
+    { label: "Online MBA Delhi",                   href: "/online-mba-delhi" },
+    { label: "Part-Time MBA Delhi",                href: "/part-time-mba-delhi" },
+    { label: "Direct Admission MBA Delhi",         href: "/direct-admission-mba-colleges-delhi" },
+  ],
+  "MBA Specialisations": [
+    { label: "MBA Finance Delhi",                  href: "/mba-in-finance-delhi" },
+    { label: "MBA Marketing Delhi",                href: "/mba-in-marketing-delhi" },
+    { label: "MBA HR Delhi",                       href: "/mba-in-hr-delhi" },
+    { label: "MBA Business Analytics Delhi",       href: "/mba-in-business-analytics-delhi" },
+    { label: "MBA Digital Marketing Delhi",        href: "/mba-in-digital-marketing-delhi" },
+    { label: "MBA International Business Delhi",   href: "/mba-in-international-business-delhi" },
+    { label: "MBA Operations Delhi",               href: "/mba-in-operations-delhi" },
+    { label: "MBA IT Delhi",                       href: "/mba-in-information-technology-delhi" },
+    { label: "MBA Banking & Finance Delhi",        href: "/mba-in-banking-finance-delhi" },
+    { label: "MBA Healthcare Delhi",               href: "/mba-in-healthcare-management-delhi" },
+    { label: "Executive MBA Delhi",                href: "/executive-mba-delhi" },
+    { label: "PGDM vs MBA Delhi",                  href: "/pgdm-vs-mba-delhi" },
   ],
   "Other Streams": [
-    { label: "Medical Colleges Delhi",       href: "/medical-colleges-delhi" },
-    { label: "Arts & Science Colleges",      href: "/arts-colleges-delhi" },
-    { label: "Law Colleges Delhi",           href: "/law-colleges-delhi" },
-    { label: "BCA Colleges Delhi",           href: "/bca-colleges-delhi" },
-    { label: "Design Colleges Delhi",        href: "/design-colleges-delhi" },
-    { label: "Pharmacy Colleges Delhi",      href: "/pharmacy-colleges-delhi" },
-    { label: "Government Colleges Delhi",    href: "/government-colleges-delhi" },
-    { label: "Colleges with Hostel Delhi",   href: "/colleges-in-delhi-with-hostel" },
+    { label: "Medical Colleges Delhi",             href: "/medical-colleges-delhi" },
+    { label: "MBBS Colleges Delhi",                href: "/mbbs-colleges-delhi" },
+    { label: "Top 10 Medical Colleges Delhi",      href: "/top-10-medical-colleges-in-delhi" },
+    { label: "Arts Colleges Delhi",                href: "/arts-colleges-delhi" },
+    { label: "Science Colleges Delhi",             href: "/science-colleges-delhi" },
+    { label: "Commerce Colleges Delhi",            href: "/commerce-colleges-delhi" },
+    { label: "Law Colleges Delhi",                 href: "/law-colleges-delhi" },
+    { label: "LLB Colleges Delhi",                 href: "/llb-colleges-delhi" },
+    { label: "Design Colleges Delhi",              href: "/design-colleges-delhi" },
+    { label: "Architecture Colleges Delhi",        href: "/architecture-colleges-delhi" },
+    { label: "BBA Colleges Delhi",                 href: "/bba-colleges-delhi" },
+    { label: "BMS Colleges Delhi",                 href: "/bms-colleges-delhi" },
+  ],
+  "By Location (Delhi NCR)": [
+    { label: "Colleges in Delhi",                  href: "/colleges-in-delhi" },
+    { label: "Best Colleges in Delhi",             href: "/best-colleges-in-delhi" },
+    { label: "Top Colleges in Delhi",              href: "/top-colleges-in-delhi" },
+    { label: "Colleges in South Delhi",            href: "/colleges-south-delhi" },
+    { label: "Colleges in North Delhi",            href: "/colleges-north-delhi" },
+    { label: "Colleges in East Delhi",             href: "/colleges-east-delhi" },
+    { label: "Colleges in Dwarka Delhi",           href: "/colleges-dwarka-delhi" },
+    { label: "Colleges in Rohini Delhi",           href: "/colleges-rohini-delhi" },
+    { label: "Colleges in Vasant Kunj Delhi",      href: "/colleges-vasant-kunj-delhi" },
+    { label: "Engineering Colleges Noida",         href: "/engineering-colleges-noida" },
+    { label: "MBA Colleges Noida",                 href: "/mba-colleges-noida" },
+    { label: "Colleges in Gurgaon",                href: "/colleges-gurugram" },
+  ],
+  "Comparisons & Guides": [
+    { label: "IIT Delhi vs DTU",                   href: "/iit-delhi-vs-dtu" },
+    { label: "DTU vs NSUT",                        href: "/dtu-vs-nsut" },
+    { label: "DTU vs IIIT Delhi",                  href: "/dtu-vs-iiit-delhi" },
+    { label: "NSUT vs IIIT Delhi",                 href: "/nsut-vs-iiit-delhi" },
+    { label: "MAIT vs MSIT",                       href: "/mait-vs-msit" },
+    { label: "FMS vs IIFT",                        href: "/fms-vs-iift" },
+    { label: "FMS Delhi vs MDI Gurgaon",           href: "/fms-delhi-vs-mdi-gurgaon" },
+    { label: "MDI vs IMI",                         href: "/mdi-vs-imi" },
+    { label: "MDI vs IMT",                         href: "/mdi-vs-imt" },
+    { label: "FMS vs IMI Delhi",                   href: "/fms-vs-imi-delhi" },
+    { label: "IMI Delhi vs FORE",                  href: "/imi-delhi-vs-fore" },
+    { label: "IMI Delhi vs LBSIM",                 href: "/imi-delhi-vs-lbsim" },
+    { label: "IMT vs BIMTECH",                     href: "/imt-vs-bimtech" },
+    { label: "JIMS vs NDIM",                       href: "/jims-vs-ndim" },
+    { label: "Miranda House vs LSR",               href: "/miranda-house-vs-lsr" },
+    { label: "SRCC vs Hindu College",              href: "/srcc-vs-hindu-college" },
+  ],
+  "Exams & Admission": [
+    { label: "JEE Colleges Delhi",                 href: "/jee-colleges-delhi" },
+    { label: "NEET Colleges Delhi",                href: "/neet-colleges-delhi" },
+    { label: "CUET Colleges Delhi",                href: "/cuet-colleges-delhi" },
+    { label: "CAT Colleges Delhi",                 href: "/cat-colleges-delhi" },
+    { label: "CET Colleges Delhi",                 href: "/cet-colleges-delhi" },
+    { label: "DU Colleges Delhi",                  href: "/du-colleges-delhi" },
+    { label: "IPU Colleges Delhi",                 href: "/ipu-colleges-delhi" },
+    { label: "Cutoffs 2026",                       href: "/cutoffs" },
+    { label: "JEE Main Cutoff 2026",              href: "/cutoffs/JEE Main" },
+    { label: "NEET Cutoff 2026",                  href: "/cutoffs/neet" },
+    { label: "CAT Cutoff MBA 2026",               href: "/cutoffs/cat" },
+    { label: "IPU CET Cutoff 2026",               href: "/cutoffs/ipu-cet" },
+    { label: "CLAT Cutoff Delhi 2026",            href: "/cutoffs/clat" },
+    { label: "Delhi Admission Calendar 2026",      href: "/delhi-college-admission-calendar-2026" },
+    { label: "Admission Deadline Tracker",         href: "/delhi-admission-deadline-tracker-2026" },
+    { label: "Scholarships 2026",                  href: "/scholarships" },
+    { label: "Free Counselling",                   href: "/counselling" },
   ],
   "Tools & Resources": [
-    { label: "College Predictor",            href: "/predictor" },
-    { label: "Compare Colleges",             href: "/compare" },
-    { label: "ROI Calculator",               href: "/roi-calculator" },
-    { label: "NIRF Insights",                href: "/nirf-insights" },
-    { label: "Cutoffs 2026",                 href: "/cutoffs" },
-    { label: "Scholarships 2026",            href: "/scholarships" },
-    { label: "Alumni Q&A",                   href: "/qa" },
-    { label: "Free Counselling",             href: "/counselling" },
+    { label: "College Predictor",                  href: "/predictor" },
+    { label: "Compare Colleges",                   href: "/compare" },
+    { label: "ROI Calculator",                     href: "/roi-calculator" },
+    { label: "Fees Calculator",                    href: "/delhi-college-fees-calculator" },
+    { label: "Placement Comparator",               href: "/delhi-college-placement-comparator" },
+    { label: "NIRF Insights",                      href: "/nirf-insights" },
+    { label: "AI College Finder",                  href: "/ai-finder" },
+    { label: "Alumni Q&A",                         href: "/qa" },
+    { label: "Blog & Guides",                      href: "/blog" },
+    { label: "News & Updates",                     href: "/news" },
+    { label: "Entrance Exams",                     href: "/exams" },
+    { label: "All Courses",                        href: "/courses" },
   ],
 }
 
 const seoLinks = [
-  { label: "Best College in Delhi",                href: "/" },
+  { label: "Best Colleges in Delhi 2026",          href: "/best-colleges-in-delhi" },
+  { label: "Top Colleges in Delhi 2026",           href: "/top-colleges-in-delhi" },
   { label: "Best BTech College in Delhi",          href: "/engineering-colleges-delhi" },
   { label: "Best MBA College in Delhi",            href: "/mba-colleges-delhi" },
-  { label: "Top Engineering Colleges Delhi",       href: "/top-10-engineering-colleges-in-delhi" },
-  { label: "Top MBA Colleges Delhi",               href: "/top-10-mba-colleges-in-delhi" },
+  { label: "Top 10 Engineering Colleges Delhi",    href: "/top-10-engineering-colleges-in-delhi" },
+  { label: "Top 10 MBA Colleges Delhi",            href: "/top-10-mba-colleges-in-delhi" },
   { label: "Medical Colleges Delhi",               href: "/medical-colleges-delhi" },
+  { label: "MBBS Colleges Delhi",                  href: "/mbbs-colleges-delhi" },
+  { label: "Top 10 Medical Colleges Delhi",        href: "/top-10-medical-colleges-in-delhi" },
   { label: "Private Engineering Colleges Delhi",   href: "/private-engineering-colleges-delhi" },
   { label: "Private MBA Colleges Delhi",           href: "/private-mba-colleges-delhi" },
-  { label: "Engineering Placement 2026",           href: "/engineering-colleges-delhi-placement" },
-  { label: "MBA Placement 2026",                   href: "/mba-colleges-delhi-placement" },
+  { label: "Engineering Placement Delhi 2026",     href: "/engineering-colleges-delhi-placement" },
+  { label: "MBA Placement Delhi 2026",             href: "/mba-colleges-delhi-placement" },
   { label: "Low Fee Engineering Colleges Delhi",   href: "/low-fees-engineering-colleges-delhi" },
   { label: "Low Fee MBA Colleges Delhi",           href: "/low-fees-mba-colleges-delhi" },
   { label: "Direct Admission Engineering Delhi",   href: "/direct-admission-engineering-colleges-delhi" },
   { label: "Direct Admission MBA Delhi",           href: "/direct-admission-mba-colleges-delhi" },
-  { label: "Delhi University Colleges List",       href: "/colleges" },
+  { label: "DU Colleges Delhi List",               href: "/du-colleges-delhi" },
+  { label: "IPU Colleges Delhi",                   href: "/ipu-colleges-delhi" },
   { label: "JEE Colleges Delhi",                   href: "/jee-colleges-delhi" },
+  { label: "NEET Colleges Delhi",                  href: "/neet-colleges-delhi" },
+  { label: "CUET Colleges Delhi",                  href: "/cuet-colleges-delhi" },
+  { label: "CAT Colleges Delhi",                   href: "/cat-colleges-delhi" },
   { label: "Cutoffs 2026 All Exams",               href: "/cutoffs" },
   { label: "ROI Calculator Delhi",                 href: "/roi-calculator" },
   { label: "NIRF Rankings Delhi 2026",             href: "/nirf-insights" },
   { label: "Government Colleges Delhi",            href: "/government-colleges-delhi" },
   { label: "Law Colleges Delhi",                   href: "/law-colleges-delhi" },
+  { label: "LLB Colleges Delhi",                   href: "/llb-colleges-delhi" },
   { label: "Design Colleges Delhi",                href: "/design-colleges-delhi" },
+  { label: "Architecture Colleges Delhi",          href: "/architecture-colleges-delhi" },
   { label: "Arts Colleges Delhi",                  href: "/arts-colleges-delhi" },
+  { label: "Science Colleges Delhi",               href: "/science-colleges-delhi" },
+  { label: "Commerce Colleges Delhi",              href: "/commerce-colleges-delhi" },
+  { label: "BBA Colleges Delhi",                   href: "/bba-colleges-delhi" },
+  { label: "BCA Colleges Delhi",                   href: "/bca-colleges-delhi" },
+  { label: "BMS Colleges Delhi",                   href: "/bms-colleges-delhi" },
+  { label: "BCom Colleges Delhi",                  href: "/bcom-colleges-delhi" },
+  { label: "Journalism Colleges Delhi",            href: "/journalism-colleges-delhi" },
+  { label: "Mass Communication Colleges Delhi",    href: "/mass-communication-colleges-delhi" },
+  { label: "Hotel Management Colleges Delhi",      href: "/hotel-management-colleges-delhi" },
+  { label: "Nursing Colleges Delhi",               href: "/nursing-colleges-delhi" },
+  { label: "Pharmacy Colleges Delhi",              href: "/pharmacy-colleges-delhi" },
+  { label: "Paramedical Colleges Delhi",           href: "/paramedical-colleges-delhi" },
   { label: "Engineering Colleges Noida",           href: "/engineering-colleges-noida" },
   { label: "MBA Colleges Noida",                   href: "/mba-colleges-noida" },
-  { label: "Colleges Greater Noida",              href: "/colleges-greater-noida" },
-  { label: "Colleges in Gurugram (Gurgaon)",      href: "/colleges-gurugram" },
+  { label: "BBA Colleges Noida",                   href: "/bba-colleges-noida" },
+  { label: "BCA Colleges Noida",                   href: "/bca-colleges-noida" },
+  { label: "MBA Colleges Greater Noida",           href: "/mba-colleges-greater-noida" },
+  { label: "MBA Colleges Gurgaon",                 href: "/mba-colleges-gurgaon" },
+  { label: "Colleges Greater Noida",               href: "/colleges-greater-noida" },
+  { label: "Colleges in Gurgaon",                  href: "/colleges-gurugram" },
+  { label: "Colleges in South Delhi",              href: "/colleges-south-delhi" },
+  { label: "Colleges in North Delhi",              href: "/colleges-north-delhi" },
+  { label: "Colleges in Dwarka Delhi",             href: "/colleges-dwarka-delhi" },
+  { label: "Colleges in Rohini Delhi",             href: "/colleges-rohini-delhi" },
+  { label: "Colleges with Hostel Delhi",           href: "/colleges-in-delhi-with-hostel" },
+  { label: "Girls Colleges Delhi",                 href: "/girls-colleges-delhi" },
+  { label: "Low Fee Colleges Delhi",               href: "/low-fee-colleges-delhi" },
+  { label: "NAAC A+ Colleges Delhi",              href: "/naac-a-plus-colleges-delhi" },
+  { label: "Top Placement Colleges Delhi",         href: "/top-placement-colleges-delhi" },
+  { label: "IIT Delhi vs DTU 2026",               href: "/iit-delhi-vs-dtu" },
   { label: "DTU vs NSUT 2026",                    href: "/dtu-vs-nsut" },
+  { label: "NSUT vs IIIT Delhi 2026",             href: "/nsut-vs-iiit-delhi" },
+  { label: "DTU vs IIIT Delhi 2026",              href: "/dtu-vs-iiit-delhi" },
+  { label: "MAIT vs MSIT Delhi",                  href: "/mait-vs-msit" },
+  { label: "FMS vs IIFT Delhi",                   href: "/fms-vs-iift" },
+  { label: "FMS Delhi vs MDI Gurgaon",            href: "/fms-delhi-vs-mdi-gurgaon" },
+  { label: "MDI vs IMI Delhi",                    href: "/mdi-vs-imi" },
+  { label: "IMI Delhi vs FORE",                   href: "/imi-delhi-vs-fore" },
+  { label: "Miranda House vs LSR",                href: "/miranda-house-vs-lsr" },
+  { label: "JEE Main Cutoff Delhi 2026",          href: "/cutoffs/JEE Main" },
+  { label: "NEET Cutoff Delhi 2026",              href: "/cutoffs/neet" },
+  { label: "CAT Cutoff MBA Delhi 2026",           href: "/cutoffs/cat" },
+  { label: "IPU CET Cutoff 2026",                 href: "/cutoffs/ipu-cet" },
+  { label: "CLAT Cutoff Delhi 2026",              href: "/cutoffs/clat" },
+  { label: "MBA Finance Colleges Delhi",          href: "/mba-in-finance-delhi" },
+  { label: "MBA Marketing Colleges Delhi",        href: "/mba-in-marketing-delhi" },
+  { label: "MBA Business Analytics Delhi",        href: "/mba-in-business-analytics-delhi" },
+  { label: "Online MBA Delhi",                    href: "/online-mba-delhi" },
+  { label: "Executive MBA Delhi",                 href: "/executive-mba-delhi" },
+  { label: "Part-Time MBA Delhi",                 href: "/part-time-mba-delhi" },
   { label: "Admission Calendar 2026",             href: "/delhi-college-admission-calendar-2026" },
+  { label: "Admission Deadline Tracker 2026",     href: "/delhi-admission-deadline-tracker-2026" },
+  { label: "College Fees Calculator Delhi",       href: "/delhi-college-fees-calculator" },
+  { label: "Engineering vs MBA Delhi",            href: "/delhi-colleges-comparison-engineering-mba" },
 ]
 
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: "var(--color-navy)" }} className="text-gray-300">
 
-      {/* Main grid */}
+      {/* Main content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
 
-          {/* Brand + contact */}
-          <div className="col-span-2 sm:col-span-3 lg:col-span-2">
-            <Link href="/" className="inline-flex items-center mb-4">
+        {/* Brand + contact */}
+        <div className="mb-8 pb-8 border-b border-white/10">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-8">
+            <Link href="/" className="inline-flex items-center shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/logo.png"
@@ -151,62 +302,39 @@ export default function Footer() {
                 style={{ mixBlendMode: "screen" }}
               />
             </Link>
-
-            <p className="text-sm text-gray-400 leading-relaxed mb-5 max-w-xs">
+            <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
               India&apos;s AI-powered college discovery portal for Delhi. Compare the best engineering, MBA, medical, and arts colleges with real fees, placements &amp; reviews.
             </p>
-
-            <div className="space-y-2 text-sm mb-5">
+            <div className="flex flex-col gap-1.5 text-sm sm:ml-auto">
               <div className="flex items-center gap-2 text-gray-400">
                 <MapPin className="w-4 h-4 shrink-0" style={{ color: "var(--color-accent)" }} />
                 Connaught Place, New Delhi, Delhi 110001
               </div>
               <div className="flex items-center gap-2 text-gray-400">
                 <Mail className="w-4 h-4 shrink-0" style={{ color: "var(--color-accent)" }} />
-                <a href="mailto:support@collegedelhi.com" className="hover:text-white transition-colors">
-                  support@collegedelhi.com
-                </a>
+                <a href="mailto:support@collegedelhi.com" className="hover:text-white transition-colors">support@collegedelhi.com</a>
               </div>
               <div className="flex items-center gap-2 text-gray-400">
                 <Phone className="w-4 h-4 shrink-0" style={{ color: "var(--color-accent)" }} />
-                <a href="tel:+917753831118" className="hover:text-white transition-colors">
-                  +91 77538 31118
-                </a>
+                <a href="tel:+917753831118" className="hover:text-white transition-colors">+91 77538 31118</a>
+              </div>
+              <div className="flex items-center gap-2.5 mt-1">
+                {socialLinks.map(({ label, href, icon }) => (
+                  <a key={label} href={href} target="_blank" rel="noopener noreferrer"
+                    aria-label={`CollegeDelhi on ${label}`}
+                    className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors text-gray-300 hover:text-white bg-white/10 hover:bg-accent">
+                    {icon}
+                  </a>
+                ))}
               </div>
             </div>
-
-            {/* Social icons */}
-            <div className="flex items-center gap-2.5">
-              {socialLinks.map(({ label, href, icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`CollegeDelhi on ${label}`}
-                  className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors text-gray-300 hover:text-white bg-white/10 hover:bg-accent"
-                >
-                  {icon}
-                </a>
-              ))}
-            </div>
-
-            {/* Footer lead form */}
-            <div className="mt-5">
-              <LeadCapture
-                source="footer_form"
-                minimal
-                buttonText="Get Free Guidance"
-                placeholderName="Your Name"
-                placeholderPhone="WhatsApp Number"
-                title="Free College Counselling"
-              />
-            </div>
           </div>
+        </div>
 
-          {/* Link columns */}
+        {/* Link columns — 2 col on mobile, 4 col on md, 5 col on xl */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-8">
           {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title} className="col-span-1">
+            <div key={title}>
               <h3 className="text-white font-bold text-xs uppercase tracking-wider mb-3 border-b border-white/10 pb-2">
                 {title}
               </h3>
@@ -215,9 +343,9 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="flex items-center gap-1 text-xs text-gray-400 hover:text-white transition-colors py-0.5 group"
+                      className="flex items-start gap-1 text-xs text-gray-400 hover:text-white transition-colors py-0.5 group"
                     >
-                      <span className="text-gray-600 group-hover:text-red-400 transition-colors">›</span>
+                      <span className="text-gray-600 group-hover:text-red-400 transition-colors mt-0.5 shrink-0">›</span>
                       {link.label}
                     </Link>
                   </li>
@@ -225,8 +353,8 @@ export default function Footer() {
               </ul>
             </div>
           ))}
-
         </div>
+
       </div>
 
       {/* SEO keyword strip */}

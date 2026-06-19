@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateCourseSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
@@ -49,9 +49,21 @@ export default function CommerceCollegesDELHIPage() {
     })),
   }
 
-  return (
+  const courseSchemaData = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: "B.Com / Commerce Courses in Delhi",
+  description: "3-year undergraduate commerce degree covering accounting, economics, business studies and taxation. Admitted via CUET for DU colleges including SRCC, Hindu, Hansraj.",
+  provider: { '@type': 'Organization', name: 'CollegeDelhi.com', sameAs: 'https://www.collegedelhi.com' },
+  timeRequired: "P3Y",
+  url: 'https://www.collegedelhi.com' + "/commerce-colleges-delhi",
+  offers: { '@type': 'Offer', priceCurrency: 'INR', price: 15000, priceSpecification: { '@type': 'PriceSpecification', minPrice: 15000, maxPrice: 200000, priceCurrency: 'INR' } },
+}
+
+return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage

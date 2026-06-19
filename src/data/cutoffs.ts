@@ -278,6 +278,205 @@ export const cutoffsData: CollegeCutoff[] = [
       { year: 2026, open: 89.0, obc: 84.0, sc: 76.0, st: 69.0 },
     ],
   },
+
+  // ── ENGINEERING – JEE Main (more colleges) ──────────────────────────────
+  {
+    college_slug: "iit-delhi",
+    college_name: "IIT Delhi – Indian Institute of Technology Delhi",
+    college_short: "IIT Delhi",
+    exam: "JEE Main",
+    stream: "engineering",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2021, open: 99.9, obc: 99.7, sc: 99.2, st: 98.5 },
+      { year: 2022, open: 99.9, obc: 99.7, sc: 99.3, st: 98.6 },
+      { year: 2023, open: 99.9, obc: 99.8, sc: 99.4, st: 98.7 },
+      { year: 2024, open: 99.9, obc: 99.8, sc: 99.5, st: 98.8 },
+      { year: 2025, open: 99.9, obc: 99.8, sc: 99.3, st: 98.6 },
+      { year: 2026, open: 99.9, obc: 99.8, sc: 99.5, st: 98.8 },
+    ],
+  },
+  {
+    college_slug: "mait-delhi",
+    college_name: "Maharaja Agrasen Institute of Technology (MAIT)",
+    college_short: "MAIT",
+    exam: "ipu-cet",
+    stream: "engineering",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2021, open: 88.0, obc: 82.0, sc: 72.0, st: 62.0 },
+      { year: 2022, open: 89.0, obc: 83.0, sc: 73.0, st: 63.0 },
+      { year: 2023, open: 90.0, obc: 84.0, sc: 74.0, st: 64.0 },
+      { year: 2024, open: 91.0, obc: 85.0, sc: 75.0, st: 65.0 },
+      { year: 2025, open: 90.0, obc: 84.0, sc: 74.0, st: 64.0 },
+      { year: 2026, open: 91.5, obc: 85.5, sc: 75.5, st: 65.5 },
+    ],
+  },
+  {
+    college_slug: "msit-delhi",
+    college_name: "Maharaja Surajmal Institute of Technology (MSIT)",
+    college_short: "MSIT",
+    exam: "ipu-cet",
+    stream: "engineering",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2021, open: 86.0, obc: 80.0, sc: 70.0, st: 60.0 },
+      { year: 2022, open: 87.0, obc: 81.0, sc: 71.0, st: 61.0 },
+      { year: 2023, open: 88.0, obc: 82.0, sc: 72.0, st: 62.0 },
+      { year: 2024, open: 89.0, obc: 83.0, sc: 73.0, st: 63.0 },
+      { year: 2025, open: 88.0, obc: 82.0, sc: 72.0, st: 62.0 },
+      { year: 2026, open: 89.5, obc: 83.5, sc: 73.5, st: 63.5 },
+    ],
+  },
+  {
+    college_slug: "nsut-delhi",
+    college_name: "Netaji Subhas University of Technology (NSUT) — IPU CET",
+    college_short: "NSUT",
+    exam: "ipu-cet",
+    stream: "engineering",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2022, open: 98.5, obc: 96.0, sc: 90.0, st: 82.0 },
+      { year: 2023, open: 98.7, obc: 96.5, sc: 90.5, st: 83.0 },
+      { year: 2024, open: 98.9, obc: 97.0, sc: 91.0, st: 83.5 },
+      { year: 2025, open: 98.8, obc: 96.5, sc: 90.5, st: 83.0 },
+      { year: 2026, open: 99.0, obc: 97.0, sc: 91.5, st: 84.0 },
+    ],
+  },
+
+  // ── MEDICAL – NEET (more colleges) ──────────────────────────────────────
+  {
+    college_slug: "vmmc-delhi",
+    college_name: "Vardhman Mahavir Medical College & Safdarjung Hospital",
+    college_short: "VMMC",
+    exam: "neet",
+    stream: "medical",
+    unit: "score",
+    cutoffs: [
+      { year: 2021, open: 635, obc: 612, sc: 580, st: 555 },
+      { year: 2022, open: 638, obc: 615, sc: 583, st: 558 },
+      { year: 2023, open: 640, obc: 618, sc: 585, st: 560 },
+      { year: 2024, open: 642, obc: 620, sc: 587, st: 562 },
+      { year: 2025, open: 640, obc: 618, sc: 585, st: 560 },
+      { year: 2026, open: 643, obc: 621, sc: 588, st: 563 },
+    ],
+  },
+  {
+    college_slug: "ucms-delhi",
+    college_name: "University College of Medical Sciences (UCMS), Delhi",
+    college_short: "UCMS",
+    exam: "neet",
+    stream: "medical",
+    unit: "score",
+    cutoffs: [
+      { year: 2021, open: 630, obc: 608, sc: 575, st: 548 },
+      { year: 2022, open: 633, obc: 610, sc: 578, st: 551 },
+      { year: 2023, open: 635, obc: 613, sc: 580, st: 553 },
+      { year: 2024, open: 637, obc: 615, sc: 582, st: 555 },
+      { year: 2025, open: 635, obc: 612, sc: 580, st: 552 },
+      { year: 2026, open: 638, obc: 616, sc: 583, st: 556 },
+    ],
+  },
+
+  // ── MBA – CAT (more colleges) ────────────────────────────────────────────
+  {
+    college_slug: "iift-delhi",
+    college_name: "IIFT Delhi – Indian Institute of Foreign Trade",
+    college_short: "IIFT",
+    exam: "cat",
+    stream: "mba",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2021, open: 95.0, obc: 90.0, sc: 82.0, st: 75.0 },
+      { year: 2022, open: 95.5, obc: 91.0, sc: 83.0, st: 76.0 },
+      { year: 2023, open: 96.0, obc: 92.0, sc: 84.0, st: 77.0 },
+      { year: 2024, open: 96.5, obc: 92.5, sc: 84.5, st: 78.0 },
+      { year: 2025, open: 96.0, obc: 92.0, sc: 84.0, st: 77.0 },
+      { year: 2026, open: 97.0, obc: 93.0, sc: 85.0, st: 78.5 },
+    ],
+  },
+  {
+    college_slug: "imt-ghaziabad",
+    college_name: "IMT Ghaziabad – Institute of Management Technology",
+    college_short: "IMT",
+    exam: "cat",
+    stream: "mba",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2021, open: 90.0, obc: 85.0, sc: 77.0, st: 70.0 },
+      { year: 2022, open: 91.0, obc: 86.0, sc: 78.0, st: 71.0 },
+      { year: 2023, open: 92.0, obc: 87.0, sc: 79.0, st: 72.0 },
+      { year: 2024, open: 93.0, obc: 88.0, sc: 80.0, st: 73.0 },
+      { year: 2025, open: 92.0, obc: 87.0, sc: 79.0, st: 72.0 },
+      { year: 2026, open: 93.5, obc: 88.5, sc: 80.5, st: 73.5 },
+    ],
+  },
+  {
+    college_slug: "lbsim-delhi",
+    college_name: "LBSIM Delhi – Lal Bahadur Shastri Institute of Management",
+    college_short: "LBSIM",
+    exam: "cat",
+    stream: "mba",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2021, open: 75.0, obc: 70.0, sc: 62.0, st: 55.0 },
+      { year: 2022, open: 76.0, obc: 71.0, sc: 63.0, st: 56.0 },
+      { year: 2023, open: 77.0, obc: 72.0, sc: 64.0, st: 57.0 },
+      { year: 2024, open: 78.0, obc: 73.0, sc: 65.0, st: 58.0 },
+      { year: 2025, open: 77.0, obc: 72.0, sc: 64.0, st: 57.0 },
+      { year: 2026, open: 79.0, obc: 74.0, sc: 66.0, st: 59.0 },
+    ],
+  },
+  {
+    college_slug: "bimtech-greater-noida",
+    college_name: "BIMTECH – Birla Institute of Management Technology, Greater Noida",
+    college_short: "BIMTECH",
+    exam: "cat",
+    stream: "mba",
+    unit: "percentile",
+    cutoffs: [
+      { year: 2021, open: 78.0, obc: 72.0, sc: 63.0, st: 56.0 },
+      { year: 2022, open: 79.0, obc: 73.0, sc: 64.0, st: 57.0 },
+      { year: 2023, open: 80.0, obc: 74.0, sc: 65.0, st: 58.0 },
+      { year: 2024, open: 82.0, obc: 76.0, sc: 67.0, st: 60.0 },
+      { year: 2025, open: 80.0, obc: 74.0, sc: 65.0, st: 58.0 },
+      { year: 2026, open: 83.0, obc: 77.0, sc: 68.0, st: 61.0 },
+    ],
+  },
+
+  // ── LAW – CLAT ───────────────────────────────────────────────────────────
+  {
+    college_slug: "mnlu-delhi-national-law-university-delhi",
+    college_name: "NLU Delhi – National Law University Delhi",
+    college_short: "NLU Delhi",
+    exam: "clat",
+    stream: "law",
+    unit: "rank",
+    cutoffs: [
+      { year: 2021, open: 1800, obc: 3200, sc: 5500, st: 7000 },
+      { year: 2022, open: 1700, obc: 3000, sc: 5200, st: 6800 },
+      { year: 2023, open: 1600, obc: 2800, sc: 5000, st: 6500 },
+      { year: 2024, open: 1500, obc: 2600, sc: 4800, st: 6200 },
+      { year: 2025, open: 1600, obc: 2700, sc: 5000, st: 6400 },
+      { year: 2026, open: 1500, obc: 2600, sc: 4800, st: 6200 },
+    ],
+  },
+  {
+    college_slug: "faculty-of-law-delhi-university",
+    college_name: "Faculty of Law, Delhi University (DU LLB Entrance)",
+    college_short: "DU Law",
+    exam: "clat",
+    stream: "law",
+    unit: "score",
+    cutoffs: [
+      { year: 2021, open: 82, obc: 76, sc: 68, st: 60 },
+      { year: 2022, open: 83, obc: 77, sc: 69, st: 61 },
+      { year: 2023, open: 84, obc: 78, sc: 70, st: 62 },
+      { year: 2024, open: 85, obc: 79, sc: 71, st: 63 },
+      { year: 2025, open: 84, obc: 78, sc: 70, st: 62 },
+      { year: 2026, open: 85, obc: 79, sc: 71, st: 63 },
+    ],
+  },
 ]
 
 export const examLabels: Record<string, string> = {
@@ -288,7 +487,23 @@ export const examLabels: Record<string, string> = {
   "cat":      "CAT",
   "cuet":     "CUET",
   "ipu-cet":  "IPU CET",
-  "clat":     "CLAT",
+  "clat":     "CLAT / DU LLB Entrance",
+}
+
+export const examDescriptions: Record<string, string> = {
+  "JEE Main": "JEE Main percentile cutoff (JAC Delhi counselling) for government engineering colleges in Delhi",
+  "jee":      "JEE Main rank cutoff (JOSAA counselling) for IIT Delhi and centrally-funded institutes",
+  "neet":     "NEET UG score cutoff for MBBS/BDS admission at top Delhi medical colleges",
+  "cat":      "CAT percentile cutoff for MBA/PGDM shortlisting at Delhi NCR management institutes",
+  "snap":     "SNAP percentile cutoff for MBA at Symbiosis and affiliated colleges",
+  "ipu-cet":  "IPU CET percentile cutoff for B.Tech at IP University affiliated colleges in Delhi",
+  "clat":     "CLAT rank / DU LLB Entrance score cutoff for law colleges in Delhi",
+}
+
+export const unitSuffix: Record<string, string> = {
+  percentile: " %ile",
+  rank:       " rank",
+  score:      " marks",
 }
 
 export const streamLabels: Record<string, string> = {

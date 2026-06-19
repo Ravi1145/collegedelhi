@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from "next"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateCourseSchema, generateSpeakableSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
@@ -45,6 +45,15 @@ const faqs = [
   { q: "What are the top BTech branches in Delhi 2026?", a: "Top BTech branches in Delhi by placement package: (1) CSE/IT at DTU, NSUT, IIIT Delhi — ₹16–45 LPA, (2) Electronics & Communication at DTU — ₹10–30 LPA, (3) Mechanical Engineering at DTU — ₹8–25 LPA, (4) AI & Data Science at IIIT Delhi — ₹18–50 LPA, (5) Civil Engineering at DTU — ₹6–18 LPA. CSE consistently gives the highest packages from Delhi colleges." },
 ]
 
+const courseSchema = generateCourseSchema({
+  name: 'Bachelor of Technology (B.Tech) in Delhi',
+  description: '4-year undergraduate engineering degree in CSE, AI, Electronics, Mechanical, Civil and more. Admitted via JEE Main through JAC Delhi for top colleges DTU, NSUT, IIIT Delhi.',
+  provider: 'CollegeDelhi.com',
+  duration: 'P4Y',
+  url: '/btech-colleges-delhi',
+  fees: { min: 80000, max: 380000 },
+})
+
 export default function BtechCollegesDELHIPage() {
   const faqSchema = generateFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -69,6 +78,7 @@ export default function BtechCollegesDELHIPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <SEOLandingPage
         breadcrumb={[{ label: "BTech colleges in Delhi", href: "/btech-colleges-Delhi" }]}
         h1="Best BTech Colleges in Delhi 2026"

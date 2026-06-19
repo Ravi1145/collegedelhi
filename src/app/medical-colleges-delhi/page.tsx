@@ -1,10 +1,11 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema, generateCourseSchema } from "@/lib/seo"
 import { CheckCircle, TrendingUp, Award, BookOpen, Users, AlertCircle } from "lucide-react"
 import { getCutoff } from "@/data/cutoffs"
 import GatedCutoffChartClient from "@/components/ui/GatedCutoffChartClient"
+import TopicalHub from "@/components/seo/TopicalHub"
 
 export const metadata: Metadata = genMeta({
   title: "Best Medical colleges in Delhi 2026 | NEET Cutoff, Fees & MBBS Seats",
@@ -72,11 +73,29 @@ export default function MedicalCollegesDELHIPage() {
     })),
   }
 
-  return (
+  const speakableSchema = generateSpeakableSchema(
+    "https://www.collegedelhi.com/medical-colleges-delhi",
+    ["h1", "h2", "#quick-answer"]
+  )
+
+  const courseSchemaData = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: "MBBS / Medical Courses in Delhi",
+  description: "5.5-year undergraduate medical degree. Admitted via NEET UG for AIIMS Delhi, MAMC, and all Delhi government medical colleges.",
+  provider: { '@type': 'Organization', name: 'CollegeDelhi.com', sameAs: 'https://www.collegedelhi.com' },
+  timeRequired: "P5Y6M",
+  url: 'https://www.collegedelhi.com' + "/medical-colleges-delhi",
+  offers: { '@type': 'Offer', priceCurrency: 'INR', price: 1628, priceSpecification: { '@type': 'PriceSpecification', minPrice: 1628, maxPrice: 1200000, priceCurrency: 'INR' } },
+}
+
+return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       <main className="bg-white min-h-screen">
         {/* Breadcrumb */}
@@ -284,6 +303,28 @@ export default function MedicalCollegesDELHIPage() {
               ))}
             </div>
           </div>
+
+        {/* Topical Hub */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <TopicalHub
+            pillarTitle="Medical Colleges in Delhi — Complete Guide"
+            pillarKeyword="medical colleges in Delhi"
+            spokeLinks={[
+              { label: "Top 10 Medical Colleges Delhi", href: "/top-10-medical-colleges-in-delhi", description: "NIRF-ranked MBBS colleges" },
+              { label: "MBBS Colleges Delhi", href: "/mbbs-colleges-delhi", description: "NEET cutoffs & seat matrix" },
+              { label: "NEET Colleges Delhi", href: "/neet-colleges-delhi", description: "Colleges accepting NEET UG" },
+              { label: "Nursing Colleges Delhi", href: "/nursing-colleges-delhi", description: "BSc Nursing admissions" },
+              { label: "Pharmacy Colleges Delhi", href: "/pharmacy-colleges-delhi", description: "BPharm & MPharm colleges" },
+              { label: "Paramedical Colleges Delhi", href: "/paramedical-colleges-delhi", description: "MLT, Radiology, Physiotherapy" },
+            ]}
+            relatedPillarLinks={[
+              { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi" },
+              { label: "MBA Colleges Delhi", href: "/mba-colleges-delhi" },
+              { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi" },
+              { label: "Government Colleges Delhi", href: "/government-colleges-delhi" },
+            ]}
+          />
+        </div>
 
         {/* CTA */}
         <section className="bg-gradient-to-r from-red-600 to-red-600 py-10">

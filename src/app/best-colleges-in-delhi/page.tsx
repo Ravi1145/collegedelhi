@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema } from "@/lib/seo"
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
+import GEOContentBlock from "@/components/seo/GEOContentBlock"
 
 export const metadata: Metadata = genMeta({
   title: "Best Colleges in Delhi 2026 — All Streams, Fees & Rankings",
@@ -82,12 +83,46 @@ export default function BestCollegesInDelhiPage() {
       url: `https://www.collegedelhi.com/colleges/${c.slug}`,
     })),
   }
+  const speakableSchema = generateSpeakableSchema(
+    "https://www.collegedelhi.com/best-colleges-in-delhi",
+    ["#quick-answer", "h1", "h2"]
+  )
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Get Admission in Best Colleges in Delhi 2026",
+    description: "Step-by-step guide to getting admission in top colleges in Delhi — IIT Delhi, FMS Delhi, AIIMS, DTU, Miranda House, SRCC.",
+    totalTime: "P6M",
+    step: [
+      { "@type": "HowToStep", position: 1, name: "Identify Your Stream & Target Entrance Exam", text: "Engineering → JEE Advanced (IIT Delhi) or JEE Main (DTU/NSUT/IIIT Delhi via JAC Delhi). Medical → NEET UG (AIIMS Delhi). MBA → CAT 2025 (FMS Delhi, MDI Gurgaon). Arts/Commerce → CUET 2026 (all DU colleges). Law → CLAT/AILET (NLU Delhi)." },
+      { "@type": "HowToStep", position: 2, name: "Register for CUET / JEE / NEET / CAT 2025–26", text: "JEE Main 2026: January and April sessions (NTA). NEET UG 2026: May 2026 (NTA). CAT 2025: November 2025. CUET UG 2026: May 2026 for DU colleges. JAC Delhi counselling happens post JEE Main results." },
+      { "@type": "HowToStep", position: 3, name: "Check Delhi-Specific Reservation & Seat Categories", text: "DTU, NSUT, IIIT Delhi reserve 85% seats for Delhi domicile students in JAC Delhi counselling. For DU colleges, CUET score is the sole criterion — no domicile reservation." },
+      { "@type": "HowToStep", position: 4, name: "Apply Online & Submit Documents", text: "Collect Class 10/12 mark sheets, category certificate, Delhi domicile certificate, passport photos, Aadhaar. Apply on official college portals or JAC Delhi / JOSAA for IITs / MCC for AIIMS." },
+      { "@type": "HowToStep", position: 5, name: "Participate in Counselling & Secure Admission", text: "Participate in JOSAA/JAC/MCC/CSAB seat allotment rounds. Accept your allotted seat within the deadline, pay the fee, and report for physical verification. Top Delhi colleges fill seats in round 1 — respond quickly." },
+    ],
+  }
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <div className="max-w-5xl mx-auto px-4 pt-8">
+        <GEOContentBlock
+          question="Which is the best college in Delhi in 2026?"
+          answer="IIT Delhi is the best college in Delhi for Engineering (NIRF #2, ₹28 LPA avg placement). AIIMS Delhi is India's #1 Medical college. FMS Delhi is India's best MBA college by ROI (₹55K total fees, ₹32 LPA placement). Miranda House (DU) is NIRF #1 among all colleges. Delhi has 900+ colleges across all streams with multiple NAAC A++ institutions."
+          bulletPoints={[
+            "IIT Delhi — Best Engineering: NIRF #2, NAAC A++, ₹28 LPA avg placement",
+            "AIIMS Delhi — Best Medical: NIRF #1 Medical, ₹1,628/yr fees",
+            "FMS Delhi — Best MBA: NIRF #13, ₹55K total fees, ₹32 LPA placement",
+            "Miranda House — Best Arts: NIRF #1 College, NAAC A++",
+            "SRCC — Best Commerce: NIRF #3 College, ₹24K/yr fees",
+          ]}
+          lastUpdated="June 2026"
+        />
+      </div>
       <SEOLandingPage
         breadcrumb={[{ label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi" }]}
         h1="Best Colleges in Delhi 2026"
@@ -130,11 +165,11 @@ export default function BestCollegesInDelhiPage() {
           { label: "Engineering Colleges in Delhi", href: "/engineering-colleges-delhi", icon: "⚙️" },
           { label: "Best MBA Colleges in Delhi", href: "/best-mba-colleges-delhi", icon: "🏛️" },
           { label: "Medical Colleges in Delhi", href: "/medical-colleges-delhi", icon: "🏥" },
-          { label: "Top 10 Colleges in Delhi", href: "/top-colleges-in-delhi", icon: "🏆" },
-          { label: "Delhi University Colleges", href: "/du-colleges-list", icon: "📚" },
+          { label: "Top 10 Engineering Colleges in Delhi", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
+          { label: "Delhi University Colleges", href: "/du-colleges-delhi", icon: "📚" },
           { label: "Government Colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
-          { label: "Private Colleges in Delhi", href: "/private-colleges-delhi", icon: "🎓" },
-          { label: "College Fees in Delhi", href: "/college-fees-delhi", icon: "💰" },
+          { label: "Private MBA Colleges in Delhi", href: "/private-mba-colleges-delhi", icon: "🎓" },
+          { label: "College Fees in Delhi", href: "/colleges-delhi-fees", icon: "💰" },
         ]}
       />
     </>

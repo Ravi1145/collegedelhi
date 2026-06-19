@@ -25,7 +25,7 @@ const compData = [
   { param: "Type", fms: "Government (Central University)", mdi: "Autonomous (AICTE Approved)" },
   { param: "NIRF 2024 (Management)", fms: "Top 5", mdi: "Top 10" },
   { param: "NAAC Grade", fms: "A+", mdi: "Not formally ranked (accredited)" },
-  { param: "Total MBA Fees", fms: "~₹30K/year (₹60K total)", mdi: "₹23L total (2 years)" },
+  { param: "Total MBA Fees", fms: "~₹27.5K/year (₹55K total)", mdi: "₹23L total (2 years)" },
   { param: "CAT Cutoff (General)", fms: "99+ percentile", mdi: "96-97+ percentile" },
   { param: "Average Placement 2024", fms: "₹32 LPA", mdi: "₹28 LPA" },
   { param: "Highest Package 2024", fms: "₹80+ LPA", mdi: "₹72 LPA" },
@@ -37,7 +37,7 @@ const compData = [
 ]
 
 const faqs = [
-  { question: "Is FMS Delhi better than MDI Gurgaon for MBA?", answer: "FMS Delhi offers better ROI — near-zero fees (₹60K total) with ₹32 LPA average placement vs MDI's ₹23L fees with ₹28 LPA placement. FMS NIRF ranking is slightly higher. However, MDI has a more corporate residential campus (better hostel, international connections), and its PGDM is more globally recognised in some HR/Marketing firms. CAT cutoff: FMS needs 99+ percentile vs MDI's 96-97 percentile — MDI is slightly more accessible." },
+  { question: "Is FMS Delhi better than MDI Gurgaon for MBA?", answer: "FMS Delhi offers better ROI — near-zero fees (₹55K total) with ₹32 LPA average placement vs MDI's ₹23L fees with ₹28 LPA placement. FMS NIRF ranking is slightly higher. However, MDI has a more corporate residential campus (better hostel, international connections), and its PGDM is more globally recognised in some HR/Marketing firms. CAT cutoff: FMS needs 99+ percentile vs MDI's 96-97 percentile — MDI is slightly more accessible." },
   { question: "What CAT percentile is needed for FMS Delhi and MDI Gurgaon?", answer: "FMS Delhi: 99+ CAT percentile for General category (among the most competitive MBA programs in India). FMS has its own GD-PI-WAT process with additional weight on work experience. MDI Gurgaon: 96-97 percentile for General category. MDI also considers XAT, GMAT. OBC-NCL: FMS needs 97+, MDI needs 93+. SC/ST: FMS 90+, MDI 85+. MDI's cutoff is 2-3 percentile lower, making it more accessible." },
   { question: "What is the total cost of FMS Delhi MBA vs MDI Gurgaon?", answer: "FMS Delhi total MBA fees: approximately ₹60,000–80,000 (for 2 years, being a government institution). Hostel available at subsidised rates. Total cost of attendance including living: ₹3-5 lakh for 2 years. MDI Gurgaon total PGDM fees: ₹23 lakh for 2 years (2025-26 fee structure). Hostel/accommodation included in fees. Total cost of attendance: ₹25-27 lakh. The ROI difference is massive — FMS is effectively India's best MBA bargain." },
   { question: "Which has better placements — FMS Delhi or MDI Gurgaon?", answer: "FMS Delhi has higher average placements at ₹32 LPA (2024) vs MDI's ₹28 LPA. FMS sees more consulting and banking recruiters (McKinsey, BCG, Goldman Sachs). MDI has strong FMCG and tech placements (P&G, Unilever, Amazon, Microsoft). Both see the same Tier-1 recruiters. FMS placement is marginally stronger but MDI is not far behind — the ₹4 LPA gap is partly explained by different batch compositions (FMS has more freshers)." },
@@ -68,7 +68,7 @@ export default function FMSvsMDIPage() {
           </nav>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">FMS Delhi vs MDI Gurgaon 2026 — Which MBA is Better?</h1>
           <p className="text-blue-200 text-base max-w-3xl">
-            A data-driven comparison of FMS Delhi (government, ₹60K total fees, ₹32 LPA avg) and MDI Gurgaon (₹23L fees, ₹28 LPA avg) — the two premier MBA options near Delhi.
+            A data-driven comparison of FMS Delhi (government, ₹55K total fees, ₹32 LPA avg) and MDI Gurgaon (₹23L fees, ₹28 LPA avg) — the two premier MBA options near Delhi.
           </p>
         </div>
       </div>
@@ -76,7 +76,7 @@ export default function FMSvsMDIPage() {
       <div className="max-w-4xl mx-auto px-4 py-10">
         <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded-r-xl mb-8">
           <p className="text-sm font-bold text-green-900 mb-1">Quick Verdict (2026)</p>
-          <p className="text-sm text-green-800"><strong>FMS Delhi wins on ROI</strong> — ₹32 LPA average placement at ₹60K total fees is unmatched in India. MDI wins on campus experience and is more accessible (96 vs 99 CAT percentile). If you get into both: choose FMS. If you get MDI but not FMS: take MDI without hesitation.</p>
+          <p className="text-sm text-green-800"><strong>FMS Delhi wins on ROI</strong> — ₹32 LPA average placement at ₹55K total fees is unmatched in India. MDI wins on campus experience and is more accessible (96 vs 99 CAT percentile). If you get into both: choose FMS. If you get MDI but not FMS: take MDI without hesitation.</p>
         </div>
 
         <h2 className="text-xl font-bold text-gray-900 mb-4">FMS Delhi vs MDI Gurgaon — Full Comparison</h2>
@@ -106,7 +106,7 @@ export default function FMSvsMDIPage() {
           <div className="bg-blue-50 border border-blue-200 rounded-2xl p-5">
             <h3 className="font-bold text-blue-900 mb-3">Choose FMS Delhi if...</h3>
             <ul className="space-y-2 text-sm text-blue-800">
-              <li className="flex items-start gap-2"><span className="text-green-600">+</span> Maximum ROI — you want ₹32 LPA placement at ₹60K total fees</li>
+              <li className="flex items-start gap-2"><span className="text-green-600">+</span> Maximum ROI — you want ₹32 LPA placement at ₹55K total fees</li>
               <li className="flex items-start gap-2"><span className="text-green-600">+</span> Consulting or investment banking career goal</li>
               <li className="flex items-start gap-2"><span className="text-green-600">+</span> You have a 99+ CAT percentile and can qualify</li>
               <li className="flex items-start gap-2"><span className="text-green-600">+</span> Cost is a major constraint — FMS is effectively free</li>

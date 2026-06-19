@@ -1,5 +1,7 @@
-﻿import Link from "next/link"
-import { ChevronRight, GraduationCap, Phone, Shield } from "lucide-react"
+﻿"use client"
+import Link from "next/link"
+import { useState } from "react"
+import { ChevronRight, GraduationCap, Phone, Shield, ChevronDown } from "lucide-react"
 
 interface College {
   name: string
@@ -52,6 +54,26 @@ interface SEOLandingPageProps {
 
   // Related Guides (optional cross-links)
   relatedGuides?: RelatedGuide[]
+}
+
+function FAQItem({ question, answer, defaultOpen }: { question: string; answer: string; defaultOpen?: boolean }) {
+  const [open, setOpen] = useState(defaultOpen ?? false)
+  return (
+    <div className="border border-gray-200 rounded-xl overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors"
+        aria-expanded={open}
+      >
+        {question}
+        <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform shrink-0 ml-3 ${open ? "rotate-180" : ""}`} />
+      </button>
+      {/* Always in DOM so Google crawls it; JS controls visibility */}
+      <div className={`px-5 pb-4 text-gray-600 text-sm leading-relaxed ${open ? "block" : "hidden"}`}>
+        {answer}
+      </div>
+    </div>
+  )
 }
 
 export default function SEOLandingPage({
@@ -187,18 +209,12 @@ export default function SEOLandingPage({
           </section>
         )}
 
-        {/* FAQs */}
-        <section>
+        {/* FAQs — visible by default so Google crawls all answer text */}
+        <section id="faqs">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-          <div className="space-y-4">
+          <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden">
-                <summary className="flex justify-between items-center px-5 py-4 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50 transition-colors list-none">
-                  {faq.q}
-                  <ChevronRight className="w-4 h-4 text-gray-400 group-open:rotate-90 transition-transform shrink-0 ml-3" />
-                </summary>
-                <div className="px-5 pb-4 text-gray-600 text-sm leading-relaxed">{faq.a}</div>
-              </details>
+              <FAQItem key={i} question={faq.q} answer={faq.a} defaultOpen={i < 3} />
             ))}
           </div>
         </section>

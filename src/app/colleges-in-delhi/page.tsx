@@ -2,14 +2,32 @@
 import Link from "next/link"
 import { BookOpen, Building2, GraduationCap, MapPin, TrendingUp, Shield } from "lucide-react"
 import { seoPages } from "@/data/seoPages"
-import { generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateBreadcrumbSchema } from "@/lib/seo"
+import InPageLinks from "@/components/seo/InPageLinks"
 
-export const metadata: Metadata = {
-  title: "colleges in Delhi 2026 — Complete List, Fees & Rankings",
+export const metadata: Metadata = genMeta({
+  title: "Colleges in Delhi 2026 — Complete List, Fees & Rankings",
   description:
     "Explore all colleges in Delhi 2026. Filter by stream (Engineering, MBA, Medical, Law), type (Government, Private, Deemed), entrance exam, fees, and location. NAAC and NIRF ranked.",
-  alternates: { canonical: "https://www.collegedelhi.com/colleges-in-delhi" },
-}
+  path: "/colleges-in-delhi",
+  keywords: [
+    "colleges in delhi",
+    "colleges in delhi 2026",
+    "list of colleges in delhi",
+    "all colleges in delhi",
+    "colleges in delhi ncr",
+    "top colleges in delhi",
+    "best colleges in delhi 2026",
+    "government colleges in delhi",
+    "private colleges in delhi",
+    "engineering colleges in delhi",
+    "mba colleges in delhi",
+    "medical colleges in delhi",
+    "law colleges in delhi",
+    "du affiliated colleges delhi",
+    "naac accredited colleges delhi",
+  ],
+})
 export const revalidate = 300
 
 const categories = [
@@ -97,9 +115,9 @@ export default function CollegesInDELHIPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-700 to-blue-900 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">colleges in Delhi 2026</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Colleges in Delhi 2026 — Complete List &amp; Rankings</h1>
           <p className="text-blue-100 text-xl max-w-3xl mx-auto">
-            Delhi is Delhi&apos;s education capital with 800+ colleges. Explore by stream, type,
+            Delhi is India&apos;s education capital with 800+ colleges. Explore by stream, type,
             entrance exam, location, and more.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-blue-200">
@@ -160,6 +178,45 @@ export default function CollegesInDELHIPage() {
             </section>
           )
         })}
+
+        {/* Internal links — pillar pages */}
+        <InPageLinks
+          heading="Popular College Guides for Delhi 2026"
+          columns={3}
+          links={[
+            { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi", tag: "Top pick" },
+            { label: "Top Colleges in Delhi 2026", href: "/top-colleges-in-delhi" },
+            { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi" },
+            { label: "MBA Colleges Delhi", href: "/mba-colleges-delhi" },
+            { label: "Medical Colleges Delhi", href: "/medical-colleges-delhi" },
+            { label: "DU Colleges Delhi", href: "/du-colleges-delhi" },
+            { label: "IPU Colleges Delhi", href: "/ipu-colleges-delhi" },
+            { label: "Government Colleges Delhi", href: "/government-colleges-delhi" },
+            { label: "Law Colleges Delhi", href: "/law-colleges-delhi" },
+            { label: "Design Colleges Delhi", href: "/design-colleges-delhi" },
+            { label: "Commerce Colleges Delhi", href: "/commerce-colleges-delhi" },
+            { label: "Science Colleges Delhi", href: "/science-colleges-delhi" },
+          ]}
+        />
+
+        <InPageLinks
+          heading="Delhi NCR Location Guides"
+          columns={4}
+          links={[
+            { label: "South Delhi Colleges", href: "/colleges-south-delhi" },
+            { label: "North Delhi Colleges", href: "/colleges-north-delhi" },
+            { label: "East Delhi Colleges", href: "/colleges-east-delhi" },
+            { label: "Dwarka Colleges", href: "/colleges-dwarka-delhi" },
+            { label: "Rohini Colleges", href: "/colleges-rohini-delhi" },
+            { label: "Vasant Kunj Colleges", href: "/colleges-vasant-kunj-delhi" },
+            { label: "Engineering Colleges Noida", href: "/engineering-colleges-noida" },
+            { label: "MBA Colleges Gurgaon", href: "/mba-colleges-gurgaon" },
+            { label: "Colleges Greater Noida", href: "/colleges-greater-noida" },
+            { label: "Colleges in Gurgaon", href: "/colleges-gurugram" },
+            { label: "MBA Colleges Noida", href: "/mba-colleges-noida" },
+            { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida" },
+          ]}
+        />
 
         {/* Browse all CTA */}
         <section className="text-center bg-blue-700 text-white rounded-2xl py-12 px-6">

@@ -1,6 +1,7 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema, generateSpeakableSchema, generateCourseSchema } from "@/lib/seo"
+import TopicalHub from "@/components/seo/TopicalHub"
 import { CheckCircle, TrendingUp, Award, MapPin, ExternalLink, BookOpen } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
@@ -66,11 +67,41 @@ export default function EngineeringCollegesDelhiPage() {
     description: `${c.type} | NIRF ${c.nirf ?? "N/A"} | NAAC ${c.naac} | ${c.fees} | ${c.placement}`,
   })))
 
+  const speakableSchema = generateSpeakableSchema(
+    "https://www.collegedelhi.com/engineering-colleges-delhi",
+    ["h1", "h2", "#quick-answer"]
+  )
+  const courseSchema = generateCourseSchema({
+    name: "Bachelor of Engineering / B.Tech in Delhi",
+    description: "4-year undergraduate engineering program in 30+ specializations including CSE, AI, Electronics, Mechanical, Civil. Admitted via JEE Main through JAC Delhi counselling.",
+    provider: "CollegeDelhi.com",
+    duration: "P4Y",
+    url: "/engineering-colleges-delhi",
+    fees: { min: 80000, max: 480000 },
+  })
+
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Get Admission in Engineering Colleges in Delhi 2026",
+    description: "Step-by-step guide to engineering admission in Delhi — DTU, NSUT, IIIT Delhi, IIT Delhi via JEE Main and JAC Delhi counselling.",
+    totalTime: "P6M",
+    step: [
+      { "@type": "HowToStep", position: 1, name: "Appear for JEE Main 2026", text: "Register and appear for JEE Main Session 1 (January) and Session 2 (April 2026) on jeemain.nta.nic.in. Target 99+ percentile for DTU/NSUT CSE, 95+ for other branches. For IIT Delhi, also clear JEE Advanced with top 200 rank for CSE." },
+      { "@type": "HowToStep", position: 2, name: "Register for JAC Delhi Counselling", text: "After JEE Main results (June 2026), register on jacdelhi.admissions.nic.in for DTU, NSUT, IGDTUW, and IIIT Delhi. Ensure your Delhi domicile certificate is ready — 85% seats are reserved for Delhi candidates." },
+      { "@type": "HowToStep", position: 3, name: "Fill College & Branch Preferences", text: "Fill your preference list carefully on the JAC Delhi portal. Order: CSE/IT at DTU → CSE at NSUT → CSE at IIIT Delhi → ECE at DTU → ECE at NSUT. Branches fill very quickly in Round 1 — fill all preferences you would accept." },
+      { "@type": "HowToStep", position: 4, name: "Accept Seat & Pay Fee", text: "After Round 1 allotment, accept the seat online within 48 hours, pay the fee (₹1.5L–2L for government colleges), and submit documents at the facilitation centre. Upgrade in subsequent rounds if a higher-preference seat becomes available." },
+    ],
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
 
       <div className="bg-[#0A1628] py-12 px-4">
         <div className="max-w-5xl mx-auto">
@@ -229,6 +260,27 @@ export default function EngineeringCollegesDelhiPage() {
             </Link>
           ))}
         </div>
+
+        {/* Topical Hub */}
+        <TopicalHub
+          pillarTitle="Engineering Colleges in Delhi — Complete Guide"
+          pillarKeyword="engineering colleges in Delhi"
+          spokeLinks={[
+            { label: "Top 10 Engineering Colleges Delhi", href: "/top-10-engineering-colleges-in-delhi", description: "NIRF-ranked with JEE cutoffs" },
+            { label: "Private Engineering Colleges Delhi", href: "/private-engineering-colleges-delhi", description: "Amity, AIACTR, BPIT, IPU colleges" },
+            { label: "Top Engineering Colleges Delhi", href: "/top-engineering-colleges-delhi", description: "All tiers with fees & placements" },
+            { label: "JEE Colleges Delhi", href: "/jee-colleges-delhi", description: "JAC Delhi counselling guide" },
+            { label: "DTU Delhi Admission 2026", href: "/colleges/dtu-delhi", description: "BTech cutoffs, fees, placement" },
+            { label: "NSUT Delhi Admission 2026", href: "/colleges/nsut-delhi", description: "JEE cutoffs branch-wise" },
+            { label: "IIIT Delhi Admission 2026", href: "/colleges/iiit-delhi", description: "JOSAA vs JAC Delhi seats" },
+          ]}
+          relatedPillarLinks={[
+            { label: "MBA Colleges Delhi", href: "/mba-colleges-delhi" },
+            { label: "Medical Colleges Delhi", href: "/medical-colleges-delhi" },
+            { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi" },
+            { label: "IP University Colleges", href: "/ipu-colleges-delhi" },
+          ]}
+        />
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">

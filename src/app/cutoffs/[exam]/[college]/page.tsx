@@ -1,343 +1,325 @@
-﻿import { Metadata } from "next"
-import { notFound } from "next/navigation"
+import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/seo"
+import { notFound } from "next/navigation"
 import {
-  cutoffsData, getCutoff, getCutoffsByCollege,
-  getAllCutoffParams, examLabels, streamLabels,
-  type CollegeCutoff,
+  getCutoff,
+  getAllCutoffParams,
+  examLabels,
+  unitSuffix,
 } from "@/data/cutoffs"
-import { colleges } from "@/data/colleges"
-import InlineLeadForm from "@/components/leads/InlineLeadForm"
-import NewsAlert from "@/components/leads/NewsAlert"
-
-export const revalidate = 86400 // 24h ISR
+import { generateMetadata as genMeta, generateBreadcrumbSchema, generateFAQSchema } from "@/lib/seo"
+import CutoffChart from "@/components/ui/CutoffChart"
 
 interface Props {
   params: Promise<{ exam: string; college: string }>
 }
 
-export function generateStaticParams() {
-  return getAllCutoffParams()
+export async function generateStaticParams() {
+  return getAllCutoffParams().map(({ exam, college }) => ({ exam, college }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { exam, college: slug } = await params
-  const data = getCutoff(slug, exam)
+  const { exam, college } = await params
+  const data = getCutoff(college, exam)
   if (!data) return {}
   const examLabel = examLabels[exam] ?? exam.toUpperCase()
+  const sfx = unitSuffix[data.unit ?? "percentile"] ?? ""
   const latest = data.cutoffs[data.cutoffs.length - 1]
   return genMeta({
-    title: `${data.college_short} ${examLabel} Cutoff 2026 | ${data.college_name}`,
-    description: `${data.college_name} ${examLabel} cutoff 2020–2026. Open category: ${latest.open} ${data.unit ?? ""}. OBC: ${latest.obc}. SC: ${latest.sc}. Check your chances of admission at ${data.college_short} Delhi.`,
-    path: `/cutoffs/${exam}/${slug}`,
+    title: `${data.college_short} ${examLabel} Cutoff 2026 | Category-wise Trend (2021–2026)`,
+    description: `${data.college_name} ${examLabel} cutoff 2026 — Open: ${latest.open}${sfx}, OBC: ${latest.obc}${sfx}, SC: ${latest.sc}${sfx}. Year-wise trend 2021–2026 with chart. Check your admission chances.`,
+    path: `/cutoffs/${exam}/${college}`,
     keywords: [
-      `${data.college_short.toLowerCase()} ${examLabel.toLowerCase()} cutoff`,
-      `${data.college_short.toLowerCase()} cutoff 2026`,
-      `${data.college_name.toLowerCase()} cutoff`,
-      `${examLabel.toLowerCase()} cutoff ${data.college_short.toLowerCase()} Delhi`,
-      `${data.college_short.toLowerCase()} admission cutoff 2026`,
+      `${data.college_short} ${examLabel} cutoff 2026`,
+      `${data.college_short} cutoff 2026`,
+      `${data.college_short} admission cutoff`,
+      `${examLabel} cutoff ${data.college_short}`,
+      `${data.college_short} category wise cutoff`,
     ],
   })
 }
 
-function CutoffTable({ data }: { data: CollegeCutoff }) {
-  const unit = data.unit === "rank" ? "Rank" : data.unit === "score" ? "Score" : "Percentile"
-  return (
-    <div className="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="bg-[#0A1628] text-white">
-            <th className="text-left px-4 py-3 font-semibold w-16">Year</th>
-            <th className="text-right px-4 py-3 font-semibold">Open<br/><span className="text-xs font-normal text-gray-300">{unit}</span></th>
-            <th className="text-right px-4 py-3 font-semibold">OBC<br/><span className="text-xs font-normal text-gray-300">{unit}</span></th>
-            <th className="text-right px-4 py-3 font-semibold">SC<br/><span className="text-xs font-normal text-gray-300">{unit}</span></th>
-            {data.cutoffs.some((c) => c.st !== undefined) && (
-              <th className="text-right px-4 py-3 font-semibold">ST<br/><span className="text-xs font-normal text-gray-300">{unit}</span></th>
-            )}
-          </tr>
-        </thead>
-        <tbody>
-          {[...data.cutoffs].reverse().map((row, i) => (
-            <tr key={row.year} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-              <td className="px-4 py-3 font-bold text-gray-900">
-                {row.year}
-                {row.year === new Date().getFullYear() && (
-                  <span className="ml-1 text-[10px] bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded-full font-semibold">Est.</span>
-                )}
-              </td>
-              <td className="px-4 py-3 text-right font-mono font-semibold text-blue-700">{row.open}</td>
-              <td className="px-4 py-3 text-right font-mono text-orange-700">{row.obc}</td>
-              <td className="px-4 py-3 text-right font-mono text-green-700">{row.sc}</td>
-              {data.cutoffs.some((c) => c.st !== undefined) && (
-                <td className="px-4 py-3 text-right font-mono text-purple-700">{row.st ?? "—"}</td>
-              )}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  )
+const CATEGORIES = [
+  { key: "open", label: "Open / General", color: "blue"   },
+  { key: "obc",  label: "OBC-NCL",        color: "orange" },
+  { key: "sc",   label: "SC",              color: "green"  },
+  { key: "st",   label: "ST",              color: "purple" },
+] as const
+
+const colorClasses: Record<string, { bg: string; text: string; border: string }> = {
+  blue:   { bg: "bg-blue-50",   text: "text-blue-700",   border: "border-blue-200"   },
+  orange: { bg: "bg-orange-50", text: "text-orange-700", border: "border-orange-200" },
+  green:  { bg: "bg-green-50",  text: "text-green-700",  border: "border-green-200"  },
+  purple: { bg: "bg-purple-50", text: "text-purple-700", border: "border-purple-200" },
 }
 
-function TrendIndicator({ data }: { data: CollegeCutoff }) {
-  const sorted = [...data.cutoffs].sort((a, b) => a.year - b.year)
-  const first = sorted[0], last = sorted[sorted.length - 1]
-  const unit = data.unit === "rank" ? "" : data.unit === "score" ? " marks" : " %ile"
-  const isRank = data.unit === "rank"
-  const trend = isRank
-    ? first.open > last.open ? "📈 Getting more competitive" : "📉 Slightly easier than 2020"
-    : last.open > first.open ? "📈 Getting more competitive" : "📉 Slightly easier than 2020"
-
-  return (
-    <div className="bg-blue-50 rounded-2xl p-4 text-sm">
-      <p className="font-bold text-gray-900 mb-2">6-Year Trend (2020 â†’ 2026)</p>
-      <p className="text-blue-700 font-semibold">{trend}</p>
-      <p className="text-gray-600 mt-1">
-        Open cutoff moved from <strong>{first.open}{unit}</strong> in 2020 to <strong>{last.open}{unit}</strong> in 2026
-        {isRank ? " (lower rank = harder)" : " (higher percentile = harder)"}.
-      </p>
-    </div>
-  )
-}
-
-export default async function CutoffPage({ params }: Props) {
-  const { exam, college: slug } = await params
-  const data = getCutoff(slug, exam)
+export default async function CollegeCutoffPage({ params }: Props) {
+  const { exam, college } = await params
+  const data = getCutoff(college, exam)
   if (!data) notFound()
 
   const examLabel = examLabels[exam] ?? exam.toUpperCase()
-  const streamLabel = streamLabels[data.stream] ?? data.stream
+  const sfx     = unitSuffix[data.unit ?? "percentile"] ?? ""
+  const isRank  = data.unit === "rank"
+  const isScore = data.unit === "score"
+
   const latest = data.cutoffs[data.cutoffs.length - 1]
+  const prev   = data.cutoffs[data.cutoffs.length - 2]
 
-  // Other exams for the same college
-  const otherExams = getCutoffsByCollege(slug).filter((c) => c.exam !== exam)
+  function getTrend(curr: number, prevVal: number) {
+    if (isRank) return curr < prevVal ? "↑ Tougher" : curr > prevVal ? "↓ Easier" : "→ Stable"
+    return curr > prevVal ? "↑ Tougher" : curr < prevVal ? "↓ Easier" : "→ Stable"
+  }
 
-  // Related colleges (same exam, same stream, different college)
-  const relatedCutoffs = cutoffsData
-    .filter((c) => c.exam === exam && c.stream === data.stream && c.college_slug !== slug)
-    .slice(0, 4)
+  const unitHint = isRank
+    ? "(lower rank = better)"
+    : isScore
+    ? "(higher score = better)"
+    : "(higher percentile = better)"
 
-  // College info for links
-  const collegeInfo = colleges.find((c) => c.slug === slug)
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home",                url: "/" },
+    { name: "Cutoffs",             url: "/cutoffs" },
+    { name: `${examLabel} Cutoff`, url: `/cutoffs/${exam}` },
+    { name: data.college_short,    url: `/cutoffs/${exam}/${college}` },
+  ])
 
   const faqs = [
     {
-      question: `What is the ${examLabel} cutoff for ${data.college_short} Delhi in 2026?`,
-      answer: `${data.college_short} ${examLabel} cutoff 2026 (estimated): Open category — ${latest.open} ${data.unit === "rank" ? "(rank)" : data.unit === "score" ? "marks" : "percentile"}; OBC — ${latest.obc}; SC — ${latest.sc}${latest.st !== undefined ? `; ST — ${latest.st}` : ""}. These are based on 2020–2025 trends from CET Cell Delhi / official admission data.`,
+      question: `What is the ${examLabel} cutoff for ${data.college_short} in 2026?`,
+      answer: `The estimated ${examLabel} cutoff for ${data.college_name} in 2026 is ${latest.open}${sfx} for Open/General category, ${latest.obc}${sfx} for OBC-NCL, and ${latest.sc}${sfx} for SC${latest.st !== undefined ? `, ${latest.st}${sfx} for ST` : ""}. These are trend-based estimates — official 2026 cutoffs publish after ${examLabel} results.`,
     },
     {
-      question: `Is ${examLabel} score enough for ${data.college_short} or do I need other documents?`,
-      answer: `${examLabel} score is the primary eligibility criterion for ${data.college_short}. You also need: 10+2 passing certificate (50% for general, 45% for SC/ST), Domicile certificate (Delhi state quota), Caste certificate (if applicable), and valid photo ID. ${data.stream === "engineering" ? "CAP (Centralized Admission Process) registration is mandatory for DU-affiliated colleges." : ""}`,
+      question: `Is ${latest.open}${sfx} enough for ${data.college_short}?`,
+      answer: `${latest.open}${sfx} in ${examLabel} puts you at the boundary of the estimated 2026 Open category cutoff for ${data.college_short}. With exactly this score, admission depends on the round and seat availability. Scoring 1–2 ${isRank ? "ranks better (lower)" : "units higher"} gives a comfortable buffer. Apply in Round 1 for the best chance.`,
     },
     {
-      question: `What branch can I get in ${data.college_short} with ${latest.open - 1} ${data.unit === "rank" ? "rank" : data.unit === "score" ? "marks" : "percentile"}?`,
-      answer: `With ${latest.open - 1} ${data.unit === "rank" ? "rank" : data.unit === "score" ? "marks" : "percentile"} you are borderline for ${data.college_short}. ${data.stream === "engineering" ? "CSE/IT typically has the highest cutoff. Mechanical and Civil are usually 1–3 percentile points lower. Check branch-wise cutoffs on the CET Cell official website for exact data." : "Admission is based on merit list. Contact the college admission office for seat availability."}`,
+      question: `How has the ${examLabel} cutoff for ${data.college_short} changed over the years?`,
+      answer: `${data.college_short} ${examLabel} Open category cutoff trend: ${data.cutoffs.slice(-4).map(c => `${c.year}: ${c.open}${sfx}`).join(", ")}. The cutoff has ${isRank ? (latest.open < data.cutoffs[0].open ? "tightened (lower rank needed each year)" : "remained broadly stable") : (latest.open > data.cutoffs[0].open ? "risen steadily, reflecting growing competition" : "remained broadly stable")} since ${data.cutoffs[0].year}.`,
     },
     {
-      question: `How are ${examLabel} cutoffs calculated for Delhi colleges?`,
-      answer: `${examLabel} cutoffs for Delhi colleges are determined by the JEE Main Cell (for engineering) or respective authorities based on: total seats in each category, number of applicants in that category, and merit rank of the last admitted student. Cutoffs can vary by branch. The data shown here covers Open (General), OBC, SC, and ST categories from official admission lists.`,
-    },
-    {
-      question: `Can I get ${data.college_short} with ${Math.round(latest.open * 0.97)} ${data.unit === "rank" ? "rank" : data.unit === "score" ? "marks" : "percentile"}?`,
-      answer: `${Math.round(latest.open * 0.97)} ${data.unit === "rank" ? "rank" : data.unit === "score" ? "marks" : "percentile"} may be insufficient for ${data.college_short}'s Open category based on 2026 trends (cutoff ~${latest.open}). However, you may qualify under reservation categories. Try our College Predictor for a personalized list of colleges matching your score across all categories.`,
+      question: `What is the ${examLabel} cutoff for ${data.college_short} for OBC and SC?`,
+      answer: `OBC-NCL cutoff at ${data.college_short} 2026: ${latest.obc}${sfx}. SC cutoff: ${latest.sc}${sfx}${latest.st !== undefined ? `. ST cutoff: ${latest.st}${sfx}` : ""}. Reserved category cutoffs are ${isRank ? "higher ranks (more relaxed)" : "lower"} than Open by approximately ${isRank ? Math.abs(latest.obc - latest.open).toLocaleString() + " ranks (OBC)" : (latest.open - latest.obc).toFixed(1) + " units (OBC)"}.`,
     },
   ]
-
-  const breadcrumb = generateBreadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "Cutoffs", url: "/cutoffs" },
-    { name: examLabel, url: `/cutoffs/${exam}` },
-    { name: data.college_short, url: `/cutoffs/${exam}/${slug}` },
-  ])
-  const faqSchema = generateFAQSchema(faqs.map((f) => ({ question: f.question, answer: f.answer })))
-
-  const tableSchema = {
-    "@context": "https://schema.org",
-    "@type": "Dataset",
-    name: `${data.college_short} ${examLabel} Cutoff 2020–2026`,
-    description: `Year-wise ${examLabel} cutoff data for ${data.college_name} (${data.college_short}) in Delhi from 2020 to 2026. Data includes Open, OBC, SC, and ST category cutoffs.`,
-    publisher: { "@type": "Organization", name: "CollegeDelhi", url: "https://www.collegedelhi.com" },
-    temporalCoverage: "2020/2026",
-    keywords: [`${examLabel} cutoff`, data.college_short, "Delhi", "admissions 2026"],
-  }
+  const faqSchema = generateFAQSchema(faqs)
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(tableSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}
-        <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] py-10">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-[#0A1628] to-[#0D3B2E] py-12 px-4">
+          <div className="max-w-4xl mx-auto">
             <nav className="text-xs text-blue-300 mb-4 flex gap-1 items-center flex-wrap">
               <Link href="/" className="hover:text-white">Home</Link>
-              <span>â€º</span>
+              <span>›</span>
               <Link href="/cutoffs" className="hover:text-white">Cutoffs</Link>
-              <span>â€º</span>
+              <span>›</span>
               <Link href={`/cutoffs/${exam}`} className="hover:text-white">{examLabel}</Link>
-              <span>â€º</span>
+              <span>›</span>
               <span className="text-white">{data.college_short}</span>
             </nav>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-white mb-2">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">
               {data.college_short} {examLabel} Cutoff 2026
             </h1>
-            <p className="text-gray-300 text-base max-w-2xl mb-4">
-              {data.college_name} — Year-wise {examLabel} cutoff data (2020–2026) for Open, OBC, SC & ST categories.
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { label: `${examLabel} Data`, bg: "bg-blue-600/30" },
-                { label: `2020–2026`, bg: "bg-white/10" },
-                { label: streamLabel, bg: "bg-orange-500/30" },
-                { label: `Open: ${latest.open} ${data.unit === "rank" ? "rank" : data.unit === "score" ? "marks" : "%ile"}`, bg: "bg-green-600/30" },
-              ].map(({ label, bg }) => (
-                <span key={label} className={`${bg} text-white text-xs px-3 py-1 rounded-full font-medium`}>
-                  {label}
-                </span>
-              ))}
-            </div>
+            <p className="text-blue-200 text-sm mb-1">{data.college_name}</p>
+            <p className="text-gray-400 text-xs">{unitHint} · Data: {data.cutoffs[0].year}–{latest.year}</p>
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+        <div className="max-w-4xl mx-auto px-4 py-10">
 
-          {/* Other exam tabs */}
-          {otherExams.length > 0 && (
-            <div className="flex gap-2 flex-wrap">
-              <span className="text-xs text-gray-500 font-semibold self-center">Also available:</span>
-              {otherExams.map((e) => (
-                <Link
-                  key={e.exam}
-                  href={`/cutoffs/${e.exam}/${slug}`}
-                  className="text-xs px-3 py-1.5 rounded-full bg-white border border-gray-200 text-gray-700 hover:border-orange-400 hover:text-orange-600 transition-colors font-medium"
-                >
-                  {examLabels[e.exam] ?? e.exam.toUpperCase()} Cutoff
-                </Link>
-              ))}
-            </div>
-          )}
-
-          {/* Main cutoff table */}
-          <div>
-            <h2 className="text-xl font-extrabold text-gray-900 mb-4">
-              {data.college_short} {examLabel} Cutoff 2020–2026
+          {/* 2026 Cutoff cards */}
+          <div className="mb-8">
+            <h2 className="text-lg font-extrabold text-gray-900 mb-4">
+              {data.college_short} — {examLabel} Cutoff 2026 (Estimated)
             </h2>
-            <CutoffTable data={data} />
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {CATEGORIES.map(({ key, label, color }) => {
+                const val     = latest[key as keyof typeof latest] as number | undefined
+                const prevVal = prev?.[key as keyof typeof prev]   as number | undefined
+                if (val === undefined) return null
+                const trend = prevVal !== undefined ? getTrend(val, prevVal) : null
+                const cls   = colorClasses[color]
+                return (
+                  <div key={key} className={`rounded-2xl border p-4 ${cls.bg} ${cls.border}`}>
+                    <p className={`text-xs font-semibold mb-1 ${cls.text}`}>{label}</p>
+                    <p className={`text-2xl font-extrabold ${cls.text}`}>
+                      {isRank ? val.toLocaleString() : val}
+                      <span className="text-sm font-normal">{sfx}</span>
+                    </p>
+                    {trend && <p className="text-xs text-gray-500 mt-1">{trend} vs {prev?.year}</p>}
+                  </div>
+                )
+              })}
+            </div>
             <p className="text-xs text-gray-400 mt-2">
-              * 2026 figures are estimated based on 2020–2025 trend. Official cutoffs will be published after CET/NEET results. Source: CET Cell Delhi / official admission data.
+              * 2026 estimates based on official {data.cutoffs[0].year}–{latest.year - 1} data. Official cutoffs publish after {examLabel} results (typically July–Aug 2026).
             </p>
           </div>
 
-          {/* Trend analysis */}
-          <TrendIndicator data={data} />
-
-          {/* Score predictor CTA */}
-          <div className="bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100 rounded-2xl p-5">
-            <h3 className="font-extrabold text-gray-900 mb-1">Check Your Admission Chances</h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Enter your {examLabel} score to see all Delhi colleges you can get admission in — across all categories.
-            </p>
-            <div className="flex gap-2 flex-wrap">
-              <Link
-                href="/predictor"
-                className="bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition-colors"
-              >
-                🎯 Use College Predictor â†’
-              </Link>
-              {collegeInfo && (
-                <Link
-                  href={`/colleges/${slug}`}
-                  className="bg-white border border-gray-200 hover:border-gray-400 text-gray-700 text-sm font-semibold px-5 py-2.5 rounded-xl transition-colors"
-                >
-                  View {data.college_short} Profile â†’
-                </Link>
-              )}
-            </div>
-          </div>
-
-          {/* Lead form */}
-          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="font-extrabold text-gray-900 mb-1">
-              Get {examLabel} Cutoff PDF on WhatsApp — Free
-            </h3>
-            <p className="text-sm text-gray-500 mb-4">
-              All 2020–2026 cutoffs for 25+ Delhi colleges in a single PDF. Enter your number below.
-            </p>
-            <InlineLeadForm context={`cutoff_gate_${slug}_${exam}`} />
-          </div>
-
-          {/* Related colleges cutoffs */}
-          {relatedCutoffs.length > 0 && (
-            <div>
-              <h2 className="text-lg font-extrabold text-gray-900 mb-4">
-                {examLabel} Cutoffs at Other Delhi {streamLabel} Colleges
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {relatedCutoffs.map((rc) => {
-                  const rcLatest = rc.cutoffs[rc.cutoffs.length - 1]
-                  return (
-                    <Link
-                      key={`${rc.exam}-${rc.college_slug}`}
-                      href={`/cutoffs/${rc.exam}/${rc.college_slug}`}
-                      className="bg-white rounded-2xl border border-gray-100 p-4 hover:shadow-md transition-shadow"
-                    >
-                      <p className="font-bold text-gray-900 text-sm">{rc.college_short}</p>
-                      <p className="text-xs text-gray-500 mb-2 truncate">{rc.college_name}</p>
-                      <div className="flex gap-3 text-xs">
-                        <span className="text-blue-700 font-semibold">Open: {rcLatest.open}</span>
-                        <span className="text-orange-700">OBC: {rcLatest.obc}</span>
-                        <span className="text-green-700">SC: {rcLatest.sc}</span>
-                      </div>
-                    </Link>
-                  )
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* FAQ */}
-          <div>
-            <h2 className="text-xl font-extrabold text-gray-900 mb-5">
-              Frequently Asked Questions — {data.college_short} {examLabel} Cutoff
+          {/* Trend Chart */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 mb-8">
+            <h2 className="text-lg font-extrabold text-gray-900 mb-1">
+              Year-wise Cutoff Trend — {data.college_short} ({examLabel})
             </h2>
-            <div className="space-y-3">
-              {faqs.map((faq) => (
-                <details key={faq.question} className="bg-white rounded-2xl border border-gray-100 px-5 py-4 group">
-                  <summary className="font-semibold text-gray-900 text-sm cursor-pointer list-none flex items-center justify-between gap-2">
-                    {faq.question}
-                    <span className="text-orange-500 text-lg group-open:rotate-45 transition-transform shrink-0">+</span>
-                  </summary>
-                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">{faq.answer}</p>
-                </details>
-              ))}
+            <p className="text-xs text-gray-500 mb-4">
+              {data.cutoffs[0].year}–{latest.year} · All categories · {unitHint}
+            </p>
+            <CutoffChart data={data} height={280} />
+          </div>
+
+          {/* Year-wise table */}
+          <div className="mb-10">
+            <h2 className="text-lg font-extrabold text-gray-900 mb-4">
+              {data.college_short} {examLabel} Cutoff — Year-wise Table
+            </h2>
+            <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-[#0A1628] text-white">
+                    <th className="px-4 py-3 text-left font-semibold">Year</th>
+                    <th className="px-4 py-3 text-center font-semibold">Open</th>
+                    <th className="px-4 py-3 text-center font-semibold">OBC-NCL</th>
+                    <th className="px-4 py-3 text-center font-semibold">SC</th>
+                    <th className="px-4 py-3 text-center font-semibold">ST</th>
+                    <th className="px-4 py-3 text-center font-semibold">Trend</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[...data.cutoffs].reverse().map((row, i, arr) => {
+                    const nextRow = arr[i + 1]
+                    const trend   = nextRow ? getTrend(row.open, nextRow.open) : null
+                    const isLat   = row.year === latest.year
+                    return (
+                      <tr key={row.year} className={isLat ? "bg-blue-50 font-semibold" : i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                        <td className="px-4 py-3 font-bold text-gray-900">
+                          {row.year}
+                          {isLat && (
+                            <span className="ml-1 text-[10px] bg-blue-600 text-white px-1.5 py-0.5 rounded-full">Est.</span>
+                          )}
+                        </td>
+                        <td className="px-4 py-3 text-center text-blue-700 font-bold">
+                          {isRank ? row.open.toLocaleString() : row.open}{sfx}
+                        </td>
+                        <td className="px-4 py-3 text-center text-orange-700">
+                          {isRank ? row.obc.toLocaleString() : row.obc}{sfx}
+                        </td>
+                        <td className="px-4 py-3 text-center text-green-700">
+                          {isRank ? row.sc.toLocaleString() : row.sc}{sfx}
+                        </td>
+                        <td className="px-4 py-3 text-center text-purple-700">
+                          {row.st !== undefined ? `${isRank ? row.st.toLocaleString() : row.st}${sfx}` : "—"}
+                        </td>
+                        <td className="px-4 py-3 text-center text-xs text-gray-500">{trend ?? "—"}</td>
+                      </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
             </div>
           </div>
 
-          {/* Bottom CTA */}
-          <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] rounded-2xl p-6 text-center">
-            <h2 className="text-xl font-extrabold text-white mb-2">Not Sure Which College to Apply?</h2>
-            <p className="text-gray-300 text-sm mb-4">Our AI counsellor matches you to the right college based on your {examLabel} score, category, and budget.</p>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <Link href="/counselling" className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
-                Book Free Counselling
+          {/* Analysis */}
+          <div className="bg-white rounded-2xl border border-gray-100 p-6 mb-10 shadow-sm">
+            <h2 className="text-lg font-extrabold text-gray-900 mb-3">
+              What the Cutoff Trend Means for You
+            </h2>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-blue-600 font-bold mt-0.5">→</span>
+                <span>
+                  <strong>Open category 2026:</strong>{" "}
+                  {latest.open}{sfx} —{" "}
+                  {isRank
+                    ? `you need a ${examLabel} rank of ${latest.open.toLocaleString()} or better (lower) to qualify.`
+                    : `you need ${latest.open}${sfx} or higher in ${examLabel} to be shortlisted.`}
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-orange-600 font-bold mt-0.5">→</span>
+                <span>
+                  <strong>OBC-NCL relaxation:</strong>{" "}
+                  {isRank
+                    ? `OBC candidates can have a rank up to ${latest.obc.toLocaleString()} — that's ${(latest.obc - latest.open).toLocaleString()} ranks of relaxation.`
+                    : `OBC candidates need ${latest.obc}${sfx} — ${(latest.open - latest.obc).toFixed(1)} units below Open cutoff.`}
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-green-600 font-bold mt-0.5">→</span>
+                <span>
+                  <strong>SC/ST:</strong> SC cutoff is {isRank ? latest.sc.toLocaleString() : latest.sc}{sfx}
+                  {latest.st !== undefined ? `, ST is ${isRank ? latest.st.toLocaleString() : latest.st}${sfx}` : ""}. Reserved category candidates have significantly relaxed cutoffs.
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-gray-500 font-bold mt-0.5">→</span>
+                <span>
+                  <strong>5-year trend:</strong>{" "}
+                  {isRank
+                    ? latest.open < data.cutoffs[0].open
+                      ? "Cutoff has tightened — lower ranks needed each year. Competition is rising."
+                      : "Cutoff has remained broadly stable over the past 5 years."
+                    : latest.open > data.cutoffs[0].open
+                      ? `Cutoff has risen from ${data.cutoffs[0].open}${sfx} to ${latest.open}${sfx} — competition is growing.`
+                      : `Cutoff has remained broadly stable around ${latest.open}${sfx}.`}
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* FAQs */}
+          <h2 className="text-xl font-extrabold text-gray-900 mb-4">
+            FAQs — {data.college_short} {examLabel} Cutoff 2026
+          </h2>
+          <div className="space-y-3 mb-10">
+            {faqs.map((f) => (
+              <details key={f.question} className="bg-white rounded-2xl border border-gray-100 px-5 py-4 group">
+                <summary className="font-semibold text-gray-900 text-sm cursor-pointer list-none flex items-center justify-between gap-2">
+                  {f.question}
+                  <span className="text-red-600 text-lg group-open:rotate-45 transition-transform shrink-0">+</span>
+                </summary>
+                <p className="text-sm text-gray-600 mt-3 leading-relaxed">{f.answer}</p>
+              </details>
+            ))}
+          </div>
+
+          {/* Related links */}
+          <h2 className="text-base font-bold text-gray-900 mb-3">More Cutoffs &amp; Guides</h2>
+          <div className="flex flex-wrap gap-2 mb-8">
+            {[
+              { label: `All ${examLabel} Cutoffs`, href: `/cutoffs/${exam}` },
+              { label: "All Cutoffs",              href: "/cutoffs" },
+              { label: "JEE Main Cutoff Delhi",    href: "/cutoffs/JEE Main" },
+              { label: "CAT Cutoff MBA",           href: "/cutoffs/cat" },
+              { label: "NEET Cutoff Delhi",        href: "/cutoffs/neet" },
+              { label: `${data.college_short} Profile`, href: `/colleges/${college}` },
+              { label: "College Predictor",        href: "/predictor" },
+            ].map(l => (
+              <Link key={l.href} href={l.href} className="text-xs bg-gray-100 hover:bg-red-50 hover:text-red-700 text-gray-700 px-3 py-1.5 rounded-full border border-gray-200 transition-colors">
+                {l.label}
               </Link>
-              <Link href="/predictor" className="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors border border-white/20">
-                Try College Predictor
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-r from-[#0A1628] to-[#1E3A5F] rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-white">
+              <p className="font-bold">Check if your score qualifies for {data.college_short}</p>
+              <p className="text-blue-200 text-sm">Use our predictor or talk to a counsellor for a personalised plan.</p>
+            </div>
+            <div className="flex gap-3 flex-wrap">
+              <Link href="/predictor" className="bg-white text-[#0A1628] font-bold px-5 py-2.5 rounded-xl text-sm whitespace-nowrap">
+                🎯 College Predictor
+              </Link>
+              <Link href="/counselling" className="bg-red-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm whitespace-nowrap">
+                Free Counselling
               </Link>
             </div>
           </div>
-
-        {/* Merit list alert subscribe */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <NewsAlert
-            examName={examLabel}
-            source="cutoff_news_alert"
-          />
-        </div>
-
         </div>
       </div>
     </>

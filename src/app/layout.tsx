@@ -119,6 +119,62 @@ export default function RootLayout({
         <meta name="geo.position" content="28.6139;77.2090" />
         <meta name="ICBM" content="28.6139, 77.2090" />
         <link rel="llms" href="/llms.txt" />
+        {/* Organization schema — tells Google/AI who CollegeDelhi is */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "CollegeDelhi",
+          "url": "https://www.collegedelhi.com",
+          "logo": "https://www.collegedelhi.com/icons/icon-512.png",
+          "description": "India's AI-powered college discovery portal for Delhi NCR. Find and compare 800+ engineering, MBA, medical, law, arts, and BCA colleges in Delhi with real fees, NAAC grades, NIRF rankings, and placement data.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Connaught Place",
+            "addressLocality": "New Delhi",
+            "addressRegion": "Delhi",
+            "postalCode": "110001",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-77538-31118",
+            "contactType": "customer support",
+            "email": "support@collegedelhi.com",
+            "availableLanguage": ["English", "Hindi"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/collegedelhi",
+            "https://www.instagram.com/collegedelhi",
+            "https://www.youtube.com/@collegedelhi",
+            "https://www.linkedin.com/company/collegedelhi"
+          ],
+          "areaServed": {
+            "@type": "City",
+            "name": "Delhi",
+            "sameAs": "https://www.wikidata.org/wiki/Q1353"
+          }
+        }) }} />
+        {/* WebSite schema with SearchAction — enables Google Sitelinks Search Box */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "CollegeDelhi",
+          "url": "https://www.collegedelhi.com",
+          "description": "Find and compare the best colleges in Delhi 2026 — engineering, MBA, medical, law, arts, BCA. Real fees, NAAC grades, NIRF rankings, cutoffs, and placements.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "CollegeDelhi"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.collegedelhi.com/colleges?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": "en-IN"
+        }) }} />
       </head>
       <body className="min-h-full flex flex-col font-dm-sans bg-white">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-700 text-white px-4 py-2 rounded z-50 font-semibold text-sm">
