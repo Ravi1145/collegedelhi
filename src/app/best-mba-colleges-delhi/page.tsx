@@ -92,14 +92,14 @@ export default function BestMbaCollegesDELHIPage() {
         ctaHeading="Get Into the Best MBA College in Delhi"
         ctaSubtext="Our MBA admission counsellors have helped 2,000+ students crack FMS Delhi, MDI Gurgaon, and FLAME admissions. Free guidance on test prep, SOP writing, and GD/PI preparation."
       relatedGuides={[
-        { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-        { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-        { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "💼" },
-        { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-        { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "🎓" },
-        { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-        { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "📊" },
-        { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "🚀" },
+        { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+        { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+        { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "" },
+        { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+        { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "" },
+        { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "" },
+        { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+        { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "" },
       ]}
       />
     </>

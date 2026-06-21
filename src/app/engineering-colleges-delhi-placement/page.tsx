@@ -118,7 +118,7 @@ export default function EngineeringCollegesDELHIPlacementPage() {
               Ranked by average placement package, highest package, placement rate, and top recruiters. Data from 2024–25 placement season.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>DTU Delhi</strong> leads with ₹12 LPA avg (₹45 LPA highest). <strong>IIIT Delhi</strong> tops all with ₹18 LPA avg (₹55 LPA highest, CS/IT focus). <strong>NSUT Delhi</strong> is best for CS placements at top tech firms (Goldman Sachs, Google, Amazon). Top recruiters: TCS, Bajaj Auto, Mercedes-Benz, Goldman Sachs, Google.
               </p>
@@ -130,10 +130,10 @@ export default function EngineeringCollegesDELHIPlacementPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "Best Avg Package", value: "₹12 LPA", icon: "📈", note: "DTU Delhi" },
-              { label: "Highest Package", value: "₹45 LPA", icon: "🏆", note: "DTU Delhi" },
-              { label: "Best Placement Rate", value: "94%", icon: "✅", note: "IMI Delhi" },
-              { label: "Top Recruiter", value: "TCS / Bajaj", icon: "🏢", note: "All colleges" },
+              { label: "Best Avg Package", value: "₹12 LPA", icon: "", note: "DTU Delhi" },
+              { label: "Highest Package", value: "₹45 LPA", icon: "", note: "DTU Delhi" },
+              { label: "Best Placement Rate", value: "94%", icon: "", note: "IMI Delhi" },
+              { label: "Top Recruiter", value: "TCS / Bajaj", icon: "", note: "All colleges" },
             ].map(({ label, value, icon, note }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -228,14 +228,14 @@ export default function EngineeringCollegesDELHIPlacementPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Engineering Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "🏛️" },
-              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
-              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "💰" },
-              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "JEE Main Colleges & Cutoffs 2026", href: "/jee-colleges-delhi", icon: "📝" },
-              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "📚" },
-              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "💻" },
-              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
+              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "" },
+              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "" },
+              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "" },
+              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "" },
+              { label: "JEE Main Colleges & Cutoffs 2026", href: "/jee-colleges-delhi", icon: "" },
+              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "" },
+              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "" },
+              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

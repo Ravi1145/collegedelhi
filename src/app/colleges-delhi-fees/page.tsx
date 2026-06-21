@@ -93,12 +93,12 @@ export default function CollegesDELHIFeesPage() {
         ctaSubtext="Use CollegeDelhi's fee calculator to estimate your 4-year education cost including scholarships, loans, and living expenses for any Delhi college."
       relatedGuides={[
         { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "â­" },
-        { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "💰" },
-        { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "💼" },
-        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "🧮" },
-        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "📈" },
+        { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "" },
+        { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "" },
+        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "" },
+        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "" },
         { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "âš–ï¸" },
-        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "📅" },
+        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "" },
       ]}
       />
     </>

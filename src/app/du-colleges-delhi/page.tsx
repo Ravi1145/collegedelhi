@@ -80,18 +80,18 @@ export default function DUCollegesDelhiPage() {
         ]}
         faqs={faqs}
         relatedGuides={[
-          { label: "CUET Colleges Delhi", href: "/cuet-colleges-delhi", icon: "📝" },
-          { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi", icon: "🏆" },
-          { label: "Arts Colleges Delhi", href: "/arts-colleges-delhi", icon: "🎨" },
-          { label: "Commerce Colleges Delhi", href: "/commerce-colleges-delhi", icon: "💼" },
-          { label: "Science Colleges Delhi", href: "/science-colleges-delhi", icon: "🔬" },
-          { label: "Miranda House vs LSR", href: "/miranda-house-vs-lsr", icon: "⚖️" },
-          { label: "SRCC vs Hindu College", href: "/srcc-vs-hindu-college", icon: "⚖️" },
-          { label: "Girls Colleges Delhi", href: "/girls-colleges-delhi", icon: "👩‍🎓" },
-          { label: "Government Colleges Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
-          { label: "Low Fee Colleges Delhi", href: "/low-fee-colleges-delhi", icon: "💰" },
-          { label: "BA Colleges Delhi", href: "/ba-colleges-delhi", icon: "📚" },
-          { label: "BCom Colleges Delhi", href: "/bcom-colleges-delhi", icon: "📊" },
+          { label: "CUET Colleges Delhi", href: "/cuet-colleges-delhi", icon: "" },
+          { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi", icon: "" },
+          { label: "Arts Colleges Delhi", href: "/arts-colleges-delhi", icon: "" },
+          { label: "Commerce Colleges Delhi", href: "/commerce-colleges-delhi", icon: "" },
+          { label: "Science Colleges Delhi", href: "/science-colleges-delhi", icon: "" },
+          { label: "Miranda House vs LSR", href: "/miranda-house-vs-lsr", icon: "" },
+          { label: "SRCC vs Hindu College", href: "/srcc-vs-hindu-college", icon: "" },
+          { label: "Girls Colleges Delhi", href: "/girls-colleges-delhi", icon: "" },
+          { label: "Government Colleges Delhi", href: "/government-colleges-delhi", icon: "" },
+          { label: "Low Fee Colleges Delhi", href: "/low-fee-colleges-delhi", icon: "" },
+          { label: "BA Colleges Delhi", href: "/ba-colleges-delhi", icon: "" },
+          { label: "BCom Colleges Delhi", href: "/bcom-colleges-delhi", icon: "" },
         ]}
       />
     </>

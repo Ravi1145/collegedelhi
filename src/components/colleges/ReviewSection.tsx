@@ -107,7 +107,7 @@ function ReviewCard({ review }: { review: Review }) {
               <ul className="space-y-1">
                 {review.pros.map(p => (
                   <li key={p} className="text-xs text-gray-600 flex items-start gap-1">
-                    <span className="text-green-500 mt-0.5">✓</span> {p}
+                    <span className="text-green-500 mt-0.5"></span> {p}
                   </li>
                 ))}
               </ul>
@@ -121,7 +121,7 @@ function ReviewCard({ review }: { review: Review }) {
               <ul className="space-y-1">
                 {review.cons.map(c => (
                   <li key={c} className="text-xs text-gray-600 flex items-start gap-1">
-                    <span className="text-red-400 mt-0.5">✗</span> {c}
+                    <span className="text-red-400 mt-0.5"></span> {c}
                   </li>
                 ))}
               </ul>
@@ -189,7 +189,7 @@ function SubmitForm({ collegeSlug, collegeName, onSuccess }: { collegeSlug: stri
     return (
       <div className="text-center py-8">
         <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-3" />
-        <p className="font-bold text-gray-900 text-lg mb-1">Review Submitted! 🎉</p>
+        <p className="font-bold text-gray-900 text-lg mb-1">Review Submitted!</p>
         <p className="text-sm text-gray-500">Your review will appear after moderation (1–2 days). Thank you!</p>
       </div>
     )
@@ -280,7 +280,7 @@ function SubmitForm({ collegeSlug, collegeName, onSuccess }: { collegeSlug: stri
       {/* Pros / Cons */}
       <div className="grid sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-semibold text-green-700 mb-1">✓ Pros (one per line)</label>
+          <label className="block text-xs font-semibold text-green-700 mb-1">Pros (one per line)</label>
           <textarea
             value={form.pros}
             onChange={e => set("pros", e.target.value)}
@@ -290,7 +290,7 @@ function SubmitForm({ collegeSlug, collegeName, onSuccess }: { collegeSlug: stri
           />
         </div>
         <div>
-          <label className="block text-xs font-semibold text-red-700 mb-1">✗ Cons (one per line)</label>
+          <label className="block text-xs font-semibold text-red-700 mb-1">Cons (one per line)</label>
           <textarea
             value={form.cons}
             onChange={e => set("cons", e.target.value)}
@@ -410,7 +410,7 @@ export default function ReviewSection({ collegeSlug, collegeName, staticReviews 
               <div className="flex-1 space-y-1.5 w-full">
                 {ratingBars.map(({ star, count, pct }) => (
                   <div key={star} className="flex items-center gap-2 text-xs">
-                    <span className="w-6 text-right text-gray-500">{star}★</span>
+                    <span className="w-6 text-right text-gray-500">{star}</span>
                     <div className="flex-1 bg-gray-100 rounded-full h-2 overflow-hidden">
                       <div
                         className="h-full rounded-full transition-all duration-500"

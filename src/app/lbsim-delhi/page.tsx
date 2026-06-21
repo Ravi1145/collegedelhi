@@ -106,16 +106,16 @@ export default function LBSIMDelhiPage() {
         ctaHeading="Get Free LBSIM Delhi Admission Guidance 2026"
         ctaSubtext="Tell us your CAT/CMAT score and work experience — our counsellors will assess your LBSIM shortlist probability and compare it against FORE, IMT, and other Delhi B-schools for your profile."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FORE School of Management Delhi", href: "/fore-school-management-delhi", icon: "🏫" },
-          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "🏫" },
-          { label: "IP University MBA Colleges", href: "/ip-university-mba-delhi", icon: "🏛️" },
-          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "📋" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FORE School of Management Delhi", href: "/fore-school-management-delhi", icon: "" },
+          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "" },
+          { label: "IP University MBA Colleges", href: "/ip-university-mba-delhi", icon: "" },
+          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
         ]}
       />
     </>

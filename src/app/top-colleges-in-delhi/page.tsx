@@ -532,18 +532,18 @@ export default function TopCollegesInDelhiPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Explore by Stream</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {[
-                { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi", icon: "⚙️" },
-                { label: "MBA Colleges Delhi", href: "/mba-colleges-delhi", icon: "💼" },
-                { label: "Medical Colleges Delhi", href: "/medical-colleges-delhi", icon: "🏥" },
-                { label: "Law Colleges Delhi", href: "/law-colleges-delhi", icon: "⚖️" },
-                { label: "Arts Colleges Delhi", href: "/arts-colleges-delhi", icon: "🎨" },
-                { label: "B.Com Colleges Delhi", href: "/bcom-colleges-delhi", icon: "📊" },
-                { label: "Science Colleges Delhi", href: "/science-colleges-delhi", icon: "🔬" },
-                { label: "Design Colleges Delhi", href: "/design-colleges-delhi", icon: "✏️" },
-                { label: "Government Colleges Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
-                { label: "Top 10 Engineering Delhi", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
-                { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🥇" },
-                { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi", icon: "⭐" },
+                { label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi", icon: "" },
+                { label: "MBA Colleges Delhi", href: "/mba-colleges-delhi", icon: "" },
+                { label: "Medical Colleges Delhi", href: "/medical-colleges-delhi", icon: "" },
+                { label: "Law Colleges Delhi", href: "/law-colleges-delhi", icon: "" },
+                { label: "Arts Colleges Delhi", href: "/arts-colleges-delhi", icon: "" },
+                { label: "B.Com Colleges Delhi", href: "/bcom-colleges-delhi", icon: "" },
+                { label: "Science Colleges Delhi", href: "/science-colleges-delhi", icon: "" },
+                { label: "Design Colleges Delhi", href: "/design-colleges-delhi", icon: "" },
+                { label: "Government Colleges Delhi", href: "/government-colleges-delhi", icon: "" },
+                { label: "Top 10 Engineering Delhi", href: "/top-10-engineering-colleges-in-delhi", icon: "" },
+                { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+                { label: "Best Colleges in Delhi", href: "/best-colleges-in-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link
                   key={href}

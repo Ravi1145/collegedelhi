@@ -105,16 +105,16 @@ export default function MBAOperationsDelhiPage() {
         ctaHeading="Get Free MBA Operations Guidance for Delhi"
         ctaSubtext="Tell us your CAT percentile and target sector (E-commerce / Manufacturing / Consulting) — we'll shortlist the best MBA Operations college in Delhi NCR for your profile."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "🎓" },
-          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "📍" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "MBA in Marketing Delhi", href: "/mba-in-marketing-delhi", icon: "📊" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "💼" },
-          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA Colleges Gurgaon", href: "/mba-colleges-gurgaon", icon: "🏙️" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "" },
+          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "MBA in Marketing Delhi", href: "/mba-in-marketing-delhi", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "" },
+          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA Colleges Gurgaon", href: "/mba-colleges-gurgaon", icon: "" },
         ]}
       />
     </>

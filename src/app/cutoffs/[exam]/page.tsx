@@ -224,7 +224,7 @@ export default async function ExamCutoffPage({ params }: Props) {
             <p className="text-gray-300 text-sm mb-4">Enter your {label} score and get a personalised list of Delhi colleges you can target.</p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Link href="/predictor" className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
-                🎯 College Predictor
+                College Predictor
               </Link>
               <Link href="/counselling" className="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors border border-white/20">
                 Free Counselling

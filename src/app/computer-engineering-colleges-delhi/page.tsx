@@ -92,14 +92,14 @@ export default function ComputerEngineeringCollegesDELHIPage() {
         ctaHeading="Which CS College in Delhi Suits Your JEE Main Score?"
         ctaSubtext="Enter your JEE Main percentile and get a personalized list of computer engineering colleges in Delhi where you have the best chance of admission."
       relatedGuides={[
-        { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "🏛️" },
-        { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
-        { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "💼" },
-        { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "💰" },
-        { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "🎓" },
-        { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "📝" },
-        { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "📚" },
-        { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
+        { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "" },
+        { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "" },
+        { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "" },
+        { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "" },
+        { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "" },
+        { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "" },
+        { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "" },
+        { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
       ]}
       />
     </>

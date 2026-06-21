@@ -77,7 +77,7 @@ export default function LeadBar() {
 
         {/* Announcement text */}
         <p className="font-semibold text-white/90 shrink-0 text-xs sm:text-sm">
-          🎓 Admission 2026 Open
+          Admission 2026 Open
         </p>
 
         {/* Countdown */}
@@ -92,7 +92,7 @@ export default function LeadBar() {
         {/* Lead form */}
         {submitted ? (
           <p className="text-green-400 font-semibold text-xs flex-1 text-center sm:text-left">
-            ✅ Check WhatsApp for college list!
+            Check WhatsApp for college list!
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="flex items-center gap-2 flex-1 justify-end sm:justify-end flex-wrap">

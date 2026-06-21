@@ -395,11 +395,11 @@ export default function CollegesGreaterNoidaPage() {
                     {c.name}
                   </Link>
                   <div className="text-[10px] text-blue-700 font-semibold mt-0.5">{c.highlight}</div>
-                  <p className="text-xs text-gray-500 mt-1">📍 {c.location}</p>
+                  <p className="text-xs text-gray-500 mt-1">{c.location}</p>
                   <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-xs text-gray-500">
-                    <span>🎓 {c.type}</span>
-                    <span>📋 {c.exam}</span>
-                    <span>💼 {c.placement}</span>
+                    <span>{c.type}</span>
+                    <span>{c.exam}</span>
+                    <span>{c.placement}</span>
                   </div>
                   <p className="text-xs text-gray-400 mt-1 truncate">Programs: {c.streams}</p>
                 </div>
@@ -461,7 +461,7 @@ export default function CollegesGreaterNoidaPage() {
               <div key={k.area} className="bg-white rounded-lg p-3 border border-amber-100">
                 <p className="font-bold text-amber-900 text-xs">{k.area}</p>
                 <p className="text-xs text-gray-700 mt-1">{k.colleges}</p>
-                <p className="text-[11px] text-gray-400 mt-1">🚇 {k.metro}</p>
+                <p className="text-[11px] text-gray-400 mt-1">{k.metro}</p>
               </div>
             ))}
           </div>
@@ -476,7 +476,7 @@ export default function CollegesGreaterNoidaPage() {
           {[
             {
               stream: "B.Tech / Engineering",
-              icon: "⚙️",
+              icon: "",
               colleges: [
                 { name: "Shiv Nadar University", note: "Best CS/Research, ₹10 LPA avg" },
                 { name: "Bennett University", note: "AI/ML focus, Times Group, ₹9 LPA avg" },
@@ -486,7 +486,7 @@ export default function CollegesGreaterNoidaPage() {
             },
             {
               stream: "MBA / PGDM",
-              icon: "📊",
+              icon: "",
               colleges: [
                 { name: "BIMTECH", note: "NIRF #61, Birla Group, ₹11.8 LPA avg" },
                 { name: "Shiv Nadar MBA", note: "Analytics focus, ₹9 LPA avg" },
@@ -496,7 +496,7 @@ export default function CollegesGreaterNoidaPage() {
             },
             {
               stream: "MBBS / Medical",
-              icon: "🏥",
+              icon: "",
               colleges: [
                 { name: "Sharda Medical College", note: "1,500-bed hospital, NEET 530+" },
                 { name: "Sharda BDS/Pharmacy", note: "Best Dental + Pharmacy NCR" },
@@ -506,7 +506,7 @@ export default function CollegesGreaterNoidaPage() {
             },
             {
               stream: "Law Colleges",
-              icon: "⚖️",
+              icon: "",
               colleges: [
                 { name: "Lloyd Law College", note: "Best private law NCR, CLAT/LSAT" },
                 { name: "Galgotias University Law", note: "NAAC A+, BA LLB 5-yr" },

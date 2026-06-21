@@ -174,7 +174,7 @@ const colleges = [
 const topFiveDetails = [
   {
     rank: 1,
-    emoji: "🥇",
+    emoji: "",
     badge: "bg-yellow-100 text-yellow-700",
     name: "FMS Delhi (Faculty of Management Studies, Delhi University)",
     slug: "fms-delhi-faculty-management-studies",
@@ -194,7 +194,7 @@ const topFiveDetails = [
   },
   {
     rank: 2,
-    emoji: "🥈",
+    emoji: "",
     badge: "bg-gray-100 text-gray-700",
     name: "MDI Gurgaon (Management Development Institute)",
     slug: "mdi-gurgaon-management-development-institute",
@@ -214,7 +214,7 @@ const topFiveDetails = [
   },
   {
     rank: 3,
-    emoji: "🥉",
+    emoji: "",
     badge: "bg-orange-100 text-orange-800",
     name: "IIFT Delhi (Indian Institute of Foreign Trade)",
     slug: "iift-delhi-indian-institute-foreign-trade",
@@ -234,7 +234,7 @@ const topFiveDetails = [
   },
   {
     rank: 4,
-    emoji: "4️⃣",
+    emoji: "4⃣",
     badge: "bg-blue-100 text-blue-700",
     name: "IMI Delhi (International Management Institute)",
     slug: "imi-delhi-international-management-institute",
@@ -254,7 +254,7 @@ const topFiveDetails = [
   },
   {
     rank: 5,
-    emoji: "5️⃣",
+    emoji: "5⃣",
     badge: "bg-green-100 text-green-700",
     name: "FORE School of Management Delhi",
     slug: "fore-school-management-delhi",
@@ -359,7 +359,7 @@ export default function Top10MBACollegesDELHIPage() {
               Definitive ranked list of Delhi&apos;s top 10 MBA colleges for 2026. Compare NIRF rank, CAT cutoffs, total fees, average placement packages, and top recruiters — all in one place.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>FMS Delhi (NIRF #5)</strong> is Delhi&apos;s best MBA college with ₹32 LPA avg, 100% placement, and only ₹55K fees. Top 5: <strong>MDI Gurgaon</strong> (₹24 LPA avg), <strong>IIFT Delhi</strong> (₹22 LPA, intl business), <strong>IMI Delhi</strong> (₹14 LPA), <strong>FORE School Delhi</strong> (₹10.5 LPA). All Delhi MBA colleges use <strong>CAT</strong> — not SNAP.
               </p>
@@ -371,10 +371,10 @@ export default function Top10MBACollegesDELHIPage() {
           {/* Key Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "MBA Colleges Ranked", value: "Top 10", icon: "🏛️" },
-              { label: "Lowest Total Fees", value: "₹2.5L (2yr)", icon: "💰" },
-              { label: "Best Avg Package", value: "₹32 LPA", icon: "📈" },
-              { label: "Top NIRF Rank", value: "#5 (FMS Delhi)", icon: "🏆" },
+              { label: "MBA Colleges Ranked", value: "Top 10", icon: "" },
+              { label: "Lowest Total Fees", value: "₹2.5L (2yr)", icon: "" },
+              { label: "Best Avg Package", value: "₹32 LPA", icon: "" },
+              { label: "Top NIRF Rank", value: "#5 (FMS Delhi)", icon: "" },
             ].map(({ label, value, icon }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -542,13 +542,13 @@ export default function Top10MBACollegesDELHIPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related MBA Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-              { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "💼" },
-              { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "📊" },
-              { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "🚀" },
+              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+              { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "" },
+              { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "" },
+              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "" },
+              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+              { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

@@ -185,7 +185,7 @@ export default function DirectAdmissionEngineeringPage() {
               and step-by-step process explained.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl mb-6">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>Yes, direct/management quota admission is available</strong> in private and deemed engineering
                 colleges in Delhi. <strong>DTU Delhi and government colleges don&apos;t offer management quota</strong> — only
@@ -207,10 +207,10 @@ export default function DirectAdmissionEngineeringPage() {
           {/* Key Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "Colleges with MQ", value: "20+", icon: "🏛️" },
-              { label: "Min MQ Seats %", value: "10%", icon: "📊" },
-              { label: "Max MQ Seats %", value: "30%", icon: "📈" },
-              { label: "Extra Fees (MQ)", value: "1.5–2.5x", icon: "💰" },
+              { label: "Colleges with MQ", value: "20+", icon: "" },
+              { label: "Min MQ Seats %", value: "10%", icon: "" },
+              { label: "Max MQ Seats %", value: "30%", icon: "" },
+              { label: "Extra Fees (MQ)", value: "1.5–2.5x", icon: "" },
             ].map(({ label, value, icon }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -509,15 +509,15 @@ export default function DirectAdmissionEngineeringPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Engineering Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "🏛️" },
-              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
-              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "💼" },
-              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "💰" },
-              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "📝" },
-              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "📚" },
-              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "💻" },
-              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
+              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "" },
+              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "" },
+              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "" },
+              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "" },
+              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "" },
+              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "" },
+              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "" },
+              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "" },
+              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

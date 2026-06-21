@@ -106,16 +106,16 @@ export default function JamiaMilliaIslamiaMBAPage() {
         ctaHeading="Get Free Jamia Millia Islamia MBA Admission Guidance 2026"
         ctaSubtext="Tell us your entrance test score, graduation marks, and category (general / minority / OBC / SC-ST) — our counsellors will guide you through Jamia MBA application and help you assess your admission chances."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FMS Delhi — ₹55K Central University MBA", href: "/fms-delhi", icon: "🎓" },
-          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-          { label: "IP University MBA Colleges Delhi", href: "/ip-university-mba-delhi", icon: "🏛️" },
-          { label: "Amity University MBA Delhi/Noida", href: "/amity-university-mba-delhi", icon: "🏫" },
-          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "📝" },
-          { label: "Online MBA Delhi", href: "/online-mba-delhi", icon: "💻" },
-          { label: "MBA in Healthcare Management Delhi", href: "/mba-in-healthcare-management-delhi", icon: "🏥" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FMS Delhi — ₹55K Central University MBA", href: "/fms-delhi", icon: "" },
+          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+          { label: "IP University MBA Colleges Delhi", href: "/ip-university-mba-delhi", icon: "" },
+          { label: "Amity University MBA Delhi/Noida", href: "/amity-university-mba-delhi", icon: "" },
+          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "" },
+          { label: "Online MBA Delhi", href: "/online-mba-delhi", icon: "" },
+          { label: "MBA in Healthcare Management Delhi", href: "/mba-in-healthcare-management-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
         ]}
       />
     </>

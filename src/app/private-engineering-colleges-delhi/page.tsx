@@ -202,10 +202,10 @@ export default function PrivateEngineeringCollegesDELHIPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "🎓", label: "10 Private Colleges" },
-                { icon: "💰", label: "Fees ₹95K–₹5L/yr" },
-                { icon: "📈", label: "Placement ₹5.5–₹20 LPA" },
-                { icon: "📝", label: "JEE Main / IPU CET" },
+                { icon: "", label: "10 Private Colleges" },
+                { icon: "", label: "Fees ₹95K–₹5L/yr" },
+                { icon: "", label: "Placement ₹5.5–₹20 LPA" },
+                { icon: "", label: "JEE Main / IPU CET" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
                   <span>{icon}</span><span>{label}</span>

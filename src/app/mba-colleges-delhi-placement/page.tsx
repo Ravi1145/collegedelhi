@@ -119,7 +119,7 @@ export default function MBACollegesDELHIPlacementPage() {
               Ranked by average placement package, highest package, and placement rate. FMS Delhi, MDI Gurgaon, BIMTECH, IMI Delhi, Fore School Delhi — complete 2024–25 data.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>FMS Delhi</strong> tops Delhi MBA placements — ₹32 LPA average, ₹72 LPA highest, 100% placement. <strong>MDI Gurgaon</strong> is second (₹24 LPA avg). <strong>IMI Delhi</strong> offers best ROI — ₹14 LPA avg at ₹7–11L total fees. Top recruiters: McKinsey, BCG, Goldman Sachs, P&G, Deloitte, HDFC Bank.
               </p>
@@ -131,10 +131,10 @@ export default function MBACollegesDELHIPlacementPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "Best Avg Package", value: "₹32 LPA", icon: "📈", note: "FMS Delhi" },
-              { label: "Highest Package", value: "₹72 LPA", icon: "🏆", note: "FMS Delhi" },
-              { label: "100% Placement", value: "FMS Delhi & MDI Gurgaon", icon: "✅", note: "Top 2 colleges" },
-              { label: "Best ROI", value: "IMI Delhi", icon: "💡", note: "₹12 LPA, ₹7–11L fees" },
+              { label: "Best Avg Package", value: "₹32 LPA", icon: "", note: "FMS Delhi" },
+              { label: "Highest Package", value: "₹72 LPA", icon: "", note: "FMS Delhi" },
+              { label: "100% Placement", value: "FMS Delhi & MDI Gurgaon", icon: "", note: "Top 2 colleges" },
+              { label: "Best ROI", value: "IMI Delhi", icon: "", note: "₹12 LPA, ₹7–11L fees" },
             ].map(({ label, value, icon, note }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -229,13 +229,13 @@ export default function MBACollegesDELHIPlacementPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related MBA Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-              { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-              { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "📊" },
-              { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "🚀" },
+              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+              { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+              { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "" },
+              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "" },
+              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+              { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

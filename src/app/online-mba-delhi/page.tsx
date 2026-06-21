@@ -110,16 +110,16 @@ export default function OnlineMBADelhiPage() {
         ctaHeading="Get Free Online MBA Guidance for Delhi 2026"
         ctaSubtext="Tell us your budget, current job, and goal — our counsellors will recommend the best UGC-approved online MBA programme for your career needs."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "💼" },
-          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "📝" },
-          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "🎓" },
-          { label: "IP University MBA Colleges", href: "/ip-university-mba-delhi", icon: "🏫" },
-          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "📋" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "" },
+          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "" },
+          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "" },
+          { label: "IP University MBA Colleges", href: "/ip-university-mba-delhi", icon: "" },
+          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
         ]}
       />
     </>

@@ -56,7 +56,7 @@ export default function AskPage() {
           <h2 className="text-xl font-extrabold text-gray-900 mb-2">Question Submitted!</h2>
           <p className="text-gray-600 text-sm mb-2">Our counsellors and alumni will answer your question shortly.</p>
           {form.phone && form.phone !== "0000000000" && (
-            <p className="text-sm text-green-700 font-semibold mb-4">📲 We'll notify you on WhatsApp when answered.</p>
+            <p className="text-sm text-green-700 font-semibold mb-4">We'll notify you on WhatsApp when answered.</p>
           )}
           <div className="flex flex-col gap-3 mt-6">
             <Link href="/qa" className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl text-sm transition-colors">

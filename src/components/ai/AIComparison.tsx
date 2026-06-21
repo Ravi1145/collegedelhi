@@ -191,7 +191,7 @@ export default function AIComparison() {
                       : "text-gray-600"
                   )}>
                     {cat.college1Value}
-                    {cat.winner === "college1" && " ✓"}
+                    {cat.winner === "college1" && ""}
                   </div>
                   <div className={cn(
                     "col-span-2 text-center text-xs rounded-lg px-2 py-1.5",
@@ -202,7 +202,7 @@ export default function AIComparison() {
                       : "text-gray-600"
                   )}>
                     {cat.college2Value}
-                    {cat.winner === "college2" && " ✓"}
+                    {cat.winner === "college2" && ""}
                   </div>
                 </div>
               )

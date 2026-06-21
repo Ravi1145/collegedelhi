@@ -114,7 +114,7 @@ export default function DELHICollegesComparisonPage() {
               Side-by-side comparison of engineering (B.Tech) and MBA colleges in Delhi — fees, entrance exams, average salaries, top recruiters, and career paths. Make the right choice for 2026.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>Choose Engineering</strong> if you&apos;re in 12th grade with PCM — DTU Delhi (₹5L fees, ₹12 LPA avg) gives best value. <strong>Choose MBA</strong> if you have a degree and want fast management growth — FMS Delhi (₹28 LPA avg) or IMI Delhi (₹12 LPA avg, better ROI). <strong>Best path</strong>: B.Tech at DTU Delhi/NSUT → 2 years work → MBA at FMS Delhi/IMI Delhi = maximum long-term salary.
               </p>
@@ -156,7 +156,7 @@ export default function DELHICollegesComparisonPage() {
             {/* Engineering */}
             <div className="bg-white rounded-2xl border border-blue-100 shadow-sm overflow-hidden">
               <div className="px-4 py-3 bg-blue-600 text-white">
-                <h3 className="font-bold text-sm">🏛️ Top Engineering Colleges Delhi 2026</h3>
+                <h3 className="font-bold text-sm">Top Engineering Colleges Delhi 2026</h3>
               </div>
               <div className="divide-y divide-gray-50">
                 {topEngineeringColleges.map((c) => (

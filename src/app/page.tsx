@@ -146,12 +146,12 @@ export default async function HomePage() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
               {[
-                { href: "/predictor", icon: "🎯", label: "College Predictor", desc: "Find your best-fit colleges by exam score", bg: "bg-red-50 hover:bg-red-100 border-red-100" },
-                { href: "/compare", icon: "⚖️", label: "Compare Colleges", desc: "Side-by-side fees & placement comparison", bg: "bg-blue-50 hover:bg-blue-100 border-blue-100" },
-                { href: "/roi-calculator", icon: "📈", label: "ROI Calculator", desc: "Is your degree worth the investment?", bg: "bg-green-50 hover:bg-green-100 border-green-100" },
-                { href: "/nirf-insights", icon: "🏆", label: "NIRF Insights", desc: "Rankings & NAAC grades for Delhi colleges", bg: "bg-purple-50 hover:bg-purple-100 border-purple-100" },
-                { href: "/ai-finder", icon: "🤖", label: "AI College Finder", desc: "Chat with AI to find your ideal college", bg: "bg-pink-50 hover:bg-pink-100 border-pink-100" },
-                { href: "/counselling", icon: "📞", label: "Free Counselling", desc: "Talk to an expert — free 15-min session", bg: "bg-teal-50 hover:bg-teal-100 border-teal-100" },
+                { href: "/predictor", icon: "", label: "College Predictor", desc: "Find your best-fit colleges by exam score", bg: "bg-red-50 hover:bg-red-100 border-red-100" },
+                { href: "/compare", icon: "", label: "Compare Colleges", desc: "Side-by-side fees & placement comparison", bg: "bg-blue-50 hover:bg-blue-100 border-blue-100" },
+                { href: "/roi-calculator", icon: "", label: "ROI Calculator", desc: "Is your degree worth the investment?", bg: "bg-green-50 hover:bg-green-100 border-green-100" },
+                { href: "/nirf-insights", icon: "", label: "NIRF Insights", desc: "Rankings & NAAC grades for Delhi colleges", bg: "bg-purple-50 hover:bg-purple-100 border-purple-100" },
+                { href: "/ai-finder", icon: "", label: "AI College Finder", desc: "Chat with AI to find your ideal college", bg: "bg-pink-50 hover:bg-pink-100 border-pink-100" },
+                { href: "/counselling", icon: "", label: "Free Counselling", desc: "Talk to an expert — free 15-min session", bg: "bg-teal-50 hover:bg-teal-100 border-teal-100" },
               ].map(({ href, icon, label, desc, bg }) => (
                 <Link key={href} href={href} className={`flex flex-col items-center text-center p-4 rounded-2xl border transition-colors ${bg}`}>
                   <span className="text-3xl mb-2">{icon}</span>
@@ -174,7 +174,7 @@ export default async function HomePage() {
               {/* Engineering */}
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
                 <h3 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center text-lg">⚙️</span>
+                  <span className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center text-lg"></span>
                   Engineering Colleges
                 </h3>
                 <ul className="space-y-2.5">
@@ -200,7 +200,7 @@ export default async function HomePage() {
               {/* MBA */}
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
                 <h3 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center text-lg">💼</span>
+                  <span className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center text-lg"></span>
                   MBA Colleges
                 </h3>
                 <ul className="space-y-2.5">
@@ -226,7 +226,7 @@ export default async function HomePage() {
               {/* Tools & Comparisons */}
               <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
                 <h3 className="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <span className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center text-lg">🛠️</span>
+                  <span className="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center text-lg"></span>
                   Tools & Comparisons
                 </h3>
                 <ul className="space-y-2.5">

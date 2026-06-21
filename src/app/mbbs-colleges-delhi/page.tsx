@@ -92,12 +92,12 @@ export default function MbbsCollegesDELHIPage() {
         ctaHeading="Need Help with MBBS Admission in Delhi?"
         ctaSubtext="Our medical admission counsellors guide NEET aspirants through MAMC, AFMC, and private MBBS college admissions in Delhi. Get free, expert guidance on state quota vs management quota strategy."
       relatedGuides={[
-        { label: "All Medical colleges in Delhi 2026", href: "/medical-colleges-delhi", icon: "🏥" },
-        { label: "NEET Colleges & Category Cutoffs", href: "/neet-colleges-Delhi", icon: "📝" },
-        { label: "Top 10 Medical Colleges — Ranked", href: "/top-10-medical-colleges-in-delhi", icon: "🏆" },
+        { label: "All Medical colleges in Delhi 2026", href: "/medical-colleges-delhi", icon: "" },
+        { label: "NEET Colleges & Category Cutoffs", href: "/neet-colleges-Delhi", icon: "" },
+        { label: "Top 10 Medical Colleges — Ranked", href: "/top-10-medical-colleges-in-delhi", icon: "" },
         { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "â­" },
-        { label: "Pharmacy colleges in Delhi", href: "/pharmacy-colleges-delhi", icon: "💊" },
-        { label: "Free Medical Counselling", href: "/counselling", icon: "📞" },
+        { label: "Pharmacy colleges in Delhi", href: "/pharmacy-colleges-delhi", icon: "" },
+        { label: "Free Medical Counselling", href: "/counselling", icon: "" },
       ]}
       />
     </>

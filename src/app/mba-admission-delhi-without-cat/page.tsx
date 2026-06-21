@@ -125,7 +125,7 @@ export default function MBAAdmissionWithoutCATPage() {
               <span>›</span>
               <span className="text-white">MBA Without CAT</span>
             </nav>
-            <div className="inline-block bg-green-500/20 text-green-300 text-xs font-bold px-3 py-1 rounded-full mb-3">✅ CAT NOT Required at Most Delhi MBA Colleges</div>
+            <div className="inline-block bg-green-500/20 text-green-300 text-xs font-bold px-3 py-1 rounded-full mb-3">CAT NOT Required at Most Delhi MBA Colleges</div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
               MBA Admission in Delhi Without CAT 2026
             </h1>
@@ -133,7 +133,7 @@ export default function MBAAdmissionWithoutCATPage() {
               Get MBA admission at top Delhi colleges using MAT, CMAT, SNAP, or direct management quota — CAT is optional. Complete list of colleges, cutoffs, and fees.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>CAT is NOT compulsory for MBA in Delhi.</strong> Most colleges — IMI Delhi, Fore School Delhi, Indira Institute, GL Bajaj, Suryadatta — accept <strong>MAT</strong> (5 times/year, easy), <strong>CMAT</strong> (January), or <strong>direct admission</strong>. Only Symbiosis institutes (FMS Delhi, MDI Gurgaon, BIMTECH) require <strong>SNAP</strong> — not CAT. The easiest path: MAT score + direct apply to IMI Delhi or Fore School Delhi.
               </p>
@@ -225,7 +225,7 @@ export default function MBAAdmissionWithoutCATPage() {
 
           {/* Direct Admission Box */}
           <div className="bg-green-50 border border-green-200 rounded-2xl p-5 sm:p-6 mb-8">
-            <h2 className="text-lg font-bold text-gray-900 mb-3">🎯 MBA Without Any Entrance Exam — Direct / Management Quota</h2>
+            <h2 className="text-lg font-bold text-gray-900 mb-3">MBA Without Any Entrance Exam — Direct / Management Quota</h2>
             <p className="text-sm text-gray-600 mb-4">
               If you don&apos;t want to appear for any exam — MAT, CMAT, or CAT — you can still get MBA admission in Delhi through the <strong>management quota / direct admission</strong> route.
             </p>
@@ -267,13 +267,13 @@ export default function MBAAdmissionWithoutCATPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related MBA Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-              { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-              { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "💼" },
-              { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "📊" },
+              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+              { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+              { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "" },
+              { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "" },
+              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "" },
+              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

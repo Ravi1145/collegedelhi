@@ -162,14 +162,14 @@ export default function BestCollegesInDelhiPage() {
         ctaHeading="Get Expert Guidance for Delhi College Admissions 2026"
         ctaSubtext="Our admission counsellors have helped 5,000+ students get into IIT Delhi, FMS Delhi, AIIMS, DTU, Miranda House, and SRCC. Free counselling on JEE, NEET, CAT, CUET strategy and college selection."
         relatedGuides={[
-          { label: "Engineering Colleges in Delhi", href: "/engineering-colleges-delhi", icon: "⚙️" },
-          { label: "Best MBA Colleges in Delhi", href: "/best-mba-colleges-delhi", icon: "🏛️" },
-          { label: "Medical Colleges in Delhi", href: "/medical-colleges-delhi", icon: "🏥" },
-          { label: "Top 10 Engineering Colleges in Delhi", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
-          { label: "Delhi University Colleges", href: "/du-colleges-delhi", icon: "📚" },
-          { label: "Government Colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
-          { label: "Private MBA Colleges in Delhi", href: "/private-mba-colleges-delhi", icon: "🎓" },
-          { label: "College Fees in Delhi", href: "/colleges-delhi-fees", icon: "💰" },
+          { label: "Engineering Colleges in Delhi", href: "/engineering-colleges-delhi", icon: "" },
+          { label: "Best MBA Colleges in Delhi", href: "/best-mba-colleges-delhi", icon: "" },
+          { label: "Medical Colleges in Delhi", href: "/medical-colleges-delhi", icon: "" },
+          { label: "Top 10 Engineering Colleges in Delhi", href: "/top-10-engineering-colleges-in-delhi", icon: "" },
+          { label: "Delhi University Colleges", href: "/du-colleges-delhi", icon: "" },
+          { label: "Government Colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
+          { label: "Private MBA Colleges in Delhi", href: "/private-mba-colleges-delhi", icon: "" },
+          { label: "College Fees in Delhi", href: "/colleges-delhi-fees", icon: "" },
         ]}
       />
     </>

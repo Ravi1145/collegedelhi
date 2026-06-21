@@ -86,7 +86,7 @@ export default function MassCommCollegesDelhi() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top Mass Communication Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Mass Communication Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best journalism:</strong> LSR Delhi (CUET 98+, ₹12K/yr) · <strong>Best broadcast:</strong> Jamia MCRC · <strong>Best digital media:</strong> Amity Delhi · <strong>Most affordable:</strong> DCAC / Gargi (₹12K/yr, CUET 90+)
             </p>

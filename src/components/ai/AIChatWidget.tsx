@@ -24,7 +24,7 @@ export default function AIChatWidget() {
     {
       id: "welcome",
       role: "assistant",
-      content: "Hi! I'm your AI DELHI college counselor. Ask me anything about colleges, fees, placements, or admissions in DELHI. 🎓",
+      content: "Hi! I'm your AI DELHI college counselor. Ask me anything about colleges, fees, placements, or admissions in DELHI.",
       timestamp: new Date(),
     },
   ])

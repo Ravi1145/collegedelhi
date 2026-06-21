@@ -104,13 +104,13 @@ return (
         ctaHeading="Choose the Right Commerce College in Delhi"
         ctaSubtext="Get personalized advice on the best BCom college in Delhi based on your HSC scores, career goals (CA, MBA, BFSI), and budget. Free counselling from commerce education experts."
       relatedGuides={[
-        { label: "Arts & Science colleges in Delhi", href: "/arts-colleges-delhi", icon: "📚" },
-        { label: "Science colleges in Delhi", href: "/science-colleges-Delhi", icon: "🔬" },
-        { label: "BCA colleges in Delhi", href: "/bca-colleges-delhi", icon: "💻" },
-        { label: "BBA colleges in Delhi", href: "/bba-colleges-delhi", icon: "📈" },
-        { label: "BSc IT colleges in Delhi", href: "/bsc-it-colleges-Delhi", icon: "🖥️" },
+        { label: "Arts & Science colleges in Delhi", href: "/arts-colleges-delhi", icon: "" },
+        { label: "Science colleges in Delhi", href: "/science-colleges-Delhi", icon: "" },
+        { label: "BCA colleges in Delhi", href: "/bca-colleges-delhi", icon: "" },
+        { label: "BBA colleges in Delhi", href: "/bba-colleges-delhi", icon: "" },
+        { label: "BSc IT colleges in Delhi", href: "/bsc-it-colleges-Delhi", icon: "" },
         { label: "Law colleges in Delhi", href: "/law-colleges-delhi", icon: "âš–ï¸" },
-        { label: "Design colleges in Delhi", href: "/design-colleges-delhi", icon: "🎨" },
+        { label: "Design colleges in Delhi", href: "/design-colleges-delhi", icon: "" },
       ]}
       />
     </>

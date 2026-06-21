@@ -173,7 +173,7 @@ export default function LawCollegesDELHI() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div id="quick-answer" className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top Law Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Law Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best value:</strong> Faculty of Law DU (₹20K/yr, 900 seats) ·{" "}
               <strong>Most prestigious:</strong> NLU Delhi (CLAT, top 2000 AIR) ·{" "}

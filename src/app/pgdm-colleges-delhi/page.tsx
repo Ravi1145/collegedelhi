@@ -92,13 +92,13 @@ export default function PgdmCollegesDELHIPage() {
         ctaHeading="Find the Best PGDM Program in Delhi for Your Profile"
         ctaSubtext="Get expert guidance on choosing between MBA and PGDM in Delhi. Our counsellors will match your CAT/IPU CET scores with the best management programs available."
       relatedGuides={[
-        { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-        { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-        { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "💼" },
-        { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-        { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "🎓" },
-        { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-        { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "🚀" },
+        { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+        { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+        { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "" },
+        { label: "Low Fees MBA colleges in Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+        { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "" },
+        { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "" },
+        { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "" },
       ]}
       />
     </>

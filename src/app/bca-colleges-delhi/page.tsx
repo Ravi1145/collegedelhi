@@ -193,7 +193,7 @@ export default function BCACollegesDELHI() {
 
           {/* Quick Answer — AEO/GEO block */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-blue-800 mb-1">⚡ Quick Answer — BCA Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-blue-800 mb-1">Quick Answer — BCA Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best govt BCA:</strong> MAIT Delhi (₹55K/yr, GGSIPU) ·{" "}
               <strong>Best private:</strong> Amity Noida (NAAC A+, ₹1.8L/yr) ·{" "}
@@ -241,25 +241,25 @@ export default function BCACollegesDELHI() {
           <h2 className="text-xl font-bold text-gray-900 mb-4">BCA vs BSc Computer Science: Which is Better?</h2>
           <div className="grid sm:grid-cols-2 gap-4 mb-10">
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
-              <h3 className="font-bold text-blue-900 mb-3">💻 Choose BCA if you want:</h3>
+              <h3 className="font-bold text-blue-900 mb-3">Choose BCA if you want:</h3>
               <ul className="text-sm text-blue-800 space-y-1.5">
-                <li>✓ Direct entry into software/web development</li>
-                <li>✓ TCS, Infosys, Wipro campus recruitment</li>
-                <li>✓ MCA or MBA after graduation</li>
-                <li>✓ App/web development specialization</li>
-                <li>✓ Startup / freelancing career path</li>
-                <li>✓ Industry-ready skills from Year 1</li>
+                <li>Direct entry into software/web development</li>
+                <li>TCS, Infosys, Wipro campus recruitment</li>
+                <li>MCA or MBA after graduation</li>
+                <li>App/web development specialization</li>
+                <li>Startup / freelancing career path</li>
+                <li>Industry-ready skills from Year 1</li>
               </ul>
             </div>
             <div className="bg-purple-50 border border-purple-100 rounded-xl p-5">
-              <h3 className="font-bold text-purple-900 mb-3">🔬 Choose BSc CS if you want:</h3>
+              <h3 className="font-bold text-purple-900 mb-3">Choose BSc CS if you want:</h3>
               <ul className="text-sm text-purple-800 space-y-1.5">
-                <li>✓ AI/ML/Data Science career</li>
-                <li>✓ Government / research sector jobs</li>
-                <li>✓ MTech or MS abroad after graduation</li>
-                <li>✓ GATE exam eligibility for MTech</li>
-                <li>✓ Strong mathematics and algorithms foundation</li>
-                <li>✓ IIT/NIT postgraduate programs</li>
+                <li>AI/ML/Data Science career</li>
+                <li>Government / research sector jobs</li>
+                <li>MTech or MS abroad after graduation</li>
+                <li>GATE exam eligibility for MTech</li>
+                <li>Strong mathematics and algorithms foundation</li>
+                <li>IIT/NIT postgraduate programs</li>
               </ul>
             </div>
           </div>

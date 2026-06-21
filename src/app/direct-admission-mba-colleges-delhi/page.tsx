@@ -167,7 +167,7 @@ export default function DirectAdmissionMBAPage() {
               <span className="text-white">Direct Admission MBA</span>
             </nav>
             <div className="inline-block bg-green-500/20 text-green-300 text-xs font-bold px-3 py-1 rounded-full mb-3">
-              ✅ Management Quota Available at 5+ MBA Colleges
+              Management Quota Available at 5+ MBA Colleges
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
               Direct Admission in MBA Colleges Delhi 2026
@@ -177,10 +177,10 @@ export default function DirectAdmissionMBAPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "🎓", label: "6 Colleges with Direct MBA" },
-                { icon: "📝", label: "No CAT Required" },
-                { icon: "💰", label: "MQ Fees ₹5L–₹25L" },
-                { icon: "📈", label: "Placement ₹7–₹14 LPA" },
+                { icon: "", label: "6 Colleges with Direct MBA" },
+                { icon: "", label: "No CAT Required" },
+                { icon: "", label: "MQ Fees ₹5L–₹25L" },
+                { icon: "", label: "Placement ₹7–₹14 LPA" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
                   <span>{icon}</span><span>{label}</span>

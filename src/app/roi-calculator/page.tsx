@@ -193,7 +193,7 @@ export default function ROICalculatorPage() {
                         <tr key={row.year} className={cn("hover:bg-gray-50", row.net > 0 && row.year === result.breakEvenYear && "bg-green-50")}>
                           <td className="px-2 sm:px-4 py-2 font-medium text-sm">
                             <span className="hidden sm:inline">Year </span>{row.year}
-                            {row.year === result.breakEvenYear && <span className="ml-1 text-[10px] bg-green-500 text-white px-1.5 rounded-full hidden sm:inline">Break-even ✓</span>}
+                            {row.year === result.breakEvenYear && <span className="ml-1 text-[10px] bg-green-500 text-white px-1.5 rounded-full hidden sm:inline">Break-even</span>}
                           </td>
                           <td className="px-2 sm:px-4 py-2 text-right text-sm">{formatINR(row.salary)}</td>
                           <td className="px-2 sm:px-4 py-2 text-right text-sm hidden sm:table-cell">{formatINR(row.cumulative)}</td>

@@ -82,12 +82,12 @@ export default function TopPlacementPage() {
         ]}
         faqs={faqs}
         relatedGuides={[
-          { label: "Engineering Placement Rankings", href: "/engineering-colleges-delhi-placement", icon: "🏆" },
-          { label: "MBA Placement Rankings", href: "/mba-colleges-delhi-placement", icon: "💼" },
-          { label: "Compare DTU vs NSUT", href: "/dtu-vs-nsut", icon: "⚖️" },
-          { label: "FMS Delhi vs MDI", href: "/fms-delhi-vs-mdi-gurgaon", icon: "📊" },
-          { label: "ROI Calculator", href: "/roi-calculator", icon: "🧮" },
-          { label: "Fees Calculator", href: "/delhi-college-fees-calculator", icon: "💰" },
+          { label: "Engineering Placement Rankings", href: "/engineering-colleges-delhi-placement", icon: "" },
+          { label: "MBA Placement Rankings", href: "/mba-colleges-delhi-placement", icon: "" },
+          { label: "Compare DTU vs NSUT", href: "/dtu-vs-nsut", icon: "" },
+          { label: "FMS Delhi vs MDI", href: "/fms-delhi-vs-mdi-gurgaon", icon: "" },
+          { label: "ROI Calculator", href: "/roi-calculator", icon: "" },
+          { label: "Fees Calculator", href: "/delhi-college-fees-calculator", icon: "" },
         ]}
       />
     </>
@@ -189,12 +189,12 @@ export default function TopPlacementCollegesDELHIPage() {
         ctaSubtext="Tell us your target package and preferred field. Our AI will identify the Delhi colleges where your profile has the highest probability of achieving your placement goals."
       relatedGuides={[
         { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "â­" },
-        { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "💰" },
-        { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "📊" },
-        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "🧮" },
-        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "📈" },
+        { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "" },
+        { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "" },
+        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "" },
+        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "" },
         { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "âš–ï¸" },
-        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "📅" },
+        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "" },
       ]}
       />
     </>

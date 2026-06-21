@@ -71,7 +71,7 @@ export default function InlineLeadForm({ context }: InlineLeadFormProps) {
   return (
     <div className="border-l-4 border-red-600 bg-red-50 rounded-xl p-4">
       <p className="text-sm font-bold text-gray-900 mb-3">
-        🎓 Get free guidance on DELHI colleges — our expert calls you back within 2 hrs
+        Get free guidance on DELHI colleges — our expert calls you back within 2 hrs
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
         <div className="flex-1 min-w-0">

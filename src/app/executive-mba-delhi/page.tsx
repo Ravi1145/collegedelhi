@@ -110,17 +110,17 @@ export default function ExecutiveMBADelhiPage() {
         ctaHeading="Get Free Executive MBA Counselling for Delhi NCR"
         ctaSubtext="Tell us your years of experience and current CTC — our counsellors will match you with the best Executive MBA programme in Delhi NCR that fits your goals and budget."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FMS Delhi MBA Admission", href: "/fms-delhi", icon: "🎓" },
-          { label: "IIFT Delhi — MBA IB", href: "/iift-delhi", icon: "🌐" },
-          { label: "MDI Gurgaon PGPM Admission", href: "/mdi-gurgaon", icon: "📍" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "MBA in Operations Delhi", href: "/mba-in-operations-delhi", icon: "⚙️" },
-          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA Colleges Gurgaon", href: "/mba-colleges-gurgaon", icon: "🏙️" },
-          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "📋" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FMS Delhi MBA Admission", href: "/fms-delhi", icon: "" },
+          { label: "IIFT Delhi — MBA IB", href: "/iift-delhi", icon: "" },
+          { label: "MDI Gurgaon PGPM Admission", href: "/mdi-gurgaon", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "MBA in Operations Delhi", href: "/mba-in-operations-delhi", icon: "" },
+          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA Colleges Gurgaon", href: "/mba-colleges-gurgaon", icon: "" },
+          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "" },
         ]}
       />
     </>

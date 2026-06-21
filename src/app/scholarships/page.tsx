@@ -34,7 +34,7 @@ const scholarships = [
     eligibility: "Delhi domicile; enrolled in degree course (Engg, Medical, Pharmacy, Arts, Science)",
     stream: ["Engineering", "Medical", "MBA", "Arts", "Pharmacy", "BCA", "BBA"],
     link: "https://NSP Delhi Scholarship.Delhi.gov.in",
-    badge: "🏛️ Government",
+    badge: "Government",
     badgeColor: "bg-blue-50 text-blue-700",
     priority: "High",
   },
@@ -47,7 +47,7 @@ const scholarships = [
     eligibility: "OBC/VJNT/NT/SBC caste certificate; Delhi domicile; 60%+ in previous exam",
     stream: ["Engineering", "Medical", "MBA", "Arts", "All"],
     link: "https://NSP Delhi Scholarship.Delhi.gov.in",
-    badge: "🏛️ Government",
+    badge: "Government",
     badgeColor: "bg-blue-50 text-blue-700",
     priority: "High",
   },
@@ -60,7 +60,7 @@ const scholarships = [
     eligibility: "SC/ST caste certificate; studying in govt-recognized college in Delhi",
     stream: ["All streams"],
     link: "https://NSP Delhi Scholarship.Delhi.gov.in",
-    badge: "🏛️ Government",
+    badge: "Government",
     badgeColor: "bg-blue-50 text-blue-700",
     priority: "High",
   },
@@ -74,7 +74,7 @@ const scholarships = [
     eligibility: "Scored above 80th percentile in Class 12 board; enrolled in regular college",
     stream: ["Engineering", "Medical", "Arts", "Commerce", "Science"],
     link: "https://scholarships.gov.in",
-    badge: "🇮🇳 Central Govt",
+    badge: "Central Govt",
     badgeColor: "bg-green-50 text-green-700",
     priority: "High",
   },
@@ -87,7 +87,7 @@ const scholarships = [
     eligibility: "Minority community certificate; 50%+ in previous exam; regular college enrollment",
     stream: ["All streams"],
     link: "https://scholarships.gov.in",
-    badge: "🇮🇳 Central Govt",
+    badge: "Central Govt",
     badgeColor: "bg-green-50 text-green-700",
     priority: "High",
   },
@@ -101,7 +101,7 @@ const scholarships = [
     eligibility: "Enrolled in DTU Delhi; top 10 rankers per branch in Sem 1 onward",
     stream: ["Engineering"],
     link: "https://DTU Delhi.org.in",
-    badge: "🎓 College",
+    badge: "College",
     badgeColor: "bg-purple-50 text-purple-700",
     priority: "Medium",
   },
@@ -114,7 +114,7 @@ const scholarships = [
     eligibility: "SNAP/SET/other Symbiosis entrance; top percentile rank",
     stream: ["MBA", "Engineering", "Law", "Design"],
     link: "https://www.siu.edu.in",
-    badge: "🎓 College",
+    badge: "College",
     badgeColor: "bg-purple-50 text-purple-700",
     priority: "Medium",
   },
@@ -127,7 +127,7 @@ const scholarships = [
     eligibility: "Top 20 rank in JEE Advanced / CAT; enrolled in premier institute including Amity University Delhi, IIIT Delhi",
     stream: ["Engineering", "MBA"],
     link: "https://www.adityabirla.com/scholarship",
-    badge: "🏢 Corporate",
+    badge: "Corporate",
     badgeColor: "bg-red-50 text-red-800",
     priority: "Medium",
   },
@@ -140,7 +140,7 @@ const scholarships = [
     eligibility: "Top 1% in Class 12 board; enrolled in BSc/BSc Hons Natural & Basic Sciences",
     stream: ["Arts (Science)"],
     link: "https://online-inspire.gov.in",
-    badge: "🇮🇳 Central Govt",
+    badge: "Central Govt",
     badgeColor: "bg-green-50 text-green-700",
     priority: "Medium",
   },
@@ -153,7 +153,7 @@ const scholarships = [
     eligibility: "Financial crisis due to death/illness of parent; 55%+ marks; any stream",
     stream: ["All streams"],
     link: "https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f",
-    badge: "🏦 Private",
+    badge: "Private",
     badgeColor: "bg-yellow-50 text-yellow-700",
     priority: "Medium",
   },
@@ -225,7 +225,7 @@ export default function ScholarshipsPage() {
           <div className="bg-green-50 border border-green-100 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <div className="flex-1">
               <h2 className="font-extrabold text-gray-900 text-sm mb-1">
-                🔔 Get Scholarship Alerts Instantly on WhatsApp
+                Get Scholarship Alerts Instantly on WhatsApp
               </h2>
               <p className="text-xs text-gray-500">New scholarship deadlines, NSP updates, NSP Delhi Scholarship notifications — delivered to your phone.</p>
             </div>
@@ -290,7 +290,7 @@ export default function ScholarshipsPage() {
 
           {/* Quick tips */}
           <div className="bg-white rounded-2xl border border-gray-100 p-6">
-            <h2 className="font-extrabold text-gray-900 text-lg mb-4">📋 Scholarship Application Tips for 2026</h2>
+            <h2 className="font-extrabold text-gray-900 text-lg mb-4">Scholarship Application Tips for 2026</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-600">
               {[
                 "Apply for NSP Delhi Scholarship on day 1 of college — seats and processing time matter.",

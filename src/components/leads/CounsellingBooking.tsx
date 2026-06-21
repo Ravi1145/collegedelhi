@@ -227,7 +227,7 @@ export default function CounsellingBooking() {
                             : "border-gray-200 text-gray-600 hover:border-red-300"
                         )}
                       >
-                        {opt === "morning" ? "☀️ Morning" : opt === "afternoon" ? "🌤 Afternoon" : "🌆 Evening"}
+                        {opt === "morning" ? "Morning" : opt === "afternoon" ? "Afternoon" : "Evening"}
                       </button>
                     ))}
                   </div>
@@ -258,7 +258,7 @@ export default function CounsellingBooking() {
                   {loading ? (
                     <><Loader2 className="w-4 h-4 animate-spin" /> Booking...</>
                   ) : (
-                    <>Book Free Session 📅</>
+                    <>Book Free Session</>
                   )}
                 </button>
               </form>

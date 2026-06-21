@@ -108,16 +108,16 @@ export default function FORESchoolManagementDelhiPage() {
         ctaHeading="Get Free FORE School of Management Admission Guidance 2026"
         ctaSubtext="Tell us your CAT percentile and target specialization (Analytics / Finance / IB / General) — our counsellors will assess your FORE shortlist probability and prepare you for GD-PI."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "🎓" },
-          { label: "IIFT Delhi — MBA IB", href: "/iift-delhi", icon: "🌐" },
-          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "📍" },
-          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "🏫" },
-          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "📋" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "MBA in International Business Delhi", href: "/mba-in-international-business-delhi", icon: "🌐" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA Colleges Delhi Placement", href: "/mba-colleges-delhi-placement", icon: "📈" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "" },
+          { label: "IIFT Delhi — MBA IB", href: "/iift-delhi", icon: "" },
+          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "" },
+          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "" },
+          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "MBA in International Business Delhi", href: "/mba-in-international-business-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA Colleges Delhi Placement", href: "/mba-colleges-delhi-placement", icon: "" },
         ]}
       />
     </>

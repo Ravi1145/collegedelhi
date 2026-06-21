@@ -31,7 +31,7 @@ export default function GEOContentBlock({
         <ul className="space-y-1.5 mt-2">
           {bulletPoints.map((pt, i) => (
             <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-              <span className="text-green-500 font-bold mt-0.5 shrink-0">✓</span>
+              <span className="text-green-500 font-bold mt-0.5 shrink-0"></span>
               {pt}
             </li>
           ))}

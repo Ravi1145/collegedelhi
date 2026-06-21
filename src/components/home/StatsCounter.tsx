@@ -4,7 +4,7 @@ const stats = [
   { icon: Building2, value: "25+", label: "Verified Colleges", color: "text-blue-600", bg: "bg-blue-50" },
   { icon: BookOpen, value: "500+", label: "Courses Listed", color: "text-red-700", bg: "bg-red-50" },
   { icon: Users, value: "50K+", label: "Student Reviews", color: "text-green-600", bg: "bg-green-50" },
-  { icon: Star, value: "4.5★", label: "Avg Rating", color: "text-yellow-600", bg: "bg-yellow-50" },
+  { icon: Star, value: "4.5", label: "Avg Rating", color: "text-yellow-600", bg: "bg-yellow-50" },
   { icon: TrendingUp, value: "₹28L", label: "Highest Avg Package", color: "text-purple-600", bg: "bg-purple-50" },
   { icon: GraduationCap, value: "100%", label: "Free to Use", color: "text-teal-600", bg: "bg-teal-50" },
 ]

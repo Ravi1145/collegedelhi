@@ -220,7 +220,7 @@ export default function ArtsCollegesDELHI() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top Arts &amp; Science Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Arts &amp; Science Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best Arts:</strong> Miranda House College · <strong>Best Science:</strong> Hindu College ·{" "}
               <strong>Best Commerce (BCom):</strong> BMCC · <strong>Best Private:</strong> Symbiosis College ·{" "}
@@ -233,17 +233,17 @@ export default function ArtsCollegesDELHI() {
           <div className="grid sm:grid-cols-3 gap-4 mb-10">
             {[
               {
-                stream: "BA (Arts)", emoji: "📚", best: "Miranda House College", why: "Heritage, affordable, best humanities faculty in Delhi",
+                stream: "BA (Arts)", emoji: "", best: "Miranda House College", why: "Heritage, affordable, best humanities faculty in Delhi",
                 also: ["Hindu College", "Kirori Mal College", "Nowrosjee Wadia"],
                 fees: "₹10K–₹30K/yr",
               },
               {
-                stream: "BSc (Science)", emoji: "🔬", best: "Hindu College (Parashurambhau)", why: "NAAC A+, strong Physics/Chemistry/Biology labs",
+                stream: "BSc (Science)", emoji: "", best: "Hindu College (Parashurambhau)", why: "NAAC A+, strong Physics/Chemistry/Biology labs",
                 also: ["Miranda House College", "Kirori Mal College", "Gargi College"],
                 fees: "₹12K–₹28K/yr",
               },
               {
-                stream: "BCom (Commerce)", emoji: "📊", best: "BMCC Delhi", why: "Cheapest fees, best commerce network, CA/CMA prep",
+                stream: "BCom (Commerce)", emoji: "", best: "BMCC Delhi", why: "Cheapest fees, best commerce network, CA/CMA prep",
                 also: ["Gargi College", "Poona College", "Symbiosis College"],
                 fees: "₹8K–₹20K/yr",
               },

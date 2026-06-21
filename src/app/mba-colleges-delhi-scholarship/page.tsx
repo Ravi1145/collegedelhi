@@ -154,7 +154,7 @@ export default function MBACollegesDELHIScholarshipPage() {
               Complete guide to MBA scholarships at Delhi colleges — government fee waivers, institutional merit awards, and national fellowships. Reduce your MBA cost from ₹22L to under ₹5L.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 Top MBA scholarship options in Delhi: <strong>Delhi Post-Matric Scholarship</strong> (SC/ST/OBC — full fee waiver), <strong>EBC Scholarship</strong> (Open category income &lt; ₹8L — 50% waiver), <strong>FMS Delhi Merit Scholarship</strong> (top SNAP scorers — ₹1–3L off), <strong>AICTE Pragati</strong> (women students — ₹50K/yr). Apply via <strong>NSP Delhi Scholarship portal</strong> within 3 months of admission.
               </p>
@@ -166,10 +166,10 @@ export default function MBACollegesDELHIScholarshipPage() {
           {/* Key Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "Scholarships Available", value: "7+", icon: "🎓" },
-              { label: "Max Savings", value: "₹10L+", icon: "💰" },
-              { label: "Income Limit (Govt.)", value: "₹8L/yr", icon: "📋" },
-              { label: "Apply Via", value: "NSP Delhi Scholarship", icon: "🌐" },
+              { label: "Scholarships Available", value: "7+", icon: "" },
+              { label: "Max Savings", value: "₹10L+", icon: "" },
+              { label: "Income Limit (Govt.)", value: "₹8L/yr", icon: "" },
+              { label: "Apply Via", value: "NSP Delhi Scholarship", icon: "" },
             ].map(({ label, value, icon }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>

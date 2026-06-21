@@ -97,7 +97,7 @@ export default function EngineeringAdmissionWithoutJEEPage() {
               <span>›</span>
               <span className="text-white">Admission Without JEE</span>
             </nav>
-            <div className="inline-block bg-green-500/20 text-green-300 text-xs font-bold px-3 py-1 rounded-full mb-3">✅ JEE NOT Required at 80%+ Delhi Colleges</div>
+            <div className="inline-block bg-green-500/20 text-green-300 text-xs font-bold px-3 py-1 rounded-full mb-3">JEE NOT Required at 80%+ Delhi Colleges</div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
               Engineering Admission in Delhi Without JEE 2026
             </h1>
@@ -105,7 +105,7 @@ export default function EngineeringAdmissionWithoutJEEPage() {
               Get B.Tech / BE admission at top Delhi engineering colleges using only JEE Main score. Complete guide to JEE Main colleges, lateral entry, and management quota routes — no JEE needed.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>Yes, you can get B.Tech admission in Delhi without JEE Main.</strong> Over 80% of Delhi engineering colleges — including <strong>DTU Delhi</strong> (NIRF #49), <strong>NSUT</strong>, <strong>GL Bajaj</strong>, and <strong>NIET Noida</strong> — admit students through <strong>JEE Main only</strong>. Alternatives: lateral entry (diploma holders, no entrance exam), management quota (12th pass sufficient, no JEE/JEE Main needed).
               </p>
@@ -117,10 +117,10 @@ export default function EngineeringAdmissionWithoutJEEPage() {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "JEE Main Only Colleges", value: "80%+", icon: "🎯" },
-              { label: "Top College Without JEE", value: "DTU Delhi", icon: "🏆" },
-              { label: "Lateral Entry Option", value: "2nd Year", icon: "📚" },
-              { label: "Mgmt Quota", value: "No Exam", icon: "✅" },
+              { label: "JEE Main Only Colleges", value: "80%+", icon: "" },
+              { label: "Top College Without JEE", value: "DTU Delhi", icon: "" },
+              { label: "Lateral Entry Option", value: "2nd Year", icon: "" },
+              { label: "Mgmt Quota", value: "No Exam", icon: "" },
             ].map(({ label, value, icon }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -133,7 +133,7 @@ export default function EngineeringAdmissionWithoutJEEPage() {
           {/* JEE Main Only Colleges */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden mb-8">
             <div className="px-5 py-4 border-b border-gray-100 bg-green-50">
-              <h2 className="text-lg font-bold text-gray-900">✅ Delhi Engineering Colleges Accepting JEE Main Only (No JEE Required)</h2>
+              <h2 className="text-lg font-bold text-gray-900">Delhi Engineering Colleges Accepting JEE Main Only (No JEE Required)</h2>
               <p className="text-xs text-gray-500 mt-0.5">These colleges do NOT require JEE Main for B.Tech admission 2026.</p>
             </div>
             <div className="overflow-x-auto">
@@ -206,7 +206,7 @@ export default function EngineeringAdmissionWithoutJEEPage() {
             {[
               {
                 title: "Lateral Entry (Diploma → BTech)",
-                icon: "📘",
+                icon: "",
                 color: "blue",
                 points: [
                   "Direct 2nd year B.Tech admission for diploma holders",
@@ -219,7 +219,7 @@ export default function EngineeringAdmissionWithoutJEEPage() {
               },
               {
                 title: "Management Quota (No Entrance Exam)",
-                icon: "🏛️",
+                icon: "",
                 color: "orange",
                 points: [
                   "No JEE, no JEE Main required",
@@ -301,15 +301,15 @@ export default function EngineeringAdmissionWithoutJEEPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Engineering Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "🏛️" },
-              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
-              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "💼" },
-              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "💰" },
-              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "📝" },
-              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "📚" },
-              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "💻" },
-              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
+              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "" },
+              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "" },
+              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "" },
+              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "" },
+              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "" },
+              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "" },
+              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "" },
+              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "" },
+              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

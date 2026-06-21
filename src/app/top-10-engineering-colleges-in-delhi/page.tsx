@@ -174,7 +174,7 @@ const colleges = [
 const topFiveDetails = [
   {
     rank: 1,
-    emoji: "🥇",
+    emoji: "",
     badge: "bg-yellow-100 text-yellow-700",
     name: "Delhi Technological University (DTU)",
     slug: "dtu-delhi-delhi-technological-university",
@@ -194,7 +194,7 @@ const topFiveDetails = [
   },
   {
     rank: 2,
-    emoji: "🥈",
+    emoji: "",
     badge: "bg-gray-100 text-gray-700",
     name: "NSUT (Netaji Subhas University of Technology)",
     slug: "nsut-delhi",
@@ -214,7 +214,7 @@ const topFiveDetails = [
   },
   {
     rank: 3,
-    emoji: "🥉",
+    emoji: "",
     badge: "bg-red-100 text-red-800",
     name: "Indraprastha Institute of Information Technology (IIIT Delhi)",
     slug: "iiit-delhi-indraprastha-institute-of-information-technology",
@@ -234,7 +234,7 @@ const topFiveDetails = [
   },
   {
     rank: 4,
-    emoji: "4️⃣",
+    emoji: "4⃣",
     badge: "bg-blue-100 text-blue-700",
     name: "NIT Delhi (National Institute of Technology Delhi)",
     slug: "nit-delhi-national-institute-of-technology",
@@ -254,7 +254,7 @@ const topFiveDetails = [
   },
   {
     rank: 5,
-    emoji: "5️⃣",
+    emoji: "5⃣",
     badge: "bg-green-100 text-green-700",
     name: "Amity University Delhi",
     slug: "amity-university-noida-delhi-ncr",
@@ -359,7 +359,7 @@ export default function Top10EngineeringCollegesDELHIPage() {
               Authoritative ranked list of Delhi&apos;s top 10 engineering colleges for 2026, compared by NIRF rank, NAAC grade, annual fees, average placement packages, and entrance exam requirements.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>DTU (NIRF #49)</strong> is Delhi&apos;s top engineering college with fees ₹80K–₹1.8L/yr and ₹12 LPA avg placement. Top 5: <strong>NSUT</strong> (best CS/IT), <strong>IIIT Delhi</strong> (NIRF #101, ₹8.5 LPA), <strong>IMI Delhi</strong> (best private, ₹9.8 LPA), <strong>Amity University Delhi</strong> (best infrastructure). All require <strong>JEE Main</strong> (60–95 percentile depending on college).
               </p>
@@ -371,10 +371,10 @@ export default function Top10EngineeringCollegesDELHIPage() {
           {/* Key Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "Colleges Ranked", value: "Top 10", icon: "🏛️" },
-              { label: "Lowest Fees/yr", value: "₹80,000", icon: "💰" },
-              { label: "Best Avg Package", value: "₹12 LPA", icon: "📈" },
-              { label: "Top NIRF Rank", value: "#49 (DTU Delhi)", icon: "🏆" },
+              { label: "Colleges Ranked", value: "Top 10", icon: "" },
+              { label: "Lowest Fees/yr", value: "₹80,000", icon: "" },
+              { label: "Best Avg Package", value: "₹12 LPA", icon: "" },
+              { label: "Top NIRF Rank", value: "#49 (DTU Delhi)", icon: "" },
             ].map(({ label, value, icon }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -543,14 +543,14 @@ export default function Top10EngineeringCollegesDELHIPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Engineering Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "🏛️" },
-              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "💼" },
-              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "💰" },
-              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "📝" },
-              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "📚" },
-              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "💻" },
-              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
+              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "" },
+              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "" },
+              { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "" },
+              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "" },
+              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "" },
+              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "" },
+              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "" },
+              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

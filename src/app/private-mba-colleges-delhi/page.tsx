@@ -164,10 +164,10 @@ export default function PrivateMBACollegesDELHIPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "🎓", label: "7 Private MBA Colleges" },
-                { icon: "💰", label: "Fees ₹2.8L–₹22L Total" },
-                { icon: "📈", label: "Avg Placement ₹4.8–₹18 LPA" },
-                { icon: "📝", label: "SNAP / CAT / MAT" },
+                { icon: "", label: "7 Private MBA Colleges" },
+                { icon: "", label: "Fees ₹2.8L–₹22L Total" },
+                { icon: "", label: "Avg Placement ₹4.8–₹18 LPA" },
+                { icon: "", label: "SNAP / CAT / MAT" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
                   <span>{icon}</span><span>{label}</span>

@@ -93,12 +93,12 @@ export default function LowFeeCollegesDELHIPage() {
         ctaSubtext="Budget should not limit your education choices. Our counsellors help you find the best low-fee colleges in Delhi matching your stream, scores, and scholarship eligibility."
       relatedGuides={[
         { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "â­" },
-        { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "📊" },
-        { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "💼" },
-        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "🧮" },
-        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "📈" },
+        { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "" },
+        { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "" },
+        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "" },
+        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "" },
         { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "âš–ï¸" },
-        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "📅" },
+        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "" },
       ]}
       />
     </>

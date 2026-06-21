@@ -84,7 +84,7 @@ export default function LLBCollegesDelhi() {
 
         <div className="max-w-5xl mx-auto px-4 py-10">
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top LLB Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top LLB Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best 5yr BA LLB:</strong> NLU Delhi (CLAT top 150) · <strong>Best affordable LLB:</strong> DU Campus Law Centre (₹12K/yr) · <strong>Central Univ:</strong> Jamia Millia (₹25–50K/yr) · <strong>IPU option:</strong> USLLS / VIPS
             </p>

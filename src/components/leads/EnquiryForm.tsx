@@ -161,7 +161,7 @@ export default function EnquiryForm({ collegeName, collegeSlug, courses, isOpen,
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-8 h-8 text-green-600" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">✅ Enquiry Sent Successfully!</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Enquiry Sent Successfully!</h3>
             <p className="text-sm font-semibold text-red-700 mb-3">Reference: {success.bookingRef}</p>
             <p className="text-sm text-gray-600 mb-5">
               Our counsellor will WhatsApp you within 2 hours with detailed information.
@@ -215,7 +215,7 @@ export default function EnquiryForm({ collegeName, collegeSlug, courses, isOpen,
               />
               {errors.phone
                 ? <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
-                : <p className="text-gray-400 text-xs mt-1">📱 We&apos;ll send info on WhatsApp</p>
+                : <p className="text-gray-400 text-xs mt-1">We&apos;ll send info on WhatsApp</p>
               }
             </div>
 
@@ -283,7 +283,7 @@ export default function EnquiryForm({ collegeName, collegeSlug, courses, isOpen,
                         : "border-gray-200 text-gray-600 hover:border-red-300"
                     )}
                   >
-                    {opt === "whatsapp" ? "📱 WhatsApp" : opt === "call" ? "📞 Call" : "📧 Email"}
+                    {opt === "whatsapp" ? "WhatsApp" : opt === "call" ? "Call" : "Email"}
                   </button>
                 ))}
               </div>
@@ -305,7 +305,7 @@ export default function EnquiryForm({ collegeName, collegeSlug, courses, isOpen,
                         : "border-gray-200 text-gray-600 hover:border-gray-300"
                     )}
                   >
-                    {opt === "morning" ? "☀️ Morning" : opt === "afternoon" ? "🌤 Afternoon" : "🌆 Evening"}
+                    {opt === "morning" ? "Morning" : opt === "afternoon" ? "Afternoon" : "Evening"}
                   </button>
                 ))}
               </div>

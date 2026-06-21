@@ -168,7 +168,7 @@ export default function LowFeesEngineeringCollegesDELHIPage() {
               Complete list of affordable B.Tech colleges in Delhi with fees under ₹5 lakh and ₹10 lakh total. Compare government vs private fee structures, scholarships, and best value options.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer — Cheapest Engineering colleges in Delhi</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer — Cheapest Engineering colleges in Delhi</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>DTU Delhi</strong> is cheapest at ₹80K/yr (govt). Among private colleges: <strong>NIET Noida</strong> ₹1.1L/yr, <strong>GL Bajaj NIET</strong> ₹1.2L/yr, <strong>Indira College</strong> ₹95K/yr. Total 4-year B.Tech under ₹5L is possible at DTU Delhi (with scholarships), Indira College (₹3.8L), and NIET Noida (₹4.4L). SC/ST students get full fee waiver at govt colleges.
               </p>
@@ -180,10 +180,10 @@ export default function LowFeesEngineeringCollegesDELHIPage() {
           {/* Key Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "Cheapest Govt. Fees/yr", value: "₹80,000", icon: "🏛️" },
-              { label: "Cheapest Private Fees/yr", value: "₹95,000", icon: "💰" },
-              { label: "Min 4-Year Total", value: "₹3.8L", icon: "📉" },
-              { label: "Affordable Colleges", value: "7+", icon: "🎓" },
+              { label: "Cheapest Govt. Fees/yr", value: "₹80,000", icon: "" },
+              { label: "Cheapest Private Fees/yr", value: "₹95,000", icon: "" },
+              { label: "Min 4-Year Total", value: "₹3.8L", icon: "" },
+              { label: "Affordable Colleges", value: "7+", icon: "" },
             ].map(({ label, value, icon }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -396,14 +396,14 @@ export default function LowFeesEngineeringCollegesDELHIPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Engineering Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "🏛️" },
-              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "🏆" },
-              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "💼" },
-              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "📝" },
-              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "📚" },
-              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "💻" },
-              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
+              { label: "Best Engineering colleges in Delhi 2026", href: "/engineering-colleges-delhi", icon: "" },
+              { label: "Top 10 Engineering Colleges — Ranked", href: "/top-10-engineering-colleges-in-delhi", icon: "" },
+              { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "" },
+              { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "" },
+              { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "" },
+              { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "" },
+              { label: "Computer Engineering Colleges Delhi", href: "/computer-engineering-colleges-delhi", icon: "" },
+              { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

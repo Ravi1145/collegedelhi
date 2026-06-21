@@ -10,9 +10,9 @@ import type { College } from "@/types"
 
 const STREAMS = [
   { label: "Engineering",    value: "Engineering",    emoji: "âš™ï¸" },
-  { label: "MBA",            value: "MBA",            emoji: "💼" },
-  { label: "Medical",        value: "Medical",        emoji: "🏥" },
-  { label: "Arts & Science", value: "Arts & Science", emoji: "📚" },
+  { label: "MBA",            value: "MBA",            emoji: "" },
+  { label: "Medical",        value: "Medical",        emoji: "" },
+  { label: "Arts & Science", value: "Arts & Science", emoji: "" },
   { label: "Law",            value: "Law",            emoji: "âš–ï¸" },
 ] as const
 

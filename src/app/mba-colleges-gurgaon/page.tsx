@@ -110,18 +110,18 @@ export default function MBACollegesGurgaonPage() {
         ctaHeading="Get Personalized MBA Admission Guidance for Gurgaon Colleges"
         ctaSubtext="Tell us your CAT percentile and target sector — our counsellors will shortlist Gurgaon MBA colleges matching your profile and help you prepare for MDI Gurgaon WAT-PI."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "🎓" },
-          { label: "IIFT Delhi — MBA IB", href: "/iift-delhi", icon: "🌐" },
-          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "📍" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "💼" },
-          { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon", icon: "⚖️" },
-          { label: "Top 10 MBA Colleges Delhi NCR", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA Colleges Noida", href: "/mba-colleges-noida", icon: "📍" },
-          { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida", icon: "🏘️" },
-          { label: "PGDM Colleges Delhi NCR", href: "/pgdm-colleges-delhi", icon: "📋" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "" },
+          { label: "IIFT Delhi — MBA IB", href: "/iift-delhi", icon: "" },
+          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "" },
+          { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi NCR", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA Colleges Noida", href: "/mba-colleges-noida", icon: "" },
+          { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida", icon: "" },
+          { label: "PGDM Colleges Delhi NCR", href: "/pgdm-colleges-delhi", icon: "" },
         ]}
       />
     </>

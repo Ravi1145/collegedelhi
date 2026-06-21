@@ -110,16 +110,16 @@ export default function PartTimeMBADelhiPage() {
         ctaHeading="Get Free Part-Time MBA Guidance for Delhi 2026"
         ctaSubtext="Tell us your CAT score, years of work experience, and weekly class availability — our counsellors will recommend the best part-time or weekend MBA in Delhi NCR for your situation."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "💼" },
-          { label: "Online MBA Delhi", href: "/online-mba-delhi", icon: "💻" },
-          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "🎓" },
-          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "📍" },
-          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "🏫" },
-          { label: "LBSIM Delhi — PGDM", href: "/lbsim-delhi", icon: "🏛️" },
-          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "📝" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "" },
+          { label: "Online MBA Delhi", href: "/online-mba-delhi", icon: "" },
+          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "" },
+          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "" },
+          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "" },
+          { label: "LBSIM Delhi — PGDM", href: "/lbsim-delhi", icon: "" },
+          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
         ]}
       />
     </>

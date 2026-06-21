@@ -107,7 +107,7 @@ export default function DELHIAdmissionDeadlineTrackerPage() {
               <span>›</span>
               <span className="text-white">Admission Deadline Tracker 2026</span>
             </nav>
-            <div className="inline-block bg-red-600/20 text-red-300 text-xs font-bold px-3 py-1 rounded-full mb-3">📅 Updated for 2026 Admissions</div>
+            <div className="inline-block bg-red-600/20 text-red-300 text-xs font-bold px-3 py-1 rounded-full mb-3">Updated for 2026 Admissions</div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
               Delhi College Admission Deadline Tracker 2026
             </h1>
@@ -134,7 +134,7 @@ export default function DELHIAdmissionDeadlineTrackerPage() {
           {/* Engineering Timeline */}
           <div className="mb-8">
             <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-              🏛️ Engineering Admission Timeline — Delhi 2026
+              Engineering Admission Timeline — Delhi 2026
             </h2>
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
               <div className="overflow-x-auto">
@@ -165,7 +165,7 @@ export default function DELHIAdmissionDeadlineTrackerPage() {
           {/* MBA Timeline */}
           <div className="mb-8">
             <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-              🎓 MBA Admission Timeline — Delhi 2026–27
+              MBA Admission Timeline — Delhi 2026–27
             </h2>
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
               <div className="overflow-x-auto">
@@ -195,7 +195,7 @@ export default function DELHIAdmissionDeadlineTrackerPage() {
 
           {/* Important Links */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 mb-8">
-            <h2 className="text-lg font-bold text-gray-900 mb-4">🔗 Important Official Links</h2>
+            <h2 className="text-lg font-bold text-gray-900 mb-4">Important Official Links</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3">
               {importantLinks.map((link) => (
                 <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer"
@@ -225,13 +225,13 @@ export default function DELHIAdmissionDeadlineTrackerPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Admission Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "⭐" },
-              { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "💰" },
-              { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "📊" },
-              { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "💼" },
-              { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "🧮" },
-              { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "📈" },
-              { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "⚖️" },
+              { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "" },
+              { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "" },
+              { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "" },
+              { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "" },
+              { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "" },
+              { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "" },
+              { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

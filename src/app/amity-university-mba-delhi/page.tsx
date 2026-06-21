@@ -110,16 +110,16 @@ export default function AmityMBADelhiPage() {
         ctaHeading="Get Free Amity University MBA Admission Guidance 2026"
         ctaSubtext="Tell us your 12th/graduation marks, Amity JEE or CAT score, and preferred specialization — our counsellors will guide you through Amity admission and scholarship application."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "MBA Colleges Noida", href: "/mba-colleges-noida", icon: "📍" },
-          { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida", icon: "🏘️" },
-          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "📝" },
-          { label: "IP University MBA Colleges Delhi", href: "/ip-university-mba-delhi", icon: "🏛️" },
-          { label: "Online MBA Delhi", href: "/online-mba-delhi", icon: "💻" },
-          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "MBA in Business Analytics Delhi", href: "/mba-in-business-analytics-delhi", icon: "📊" },
-          { label: "MBA in IT Delhi", href: "/mba-in-information-technology-delhi", icon: "💻" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "MBA Colleges Noida", href: "/mba-colleges-noida", icon: "" },
+          { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida", icon: "" },
+          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "" },
+          { label: "IP University MBA Colleges Delhi", href: "/ip-university-mba-delhi", icon: "" },
+          { label: "Online MBA Delhi", href: "/online-mba-delhi", icon: "" },
+          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "MBA in Business Analytics Delhi", href: "/mba-in-business-analytics-delhi", icon: "" },
+          { label: "MBA in IT Delhi", href: "/mba-in-information-technology-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
         ]}
       />
     </>

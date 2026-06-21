@@ -150,10 +150,10 @@ export default function ArchitectureCollegesDELHIPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "🏛️", label: "6 Top Colleges" },
-                { icon: "📐", label: "NATA / JEE Paper 2" },
-                { icon: "💰", label: "Fees ₹1.1L–₹2.8L/yr" },
-                { icon: "📈", label: "Avg Placement ₹3.5–10 LPA" },
+                { icon: "", label: "6 Top Colleges" },
+                { icon: "", label: "NATA / JEE Paper 2" },
+                { icon: "", label: "Fees ₹1.1L–₹2.8L/yr" },
+                { icon: "", label: "Avg Placement ₹3.5–10 LPA" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
                   <span>{icon}</span><span>{label}</span>
@@ -260,14 +260,14 @@ export default function ArchitectureCollegesDELHIPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Design & Architecture Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Arts & Science colleges in Delhi", href: "/arts-colleges-delhi", icon: "📚" },
-              { label: "Commerce colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "📊" },
-              { label: "Science colleges in Delhi", href: "/science-colleges-Delhi", icon: "🔬" },
-              { label: "BCA colleges in Delhi", href: "/bca-colleges-delhi", icon: "💻" },
-              { label: "BBA colleges in Delhi", href: "/bba-colleges-delhi", icon: "📈" },
-              { label: "BSc IT colleges in Delhi", href: "/bsc-it-colleges-Delhi", icon: "🖥️" },
-              { label: "Law colleges in Delhi", href: "/law-colleges-delhi", icon: "⚖️" },
-              { label: "Design colleges in Delhi", href: "/design-colleges-delhi", icon: "🎨" },
+              { label: "Arts & Science colleges in Delhi", href: "/arts-colleges-delhi", icon: "" },
+              { label: "Commerce colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "" },
+              { label: "Science colleges in Delhi", href: "/science-colleges-Delhi", icon: "" },
+              { label: "BCA colleges in Delhi", href: "/bca-colleges-delhi", icon: "" },
+              { label: "BBA colleges in Delhi", href: "/bba-colleges-delhi", icon: "" },
+              { label: "BSc IT colleges in Delhi", href: "/bsc-it-colleges-Delhi", icon: "" },
+              { label: "Law colleges in Delhi", href: "/law-colleges-delhi", icon: "" },
+              { label: "Design colleges in Delhi", href: "/design-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

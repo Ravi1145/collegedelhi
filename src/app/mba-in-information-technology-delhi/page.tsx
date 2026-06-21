@@ -110,16 +110,16 @@ export default function MBAITDelhiPage() {
         ctaHeading="Get Free MBA IT Admission Guidance Delhi 2026"
         ctaSubtext="Tell us your background (BTech / BCA / Commerce), CAT score, and target role (IT consulting / product management / ERP) — our counsellors will recommend the best MBA IT programme in Delhi NCR."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "LBSIM Delhi — PGDM", href: "/lbsim-delhi", icon: "🏛️" },
-          { label: "MBA in Business Analytics Delhi", href: "/mba-in-business-analytics-delhi", icon: "📊" },
-          { label: "FORE School of Management Delhi", href: "/fore-school-management-delhi", icon: "🏫" },
-          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "🏫" },
-          { label: "MBA Colleges Noida", href: "/mba-colleges-noida", icon: "📍" },
-          { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida", icon: "🏘️" },
-          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "📋" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA in Operations Delhi", href: "/mba-in-operations-delhi", icon: "⚙️" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "LBSIM Delhi — PGDM", href: "/lbsim-delhi", icon: "" },
+          { label: "MBA in Business Analytics Delhi", href: "/mba-in-business-analytics-delhi", icon: "" },
+          { label: "FORE School of Management Delhi", href: "/fore-school-management-delhi", icon: "" },
+          { label: "IMT Ghaziabad — PGDM", href: "/imt-ghaziabad", icon: "" },
+          { label: "MBA Colleges Noida", href: "/mba-colleges-noida", icon: "" },
+          { label: "MBA Colleges Greater Noida", href: "/mba-colleges-greater-noida", icon: "" },
+          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA in Operations Delhi", href: "/mba-in-operations-delhi", icon: "" },
         ]}
       />
     </>

@@ -116,16 +116,16 @@ export default function MBACollegesGreaterNoidaPage() {
         ctaHeading="Get Personalized MBA Admission Guidance for Greater Noida Colleges"
         ctaSubtext="Tell us your CAT/MAT percentile and target salary — our counsellors will shortlist the best Greater Noida MBA colleges matching your budget and career goals."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "🎓" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "MBA Colleges in Noida", href: "/mba-colleges-noida", icon: "📍" },
-          { label: "MBA Colleges in Gurgaon", href: "/mba-colleges-gurgaon", icon: "🏙️" },
-          { label: "Top 10 MBA Colleges Delhi NCR", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "PGDM Colleges Delhi NCR", href: "/pgdm-colleges-delhi", icon: "📋" },
-          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "MBA Placement Colleges Delhi", href: "/mba-colleges-delhi-placement", icon: "📈" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FMS Delhi — ₹55K MBA", href: "/fms-delhi", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "MBA Colleges in Noida", href: "/mba-colleges-noida", icon: "" },
+          { label: "MBA Colleges in Gurgaon", href: "/mba-colleges-gurgaon", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi NCR", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "PGDM Colleges Delhi NCR", href: "/pgdm-colleges-delhi", icon: "" },
+          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "MBA Placement Colleges Delhi", href: "/mba-colleges-delhi-placement", icon: "" },
         ]}
       />
     </>

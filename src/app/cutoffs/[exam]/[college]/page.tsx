@@ -313,7 +313,7 @@ export default async function CollegeCutoffPage({ params }: Props) {
             </div>
             <div className="flex gap-3 flex-wrap">
               <Link href="/predictor" className="bg-white text-[#0A1628] font-bold px-5 py-2.5 rounded-xl text-sm whitespace-nowrap">
-                🎯 College Predictor
+                College Predictor
               </Link>
               <Link href="/counselling" className="bg-red-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm whitespace-nowrap">
                 Free Counselling

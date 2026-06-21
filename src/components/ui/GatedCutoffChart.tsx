@@ -68,7 +68,7 @@ export default function GatedCutoffChart({ data, slug, height = 260 }: Props) {
       <div className="absolute inset-0 flex items-center justify-center bg-white/70 backdrop-blur-sm">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-5 max-w-sm w-full mx-4 text-center">
           <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-3">
-            <span className="text-2xl">📊</span>
+            <span className="text-2xl"></span>
           </div>
           <h3 className="font-extrabold text-gray-900 text-sm mb-1">
             Unlock 2020–2026 Cutoff Data
@@ -106,7 +106,7 @@ export default function GatedCutoffChart({ data, slug, height = 260 }: Props) {
               disabled={loading || phone.length !== 10 || !agreedToTerms}
               className="w-full bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
             >
-              {loading ? "Unlocking…" : "🔓 Show Full Chart"}
+              {loading ? "Unlocking…" : "Show Full Chart"}
             </button>
           </form>
           <p className="text-[10px] text-gray-400 mt-2">No spam. Get college alerts on WhatsApp.</p>

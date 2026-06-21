@@ -153,7 +153,7 @@ export default function CollegesGurugramPage() {
                     {c.name}
                   </Link>
                   <div className="text-[10px] text-red-600 font-medium mt-0.5">{c.highlight}</div>
-                  <p className="text-xs text-gray-500 mt-1">📍 {c.location}</p>
+                  <p className="text-xs text-gray-500 mt-1">{c.location}</p>
                   <p className="text-xs text-gray-500 mt-1">Programs: {c.streams}</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -180,14 +180,14 @@ export default function CollegesGurugramPage() {
               </thead>
               <tbody>
                 {[
-                  ["Best for MBA", "MDI Gurgaon (NIRF #17) ✅", "BIMTECH (NIRF #61)"],
-                  ["Best for Engineering", "GD Goenka, BML Munjal", "Galgotias, Sharda, GL Bajaj ✅"],
-                  ["Fees (B.Tech)", "₹1.5L–4L/yr", "₹80K–3.5L/yr ✅"],
+                  ["Best for MBA", "MDI Gurgaon (NIRF #17)", "BIMTECH (NIRF #61)"],
+                  ["Best for Engineering", "GD Goenka, BML Munjal", "Galgotias, Sharda, GL Bajaj"],
+                  ["Fees (B.Tech)", "₹1.5L–4L/yr", "₹80K–3.5L/yr"],
                   ["Placement Quality", "₹7–26 LPA (MDI leads)", "₹6–9.2 LPA avg"],
-                  ["Corporate Access", "250+ MNCs nearby ✅", "Noida tech park"],
-                  ["Metro Access", "Yellow Line ✅", "Aqua Line"],
-                  ["Campus Life", "Urban, premium", "Larger campuses ✅"],
-                  ["Medical Colleges", "SGT University MBBS", "Sharda Medical ✅"],
+                  ["Corporate Access", "250+ MNCs nearby", "Noida tech park"],
+                  ["Metro Access", "Yellow Line", "Aqua Line"],
+                  ["Campus Life", "Urban, premium", "Larger campuses"],
+                  ["Medical Colleges", "SGT University MBBS", "Sharda Medical"],
                 ].map(([p, g, n], i) => (
                   <tr key={i} className={i % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                     <td className="px-4 py-2.5 text-xs font-medium text-gray-700">{p}</td>

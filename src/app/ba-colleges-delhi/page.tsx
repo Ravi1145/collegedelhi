@@ -87,7 +87,7 @@ export default function BACollegesDelhi() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top BA Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top BA Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best women's:</strong> Miranda House (99+) · <strong>Best coed:</strong> Hindu College (97–98) · <strong>Economics:</strong> LSR (98–99) · <strong>Journalism:</strong> LSR / Jamia · <strong>Affordable:</strong> Kirori Mal (₹10K/yr, 94–96 percentile)
             </p>

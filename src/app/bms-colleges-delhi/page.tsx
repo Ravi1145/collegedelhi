@@ -83,7 +83,7 @@ export default function BMSCollegesDelhi() {
 
         <div className="max-w-5xl mx-auto px-4 py-10">
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top BMS Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top BMS Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best:</strong> SSCBS Delhi (CUET 98–99, ₹14 LPA avg, McKinsey/BCG) · <strong>Mid-range:</strong> DDUC (CUET 90–94) · <strong>Accessible:</strong> Keshav / Maharaja Agrasen (CUET 87–92) · <strong>All fees:</strong> ₹10–14K/yr
             </p>

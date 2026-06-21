@@ -92,13 +92,13 @@ export default function NaacAPlusCollegesDELHIPage() {
         ctaHeading="Get Admitted to a NAAC A+ College in Delhi"
         ctaSubtext="Our counsellors help you navigate admissions to Delhi's best NAAC-accredited colleges. Free guidance based on your scores, budget, and stream preferences."
       relatedGuides={[
-        { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "💰" },
-        { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "📊" },
-        { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "💼" },
-        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "🧮" },
-        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "📈" },
+        { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "" },
+        { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "" },
+        { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "" },
+        { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "" },
+        { label: "Placement Comparator Tool", href: "/delhi-college-placement-comparator", icon: "" },
         { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "âš–ï¸" },
-        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "📅" },
+        { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "" },
       ]}
       />
     </>

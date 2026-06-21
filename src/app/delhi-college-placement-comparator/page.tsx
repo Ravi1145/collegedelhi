@@ -217,13 +217,13 @@ export default function DELHICollegePlacementComparatorPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Placement Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "⭐" },
-              { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "💰" },
-              { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "📊" },
-              { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "💼" },
-              { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "🧮" },
-              { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "⚖️" },
-              { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "📅" },
+              { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "" },
+              { label: "Low Fee colleges in Delhi", href: "/low-fee-colleges-Delhi", icon: "" },
+              { label: "Delhi Colleges Fees Guide 2026", href: "/colleges-Delhi-fees", icon: "" },
+              { label: "Top Placement colleges in Delhi", href: "/top-placement-colleges-delhi", icon: "" },
+              { label: "College Fees Calculator", href: "/delhi-college-fees-calculator", icon: "" },
+              { label: "Engineering vs MBA Comparison", href: "/delhi-colleges-comparison-engineering-mba", icon: "" },
+              { label: "Admission Deadline Tracker 2026", href: "/delhi-admission-deadline-tracker-2026", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

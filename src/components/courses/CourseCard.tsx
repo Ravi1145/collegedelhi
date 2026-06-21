@@ -13,14 +13,14 @@ const levelColors: Record<string, string> = {
 }
 
 const streamEmoji: Record<string, string> = {
-  Engineering:  "⚙️",
-  Management:   "💼",
-  Medical:      "🩺",
-  Law:          "⚖️",
-  Architecture: "🏛️",
-  Commerce:     "📊",
-  Arts:         "🎨",
-  Science:      "🔬",
+  Engineering:  "",
+  Management:   "",
+  Medical:      "",
+  Law:          "",
+  Architecture: "",
+  Commerce:     "",
+  Arts:         "",
+  Science:      "",
 }
 
 interface CourseCardProps {
@@ -53,7 +53,7 @@ export default function CourseCard({ course }: CourseCardProps) {
           <div className="relative z-10 flex items-start gap-3 pr-10">
             {/* Emoji icon badge */}
             <div className="shrink-0 w-14 h-14 rounded-xl bg-white shadow-md flex items-center justify-center">
-              <span className="text-2xl">{streamEmoji[course.stream] ?? "📚"}</span>
+              <span className="text-2xl">{streamEmoji[course.stream] ?? ""}</span>
             </div>
 
             {/* Name + full name */}

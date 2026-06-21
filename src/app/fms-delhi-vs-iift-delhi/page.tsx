@@ -106,16 +106,16 @@ export default function FMSvsIIFTPage() {
         ctaHeading="Get Free FMS vs IIFT Guidance for Your Profile 2026"
         ctaSubtext="Tell us your CAT percentile, IIFT exam score (if taken), and target career — our counsellors will tell you which programme fits better and how to maximize your admission chances at both."
         relatedGuides={[
-          { label: "FMS Delhi — ₹55K MBA Guide", href: "/fms-delhi", icon: "🎓" },
-          { label: "IIFT Delhi — MBA International Business", href: "/iift-delhi", icon: "🌐" },
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "📍" },
-          { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon", icon: "⚖️" },
-          { label: "MBA in International Business Delhi", href: "/mba-in-international-business-delhi", icon: "🌐" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA Colleges Delhi Placement", href: "/mba-colleges-delhi-placement", icon: "📈" },
+          { label: "FMS Delhi — ₹55K MBA Guide", href: "/fms-delhi", icon: "" },
+          { label: "IIFT Delhi — MBA International Business", href: "/iift-delhi", icon: "" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "" },
+          { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon", icon: "" },
+          { label: "MBA in International Business Delhi", href: "/mba-in-international-business-delhi", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA Colleges Delhi Placement", href: "/mba-colleges-delhi-placement", icon: "" },
         ]}
       />
     </>

@@ -121,7 +121,7 @@ export default function ExitPopup() {
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <CheckCircle className="w-9 h-9 text-green-500" />
             </div>
-            <h2 className="text-xl font-extrabold text-gray-900 mb-2">You&apos;re all set! 🎉</h2>
+            <h2 className="text-xl font-extrabold text-gray-900 mb-2">You&apos;re all set!</h2>
             <p className="text-gray-500 text-sm leading-relaxed">
               Our expert counsellor will call you within <strong>2 hours</strong> with personalised college recommendations.
             </p>
@@ -159,7 +159,7 @@ export default function ExitPopup() {
                   "Expert guidance — completely free",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
-                    <span className="w-4 h-4 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5">✓</span>
+                    <span className="w-4 h-4 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5"></span>
                     {item}
                   </li>
                 ))}

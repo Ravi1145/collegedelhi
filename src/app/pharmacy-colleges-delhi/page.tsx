@@ -179,7 +179,7 @@ export default function PharmacyCollegesDELHI() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Pharmacy Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Pharmacy Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best overall:</strong> Poona College of Pharmacy · <strong>Best NAAC A+:</strong> MIT ·{" "}
               <strong>Cheapest:</strong> Government College (₹25K/yr) · <strong>Biggest intake:</strong> Sharda ·{" "}
@@ -189,7 +189,7 @@ export default function PharmacyCollegesDELHI() {
           {/* College table — live from backend */}
           <StreamCollegesTable stream="Pharmacy" keywords={["pharma","pharm"]} />
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-5 mb-10">
-            <h3 className="font-bold text-blue-900 mb-2">🏭 Why Delhi for Pharmacy?</h3>
+            <h3 className="font-bold text-blue-900 mb-2">Why Delhi for Pharmacy?</h3>
             <p className="text-sm text-blue-800 leading-relaxed">
               Delhi is one of India&apos;s top pharma hubs with <strong>Serum Institute of India</strong> (world&apos;s largest vaccine maker),{" "}
               <strong>Lupin, Cipla, Wockhardt, Sun Pharma</strong> and 200+ pharma companies in Delhi NCR and nearby industrial corridors.

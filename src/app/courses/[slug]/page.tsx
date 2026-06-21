@@ -248,7 +248,7 @@ export default async function CourseDetailPage({ params }: { params: Promise<{ s
                   )}
                   {course.cons?.length > 0 && (
                     <div>
-                      <p className="font-semibold text-red-700 mb-2">❌ Cons</p>
+                      <p className="font-semibold text-red-700 mb-2">Cons</p>
                       <ul className="space-y-1">{course.cons.map((c: string, i: number) => <li key={i} className="text-sm text-gray-600 flex items-start gap-2"><span className="text-red-500 mt-0.5">–</span>{c}</li>)}</ul>
                     </div>
                   )}

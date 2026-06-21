@@ -289,12 +289,12 @@ return (
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related Medical College Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "MBBS Colleges — NEET Cutoffs & Fees", href: "/mbbs-colleges-Delhi", icon: "🎓" },
-              { label: "NEET Colleges & Category Cutoffs", href: "/neet-colleges-Delhi", icon: "📝" },
-              { label: "Top 10 Medical Colleges — Ranked", href: "/top-10-medical-colleges-in-delhi", icon: "🏆" },
+              { label: "MBBS Colleges — NEET Cutoffs & Fees", href: "/mbbs-colleges-Delhi", icon: "" },
+              { label: "NEET Colleges & Category Cutoffs", href: "/neet-colleges-Delhi", icon: "" },
+              { label: "Top 10 Medical Colleges — Ranked", href: "/top-10-medical-colleges-in-delhi", icon: "" },
               { label: "NAAC A+ colleges in Delhi", href: "/naac-a-plus-colleges-delhi", icon: "â­" },
-              { label: "Pharmacy colleges in Delhi", href: "/pharmacy-colleges-delhi", icon: "💊" },
-              { label: "Free Medical Counselling", href: "/counselling", icon: "📞" },
+              { label: "Pharmacy colleges in Delhi", href: "/pharmacy-colleges-delhi", icon: "" },
+              { label: "Free Medical Counselling", href: "/counselling", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

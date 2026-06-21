@@ -22,11 +22,11 @@ export const metadata: Metadata = genMeta({
 })
 
 const exams = [
-  { key: "JEE Main", label: "JEE Main", desc: "State-level CET for Engineering — most Delhi colleges", icon: "⚙️", stream: "Engineering" },
-  { key: "jee",     label: "JEE Main", desc: "National entrance for DTU Delhi, SIT, Amity University Delhi (state quota)", icon: "🔬", stream: "Engineering" },
-  { key: "neet",    label: "NEET UG",  desc: "For MBBS/BDS — AFMC, BJ Medical, Lady Hardinge Medical", icon: "🏥", stream: "Medical" },
-  { key: "snap",    label: "SNAP",     desc: "Symbiosis entrance — Symbiosis Institute Noida, SIBM, SCIT", icon: "💼", stream: "MBA" },
-  { key: "cat",     label: "CAT",      desc: "Top MBA colleges — IIM Delhi, FMS Delhi, MDI Gurgaon (CAT route)", icon: "📊", stream: "MBA" },
+  { key: "JEE Main", label: "JEE Main", desc: "State-level CET for Engineering — most Delhi colleges", icon: "", stream: "Engineering" },
+  { key: "jee",     label: "JEE Main", desc: "National entrance for DTU Delhi, SIT, Amity University Delhi (state quota)", icon: "", stream: "Engineering" },
+  { key: "neet",    label: "NEET UG",  desc: "For MBBS/BDS — AFMC, BJ Medical, Lady Hardinge Medical", icon: "", stream: "Medical" },
+  { key: "snap",    label: "SNAP",     desc: "Symbiosis entrance — Symbiosis Institute Noida, SIBM, SCIT", icon: "", stream: "MBA" },
+  { key: "cat",     label: "CAT",      desc: "Top MBA colleges — IIM Delhi, FMS Delhi, MDI Gurgaon (CAT route)", icon: "", stream: "MBA" },
 ]
 
 const faqs = [
@@ -188,7 +188,7 @@ export default function CutoffsPage() {
             <p className="text-gray-300 text-sm mb-4">Enter your score and get a personalized college shortlist based on 2026 cutoffs.</p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Link href="/predictor" className="bg-red-600 hover:bg-red-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors">
-                🎯 Try College Predictor
+                Try College Predictor
               </Link>
               <Link href="/counselling" className="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-xl text-sm transition-colors border border-white/20">
                 Book Free Counselling

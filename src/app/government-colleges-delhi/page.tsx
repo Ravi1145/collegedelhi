@@ -27,7 +27,7 @@ export const metadata: Metadata = genMeta({
 const categories = [
   {
     type: "Government Engineering",
-    emoji: "⚙️",
+    emoji: "",
     colleges: [
       { name: "DTU Delhi Technological University", fees: "₹80K–₹1.8L/yr", naac: "A+", nirf: 49, program: "BTech, MTech, PhD", slug: "dtu-delhi-delhi-technological-university", note: "Best Govt Engineering | Est. 1854 | NIRF #49" },
       { name: "Army Institute of Technology (AIT)", fees: "₹1.5L–₹2L/yr", naac: "A", nirf: null, program: "BTech (4 branches)", slug: "army-institute-of-technology-Delhi", note: "Defence-backed | Delhi Cantonment | Very selective" },
@@ -36,7 +36,7 @@ const categories = [
   },
   {
     type: "Government Arts & Science",
-    emoji: "📚",
+    emoji: "",
     colleges: [
       { name: "Miranda House College", fees: "₹10K–₹30K/yr", naac: "A+", nirf: null, program: "BA, BSc, BCom, BCA", slug: "miranda-house-college-delhi", note: "Est. 1885 | Most Prestigious Arts College Delhi" },
       { name: "Hindu College (Sir Parashurambhau)", fees: "₹12K–₹28K/yr", naac: "A+", nirf: null, program: "BA, BSc, BCom", slug: "sp-college-delhi-sir-parashurambhau-college", note: "Top Science Stream | NAAC A+" },
@@ -47,7 +47,7 @@ const categories = [
   },
   {
     type: "Government Medical",
-    emoji: "🏥",
+    emoji: "",
     colleges: [
       { name: "AFMC — AIIMS Delhi", fees: "₹50,000 (total 4.5 yrs)", naac: "A++", nirf: 4, program: "MBBS (Defence)", slug: "afmc-armed-forces-medical-college-delhi", note: "NIRF #4 | Free for Defence | 650+ NEET" },
       { name: "Maulana Azad Medical College, Delhi (MAMC)", fees: "₹60K–₹1.2L/yr", naac: "A+", nirf: 18, program: "MBBS, MD, MS", slug: "bj-medical-college-delhi", note: "NIRF #18 | Best Govt for Open Category | 625+ NEET" },
@@ -57,7 +57,7 @@ const categories = [
   },
   {
     type: "Government Law",
-    emoji: "⚖️",
+    emoji: "",
     colleges: [
       { name: "ILS Law College", fees: "₹20K–₹40K/yr", naac: "A", nirf: null, program: "BA LLB (5yr), LLM", slug: "ils-law-college-delhi", note: "Est. 1924 | Most Prestigious Law College Delhi" },
       { name: "New Law College (BMCC Road)", fees: "₹15K–₹25K/yr", naac: "B+", nirf: null, program: "LLB (3yr)", slug: "new-law-college-delhi", note: "Cheapest LLB Delhi | 360 seats | DU" },
@@ -65,7 +65,7 @@ const categories = [
   },
   {
     type: "Government Research & Specialised",
-    emoji: "🔬",
+    emoji: "",
     colleges: [
       { name: "IISER Delhi (Indian Institute of Science Education & Research)", fees: "₹15K–₹30K/yr", naac: "–", nirf: null, program: "BS-MS (5yr), PhD", slug: "iiser-Delhi-indian-institute-science-education-research", note: "National Institute | IAT + JEE Advanced | Research excellence" },
       { name: "DIAT (Defence Institute of Advanced Technology)", fees: "₹50K–₹80K/yr", naac: "–", nirf: null, program: "MTech, PhD (Defence)", slug: "diat-defence-institute-advanced-technology-Delhi", note: "Defence University | GATE required | PG only" },
@@ -145,7 +145,7 @@ export default function GovernmentCollegesDELHI() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-10">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Best Government Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Best Government Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Engineering:</strong> DTU (NIRF #49) · <strong>Medical:</strong> AFMC (NIRF #4, free!) / BJ Medical (NIRF #18) ·{" "}
               <strong>Arts:</strong> Miranda House College · <strong>Commerce:</strong> SRCC · <strong>MBA:</strong> DSM DTU ·{" "}
@@ -206,7 +206,7 @@ export default function GovernmentCollegesDELHI() {
                 "IISER / AFMC / DIAT — Full stipend from Govt of India",
               ].map(s => (
                 <div key={s} className="flex items-start gap-2">
-                  <span className="text-green-600 mt-0.5">✓</span>
+                  <span className="text-green-600 mt-0.5"></span>
                   <span>{s}</span>
                 </div>
               ))}

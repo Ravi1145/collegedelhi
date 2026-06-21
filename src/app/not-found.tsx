@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 }
 
 const QUICK_LINKS = [
-  { icon: "⚙️", label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi" },
-  { icon: "💼", label: "MBA Colleges Delhi", href: "/mba-colleges-delhi" },
-  { icon: "🏥", label: "Medical Colleges Delhi", href: "/medical-colleges-delhi" },
-  { icon: "🎓", label: "Top 10 Engineering Colleges", href: "/top-10-engineering-colleges-in-delhi" },
-  { icon: "🏆", label: "Top 10 MBA Colleges", href: "/top-10-mba-colleges-in-delhi" },
-  { icon: "🔮", label: "AI College Finder", href: "/ai-finder" },
+  { icon: "", label: "Engineering Colleges Delhi", href: "/engineering-colleges-delhi" },
+  { icon: "", label: "MBA Colleges Delhi", href: "/mba-colleges-delhi" },
+  { icon: "", label: "Medical Colleges Delhi", href: "/medical-colleges-delhi" },
+  { icon: "", label: "Top 10 Engineering Colleges", href: "/top-10-engineering-colleges-in-delhi" },
+  { icon: "", label: "Top 10 MBA Colleges", href: "/top-10-mba-colleges-in-delhi" },
+  { icon: "", label: "AI College Finder", href: "/ai-finder" },
 ]
 
 export default function NotFound() {

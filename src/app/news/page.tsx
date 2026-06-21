@@ -28,13 +28,13 @@ export const metadata: Metadata = genMeta({
 })
 
 const CATEGORIES = [
-  { key: "all",        label: "All News",     icon: "📰" },
-  { key: "admission",  label: "Admissions",   icon: "🎓" },
-  { key: "Exams",      label: "Exams",        icon: "📝" },
-  { key: "Engineering",label: "Engineering",  icon: "⚙️" },
-  { key: "MBA",        label: "MBA",          icon: "💼" },
-  { key: "Medical",    label: "Medical",      icon: "🏥" },
-  { key: "Student Life", label: "Student Life", icon: "🏠" },
+  { key: "all",        label: "All News",     icon: "" },
+  { key: "admission",  label: "Admissions",   icon: "" },
+  { key: "Exams",      label: "Exams",        icon: "" },
+  { key: "Engineering",label: "Engineering",  icon: "" },
+  { key: "MBA",        label: "MBA",          icon: "" },
+  { key: "Medical",    label: "Medical",      icon: "" },
+  { key: "Student Life", label: "Student Life", icon: "" },
 ]
 
 function formatDate(dateStr: string) {
@@ -146,7 +146,7 @@ export default async function NewsPage() {
             <p className="text-gray-300 max-w-xl mb-4">JEE Main results, admission dates, scholarship alerts, and exam news — updated daily.</p>
             {/* Alert subscribe */}
             <div className="flex items-center gap-3 bg-white/10 rounded-xl px-4 py-3 max-w-md">
-              <span className="text-xl">📲</span>
+              <span className="text-xl"></span>
               <div className="flex-1">
                 <p className="text-white text-xs font-semibold">Get alerts on WhatsApp — instantly</p>
               </div>
@@ -245,7 +245,7 @@ export default async function NewsPage() {
             <div className="space-y-6">
               {/* Important dates */}
               <div className="bg-white rounded-2xl border border-gray-100 p-5">
-                <h3 className="font-extrabold text-gray-900 text-sm mb-4">📅 Key Dates 2026</h3>
+                <h3 className="font-extrabold text-gray-900 text-sm mb-4">Key Dates 2026</h3>
                 <div className="space-y-3 text-xs">
                   {[
                     { event: "JEE Main 2026", date: "Apr 20 – May 15", color: "text-blue-700" },

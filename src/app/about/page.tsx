@@ -149,17 +149,17 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
           <div className="grid md:grid-cols-3 gap-5 mb-8">
             <div className="bg-blue-50 rounded-xl p-5 text-center">
-              <div className="text-2xl mb-2">📧</div>
+              <div className="text-2xl mb-2"></div>
               <div className="font-semibold text-gray-900 mb-1">Editorial</div>
               <a href="mailto:support@collegedelhi.com" className="text-blue-600 text-sm hover:underline">support@collegedelhi.com</a>
             </div>
             <div className="bg-blue-50 rounded-xl p-5 text-center">
-              <div className="text-2xl mb-2">📞</div>
+              <div className="text-2xl mb-2"></div>
               <div className="font-semibold text-gray-900 mb-1">Counselling</div>
               <a href="tel:+917753831118" className="text-blue-600 text-sm hover:underline">+91-7753831118</a>
             </div>
             <div className="bg-blue-50 rounded-xl p-5 text-center">
-              <div className="text-2xl mb-2">📍</div>
+              <div className="text-2xl mb-2"></div>
               <div className="font-semibold text-gray-900 mb-1">Address</div>
               <span className="text-gray-600 text-sm">Connaught Place, New Delhi — 110001</span>
             </div>

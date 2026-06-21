@@ -95,9 +95,9 @@ return (
         </div>
 
         <div className="max-w-5xl mx-auto px-4 py-10">
-          {/* ⚡ Quick Answer */}
+          {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top Design Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Design Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best overall:</strong> MIT Institute of Design (MIT-ID) · <strong>Best deemed:</strong> Symbiosis School of Design · <strong>Best B.Arch:</strong> MIT AOA ·{" "}
               <strong>Lowest fees:</strong> Miranda House College (₹15K/yr) · <strong>Highest placement:</strong> MIT-ID (₹12 LPA top offer)

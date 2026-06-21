@@ -92,7 +92,7 @@ export default function ParamedicalCollegesDelhi() {
 
         <div className="max-w-5xl mx-auto px-4 py-10">
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top Paramedical Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Paramedical Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best govt:</strong> AIIMS Delhi · <strong>Best Delhi Govt:</strong> MAMC / VMMC (Safdarjung) · <strong>Best private:</strong> Jamia Hamdard · <strong>IP University:</strong> GGSIPU Allied Health Colleges
             </p>

@@ -122,14 +122,14 @@ return (
         ctaHeading="Get Personalized BBA Admission Guidance for Delhi"
         ctaSubtext="Tell us your CUET/IPU CET score and budget — our counsellors will shortlist the best BBA colleges in Delhi matching your profile and MBA goals."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🎓" },
-          { label: "BCA Colleges in Delhi 2026", href: "/bca-colleges-delhi", icon: "💻" },
-          { label: "BTech Colleges in Delhi 2026", href: "/btech-colleges-delhi", icon: "⚙️" },
-          { label: "Commerce Colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "📊" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-          { label: "Government Colleges Delhi", href: "/government-colleges-delhi", icon: "🏛️" },
-          { label: "Best Colleges in Delhi 2026", href: "/best-colleges-in-delhi", icon: "⭐" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "BCA Colleges in Delhi 2026", href: "/bca-colleges-delhi", icon: "" },
+          { label: "BTech Colleges in Delhi 2026", href: "/btech-colleges-delhi", icon: "" },
+          { label: "Commerce Colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "" },
+          { label: "Government Colleges Delhi", href: "/government-colleges-delhi", icon: "" },
+          { label: "Best Colleges in Delhi 2026", href: "/best-colleges-in-delhi", icon: "" },
         ]}
       />
     </>

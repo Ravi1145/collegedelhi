@@ -71,12 +71,12 @@ export default function PGDMvsMBAPage() {
         ]}
         faqs={faqs}
         relatedGuides={[
-          { label: "Best MBA Colleges Delhi", href: "/best-mba-colleges-delhi", icon: "🎓" },
-          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "📋" },
-          { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-          { label: "MBA without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "🔓" },
-          { label: "FMS Delhi vs MDI", href: "/fms-delhi-vs-mdi-gurgaon", icon: "⚖️" },
-          { label: "Low Fees MBA Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
+          { label: "Best MBA Colleges Delhi", href: "/best-mba-colleges-delhi", icon: "" },
+          { label: "PGDM Colleges Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+          { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "" },
+          { label: "MBA without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "" },
+          { label: "FMS Delhi vs MDI", href: "/fms-delhi-vs-mdi-gurgaon", icon: "" },
+          { label: "Low Fees MBA Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
         ]}
       />
     </>

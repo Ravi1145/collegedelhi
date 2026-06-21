@@ -110,16 +110,16 @@ export default function MBAHealthcareManagementDelhiPage() {
         ctaHeading="Get Free MBA Healthcare Management Guidance Delhi 2026"
         ctaSubtext="Tell us your background (medicine / pharma / IT / general) and target role (hospital / pharma / health-tech / consulting) — our counsellors will recommend the best healthcare MBA in Delhi for you."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FORE School of Management Delhi", href: "/fore-school-management-delhi", icon: "🏫" },
-          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "MBA in Operations Delhi", href: "/mba-in-operations-delhi", icon: "⚙️" },
-          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "📝" },
-          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "MBA in Business Analytics Delhi", href: "/mba-in-business-analytics-delhi", icon: "📊" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA Colleges Delhi Placement", href: "/mba-colleges-delhi-placement", icon: "📈" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FORE School of Management Delhi", href: "/fore-school-management-delhi", icon: "" },
+          { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "MBA in Operations Delhi", href: "/mba-in-operations-delhi", icon: "" },
+          { label: "MBA Admission Without CAT Delhi", href: "/mba-admission-delhi-without-cat", icon: "" },
+          { label: "Low Fees MBA Colleges Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "MBA in Business Analytics Delhi", href: "/mba-in-business-analytics-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA Colleges Delhi Placement", href: "/mba-colleges-delhi-placement", icon: "" },
         ]}
       />
     </>

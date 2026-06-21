@@ -86,7 +86,7 @@ export default function CUETCollegesDelhi() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — CUET Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — CUET Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Commerce:</strong> SRCC (99.5+) · <strong>Science:</strong> Miranda House / Hindu (99+) · <strong>Arts:</strong> LSR / Hansraj (97–98+) · <strong>BMS/BBA:</strong> SSCBS (95+) · <strong>Affordable:</strong> Kirori Mal (95+, ₹10K/yr)
             </p>

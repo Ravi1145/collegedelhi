@@ -111,17 +111,17 @@ export default function GovernmentMBADelhiPage() {
         ctaHeading="Get Free Counselling for Government MBA Colleges in Delhi"
         ctaSubtext="Tell us your CAT percentile and budget — our counsellors will map you to the best government MBA college in Delhi that matches your profile."
         relatedGuides={[
-          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-          { label: "FMS Delhi MBA Admission 2026", href: "/fms-delhi", icon: "🎓" },
-          { label: "IIFT Delhi MBA 2026", href: "/iift-delhi", icon: "🌐" },
-          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "📍" },
-          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "💼" },
-          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-          { label: "Low Fees MBA Delhi", href: "/low-fees-mba-colleges-delhi", icon: "💰" },
-          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-          { label: "MBA Colleges Gurgaon", href: "/mba-colleges-gurgaon", icon: "🏙️" },
-          { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "📝" },
+          { label: "MBA Colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+          { label: "FMS Delhi MBA Admission 2026", href: "/fms-delhi", icon: "" },
+          { label: "IIFT Delhi MBA 2026", href: "/iift-delhi", icon: "" },
+          { label: "MDI Gurgaon — PGDM", href: "/mdi-gurgaon", icon: "" },
+          { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+          { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "" },
+          { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+          { label: "Low Fees MBA Delhi", href: "/low-fees-mba-colleges-delhi", icon: "" },
+          { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+          { label: "MBA Colleges Gurgaon", href: "/mba-colleges-gurgaon", icon: "" },
+          { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "" },
         ]}
       />
     </>

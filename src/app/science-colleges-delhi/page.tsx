@@ -92,13 +92,13 @@ export default function ScienceCollegesDELHIPage() {
         ctaHeading="Find the Best Science College in Delhi for Your Interests"
         ctaSubtext="Whether you want research, pharma careers, or IT crossover -- our counsellors will help you find the right science college in Delhi matching your HSC scores and career goals."
       relatedGuides={[
-        { label: "Arts & Science colleges in Delhi", href: "/arts-colleges-delhi", icon: "📚" },
-        { label: "Commerce colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "📊" },
-        { label: "BCA colleges in Delhi", href: "/bca-colleges-delhi", icon: "💻" },
-        { label: "BBA colleges in Delhi", href: "/bba-colleges-delhi", icon: "📈" },
-        { label: "BSc IT colleges in Delhi", href: "/bsc-it-colleges-Delhi", icon: "🖥️" },
+        { label: "Arts & Science colleges in Delhi", href: "/arts-colleges-delhi", icon: "" },
+        { label: "Commerce colleges in Delhi", href: "/commerce-colleges-Delhi", icon: "" },
+        { label: "BCA colleges in Delhi", href: "/bca-colleges-delhi", icon: "" },
+        { label: "BBA colleges in Delhi", href: "/bba-colleges-delhi", icon: "" },
+        { label: "BSc IT colleges in Delhi", href: "/bsc-it-colleges-Delhi", icon: "" },
         { label: "Law colleges in Delhi", href: "/law-colleges-delhi", icon: "âš–ï¸" },
-        { label: "Design colleges in Delhi", href: "/design-colleges-delhi", icon: "🎨" },
+        { label: "Design colleges in Delhi", href: "/design-colleges-delhi", icon: "" },
       ]}
       />
     </>

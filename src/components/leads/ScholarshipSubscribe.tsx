@@ -51,7 +51,7 @@ export default function ScholarshipSubscribe({ context = "scholarship_subscribe"
       <div className="rounded-2xl border border-green-200 bg-green-50 p-5 flex items-start gap-4">
         <CheckCircle className="w-6 h-6 text-green-600 shrink-0 mt-0.5" />
         <div>
-          <p className="font-bold text-green-800">You&apos;re on the list! 🎉</p>
+          <p className="font-bold text-green-800">You&apos;re on the list!</p>
           <p className="text-sm text-green-700 mt-0.5">
             We&apos;ll WhatsApp you when new scholarships or deadlines are announced.
           </p>

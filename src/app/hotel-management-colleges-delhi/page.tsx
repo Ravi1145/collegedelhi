@@ -85,7 +85,7 @@ export default function HotelManagementCollegesDelhi() {
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">⚡ Quick Answer — Top Hotel Management Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Hotel Management Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
               <strong>Best govt:</strong> IHM Delhi (NCHMCT JEE) · <strong>Best private:</strong> Amity Hospitality · <strong>Most affordable:</strong> DIHM (₹60K/yr) · <strong>IP University:</strong> GGSIPU HM Colleges · <strong>Top placement:</strong> IHM Delhi (Taj, Oberoi, Marriott)
             </p>

@@ -217,10 +217,10 @@ export default function Top10MedicalCollegesPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "🏥", label: "10 Medical Colleges" },
-                { icon: "🩺", label: "NEET 490–655+" },
-                { icon: "💰", label: "Fees ₹50K–₹18L/yr" },
-                { icon: "📊", label: "NIRF Ranked" },
+                { icon: "", label: "10 Medical Colleges" },
+                { icon: "", label: "NEET 490–655+" },
+                { icon: "", label: "Fees ₹50K–₹18L/yr" },
+                { icon: "", label: "NIRF Ranked" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
                   <span>{icon}</span><span>{label}</span>

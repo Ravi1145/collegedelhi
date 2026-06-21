@@ -292,18 +292,18 @@ export default function FMSDelhiPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related MBA Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-                { label: "MBA Colleges Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-                { label: "IIFT Delhi — MBA IB 2026", href: "/iift-delhi", icon: "🌐" },
-                { label: "MDI Gurgaon — PGDM 2026", href: "/mdi-gurgaon", icon: "📍" },
-                { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon", icon: "⚖️" },
-                { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "🏛️" },
-                { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "💹" },
-                { label: "MBA in Marketing Delhi", href: "/mba-in-marketing-delhi", icon: "📊" },
-                { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "👥" },
-                { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "💼" },
-                { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-                { label: "MBA Placement Rankings", href: "/mba-colleges-delhi-placement", icon: "📈" },
-                { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "📝" },
+                { label: "MBA Colleges Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+                { label: "IIFT Delhi — MBA IB 2026", href: "/iift-delhi", icon: "" },
+                { label: "MDI Gurgaon — PGDM 2026", href: "/mdi-gurgaon", icon: "" },
+                { label: "FMS Delhi vs MDI Gurgaon", href: "/fms-delhi-vs-mdi-gurgaon", icon: "" },
+                { label: "Government MBA Colleges Delhi", href: "/government-mba-colleges-delhi", icon: "" },
+                { label: "MBA in Finance Delhi", href: "/mba-in-finance-delhi", icon: "" },
+                { label: "MBA in Marketing Delhi", href: "/mba-in-marketing-delhi", icon: "" },
+                { label: "MBA in HR Delhi", href: "/mba-in-hr-delhi", icon: "" },
+                { label: "Executive MBA Delhi", href: "/executive-mba-delhi", icon: "" },
+                { label: "Top 10 MBA Colleges Delhi", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+                { label: "MBA Placement Rankings", href: "/mba-colleges-delhi-placement", icon: "" },
+                { label: "CAT Colleges Delhi", href: "/cat-colleges-delhi", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 px-4 py-3 hover:border-red-200 hover:shadow-sm transition-all group">
                   <span className="text-xl">{icon}</span>

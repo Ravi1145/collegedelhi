@@ -181,9 +181,9 @@ export default function CollegesWithHostelDELHIPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "🏠", label: "8 Colleges with Hostels" },
-                { icon: "💰", label: "Fees ₹40K–₹1.8L/yr" },
-                { icon: "✅", label: "Boys & Girls Hostels" },
+                { icon: "", label: "8 Colleges with Hostels" },
+                { icon: "", label: "Fees ₹40K–₹1.8L/yr" },
+                { icon: "", label: "Boys & Girls Hostels" },
                 { icon: "🆓", label: "AFMC: Free Hostel" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
@@ -221,7 +221,7 @@ export default function CollegesWithHostelDELHIPage() {
                         {c.availability}
                       </div>
                     </div>
-                    <p className="text-[11px] text-amber-700 bg-amber-50 px-2 py-1 rounded-lg inline-block">⚠️ {c.note}</p>
+                    <p className="text-[11px] text-amber-700 bg-amber-50 px-2 py-1 rounded-lg inline-block">{c.note}</p>
                   </div>
                   <Link href={`/colleges/${c.slug}`}
                     className="shrink-0 text-xs font-semibold text-red-700 hover:text-red-800 border border-red-200 hover:border-red-400 px-3 py-1.5 rounded-lg transition-colors">

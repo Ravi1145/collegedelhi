@@ -4,13 +4,13 @@ import { PhoneCall, CheckCircle2, GraduationCap, Users, TrendingUp, Building2 } 
 
 const COURSES = [
   { icon: "âš™ï¸", label: "ENGINEERING", desc: "B.Tech | M.Tech" },
-  { icon: "💼", label: "MANAGEMENT", desc: "MBA | BBA | PGDM" },
-  { icon: "💻", label: "COMPUTER APPLICATIONS", desc: "BCA | MCA | B.Sc (CS)" },
-  { icon: "🔬", label: "SCIENCES", desc: "B.Sc | M.Sc" },
-  { icon: "📊", label: "COMMERCE", desc: "B.Com | M.Com" },
+  { icon: "", label: "MANAGEMENT", desc: "MBA | BBA | PGDM" },
+  { icon: "", label: "COMPUTER APPLICATIONS", desc: "BCA | MCA | B.Sc (CS)" },
+  { icon: "", label: "SCIENCES", desc: "B.Sc | M.Sc" },
+  { icon: "", label: "COMMERCE", desc: "B.Com | M.Com" },
   { icon: "âš–ï¸", label: "LAW", desc: "BA LLB | LLB | LLM" },
-  { icon: "🏛️", label: "ARCHITECTURE & DESIGN", desc: "B.Arch | B.Des | M.Des" },
-  { icon: "🏨", label: "HOTEL MANAGEMENT", desc: "BHM | MHM" },
+  { icon: "", label: "ARCHITECTURE & DESIGN", desc: "B.Arch | B.Des | M.Des" },
+  { icon: "", label: "HOTEL MANAGEMENT", desc: "BHM | MHM" },
 ]
 
 const TOP_COLLEGES = [
@@ -22,9 +22,9 @@ const TOP_COLLEGES = [
 ]
 
 const ADMISSION_STEPS = [
-  { num: "1", title: "FILL THE ENQUIRY FORM", icon: "📋" },
-  { num: "2", title: "GET EXPERT COUNSELLING", icon: "👨â€💼" },
-  { num: "3", title: "CHOOSE YOUR DREAM COLLEGE", icon: "🏫" },
+  { num: "1", title: "FILL THE ENQUIRY FORM", icon: "" },
+  { num: "2", title: "GET EXPERT COUNSELLING", icon: "â€" },
+  { num: "3", title: "CHOOSE YOUR DREAM COLLEGE", icon: "" },
   { num: "4", title: "EASY ADMISSION CONFIRMATION", icon: "âœ…" },
 ]
 
@@ -122,10 +122,10 @@ export default function AdmissionPosterHero() {
         {/* Highlights */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           {[
-            { icon: "🏆", label: "TOP colleges in Delhi" },
-            { icon: "👨â€🎓", label: "EXPERT COUNSELLING" },
+            { icon: "", label: "TOP colleges in Delhi" },
+            { icon: "â€", label: "EXPERT COUNSELLING" },
             { icon: "âœ…", label: "EASY ADMISSION" },
-            { icon: "👥", label: "FREE PLACEMENT GUIDANCE" },
+            { icon: "", label: "FREE PLACEMENT GUIDANCE" },
           ].map((item) => (
             <div key={item.label} className="bg-[#0A1628] text-white rounded-2xl p-4 text-center">
               <div className="text-3xl mb-2">{item.icon}</div>
@@ -157,11 +157,11 @@ export default function AdmissionPosterHero() {
         {/* CTAs */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <Link href="/colleges" className="bg-red-600 hover:bg-red-700 text-white rounded-2xl p-6 text-center font-black text-xl transition-colors">
-            📋 APPLY NOW<br />
+            APPLY NOW<br />
             <span className="text-sm font-bold">SECURE YOUR FUTURE TODAY!</span>
           </Link>
           <Link href="/counselling" className="bg-[#0A1628] hover:bg-[#0f2340] text-white rounded-2xl p-6 text-center font-black text-xl transition-colors">
-            📞 TALK TO OUR ADMISSION EXPERTS<br />
+            TALK TO OUR ADMISSION EXPERTS<br />
             <span className="text-red-600 text-2xl font-black">7318538887</span>
             <div className="text-sm font-bold mt-2">www.collegedelhi.com</div>
           </Link>

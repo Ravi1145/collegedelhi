@@ -158,7 +158,7 @@ export default function LowFeesMBACollegesDELHIPage() {
               Complete list of affordable MBA colleges in Delhi with fees under ₹5 lakh and ₹10 lakh total. Compare fee structures, average placements, and ROI to pick the best budget MBA program.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
-              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">⚡ Quick Answer — Cheapest MBA colleges in Delhi</p>
+              <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer — Cheapest MBA colleges in Delhi</p>
               <p className="text-white text-sm leading-relaxed">
                 <strong>IMS Ghaziabad</strong> is cheapest at ₹2.8L total (2 years). <strong>GL Bajaj Noida</strong> ₹3.8L, <strong>Indira Institute</strong> ₹4.2L, <strong>Fore School Delhi</strong> ₹5L. All under ₹5L and NAAC accredited. Admission via <strong>IPU CET</strong> or <strong>CAT</strong>. Average placement ₹4–6 LPA. IMI Delhi (₹7–11L) offers higher placements of ₹7–9 LPA.
               </p>
@@ -170,10 +170,10 @@ export default function LowFeesMBACollegesDELHIPage() {
           {/* Key Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
-              { label: "Cheapest MBA (2 yrs)", value: "₹2.8L", icon: "🏛️" },
-              { label: "Under ₹5L Options", value: "4 Colleges", icon: "💰" },
-              { label: "Min Avg Placement", value: "₹4 LPA", icon: "📈" },
-              { label: "ROI Recovery", value: "< 1 Year", icon: "🎯" },
+              { label: "Cheapest MBA (2 yrs)", value: "₹2.8L", icon: "" },
+              { label: "Under ₹5L Options", value: "4 Colleges", icon: "" },
+              { label: "Min Avg Placement", value: "₹4 LPA", icon: "" },
+              { label: "ROI Recovery", value: "< 1 Year", icon: "" },
             ].map(({ label, value, icon }) => (
               <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 text-center">
                 <p className="text-2xl mb-1">{icon}</p>
@@ -382,13 +382,13 @@ export default function LowFeesMBACollegesDELHIPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-4">Related MBA Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
-              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "🏛️" },
-              { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "🏆" },
-              { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "💼" },
-              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "🎓" },
-              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "📝" },
-              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "📊" },
-              { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "🚀" },
+              { label: "Best MBA colleges in Delhi 2026", href: "/mba-colleges-delhi", icon: "" },
+              { label: "Top 10 MBA Colleges — Ranked", href: "/top-10-mba-colleges-in-delhi", icon: "" },
+              { label: "MBA Placement Guide — LPA Stats", href: "/mba-colleges-delhi-placement", icon: "" },
+              { label: "MBA Scholarships in Delhi", href: "/mba-colleges-delhi-scholarship", icon: "" },
+              { label: "CAT Score colleges in Delhi", href: "/cat-colleges-delhi", icon: "" },
+              { label: "PGDM colleges in Delhi", href: "/pgdm-colleges-delhi", icon: "" },
+              { label: "Admission Without CAT (IPU CET)", href: "/mba-admission-delhi-without-cat", icon: "" },
               ].map(({ label, href, icon }) => (
                 <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all group">
                   <span className="text-xl">{icon}</span>

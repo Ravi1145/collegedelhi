@@ -7,9 +7,9 @@ import { formatCurrency, formatFeesRange, getNaacColor, cn } from "@/lib/utils"
 import * as Tabs from "@radix-ui/react-tabs"
 
 const tabs = [
-  { id: "engineering", label: "🏗️ Top BTech Colleges", title: "Top 10 BTech colleges in Delhi 2026" },
-  { id: "mba", label: "💼 Top MBA Colleges", title: "Top 10 MBA colleges in Delhi 2026" },
-  { id: "medical", label: "🏥 Top Medical Colleges", title: "Top Medical colleges in Delhi 2026" },
+  { id: "engineering", label: "Top BTech Colleges", title: "Top 10 BTech colleges in Delhi 2026" },
+  { id: "mba", label: "Top MBA Colleges", title: "Top 10 MBA colleges in Delhi 2026" },
+  { id: "medical", label: "Top Medical Colleges", title: "Top Medical colleges in Delhi 2026" },
 ]
 
 function RankTable({ colleges, title }: { colleges: College[]; title: string }) {

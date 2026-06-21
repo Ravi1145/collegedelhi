@@ -59,7 +59,7 @@ export default function AIFinderPage() {
             Our AI counselor is available 24/7 to answer specific questions about any Delhi college — fees, cutoffs, hostel, placements, and more.
           </p>
           <p className="text-red-300 font-medium">
-            💬 Click the chat bubble in the bottom-right corner to start chatting with our AI counselor
+            Click the chat bubble in the bottom-right corner to start chatting with our AI counselor
           </p>
         </div>
       </div>
