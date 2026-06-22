@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "MDI Gurgaon vs IMI Delhi 2026 — Fees, Placements, CAT Score & Which is Better",
-  description: "MDI Gurgaon vs IMI Delhi 2026: NIRF rank, CAT cutoff (97+ vs 90+), fees (₹22L vs ₹22L), placements (₹26 LPA vs ₹17 LPA), campus. Detailed MBA head-to-head comparison.",
+  title: "MDI Gurgaon vs IMI Delhi 2026",
+  description: "MDI Gurgaon vs IMI Delhi 2026: NIRF rank, CAT cutoff (97+ vs 90+), fees (₹22L vs ₹22L), placements (₹26 LPA vs ₹17 LPA), campus",
   path: "/mdi-vs-imi",
   keywords: ["MDI vs IMI","MDI Gurgaon vs IMI Delhi 2026","MDI IMI comparison MBA","MDI better than IMI","MDI Gurgaon IMI Delhi placements","which is better MDI or IMI for MBA"],
 })

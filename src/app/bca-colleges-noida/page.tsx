@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 
 export const metadata: Metadata = genMeta({
   title: "Best BCA Colleges in Noida 2026 | Fees, Cutoff & Placements",
-  description: "Top BCA colleges in Noida NCR 2026 — Amity University, Galgotias University, Sharda University, GL Bajaj, NIET. CUET/IPU CET admission, fees ₹60K–2.5L/yr, placements ₹4–8 LPA.",
+  description: "Top BCA colleges in Noida NCR 2026 — Amity University, Galgotias University, Sharda University, GL Bajaj, NIET",
   path: "/bca-colleges-noida",
   keywords: [
     "bca colleges in noida", "best bca colleges noida 2026", "bca admission noida",

@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BMS Colleges in Delhi 2026 | Bachelor of Management Studies Fees & CUET Cutoff",
+  title: "Best BMS Colleges in Delhi 2026",
   description: "Top BMS colleges in Delhi 2026 — SSCBS, Shaheed Sukhdev, DU. Compare BMS fees ₹10K–₹1.5L/yr, CUET cutoffs, placement packages up to ₹15 LPA.",
   path: "/bms-colleges-delhi",
   keywords: [

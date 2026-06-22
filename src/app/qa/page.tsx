@@ -6,7 +6,7 @@ import QAPageClient from "@/components/home/QAPageClient"
 export const revalidate = 60
 
 export const metadata: Metadata = genMeta({
-  title: "Delhi College Q&A 2026 — Real Questions Answered by Alumni & Experts",
+  title: "Delhi College Q&A 2026 — Real Questions Answered by Alumni",
   description: "Browse answered questions about Delhi college admissions, cutoffs, fees, hostels, and placements. Ask your question and get answers from CollegeDelhi alumni.",
   path: "/qa",
   keywords: ["Delhi college questions", "DTU Delhi admission question", "FMS Delhi mba questions", "JEE Main cutoff Delhi", "entrance exams Delhi"],

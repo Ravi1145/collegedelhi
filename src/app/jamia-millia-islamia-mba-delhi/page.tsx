@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Jamia Millia Islamia MBA Delhi 2026 | Fees, Cutoff, Placement & Admission",
-  description: "Jamia Millia Islamia MBA 2026: Central university, NAAC A+, fees ₹55K–₹80K per year, CAT/CMAT cutoff, average placement ₹7–10 LPA. OBC/Minority quota. Full guide.",
+  title: "Jamia Millia Islamia MBA Delhi 2026",
+  description: "Jamia Millia Islamia MBA 2026: Central university, NAAC A+, fees ₹55K–₹80K per year, CAT/CMAT cutoff, average placement ₹7–10 LPA. OBC/Minority quota",
   path: "/jamia-millia-islamia-mba-delhi",
   keywords: [
     "jamia millia islamia mba",

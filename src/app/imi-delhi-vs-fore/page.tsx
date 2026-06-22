@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "IMI Delhi vs FORE School 2026 — Fees, Placements, CAT Score & Which is Better",
-  description: "IMI Delhi vs FORE School of Management 2026: fees (₹22L vs ₹18L), CAT cutoff, placements (₹17 LPA vs ₹14 LPA), campus, accreditation, recruiters. Detailed MBA comparison.",
+  title: "IMI Delhi vs FORE School 2026",
+  description: "IMI Delhi vs FORE School of Management 2026: fees (₹22L vs ₹18L), CAT cutoff, placements (₹17 LPA vs ₹14 LPA), campus, accreditation, recruiters",
   path: "/imi-delhi-vs-fore",
   keywords: ["IMI Delhi vs FORE School","IMI vs FORE 2026","IMI Delhi FORE comparison MBA","FORE School vs IMI Delhi placements","IMI Delhi better than FORE","which MBA college Delhi IMI or FORE"],
 })

@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "FMS Delhi vs IIFT Delhi 2026 — Fees, Placements, CAT Score & Which is Better",
-  description: "FMS Delhi vs IIFT Delhi 2026 MBA comparison: fees (₹20K vs ₹15L), CAT vs IIFT exam, average placement (₹27 LPA vs ₹24 LPA), specialisations, campus. Honest verdict for MBA aspirants.",
+  title: "FMS Delhi vs IIFT Delhi 2026",
+  description: "FMS Delhi vs IIFT Delhi 2026 MBA comparison: fees (₹20K vs ₹15L), CAT vs IIFT exam, average placement (₹27 LPA vs ₹24 LPA), specialisations, campus",
   path: "/fms-vs-iift",
   keywords: ["FMS vs IIFT","FMS Delhi vs IIFT Delhi 2026","FMS IIFT comparison","FMS Delhi fees vs IIFT","IIFT vs FMS placements","which is better FMS or IIFT for MBA"],
 })

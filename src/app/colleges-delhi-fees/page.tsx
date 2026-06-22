@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "College Fees in Delhi 2026 | Fee Structure for Engineering, MBA & Medical",
-  description: "Complete fee structure for colleges in Delhi 2026. Engineering fees ₹80K-4.8L/yr, MBA ₹4L-18L total, MBBS ₹1L-22L/yr. Government vs private college fee comparison.",
+  title: "College Fees in Delhi 2026",
+  description: "Complete fee structure for colleges in Delhi 2026. Engineering fees ₹80K-4.8L/yr, MBA ₹4L-18L total, MBBS ₹1L-22L/yr",
   path: "/colleges-delhi-fees",
   keywords: ["college fees Delhi", "Delhi college fee structure 2026", "engineering fees Delhi", "mba fees Delhi", "mbbs fees Delhi", "college fees comparison Delhi"],
 })

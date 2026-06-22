@@ -5,9 +5,9 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Delhi Admission Deadline Tracker 2026 | Engineering & MBA Last Dates",
+  title: "Delhi Admission Deadline Tracker 2026",
   description:
-    "All Delhi college admission deadlines for 2026 in one place. JEE Main, JEE Main, JAC Delhi Rounds, SNAP, CMAT, NEET, CAT — never miss a deadline for engineering or MBA admission.",
+    "All Delhi college admission deadlines for 2026 in one place. JEE Main, JAC Delhi Rounds, SNAP, CMAT, NEET, CAT — never miss a deadline for engineering or MBA",
   path: "/delhi-admission-deadline-tracker-2026",
   keywords: [
     "engineering admission Delhi 2026",

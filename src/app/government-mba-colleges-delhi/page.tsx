@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Government MBA Colleges in Delhi 2026 | Low Fees, CAT Cutoff & Placements",
-  description: "Best government MBA colleges in Delhi 2026: FMS Delhi (₹55K), IIFT Delhi (₹18.5L), DSE Delhi (₹50K), TERI SAS. Low fees, high placements. Admission via CAT/CUET.",
+  title: "Government MBA Colleges in Delhi 2026",
+  description: "Best government MBA colleges in Delhi 2026: FMS Delhi (₹55K), IIFT Delhi (₹18.5L), DSE Delhi (₹50K), TERI SAS. Low fees, high placements",
   path: "/government-mba-colleges-delhi",
   keywords: [
     "government mba colleges in delhi",

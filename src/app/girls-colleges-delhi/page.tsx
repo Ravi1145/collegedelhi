@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Girls Colleges in Delhi 2026 | Top Women's Colleges Delhi",
-  description: "Complete list of best girls colleges and women's colleges in Delhi 2026. Miranda House, LSR, Gargi, Indraprastha, IGDTUW — compare fees, NAAC grades, placements. 30+ women's colleges ranked.",
+  title: "Best Girls Colleges in Delhi 2026",
+  description: "Complete list of best girls colleges and women's colleges in Delhi 2026. Miranda House, LSR, Gargi, Indraprastha, IGDTUW — compare fees, NAAC grades, placements",
   path: "/girls-colleges-delhi",
   keywords: ["girls colleges in Delhi", "women's colleges Delhi 2026", "best girls college Delhi", "women only colleges Delhi", "girls college admission Delhi 2026"],
 })

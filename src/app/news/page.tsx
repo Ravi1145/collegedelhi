@@ -10,7 +10,7 @@ import NewsAlert from "@/components/leads/NewsAlert"
 export const revalidate = 3600 // ISR — re-render every hour
 
 export const metadata: Metadata = genMeta({
-  title: "Delhi College News & Admission Updates 2026 | JEE Main, NEET, CAT",
+  title: "Delhi College News & Admission Updates 2026",
   description: "Latest Delhi college news, JEE Main 2026 results, NEET merit list, MBA admission updates, scholarship alerts, and education news from Delhi. Updated daily.",
   path: "/news",
   keywords: [

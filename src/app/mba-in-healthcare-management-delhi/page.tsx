@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBA in Healthcare Management Delhi 2026 | Best Colleges, Salary & Admission",
+  title: "MBA in Healthcare Management Delhi 2026",
   description: "Best MBA Healthcare Management colleges in Delhi 2026: IIHMR Delhi, FORE, IHMR. Hospital management, pharma, health-tech careers. Salary ₹8–20 LPA. Full guide.",
   path: "/mba-in-healthcare-management-delhi",
   keywords: [

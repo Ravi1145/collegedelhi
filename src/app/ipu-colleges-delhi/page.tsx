@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "IP University Colleges List 2026 | Best GGSIPU Affiliated Colleges Delhi",
-  description: "Complete list of IP University (GGSIPU) affiliated colleges in Delhi 2026. Compare IPU CET cutoffs, fees, placements for Engineering, MBA, Law, Medical colleges. 150+ IPU colleges ranked.",
+  title: "IP University Colleges List 2026",
+  description: "Complete list of IP University (GGSIPU) affiliated colleges in Delhi 2026. Compare IPU CET cutoffs, fees, placements for Engineering, MBA, Law, Medical colleges",
   path: "/ipu-colleges-delhi",
   keywords: ["IP University colleges", "GGSIPU affiliated colleges 2026", "IPU CET colleges Delhi", "best IP university college Delhi", "IP university admission 2026"],
 })

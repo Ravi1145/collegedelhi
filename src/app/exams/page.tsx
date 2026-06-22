@@ -8,7 +8,7 @@ import Link from "next/link"
 export const revalidate = 60
 
 export const metadata: Metadata = genMeta({
-  title: "Entrance Exam Calendar 2026 — JEE Main, JEE, NEET, CAT for Delhi Colleges",
+  title: "Entrance Exam Calendar 2026",
   description: "Complete entrance exam schedule 2026 for Delhi college admissions. Dates for JEE Main, JEE Main, NEET, CAT, SNAP, MAT and more.",
   path: "/exams",
   keywords: ["JEE Main 2026", "jee main 2026 Delhi", "neet 2026", "cat 2026", "snap 2026", "entrance exams Delhi"],

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Disclaimer — CollegeDelhi",
-  description: "Disclaimer for collegedelhi.com — understand the nature of our services, information accuracy, and limitations of liability as an education information platform.",
+  description: "Disclaimer for collegedelhi.com — understand the nature of our services, information accuracy, and limitations of liability as an education information",
   alternates: { canonical: "https://www.collegedelhi.com/disclaimer" },
   robots: { index: true, follow: true },
 }

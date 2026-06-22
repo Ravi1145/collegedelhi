@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "NEET colleges in Delhi 2026 | Medical Colleges | NEET Cutoffs & Seats",
-  description: "Medical colleges in Delhi accepting NEET 2026. MAMC, AFMC, DY Patil, Bharati Vidyapeeth - NEET cutoffs (score-wise), MBBS seats, fees, and Delhi state quota admission.",
+  title: "NEET colleges in Delhi 2026 | Medical Colleges",
+  description: "Medical colleges in Delhi accepting NEET 2026. MAMC, AFMC, DY Patil, Bharati Vidyapeeth - NEET cutoffs (score-wise), MBBS seats, fees, and Delhi state quota",
   path: "/neet-colleges-delhi",
   keywords: ["neet colleges Delhi", "medical colleges Delhi neet 2026", "neet cutoff Delhi mbbs", "neet admission Delhi", "mbbs neet Delhi"],
 })

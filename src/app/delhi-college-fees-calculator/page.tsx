@@ -6,9 +6,9 @@ import FeesCalculator from "@/components/tools/FeesCalculator"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Delhi College Fees Calculator 2026 | Engineering & MBA Fee Estimator",
+  title: "Delhi College Fees Calculator 2026",
   description:
-    "Calculate total 4-year engineering or 2-year MBA fees at Delhi colleges. Compare DTU Delhi (₹80K/yr), IIIT Delhi, FMS Delhi (₹8L/yr), IMI Delhi. Includes scholarship deductions for SC/ST/OBC/EBC.",
+    "Calculate total 4-year engineering or 2-year MBA fees at Delhi colleges. Compare DTU Delhi (₹80K/yr), IIIT Delhi, FMS Delhi (₹8L/yr), IMI Delhi",
   path: "/delhi-college-fees-calculator",
   keywords: [
     "engineering colleges in Delhi list with fees",

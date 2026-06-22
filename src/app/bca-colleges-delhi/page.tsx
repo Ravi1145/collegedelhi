@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BCA Colleges in Delhi 2026 | Fees, Cutoff & IT Placements",
+  title: "Best BCA Colleges in Delhi 2026",
   description: "Top BCA colleges in Delhi 2026. MAIT, JIMS, Amity, VIPS — fees ₹20K–₹1.8L/yr, IPU CET cutoffs, placement up to ₹12 LPA. Complete BCA admission guide.",
   path: "/bca-colleges-delhi",
   keywords: [

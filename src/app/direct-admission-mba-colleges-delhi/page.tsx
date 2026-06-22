@@ -6,9 +6,9 @@ import { CheckCircle, AlertCircle, BookOpen, Users, Phone } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Direct Admission in MBA Colleges Delhi 2026 | Without SNAP/CAT",
+  title: "Direct Admission in MBA Colleges Delhi 2026",
   description:
-    "Get direct MBA admission in Delhi 2026 without SNAP or CAT score. Management quota, NRI quota at FMS Delhi, IMI Delhi, Fore School Delhi. Fees ₹5L–₹25L for direct admission.",
+    "Get direct MBA admission in Delhi 2026 without SNAP or CAT score. Management quota, NRI quota at FMS Delhi, IMI Delhi, Fore School Delhi",
   path: "/direct-admission-mba-colleges-delhi",
   keywords: [
     "mba direct admission Delhi",

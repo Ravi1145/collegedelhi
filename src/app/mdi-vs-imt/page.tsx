@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "MDI Gurgaon vs IMT Ghaziabad 2026 — Placements, CAT Cutoff & Which is Better",
-  description: "MDI Gurgaon vs IMT Ghaziabad 2026 MBA comparison: NIRF rank (#9 vs #30), CAT cutoff (97+ vs 93+), fees (₹22L vs ₹19L), placements (₹26 LPA vs ₹19 LPA), campus. Detailed head-to-head.",
+  title: "MDI Gurgaon vs IMT Ghaziabad 2026",
+  description: "MDI Gurgaon vs IMT Ghaziabad 2026 MBA comparison: NIRF rank (#9 vs #30), CAT cutoff (97+ vs 93+), fees (₹22L vs ₹19L), placements (₹26 LPA vs ₹19 LPA), campus",
   path: "/mdi-vs-imt",
   keywords: ["MDI vs IMT","MDI Gurgaon vs IMT Ghaziabad 2026","MDI IMT comparison","MDI better than IMT Ghaziabad","IMT Ghaziabad vs MDI placements","CAT cutoff MDI IMT 2026"],
 })

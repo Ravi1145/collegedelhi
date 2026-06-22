@@ -6,7 +6,7 @@ import { CheckCircle, GraduationCap } from "lucide-react"
 export const revalidate = 3600
 
 export const metadata: Metadata = genMeta({
-  title: "Delhi College Alumni Network 2026 | Ask Graduates Directly | CollegeDelhi",
+  title: "Delhi College Alumni Network 2026 | Ask Graduates Directly",
   description: "Connect with verified alumni from DTU Delhi, FMS Delhi, NSUT, IIIT Delhi and 20+ colleges. Get honest answers about placements, campus life and admission.",
   path: "/alumni",
   keywords: [

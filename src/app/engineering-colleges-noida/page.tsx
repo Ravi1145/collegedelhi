@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Engineering Colleges in Noida 2026 | Fees, Cutoff & Placements",
-  description: "Top engineering colleges in Noida 2026 — Amity University, Jaypee Institute, NIET, JSS Noida, Galgotias College, GL Bajaj. JEE Main cutoff, fees ₹1.2L–4L/yr, avg placements ₹6–12 LPA.",
+  title: "Best Engineering Colleges in Noida 2026",
+  description: "Top engineering colleges in Noida 2026 — Amity University, Jaypee Institute, NIET, JSS Noida, Galgotias College, GL Bajaj",
   path: "/engineering-colleges-noida",
   keywords: [
     "engineering colleges in noida",

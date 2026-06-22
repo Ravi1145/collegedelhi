@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in Rohini, Delhi 2026 | DTU, MAIT, BPIT & Engineering Colleges",
-  description: "Best colleges in Rohini, Delhi 2026 — DTU (Sector 22/Rohini), MAIT (Sector 22), BPIT, GTBIT, JIMS Rohini. Engineering, MBA & BCA colleges with Red Line metro access. Fees & admission guide.",
+  title: "Colleges in Rohini, Delhi 2026",
+  description: "Best colleges in Rohini, Delhi 2026 — DTU (Sector 22/Rohini), MAIT (Sector 22), BPIT, GTBIT, JIMS Rohini",
   path: "/colleges-rohini-delhi",
   keywords: [
     "colleges in rohini delhi",

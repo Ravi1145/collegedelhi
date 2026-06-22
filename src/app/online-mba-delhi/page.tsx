@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Online MBA in Delhi 2026 | Best Colleges, UGC Approved, Fees & Admission",
-  description: "Best online MBA colleges for Delhi students 2026: Delhi University SOL, IGNOU, Amity Online, NMIMS Online, Manipal Online. UGC-approved, fees ₹60K–₹2.5L, admission process.",
+  title: "Online MBA in Delhi 2026 | Best Colleges, UGC Approved, Fees",
+  description: "Best online MBA colleges for Delhi students 2026: Delhi University SOL, IGNOU, Amity Online, NMIMS Online, Manipal Online",
   path: "/online-mba-delhi",
   keywords: [
     "online mba in delhi",

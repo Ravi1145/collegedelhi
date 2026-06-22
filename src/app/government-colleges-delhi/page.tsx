@@ -4,8 +4,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users, ShieldCheck } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Government colleges in Delhi 2026 | Fees from ₹8K, NIRF Rankings & Admission",
-  description: "Top govt colleges in Delhi 2026: DTU Delhi (NIRF #49, ₹80K/yr), AFMC (NIRF #4, free MBBS), BJ Medical (NIRF #18). Fees ₹8K–₹1.8L/yr. CAP/NEET/JEE Main cutoffs. Compare free.",
+  title: "Best Government colleges in Delhi 2026",
+  description: "Top govt colleges in Delhi 2026: DTU Delhi (NIRF #49, ₹80K/yr), AFMC (NIRF #4, free MBBS), BJ Medical (NIRF #18). Fees ₹8K–₹1.8L/yr. CAP/NEET/JEE Main cutoffs",
   path: "/government-colleges-delhi",
   keywords: [
     "government colleges in Delhi 2026",

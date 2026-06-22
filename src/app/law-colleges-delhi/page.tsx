@@ -5,8 +5,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Law Colleges in Delhi 2026 | LLB, LLM Fees, CLAT Cutoff & Placements",
-  description: "Top 8 law colleges in Delhi 2026 — NLU Delhi, DU Law Faculty, Jamia Law, SLS Delhi. Compare BA LLB & LLB 3-year fees (₹18K–₹2.5L/yr), CLAT & DU Entrance cutoffs, average placements up to ₹18 LPA. Admission process explained.",
+  title: "Best Law Colleges in Delhi 2026",
+  description: "Top 8 law colleges in Delhi 2026 — NLU Delhi, DU Law Faculty, Jamia Law, SLS Delhi",
   path: "/law-colleges-delhi",
   keywords: [
     "law colleges in Delhi 2026",

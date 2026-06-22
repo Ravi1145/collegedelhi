@@ -4,8 +4,8 @@ import { generateMetadata as genMeta, generateBreadcrumbSchema, generateFAQSchem
 import { cutoffsData, examLabels, streamLabels } from "@/data/cutoffs"
 
 export const metadata: Metadata = genMeta({
-  title: "JEE Main JEE NEET Cutoffs for Delhi Colleges 2026 | CollegeDelhi",
-  description: "Year-wise cutoffs (2020–2026) for top Delhi colleges. JEE Main, NEET, CAT cutoffs for DTU Delhi, NSUT, IIIT Delhi, FMS Delhi, AIIMS. Check your admission chances.",
+  title: "JEE Main JEE NEET Cutoffs for Delhi Colleges 2026",
+  description: "Year-wise cutoffs (2020–2026) for top Delhi colleges. JEE Main, NEET, CAT cutoffs for DTU Delhi, NSUT, IIIT Delhi, FMS Delhi, AIIMS",
   path: "/cutoffs",
   keywords: [
     "JEE Main cutoff 2026 Delhi colleges",

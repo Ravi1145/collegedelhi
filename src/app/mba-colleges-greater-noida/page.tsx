@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA Colleges in Greater Noida 2026 | Fees, Cutoff & Placements",
-  description: "Top MBA colleges in Greater Noida 2026: BIMTECH, Asian Business School, GNIOT, Mangalmay, Sharda, Galgotias, GL Bajaj. CAT/MAT cutoffs, fees ₹1.8L–₹9.5L total, placements ₹5–10 LPA.",
+  title: "Best MBA Colleges in Greater Noida 2026",
+  description: "Top MBA colleges in Greater Noida 2026: BIMTECH, Asian Business School, GNIOT, Mangalmay, Sharda, Galgotias, GL Bajaj",
   path: "/mba-colleges-greater-noida",
   keywords: [
     "mba colleges in greater noida",

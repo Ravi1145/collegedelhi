@@ -4,7 +4,7 @@ import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "IMT Ghaziabad MBA 2026 | Fees, Cutoff, Placement & Admission",
-  description: "IMT Ghaziabad PGDM 2026: CAT/XAT cutoff 80-85 percentile, total fees ₹17.6L, average placement ₹12.5 LPA, top package ₹35 LPA. Admission process, ranking & review.",
+  description: "IMT Ghaziabad PGDM 2026: CAT/XAT cutoff 80-85 percentile, total fees ₹17.6L, average placement ₹12.5 LPA, top package ₹35 LPA",
   path: "/imt-ghaziabad",
   keywords: [
     "imt ghaziabad admission",

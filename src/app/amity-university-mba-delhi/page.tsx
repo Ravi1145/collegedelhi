@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Amity University MBA Delhi/Noida 2026 | Fees, Cutoff, Placement & Review",
-  description: "Amity University MBA Noida 2026: NAAC A+, fees ₹4–5.5L per year, 60+ MBA specializations, average placement ₹7–9 LPA. Admission without CAT (Amity JEE). Full guide.",
+  title: "Amity University MBA Delhi/Noida 2026",
+  description: "Amity University MBA Noida 2026: NAAC A+, fees ₹4–5.5L per year, 60+ MBA specializations, average placement ₹7–9 LPA. Admission without CAT (Amity JEE)",
   path: "/amity-university-mba-delhi",
   keywords: [
     "amity university mba",

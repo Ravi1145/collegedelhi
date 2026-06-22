@@ -8,7 +8,7 @@ import { getAllColleges } from "@/lib/db"
 
 export const metadata: Metadata = genMeta({
   title: "All colleges in Delhi 2026 — Fees, Rankings & Reviews",
-  description: "Browse and compare 103+ colleges in Delhi. Filter by stream (Engineering, MBA, Medical), fees, NAAC grade, and location. Government, private & deemed colleges with real placement data.",
+  description: "Browse and compare 103+ colleges in Delhi. Filter by stream (Engineering, MBA, Medical), fees, NAAC grade, and location",
   path: "/colleges",
   keywords: [
     "colleges in Delhi", "engineering colleges Delhi", "mba colleges Delhi",

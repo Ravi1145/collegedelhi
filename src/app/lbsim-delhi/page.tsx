@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "LBSIM Delhi 2026 | Lal Bahadur Shastri Institute — PGDM Fees, Cutoff & Placement",
-  description: "LBSIM Delhi (Lal Bahadur Shastri Institute of Management) PGDM 2026: CAT cutoff 70-75 percentile, total fees ₹12.5L, average placement ₹10.5 LPA. Admission process & review.",
+  title: "LBSIM Delhi 2026 | Lal Bahadur Shastri Institute",
+  description: "LBSIM Delhi (Lal Bahadur Shastri Institute of Management) PGDM 2026: CAT cutoff 70-75 percentile, total fees ₹12.5L, average placement ₹10.5 LPA",
   path: "/lbsim-delhi",
   keywords: [
     "lbsim delhi",

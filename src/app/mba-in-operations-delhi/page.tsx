@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBA in Operations Management Delhi 2026 | Best Colleges, Fees & Jobs",
+  title: "MBA in Operations Management Delhi 2026",
   description: "Best MBA in Operations colleges in Delhi 2026: MDI Gurgaon, IMI Delhi, FORE, BIMTECH. Supply chain & logistics roles. Fees Rs55K-Rs22.5L, placements Rs8-26 LPA.",
   path: "/mba-in-operations-delhi",
   keywords: [

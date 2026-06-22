@@ -8,7 +8,7 @@ import InPageLinks from "@/components/seo/InPageLinks"
 export const metadata: Metadata = genMeta({
   title: "Colleges in Delhi 2026 — Complete List, Fees & Rankings",
   description:
-    "Explore all colleges in Delhi 2026. Filter by stream (Engineering, MBA, Medical, Law), type (Government, Private, Deemed), entrance exam, fees, and location. NAAC and NIRF ranked.",
+    "Explore all colleges in Delhi 2026. Filter by stream (Engineering, MBA, Medical, Law), type (Government, Private, Deemed), entrance exam, fees, and location",
   path: "/colleges-in-delhi",
   keywords: [
     "colleges in delhi",

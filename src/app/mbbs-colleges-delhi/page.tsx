@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBBS colleges in Delhi 2026 | Medical Admission | NEET Cutoffs & Fees",
+  title: "MBBS colleges in Delhi 2026 | Medical Admission",
   description: "Top MBBS colleges in Delhi 2026. Maulana Azad Medical College, AIIMS Delhi, Lady Hardinge Medical - NEET cutoffs, fees (₹1L-1.5Cr), seats & admission guide.",
   path: "/mbbs-colleges-delhi",
   keywords: ["mbbs colleges Delhi", "medical colleges Delhi neet", "mbbs admission Delhi 2026", "neet cutoff Delhi mbbs", "mbbs fees Delhi"],

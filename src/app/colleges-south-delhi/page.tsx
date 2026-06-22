@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in South Delhi 2026 | IIT Delhi, FMS, AIIMS, JNU & More",
+  title: "Colleges in South Delhi 2026",
   description: "Best colleges in South Delhi 2026 — IIT Delhi, AIIMS Delhi, JNU, FMS Delhi, Lady Shri Ram College, Gargi College. Fees, metro access, and admission guide.",
   path: "/colleges-south-delhi",
   keywords: [

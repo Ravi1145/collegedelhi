@@ -6,9 +6,9 @@ import { TrendingUp, ExternalLink } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA colleges in Delhi for Placements 2026 | Average Package Data",
+  title: "Best MBA colleges in Delhi for Placements 2026",
   description:
-    "Compare MBA placement packages across Delhi colleges 2026. FMS Delhi ₹28 LPA avg, MDI Gurgaon ₹22 LPA, IMI Delhi ₹12 LPA. Full recruiter list, placement %, and salary data for all top Delhi MBA colleges.",
+    "Compare MBA placement packages across Delhi colleges 2026. FMS Delhi ₹28 LPA avg, MDI Gurgaon ₹22 LPA, IMI Delhi ₹12 LPA",
   path: "/mba-colleges-delhi-placement",
   keywords: [
     "best mba colleges in Delhi with placement",

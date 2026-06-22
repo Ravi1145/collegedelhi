@@ -6,9 +6,9 @@ import PlacementComparator from "@/components/tools/PlacementComparator"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Delhi College Placement Comparator 2026 | Avg & Highest Package Tool",
+  title: "Delhi College Placement Comparator 2026",
   description:
-    "Compare placement packages across Delhi engineering and MBA colleges. Interactive comparator for average salary, highest package, and placement % — 2026 data. DTU Delhi ₹12L, FMS Delhi ₹28L avg.",
+    "Compare placement packages across Delhi engineering and MBA colleges. Interactive comparator for average salary, highest package, and placement % — 2026 data",
   path: "/delhi-college-placement-comparator",
   keywords: [
     "average package engineering colleges Delhi",

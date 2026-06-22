@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA in Finance Colleges in Delhi 2026 | Fees, CAT Cutoff & Jobs",
+  title: "Best MBA in Finance Colleges in Delhi 2026",
   description: "Top MBA Finance colleges in Delhi 2026: FMS Delhi (₹32 LPA), MDI Gurgaon, IIFT, IMI Delhi. CAT cutoffs, fees ₹55K–₹22.5L, finance placements up to ₹45 LPA.",
   path: "/mba-in-finance-delhi",
   keywords: [

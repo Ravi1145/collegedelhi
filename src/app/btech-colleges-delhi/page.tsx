@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BTech Colleges in Delhi 2026 | Fees, JEE Main Cutoff & Placements",
+  title: "Best BTech Colleges in Delhi 2026",
   description: "Top BTech colleges in Delhi 2026: DTU (₹80K/yr, ₹12 LPA), NSUT, IIIT Delhi, NIT Delhi. JEE Main cutoffs, fees ₹80K–4.8L/yr, NAAC grades compared.",
   path: "/btech-colleges-delhi",
   keywords: [

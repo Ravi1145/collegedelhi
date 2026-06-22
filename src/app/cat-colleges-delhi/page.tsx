@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "CAT colleges in Delhi 2026 | MBA Colleges Accepting CAT | Cutoffs & Fees",
+  title: "CAT colleges in Delhi 2026 | MBA Colleges Accepting CAT",
   description: "Top MBA colleges in Delhi accepting CAT 2025 scores. FMS Delhi, MDI Gurgaon, IMI Delhi — CAT cutoffs, fees, and placement packages for 2026 admission.",
   path: "/cat-colleges-delhi",
   keywords: ["cat colleges Delhi", "mba colleges Delhi cat 2025", "cat cutoff Delhi mba", "cat accepting colleges Delhi 2026"],

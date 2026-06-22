@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "JEE Main colleges in Delhi 2026 | Cutoffs, Seats & Admission Guide",
-  description: "Best colleges in Delhi accepting JEE Main 2026. Compare JEE Main cutoffs (percentile-wise), seats, fees, and admission process for engineering colleges via JAC Delhi Rounds.",
+  title: "JEE Main colleges in Delhi 2026",
+  description: "Best colleges in Delhi accepting JEE Main 2026. Compare JEE Main cutoffs (percentile-wise), seats, fees, and admission process for engineering colleges via JAC",
   path: "/JEE Main-colleges-delhi",
   keywords: ["jee main colleges Delhi", "jac delhi admission 2026", "jac delhi cutoff 2026", "JAC Delhi Round 2026", "ipu cet engineering colleges Delhi"],
 })

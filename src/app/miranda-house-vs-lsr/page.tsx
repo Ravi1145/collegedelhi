@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 
 export const metadata: Metadata = genMeta({
   title: "Miranda House vs LSR 2026 — Which DU College is Better?",
-  description: "Miranda House vs Lady Shri Ram College (LSR) detailed comparison 2026: CUET cutoff, NAAC grade, courses, placement, campus life, hostel. Which is better for Arts & Science? Honest verdict.",
+  description: "Miranda House vs Lady Shri Ram College (LSR) detailed comparison 2026: CUET cutoff, NAAC grade, courses, placement, campus life, hostel",
   path: "/miranda-house-vs-lsr",
   keywords: [
     "Miranda House vs LSR", "Miranda House vs Lady Shri Ram College",

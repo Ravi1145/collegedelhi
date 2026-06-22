@@ -5,8 +5,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Arts & Science colleges in Delhi 2026 | BA, BSc, BCom Fees & Admission",
-  description: "Top arts, science and commerce colleges in Delhi 2026. Compare Miranda House College, Hindu College, BMCC, Symbiosis College and more. BA/BSc/BCom fees from ₹10K–₹1.5L/yr, NAAC grades, placements & admission process.",
+  title: "Best Arts & Science colleges in Delhi 2026",
+  description: "Top arts, science and commerce colleges in Delhi 2026. Compare Miranda House College, Hindu College, BMCC, Symbiosis College and more",
   path: "/arts-colleges-delhi",
   keywords: [
     "arts colleges in Delhi 2026",

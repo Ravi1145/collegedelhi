@@ -6,9 +6,9 @@ import { CheckCircle, MapPin, ExternalLink, BookOpen } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Top 10 MBA colleges in Delhi 2026 | CAT Cutoff, Fees & Placements",
+  title: "Top 10 MBA colleges in Delhi 2026",
   description:
-    "Top 10 MBA colleges in Delhi 2026: FMS Delhi (₹32 LPA avg, ₹55K fees), MDI Gurgaon (₹24 LPA), IIFT Delhi (₹22 LPA), IMI Delhi (₹14 LPA). CAT cutoffs, fees ₹55K–₹22L. Compare free.",
+    "Top 10 MBA colleges in Delhi 2026: FMS Delhi (₹32 LPA avg, ₹55K fees), MDI Gurgaon (₹24 LPA), IIFT Delhi (₹22 LPA), IMI Delhi (₹14 LPA)",
   path: "/top-10-mba-colleges-in-delhi",
   keywords: [
     "top 10 mba colleges in Delhi",

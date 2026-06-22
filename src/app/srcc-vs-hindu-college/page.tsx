@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "SRCC vs Hindu College 2026 — Which is Better? CUET Cutoff & Placements",
-  description: "SRCC vs Hindu College detailed comparison 2026: CUET cutoff, BCom Hons placements, fees, campus, courses. Which Delhi University college should you choose? Honest verdict.",
+  title: "SRCC vs Hindu College 2026",
+  description: "SRCC vs Hindu College detailed comparison 2026: CUET cutoff, BCom Hons placements, fees, campus, courses. Which Delhi University college should you choose",
   path: "/srcc-vs-hindu-college",
   keywords: [
     "SRCC vs Hindu College",

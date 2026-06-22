@@ -6,9 +6,9 @@ import { CheckCircle } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "MBA Admission in Delhi Without CAT 2026 | MAT, CMAT, SNAP Colleges",
+  title: "MBA Admission in Delhi Without CAT 2026",
   description:
-    "Get MBA admission in Delhi without CAT 2026. Colleges accepting MAT, CMAT, SNAP, XAT, ATMA. IMI Delhi, Fore School Delhi, Indira Institute, GL Bajaj — no CAT required. Full list with fees & cutoffs.",
+    "Get MBA admission in Delhi without CAT 2026. Colleges accepting MAT, CMAT, SNAP, XAT, ATMA",
   path: "/mba-admission-delhi-without-cat",
   keywords: [
     "mba admission without cat Delhi",

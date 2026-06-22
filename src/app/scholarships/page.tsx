@@ -5,8 +5,8 @@ import InlineLeadForm from "@/components/leads/InlineLeadForm"
 import ScholarshipSubscribe from "@/components/leads/ScholarshipSubscribe"
 
 export const metadata: Metadata = genMeta({
-  title: "Scholarships for Delhi College Students 2026 | NSP Delhi Scholarship, NSP, Merit",
-  description: "Complete guide to scholarships for Delhi college students 2026. NSP Delhi Scholarship, NSP, EBC, OBC, Merit scholarships — eligibility, amount, deadline & application links. Get alerts on WhatsApp.",
+  title: "Scholarships for Delhi College Students 2026",
+  description: "Complete guide to scholarships for Delhi college students 2026. NSP Delhi Scholarship, NSP, EBC, OBC, Merit scholarships — eligibility, amount, deadline",
   path: "/scholarships",
   keywords: [
     "scholarships for Delhi college students 2026",

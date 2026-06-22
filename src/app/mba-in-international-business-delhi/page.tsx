@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBA in International Business Delhi 2026 | Best Colleges, IIFT, Fees & Jobs",
+  title: "MBA in International Business Delhi 2026",
   description: "Best MBA International Business colleges in Delhi 2026: IIFT Delhi, FMS Delhi, FORE IB, MDI Gurgaon. IIFT exam cutoff, fees ₹18.5L–₹22.5L, IB salary ₹12–30 LPA.",
   path: "/mba-in-international-business-delhi",
   keywords: [

@@ -20,7 +20,7 @@ import type { NewsArticle } from "@/components/home/HomepageNewsSection"
 
 export const metadata: Metadata = genMeta({
   title: "Best colleges in Delhi 2026 | CollegeDelhi",
-  description: "Best colleges in Delhi 2026: IIT Delhi, FMS Delhi, AIIMS, DTU, Miranda House. Compare fees (₹15K–25L/yr), placements, NAAC grades & CAT/JEE/NEET cutoffs. Free AI counselor.",
+  description: "Best colleges in Delhi 2026: IIT Delhi, FMS Delhi, AIIMS, DTU, Miranda House. Compare fees (₹15K–25L/yr), placements, NAAC grades & CAT/JEE/NEET cutoffs",
   path: "/",
   keywords: [
     "colleges in Delhi 2026",

@@ -6,9 +6,9 @@ import { CheckCircle, AlertCircle, BookOpen, Users, Phone } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Direct Admission in Engineering Colleges Delhi 2026 | Management Quota",
+  title: "Direct Admission in Engineering Colleges Delhi 2026",
   description:
-    "Get direct admission in Delhi engineering colleges 2026 without JEE Main rank. Management quota seats, NRI quota, and direct BTech admission process at DTU Delhi, NSUT, IIIT Delhi & more.",
+    "Get direct admission in Delhi engineering colleges 2026 without JEE Main rank",
   path: "/direct-admission-engineering-colleges-delhi",
   keywords: [
     "btech direct admission Delhi",

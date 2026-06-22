@@ -3,7 +3,7 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "MDI Gurgaon MBA 2026 | Fees ₹22.5L, CAT Cutoff 97%ile & Placement ₹26 LPA",
+  title: "MDI Gurgaon MBA 2026 | Fees ₹22.5L, CAT Cutoff 97%ile",
   description: "MDI Gurgaon (NIRF #9) MBA PGDM 2026: ₹22.5L total fees, CAT 97+ percentile cutoff, ₹26 LPA avg placement. WAT-PI process, MDI vs FMS comparison, deadlines.",
   path: "/mdi-gurgaon",
   keywords: [

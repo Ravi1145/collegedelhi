@@ -3,7 +3,7 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "NSUT vs IIIT Delhi 2026 — Placements, Fees, Cutoff & Which is Better",
+  title: "NSUT vs IIIT Delhi 2026 — Placements, Fees, Cutoff",
   description: "NSUT vs IIIT Delhi 2026 head-to-head: JEE cutoff, fees, CSE/IT placements, research, campus. Which Delhi engineering college is better for CSE and tech careers?",
   path: "/nsut-vs-iiit-delhi",
   keywords: ["NSUT vs IIIT Delhi","NSUT vs IIIT Delhi which is better 2026","NSUT IIIT Delhi comparison","IIIT Delhi vs NSUT placements","IIIT Delhi cutoff vs NSUT cutoff","which is better NSUT or IIIT Delhi"],

@@ -5,8 +5,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Pharmacy colleges in Delhi 2026 | B.Pharm, M.Pharm Fees & NEET Cutoff",
-  description: "Top pharmacy colleges in Delhi 2026. Compare Poona College of Pharmacy, MAEER's MIT, Sharda College of Pharmacy and more. B.Pharm/M.Pharm fees ₹60K–₹1.5L/yr, JEE Main cutoffs, placements & admission guide.",
+  title: "Best Pharmacy colleges in Delhi 2026",
+  description: "Top pharmacy colleges in Delhi 2026. Compare Poona College of Pharmacy, MAEER's MIT, Sharda College of Pharmacy and more",
   path: "/pharmacy-colleges-delhi",
   keywords: [
     "pharmacy colleges in Delhi 2026",

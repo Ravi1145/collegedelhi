@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in North Delhi 2026 | DU North Campus, GTB Nagar & More",
-  description: "Top colleges in North Delhi 2026 — Delhi University North Campus (Hindu, Hansraj, Kirori Mal, Miranda House), GTBIT, DTU Rohini. Fees, courses, metro access, and admission guide.",
+  title: "Colleges in North Delhi 2026",
+  description: "Top colleges in North Delhi 2026 — Delhi University North Campus (Hindu, Hansraj, Kirori Mal, Miranda House), GTBIT, DTU Rohini",
   path: "/colleges-north-delhi",
   keywords: [
     "colleges in north delhi",

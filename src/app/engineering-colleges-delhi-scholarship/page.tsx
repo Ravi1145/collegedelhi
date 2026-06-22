@@ -6,9 +6,9 @@ import { CheckCircle, BookOpen, Award, ExternalLink } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Engineering colleges in Delhi with Scholarship 2026 | Merit & Need-Based",
+  title: "Engineering colleges in Delhi with Scholarship 2026",
   description:
-    "Find engineering colleges in Delhi offering scholarships in 2026. Government merit scholarships, EBC quota, SC/ST fee waiver, and private merit-based scholarships at DTU Delhi, NSUT, IIIT Delhi & more.",
+    "Find engineering colleges in Delhi offering scholarships in 2026. Government merit scholarships, EBC quota, SC/ST fee waiver, and private merit-based",
   path: "/engineering-colleges-delhi-scholarship",
   keywords: [
     "engineering colleges with scholarship Delhi",

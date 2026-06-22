@@ -6,9 +6,9 @@ import { CheckCircle, MapPin, ExternalLink, BookOpen } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Top 10 Engineering colleges in Delhi 2026 | Fees, JEE Main Cutoff & Placements",
+  title: "Top 10 Engineering colleges in Delhi 2026",
   description:
-    "Top 10 engineering colleges in Delhi 2026: DTU Delhi (NIRF #49, ₹80K/yr, ₹12 LPA avg), IIIT Delhi (NIRF #101, ₹8.5 LPA), IMI Delhi (₹9.8 LPA). JEE Main cutoffs 60–95 %ile. Compare free.",
+    "Top 10 engineering colleges in Delhi 2026: DTU Delhi (NIRF #49, ₹80K/yr, ₹12 LPA avg), IIIT Delhi (NIRF #101, ₹8.5 LPA), IMI Delhi (₹9.8 LPA)",
   path: "/top-10-engineering-colleges-in-delhi",
   keywords: [
     "top 10 engineering colleges in Delhi",

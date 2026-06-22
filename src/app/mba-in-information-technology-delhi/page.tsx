@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBA in Information Technology Delhi 2026 | Best IT MBA Colleges, Salary & Admission",
-  description: "Best MBA IT colleges in Delhi 2026: LBSIM PGDM-IM, IMI Delhi, MDI, Amity. IT management, digital transformation, tech consulting careers. Salary ₹10–25 LPA. Full guide.",
+  title: "MBA in Information Technology Delhi 2026",
+  description: "Best MBA IT colleges in Delhi 2026: LBSIM PGDM-IM, IMI Delhi, MDI, Amity. IT management, digital transformation, tech consulting careers. Salary ₹10–25 LPA",
   path: "/mba-in-information-technology-delhi",
   keywords: [
     "mba in information technology delhi",

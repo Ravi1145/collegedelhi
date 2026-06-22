@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in Vasant Kunj, Delhi 2026 | DU Colleges & South Delhi",
-  description: "Best colleges in Vasant Kunj and South West Delhi 2026 — Shaheed Rajguru College, Shaheed Sukhdev College, Aryabhatta College DU, and colleges near Vasant Kunj metro. CUET guide.",
+  title: "Colleges in Vasant Kunj, Delhi 2026",
+  description: "Best colleges in Vasant Kunj and South West Delhi 2026 — Shaheed Rajguru College, Shaheed Sukhdev College, Aryabhatta College DU, and colleges near Vasant Kunj",
   path: "/colleges-vasant-kunj-delhi",
   keywords: [
     "colleges in vasant kunj delhi", "vasant kunj colleges 2026",

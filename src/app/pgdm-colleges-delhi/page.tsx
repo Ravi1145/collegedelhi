@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "PGDM colleges in Delhi 2026 | Best Post Graduate Diploma Management",
-  description: "Best PGDM colleges in Delhi 2026. Compare PGDM vs MBA, fees (₹4L-9L), placement packages, AICTE approval, and CAT/IPU CET cutoffs for top Delhi management institutes.",
+  title: "PGDM colleges in Delhi 2026",
+  description: "Best PGDM colleges in Delhi 2026. Compare PGDM vs MBA, fees (₹4L-9L), placement packages, AICTE approval, and CAT/IPU CET cutoffs for top Delhi management",
   path: "/pgdm-colleges-delhi",
   keywords: ["pgdm colleges Delhi", "post graduate diploma management Delhi", "pgdm vs mba Delhi", "pgdm admission Delhi 2026"],
 })

@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in East Delhi 2026 | NSUT East Campus, IP Colleges & More",
-  description: "Best colleges in East Delhi 2026 — NSUT East Campus, GGSIP University affiliated colleges in Mayur Vihar, Patparganj, Geeta Colony. Fees, courses, metro access & admission guide.",
+  title: "Colleges in East Delhi 2026",
+  description: "Best colleges in East Delhi 2026 — NSUT East Campus, GGSIP University affiliated colleges in Mayur Vihar, Patparganj, Geeta Colony",
   path: "/colleges-east-delhi",
   keywords: [
     "colleges in east delhi",

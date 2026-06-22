@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "FORE School of Management Delhi 2026 | PGDM Fees, Cutoff & Placement",
-  description: "FORE School of Management Delhi PGDM 2026: CAT cutoff 80-85 percentile, total fees ₹16.5L, average placement ₹12 LPA. Admission process, ranking, review & comparison.",
+  title: "FORE School of Management Delhi 2026",
+  description: "FORE School of Management Delhi PGDM 2026: CAT cutoff 80-85 percentile, total fees ₹16.5L, average placement ₹12 LPA",
   path: "/fore-school-management-delhi",
   keywords: [
     "fore school of management delhi admission",

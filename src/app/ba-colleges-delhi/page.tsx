@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BA Colleges in Delhi 2026 | Fees, CUET Cutoff & Top Arts Colleges",
+  title: "Best BA Colleges in Delhi 2026",
   description: "Top BA colleges in Delhi 2026 — Miranda House, LSR, Hindu, Hansraj. Compare BA Hons fees ₹10K–₹80K/yr, CUET cutoffs and career options after BA.",
   path: "/ba-colleges-delhi",
   keywords: [

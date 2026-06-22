@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Computer Engineering colleges in Delhi 2026 | CS/IT BTech Admission",
+  title: "Computer Engineering colleges in Delhi 2026",
   description: "Best computer engineering colleges in Delhi 2026. NSUT, DTU Delhi, IIIT Delhi — compare CS fees, JEE Main cutoffs, placement packages up to ₹45 LPA.",
   path: "/computer-engineering-colleges-delhi",
   keywords: ["computer engineering colleges Delhi", "cs colleges Delhi", "it engineering colleges Delhi 2026", "best cs College Delhi"],

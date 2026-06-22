@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateOrganizationSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "About CollegeDelhi — India's Delhi College Discovery Platform",
-  description: "CollegeDelhi is India's AI-powered portal for Delhi college discovery. Learn about our editorial team, data methodology, and mission to simplify Delhi admissions.",
+  title: "About CollegeDelhi — India's Delhi College Discovery",
+  description: "CollegeDelhi is India's AI-powered portal for Delhi college discovery",
   path: "/about",
 })
 

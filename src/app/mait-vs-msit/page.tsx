@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "MAIT vs MSIT Delhi 2026 — Fees, Placements, IPU CET Cutoff & Which is Better",
-  description: "MAIT (Maharaja Agrasen Institute of Technology) vs MSIT (Maharaja Surajmal Institute of Technology) Delhi 2026: IPU CET cutoff, fees, CSE placements, hostel, NAAC grade. Detailed comparison.",
+  title: "MAIT vs MSIT Delhi 2026 — Fees, Placements, IPU CET Cutoff",
+  description: "MAIT (Maharaja Agrasen Institute of Technology) vs MSIT (Maharaja Surajmal Institute of Technology) Delhi 2026: IPU CET cutoff, fees, CSE placements, hostel",
   path: "/mait-vs-msit",
   keywords: ["MAIT vs MSIT","MAIT Delhi vs MSIT Delhi 2026","MAIT MSIT comparison","IPU CET cutoff MAIT MSIT","MSIT vs MAIT placements","which is better MAIT or MSIT Delhi engineering"],
 })

@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Executive MBA Delhi 2026 | Best EMBA Colleges, Fees & Eligibility",
-  description: "Best Executive MBA colleges in Delhi 2026: MDI Gurgaon PGPM, FMS EMBA, IMI Delhi PGDM-Ex, IIM Lucknow (Noida campus). Fees ₹8L–₹25L, 5+ years experience required.",
+  title: "Executive MBA Delhi 2026 | Best EMBA Colleges, Fees",
+  description: "Best Executive MBA colleges in Delhi 2026: MDI Gurgaon PGPM, FMS EMBA, IMI Delhi PGDM-Ex, IIM Lucknow (Noida campus)",
   path: "/executive-mba-delhi",
   keywords: [
     "executive mba delhi",

@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "DU Colleges List 2026 | Delhi University Colleges – Fees, Cutoffs & Courses",
-  description: "Complete list of Delhi University (DU) colleges 2026. Miranda House, SRCC, LSR, Hindu, Hansraj — compare CUET cutoffs, fees, placements, NAAC grades. 90+ DU colleges ranked.",
+  title: "DU Colleges List 2026 | Delhi University Colleges – Fees",
+  description: "Complete list of Delhi University (DU) colleges 2026. Miranda House, SRCC, LSR, Hindu, Hansraj — compare CUET cutoffs, fees, placements, NAAC grades",
   path: "/du-colleges-delhi",
   keywords: ["DU colleges", "Delhi University colleges list 2026", "best DU college", "CUET cutoff DU 2026", "Delhi University admission 2026"],
 })

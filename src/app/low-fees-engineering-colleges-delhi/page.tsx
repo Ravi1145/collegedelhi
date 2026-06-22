@@ -6,9 +6,9 @@ import { CheckCircle, TrendingUp, BookOpen, IndianRupee } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Low Fees Engineering colleges in Delhi 2026 | Under ₹5L & ₹10L",
+  title: "Low Fees Engineering colleges in Delhi 2026",
   description:
-    "List of affordable engineering colleges in Delhi 2026. DTU Delhi fees ₹80K/yr, NIET Noida ₹1.1L/yr. Find budget B.Tech colleges under ₹5 lakh & ₹10 lakh total fees.",
+    "List of affordable engineering colleges in Delhi 2026. DTU Delhi fees ₹80K/yr, NIET Noida ₹1.1L/yr",
   path: "/low-fees-engineering-colleges-delhi",
   keywords: [
     "low fees engineering colleges in Delhi",

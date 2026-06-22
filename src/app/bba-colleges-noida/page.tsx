@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BBA Colleges in Noida 2026 | Fees, Admission & Placements",
-  description: "Top BBA colleges in Noida NCR 2026 — Amity University, Galgotias, Sharda, IILM, GL Bajaj. CUET/direct admission, fees ₹60K–3L/yr, average placements ₹4–7 LPA. Full guide.",
+  title: "Best BBA Colleges in Noida 2026",
+  description: "Top BBA colleges in Noida NCR 2026 — Amity University, Galgotias, Sharda, IILM, GL Bajaj. CUET/direct admission, fees ₹60K–3L/yr, average placements ₹4–7 LPA",
   path: "/bba-colleges-noida",
   keywords: [
     "bba colleges in noida", "best bba colleges noida 2026", "top bba colleges noida ncr",

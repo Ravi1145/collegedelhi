@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Low Fee colleges in Delhi 2026 | Affordable Colleges Under ₹1L/Year",
-  description: "Best affordable colleges in Delhi with low fees under ₹1L per year. Government, aided, and scholarship-eligible colleges for engineering, arts, commerce, and science streams.",
+  title: "Low Fee colleges in Delhi 2026",
+  description: "Best affordable colleges in Delhi with low fees under ₹1L per year",
   path: "/low-fee-colleges-delhi",
   keywords: ["low fee colleges Delhi", "affordable colleges Delhi 2026", "cheap colleges Delhi", "colleges under 1 lakh Delhi", "government colleges Delhi fees"],
 })

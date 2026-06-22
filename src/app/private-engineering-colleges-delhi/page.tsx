@@ -6,9 +6,9 @@ import { CheckCircle, BookOpen, ExternalLink, MapPin } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Private Engineering colleges in Delhi 2026 | Fees, Rankings & Admission",
+  title: "Private Engineering colleges in Delhi 2026",
   description:
-    "Top private engineering colleges in Delhi 2026. Compare IIIT Delhi, IMI Delhi, Amity University Delhi, NSUT, Cummins by fees (₹1.1L–₹4.8L/yr), NAAC grade, and placements.",
+    "Top private engineering colleges in Delhi 2026. Compare IIIT Delhi, IMI Delhi, Amity University Delhi, NSUT, Cummins by fees (₹1.1L–₹4.8L/yr), NAAC grade",
   path: "/private-engineering-colleges-delhi",
   keywords: [
     "private engineering colleges in Delhi",

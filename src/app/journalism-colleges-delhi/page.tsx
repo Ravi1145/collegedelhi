@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Journalism Colleges in Delhi 2026 | BJMC Fees, CUET Cutoff & Placements",
+  title: "Best Journalism Colleges in Delhi 2026",
   description: "Top journalism colleges in Delhi 2026 — LSR, Jamia MCRC, IIMC. Compare BJMC fees ₹12K–₹2.5L/yr, CUET cutoffs, media placements at NDTV, BBC, Times of India.",
   path: "/journalism-colleges-delhi",
   keywords: [

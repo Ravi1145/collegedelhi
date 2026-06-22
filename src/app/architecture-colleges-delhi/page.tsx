@@ -4,8 +4,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Architecture Colleges Delhi 2026 | B.Arch Fees & NATA Cutoff",
-  description: "Top B.Arch colleges in Delhi 2026 — SPA, MIT-ADT, DY Patil, MAEER. Fees ₹1.5L–4.5L/yr, NATA cutoff 120+, placement guide and admission process for architecture in Delhi.",
+  title: "Best Architecture Colleges Delhi 2026",
+  description: "Top B.Arch colleges in Delhi 2026 — SPA, MIT-ADT, DY Patil, MAEER",
   path: "/architecture-colleges-delhi",
   keywords: [
     "architecture colleges in Delhi 2026",

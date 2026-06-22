@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in Dwarka, Delhi 2026 | NSUT, IP Univ, Engineering & MBA",
-  description: "Best colleges in Dwarka, Delhi 2026 — NSUT Dwarka Campus, IP University affiliated engineering and MBA colleges in Sectors 10, 22, 23, 24. Fees, metro access, admission guide.",
+  title: "Colleges in Dwarka, Delhi 2026",
+  description: "Best colleges in Dwarka, Delhi 2026 — NSUT Dwarka Campus, IP University affiliated engineering and MBA colleges in Sectors 10, 22, 23, 24",
   path: "/colleges-dwarka-delhi",
   keywords: [
     "colleges in dwarka delhi",

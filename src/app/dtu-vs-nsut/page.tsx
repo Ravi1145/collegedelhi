@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 
 export const metadata: Metadata = genMeta({
   title: "DTU vs NSUT 2026 — Which is Better? Placements, Fees, Cutoff",
-  description: "DTU vs NSUT detailed comparison 2026: NIRF rank, JEE Main cutoff, branch-wise placements, fees, hostel, campus size. Which is better for CSE, ECE, Mechanical? Honest verdict.",
+  description: "DTU vs NSUT detailed comparison 2026: NIRF rank, JEE Main cutoff, branch-wise placements, fees, hostel, campus size. Which is better for CSE, ECE, Mechanical",
   path: "/dtu-vs-nsut",
   keywords: [
     "DTU vs NSUT",

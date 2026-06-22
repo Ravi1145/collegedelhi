@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBA in Digital Marketing Delhi 2026 | Best Colleges, Fees & Salary",
-  description: "Best MBA in Digital Marketing colleges in Delhi 2026: MICA (Delhi campus), IMI Delhi, LBSIM, Amity. CAT cutoffs, fees ₹3L–₹19.5L, digital marketing salary ₹8–22 LPA.",
+  title: "MBA in Digital Marketing Delhi 2026",
+  description: "Best MBA in Digital Marketing colleges in Delhi 2026: MICA (Delhi campus), IMI Delhi, LBSIM, Amity",
   path: "/mba-in-digital-marketing-delhi",
   keywords: [
     "mba in digital marketing delhi",

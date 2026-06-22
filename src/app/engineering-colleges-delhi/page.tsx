@@ -5,8 +5,8 @@ import TopicalHub from "@/components/seo/TopicalHub"
 import { CheckCircle, TrendingUp, Award, MapPin, ExternalLink, BookOpen } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Engineering Colleges in Delhi 2026 | Fees, Cutoff & Rankings",
-  description: "Top 12 engineering colleges in Delhi 2026 — DTU (NIRF 49), NSUT, IGDTUW, IIT Delhi, Amity, Jamia Millia. JEE Main cutoffs, fees ₹1.5L–5L/yr, avg placements ₹14–18 LPA. Compare & apply.",
+  title: "Best Engineering Colleges in Delhi 2026",
+  description: "Top 12 engineering colleges in Delhi 2026 — DTU (NIRF 49), NSUT, IGDTUW, IIT Delhi, Amity, Jamia Millia",
   path: "/engineering-colleges-delhi",
   keywords: [
     "engineering colleges in Delhi",

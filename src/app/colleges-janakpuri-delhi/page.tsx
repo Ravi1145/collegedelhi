@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 
 export const metadata: Metadata = genMeta({
   title: "Colleges in Janakpuri, Delhi 2026 | IGDTUW, IP Colleges & DU",
-  description: "Best colleges in Janakpuri, Delhi 2026 — IGDTUW (women's engineering), Vivekananda College DU, VIPS, and IP University affiliated colleges. Blue Line metro access, fees, admission guide.",
+  description: "Best colleges in Janakpuri, Delhi 2026 — IGDTUW (women's engineering), Vivekananda College DU, VIPS, and IP University affiliated colleges",
   path: "/colleges-janakpuri-delhi",
   keywords: [
     "colleges in janakpuri delhi", "janakpuri delhi colleges 2026",

@@ -5,7 +5,7 @@ import SEOLandingPage from "@/components/seo/SEOLandingPage"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Top Placement Colleges in Delhi 2026 — Highest Package & Avg LPA",
+  title: "Top Placement Colleges in Delhi 2026",
   description: "Delhi's highest placement colleges ranked by average LPA: FMS (₹28 LPA), IIT Delhi DMS (₹26 LPA), DTU (₹18 LPA), IIIT Delhi (₹20 LPA). Real 2025 placement data.",
   path: "/top-placement-colleges-delhi",
   keywords: [

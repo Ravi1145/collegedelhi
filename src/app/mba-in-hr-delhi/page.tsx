@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA in HR Colleges in Delhi 2026 | Fees, CAT Cutoff & HR Jobs",
+  title: "Best MBA in HR Colleges in Delhi 2026",
   description: "Top MBA HR colleges in Delhi 2026: MDI Gurgaon PGDM-HRM, FMS Delhi, XLRI (Delhi campus), IMI Delhi. CAT cutoffs, fees ₹55K–₹21L, HR placements ₹8–22 LPA.",
   path: "/mba-in-hr-delhi",
   keywords: [

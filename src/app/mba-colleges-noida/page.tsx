@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA Colleges in Noida 2026 | Fees, CAT Cutoff & Placements",
-  description: "Top MBA colleges in Noida 2026 — Amity Business School, IILM, Galgotias University, IMS Ghaziabad, Jaipuria Noida. CAT/CMAT cutoff, fees ₹3L–18L, avg placements ₹7–14 LPA.",
+  title: "Best MBA Colleges in Noida 2026",
+  description: "Top MBA colleges in Noida 2026 — Amity Business School, IILM, Galgotias University, IMS Ghaziabad, Jaipuria Noida",
   path: "/mba-colleges-noida",
   keywords: [
     "mba colleges in noida",

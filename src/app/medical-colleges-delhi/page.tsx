@@ -8,8 +8,8 @@ import GatedCutoffChartClient from "@/components/ui/GatedCutoffChartClient"
 import TopicalHub from "@/components/seo/TopicalHub"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Medical colleges in Delhi 2026 | NEET Cutoff, Fees & MBBS Seats",
-  description: "Top medical colleges in Delhi 2026 with NEET cutoffs, NIRF ranks, annual fees (₹50K–₹15L), and MBBS/BDS seat count. Compare AFMC (NIRF #4), Maulana Azad Medical College (NIRF #18), DY Patil & Bharati Vidyapeeth.",
+  title: "Best Medical colleges in Delhi 2026",
+  description: "Top medical colleges in Delhi 2026 with NEET cutoffs, NIRF ranks, annual fees (₹50K–₹15L), and MBBS/BDS seat count",
   path: "/medical-colleges-delhi",
   keywords: [
     "best medical college in Delhi",

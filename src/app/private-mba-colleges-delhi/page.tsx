@@ -6,9 +6,9 @@ import { CheckCircle, BookOpen, ExternalLink } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Private MBA colleges in Delhi 2026 | Fees, Placements & Admission",
+  title: "Private MBA colleges in Delhi 2026",
   description:
-    "Top private MBA colleges in Delhi 2026. Compare FMS Delhi, IMI Delhi, Fore School Delhi, Indira Institute by fees (₹2.8L–₹22L total), SNAP/CAT cutoff, and average placements.",
+    "Top private MBA colleges in Delhi 2026. Compare FMS Delhi, IMI Delhi, Fore School Delhi, Indira Institute by fees (₹2.8L–₹22L total), SNAP/CAT cutoff",
   path: "/private-mba-colleges-delhi",
   keywords: [
     "private mba colleges in Delhi",

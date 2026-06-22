@@ -6,9 +6,9 @@ import { CheckCircle, TrendingUp, BookOpen, IndianRupee } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Low Fees MBA colleges in Delhi 2026 | Under ₹5L & ₹10L Options",
+  title: "Low Fees MBA colleges in Delhi 2026",
   description:
-    "Affordable MBA colleges in Delhi 2026 with fees under ₹5 lakh and ₹10 lakh. Suryadatta ₹2.8L, GL Bajaj ₹3.8L, Indira Institute ₹4.2L total. Compare budget MBA programs.",
+    "Affordable MBA colleges in Delhi 2026 with fees under ₹5 lakh and ₹10 lakh. Suryadatta ₹2.8L, GL Bajaj ₹3.8L, Indira Institute ₹4.2L total",
   path: "/low-fees-mba-colleges-delhi",
   keywords: [
     "low fees mba colleges in Delhi",

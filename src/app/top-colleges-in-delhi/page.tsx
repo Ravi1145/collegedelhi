@@ -6,7 +6,7 @@ import { Award, TrendingUp, BookOpen, CheckCircle } from "lucide-react"
 export const metadata: Metadata = genMeta({
   title: "Top Colleges in Delhi 2026 | Rankings, Fees & Placements",
   description:
-    "Top colleges in Delhi 2026 across all streams. IIT Delhi (Engineering #2), AIIMS (Medical #1), FMS Delhi (MBA #13), Miranda House, SRCC, DTU, NSUT — NIRF ranks, fees & placements compared.",
+    "Top colleges in Delhi 2026 across all streams. IIT Delhi (Engineering #2), AIIMS (Medical #1), FMS Delhi (MBA #13), Miranda House, SRCC, DTU, NSUT — NIRF ranks",
   path: "/top-colleges-in-delhi",
   keywords: [
     "top colleges in delhi",

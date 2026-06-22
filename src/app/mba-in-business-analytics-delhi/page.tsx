@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBA in Business Analytics Delhi 2026 | Best Colleges, Salary & Admission",
-  description: "Best MBA Business Analytics colleges in Delhi 2026: FORE BDA, IMI Delhi, MDI, Amity. Data science, analytics salary ₹12–25 LPA. Python, R, SQL curriculum. Full guide.",
+  title: "MBA in Business Analytics Delhi 2026",
+  description: "Best MBA Business Analytics colleges in Delhi 2026: FORE BDA, IMI Delhi, MDI, Amity. Data science, analytics salary ₹12–25 LPA. Python, R, SQL curriculum",
   path: "/mba-in-business-analytics-delhi",
   keywords: [
     "mba in business analytics delhi",

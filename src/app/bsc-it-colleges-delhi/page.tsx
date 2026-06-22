@@ -4,8 +4,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BSc IT Colleges Delhi 2026 | Fees, Cutoff & IT Placements",
-  description: "Top BSc IT / BSc Computer Science colleges in Delhi 2026 — Fergusson, Hindu College, MIT, Symbiosis. Fees ₹20K–₹1.5L/yr, HSC cutoffs, IT placement ₹4–12 LPA and admission guide.",
+  title: "Best BSc IT Colleges Delhi 2026",
+  description: "Top BSc IT / BSc Computer Science colleges in Delhi 2026 — Fergusson, Hindu College, MIT, Symbiosis",
   path: "/bsc-it-colleges-delhi",
   keywords: [
     "bsc it colleges in Delhi 2026",

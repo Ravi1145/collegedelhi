@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Mechanical Engineering colleges in Delhi 2026 | Fees, Placements & Cutoffs",
+  title: "Mechanical Engineering colleges in Delhi 2026",
   description: "Top mechanical engineering colleges in Delhi 2026. DTU Delhi, NSUT, IIIT Delhi — compare fees (₹80K–3.8L), JEE Main cutoffs, and placements for Mech BTech.",
   path: "/mechanical-engineering-colleges-delhi",
   keywords: ["mechanical engineering colleges Delhi", "mech engineering colleges Delhi 2026", "best mechanical College Delhi", "mechanical btech Delhi"],

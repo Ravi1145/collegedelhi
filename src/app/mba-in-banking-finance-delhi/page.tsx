@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "MBA in Banking & Finance Delhi 2026 | Best Colleges, Salary & Admission",
+  title: "MBA in Banking & Finance Delhi 2026",
   description: "Best MBA Banking & Finance colleges in Delhi 2026: FMS, IIFT, MDI, FORE, IMI. Investment banking, trade finance, fintech careers. Salary ₹10–35 LPA. Full guide.",
   path: "/mba-in-banking-finance-delhi",
   keywords: [

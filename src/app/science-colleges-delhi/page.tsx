@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Science colleges in Delhi 2026 | BSc, MSc Colleges | Fees & Admissions",
-  description: "Top science colleges in Delhi for BSc and MSc 2026. Miranda House College, Hindu College, Amity University Delhi, Symbiosis -- compare fees, NAAC grades, courses, and career options.",
+  title: "Science colleges in Delhi 2026 | BSc, MSc Colleges",
+  description: "Top science colleges in Delhi for BSc and MSc 2026. Miranda House College, Hindu College, Amity University Delhi, Symbiosis -- compare fees, NAAC grades",
   path: "/science-colleges-delhi",
   keywords: ["science colleges Delhi", "bsc colleges Delhi 2026", "msc colleges Delhi", "best science College Delhi", "physics chemistry biology Delhi"],
 })

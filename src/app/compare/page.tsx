@@ -5,7 +5,7 @@ import AIComparison from "@/components/ai/AIComparison"
 
 export const metadata: Metadata = genMeta({
   title: "Compare Colleges in Delhi 2026 — Side-by-Side Comparison",
-  description: "Compare any two Delhi NCR colleges side-by-side: fees, NIRF rank, placements, NAAC grade, cutoff and campus life. DTU vs NSUT, FMS vs MDI, Miranda House vs LSR and 500+ more pairs.",
+  description: "Compare any two Delhi NCR colleges side-by-side: fees, NIRF rank, placements, NAAC grade, cutoff and campus life",
   path: "/compare",
   keywords: ["compare colleges Delhi", "DTU vs NSUT", "FMS Delhi vs MDI", "college comparison Delhi 2026", "Miranda House vs LSR", "SRCC vs Hindu College"],
 })

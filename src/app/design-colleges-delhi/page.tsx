@@ -5,8 +5,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Design colleges in Delhi 2026 | Architecture, Fashion & NID Prep",
-  description: "Top design & architecture colleges in Delhi 2026. Compare MIT ID, Symbiosis School of Design, MAEER's MIT AOA, and more. Fees, placements, NID/NATA cutoffs & admission guide.",
+  title: "Best Design colleges in Delhi 2026",
+  description: "Top design & architecture colleges in Delhi 2026. Compare MIT ID, Symbiosis School of Design, MAEER's MIT AOA, and more",
   path: "/design-colleges-delhi",
   keywords: [
     "design colleges in Delhi 2026",

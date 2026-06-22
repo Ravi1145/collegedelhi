@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "FMS Delhi vs IIFT Delhi 2026 | Fees, Cutoff, Placement & Which to Choose",
-  description: "FMS Delhi vs IIFT Delhi comparison 2026: FMS ₹55K vs IIFT ₹18.5L fees, FMS 99%ile vs IIFT exam cutoff, FMS ₹32 LPA vs IIFT ₹22 LPA avg placement. Which is better?",
+  title: "FMS Delhi vs IIFT Delhi 2026",
+  description: "FMS Delhi vs IIFT Delhi comparison 2026: FMS ₹55K vs IIFT ₹18.5L fees, FMS 99%ile vs IIFT exam cutoff, FMS ₹32 LPA vs IIFT ₹22 LPA avg placement",
   path: "/fms-delhi-vs-iift-delhi",
   keywords: [
     "fms delhi vs iift delhi",

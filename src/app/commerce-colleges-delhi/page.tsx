@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Commerce colleges in Delhi 2026 | BCom, MCom Colleges | Fees & Admissions",
-  description: "Best commerce colleges in Delhi 2026. BMCC, Gargi College, Hindu College, Symbiosis -- compare BCom fees (₹15K-80K/yr), NAAC grades, and career options after BCom.",
+  title: "Commerce colleges in Delhi 2026 | BCom, MCom Colleges",
+  description: "Best commerce colleges in Delhi 2026. BMCC, Gargi College, Hindu College, Symbiosis -- compare BCom fees (₹15K-80K/yr), NAAC grades, and career options after",
   path: "/commerce-colleges-delhi",
   keywords: ["commerce colleges Delhi", "bcom colleges Delhi 2026", "mcom colleges Delhi", "best commerce College Delhi", "bcom admission Delhi"],
 })

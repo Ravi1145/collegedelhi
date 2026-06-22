@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA Colleges in Gurgaon 2026 | Fees, CAT Cutoff & Placements",
+  title: "Best MBA Colleges in Gurgaon 2026",
   description: "Top MBA colleges in Gurgaon 2026: MDI Gurgaon (₹22.5L), IMT Ghaziabad, Amity, GD Goenka. CAT cutoffs, fees ₹3L–₹22.5L, average placements ₹10–26 LPA.",
   path: "/mba-colleges-gurgaon",
   keywords: [

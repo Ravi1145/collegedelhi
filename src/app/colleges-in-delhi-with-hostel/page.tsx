@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Home, Shield, Star, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "colleges in Delhi with Hostel 2026 | Fees, Facilities & Availability",
+  title: "colleges in Delhi with Hostel 2026",
   description: "Top Delhi colleges with hostel 2026. DTU Delhi, IIIT Delhi, FMS Delhi — hostel fees ₹40K–₹1.8L/yr, boys/girls availability, food, and campus life guide.",
   path: "/colleges-in-delhi-with-hostel",
   keywords: [

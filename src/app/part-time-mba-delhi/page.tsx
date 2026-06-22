@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Part-Time MBA in Delhi 2026 | Weekend MBA Colleges, Fees & Admission",
-  description: "Best part-time MBA colleges in Delhi 2026: FMS Evening, IMT Part-Time, LBSIM, MDI PGPM-Ex. Weekend MBA, Saturday-Sunday classes. Fees ₹2L–₹15L. For working professionals.",
+  title: "Part-Time MBA in Delhi 2026",
+  description: "Best part-time MBA colleges in Delhi 2026: FMS Evening, IMT Part-Time, LBSIM, MDI PGPM-Ex. Weekend MBA, Saturday-Sunday classes. Fees ₹2L–₹15L",
   path: "/part-time-mba-delhi",
   keywords: [
     "part time mba in delhi",

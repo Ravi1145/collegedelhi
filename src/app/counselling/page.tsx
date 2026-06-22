@@ -4,9 +4,9 @@ import CounsellingBooking from "@/components/leads/CounsellingBooking"
 import { generateMetadata as genMeta } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Free College Counselling in Delhi 2026 — Expert Admission Guidance",
+  title: "Free College Counselling in Delhi 2026",
   description:
-    "Book a FREE 15-minute expert counselling session for Delhi college admissions. Get personalized guidance on fees, scholarships, entrance exams & college shortlisting. 100% free, no spam.",
+    "Book a FREE 15-minute expert counselling session for Delhi college admissions",
   path: "/counselling",
   keywords: [
     "free college counselling Delhi",

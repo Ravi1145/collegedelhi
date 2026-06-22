@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "CUET Colleges in Delhi 2026 | DU, IP University CUET Cutoff & Admission",
+  title: "CUET Colleges in Delhi 2026",
   description: "Top CUET colleges in Delhi 2026 — DU colleges, IP University, Jamia. CUET cutoffs, seat matrix, best colleges for 95–99 percentile in Delhi.",
   path: "/cuet-colleges-delhi",
   keywords: [

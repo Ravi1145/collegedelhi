@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best BBA Colleges in Delhi 2026 | Fees, CUET Cutoff & Placements",
+  title: "Best BBA Colleges in Delhi 2026",
   description: "Top BBA colleges in Delhi 2026: SSCBS DU (₹18K/yr), Amity Noida, JIMS, BPIT. CUET & IPU CET cutoffs, fees ₹18K–₹2.5L/yr, placements ₹3.5–15 LPA.",
   path: "/bba-colleges-delhi",
   keywords: [

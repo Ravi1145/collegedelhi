@@ -6,9 +6,9 @@ import { CheckCircle, Award, BookOpen, TrendingUp } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "MBA colleges in Delhi with Scholarship 2026 | Fee Waiver & Fellowship Guide",
+  title: "MBA colleges in Delhi with Scholarship 2026",
   description:
-    "MBA scholarship opportunities at Delhi colleges 2026. FMS Delhi merit scholarship, IMI Delhi fellowship, government OBC/SC/ST fee waiver. Reduce MBA fees from ₹22L to under ₹10L.",
+    "MBA scholarship opportunities at Delhi colleges 2026. FMS Delhi merit scholarship, IMI Delhi fellowship, government OBC/SC/ST fee waiver",
   path: "/mba-colleges-delhi-scholarship",
   keywords: [
     "mba colleges with scholarship Delhi",

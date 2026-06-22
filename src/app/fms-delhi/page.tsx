@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "FMS Delhi MBA 2026 | Fees ₹55K, CAT Cutoff 99+%ile & Placement ₹32 LPA",
-  description: "FMS Delhi (Faculty of Management Studies, DU) MBA 2026: India's best value MBA at ₹55K total fees. CAT 99+ percentile cutoff, ₹32 LPA avg placement, ₹75 LPA highest. Admission process, eligibility & dates.",
+  title: "FMS Delhi MBA 2026 | Fees ₹55K, CAT Cutoff 99+%ile",
+  description: "FMS Delhi (Faculty of Management Studies, DU) MBA 2026: India's best value MBA at ₹55K total fees",
   path: "/fms-delhi",
   keywords: [
     "fms delhi mba admission",

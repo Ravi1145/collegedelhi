@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Paramedical Colleges in Delhi 2026 | B.Sc. MLT, Radiology Fees & Admission",
+  title: "Best Paramedical Colleges in Delhi 2026",
   description: "Top paramedical colleges in Delhi 2026 — AIIMS, MAMC, Jamia Hamdard. Compare B.Sc. MLT, Radiology, Physiotherapy fees ₹30K–₹2L/yr and NEET/direct admission.",
   path: "/paramedical-colleges-delhi",
   keywords: [

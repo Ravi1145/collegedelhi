@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best MBA in Marketing Colleges in Delhi 2026 | Fees, CAT Cutoff & Jobs",
+  title: "Best MBA in Marketing Colleges in Delhi 2026",
   description: "Top MBA Marketing colleges in Delhi 2026: FMS Delhi, MDI Gurgaon, IMI Delhi, FORE. CAT cutoffs, fees ₹55K–₹22.5L total, marketing placements ₹8–28 LPA.",
   path: "/mba-in-marketing-delhi",
   keywords: [

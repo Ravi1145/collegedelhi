@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "JIMS vs NDIM Delhi 2026 — Fees, Placements, Admission & Which is Better",
-  description: "JIMS (Jagannath International Management School) vs NDIM (New Delhi Institute of Management) 2026: fees (₹10L vs ₹8L), CAT/MAT cutoff, placements, campus, AICTE approval. Honest comparison.",
+  title: "JIMS vs NDIM Delhi 2026 — Fees, Placements, Admission",
+  description: "JIMS (Jagannath International Management School) vs NDIM (New Delhi Institute of Management) 2026: fees (₹10L vs ₹8L), CAT/MAT cutoff, placements, campus, AICTE",
   path: "/jims-vs-ndim",
   keywords: ["JIMS vs NDIM","JIMS Delhi vs NDIM 2026","JIMS NDIM comparison MBA Delhi","NDIM Delhi placements vs JIMS","JIMS Rohini vs NDIM Tughlakabad","which is better JIMS or NDIM Delhi MBA"],
 })

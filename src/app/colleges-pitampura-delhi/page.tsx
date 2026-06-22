@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in Pitampura, Delhi 2026 | Engineering, BCA & DU Colleges",
-  description: "Best colleges in Pitampura, Delhi 2026 — MAIT, VIPS, Delhi Technical Campus, and DU colleges near Pitampura. Red Line metro access, fees, BCA/BTech/MBA admission guide.",
+  title: "Colleges in Pitampura, Delhi 2026",
+  description: "Best colleges in Pitampura, Delhi 2026 — MAIT, VIPS, Delhi Technical Campus, and DU colleges near Pitampura",
   path: "/colleges-pitampura-delhi",
   keywords: [
     "colleges in pitampura delhi", "pitampura delhi colleges 2026",

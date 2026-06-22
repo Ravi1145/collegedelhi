@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best M.Tech Colleges in Delhi 2026 | Top MTech Colleges Delhi",
+  title: "Best M.Tech Colleges in Delhi 2026",
   description: "Best M.Tech colleges in Delhi 2026. IIT Delhi, DTU, NSUT, IIIT Delhi — compare GATE cutoffs, fees, research output, and placements.",
   path: "/mtech-colleges-delhi",
   keywords: ["mtech colleges Delhi", "best MTech college Delhi 2026", "GATE cutoff Delhi colleges", "M.Tech admission Delhi 2026", "MTech fees Delhi colleges"],

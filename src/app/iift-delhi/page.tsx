@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "IIFT Delhi MBA 2026 | Fees, IIFT Exam Cutoff & Placement ₹22 LPA",
-  description: "IIFT Delhi MBA International Business 2026: ₹18.5L fees, IIFT exam cutoff 45+ marks, ₹22 LPA avg placement. Admission process, eligibility, IIFT vs FMS comparison.",
+  title: "IIFT Delhi MBA 2026 | Fees, IIFT Exam Cutoff & Placement",
+  description: "IIFT Delhi MBA International Business 2026: ₹18.5L fees, IIFT exam cutoff 45+ marks, ₹22 LPA avg placement",
   path: "/iift-delhi",
   keywords: [
     "iift delhi mba admission",

@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "IP University MBA Colleges Delhi 2026 | IPU CET, Fees & Placement",
+  title: "IP University MBA Colleges Delhi 2026",
   description: "Best IP University MBA colleges in Delhi 2026: JIMS, USMS, BPIT, VIPS, MAIT. IPU CET cutoff, fees ₹1.8L–₹2.5L per year, placement ₹4–10 LPA. Full guide.",
   path: "/ip-university-mba-delhi",
   keywords: [

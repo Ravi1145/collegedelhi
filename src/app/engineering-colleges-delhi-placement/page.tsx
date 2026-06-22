@@ -6,9 +6,9 @@ import { TrendingUp, ExternalLink } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Best Engineering colleges in Delhi for Placements 2026 | Package Data",
+  title: "Best Engineering colleges in Delhi for Placements 2026",
   description:
-    "Compare average & highest placement packages of top Delhi engineering colleges 2026. DTU Delhi ₹12 LPA avg, IMI Delhi ₹9.8 LPA, IIIT Delhi ₹8.5 LPA. Top recruiters, placement % & salary data.",
+    "Compare average & highest placement packages of top Delhi engineering colleges 2026. DTU Delhi ₹12 LPA avg, IMI Delhi ₹9.8 LPA, IIIT Delhi ₹8.5 LPA",
   path: "/engineering-colleges-delhi-placement",
   keywords: [
     "best engineering colleges in Delhi with placement",

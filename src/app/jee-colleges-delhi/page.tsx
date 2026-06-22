@@ -3,7 +3,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "JEE colleges in Delhi 2026 | Engineering Colleges Accepting JEE Main",
+  title: "JEE colleges in Delhi 2026",
   description: "Engineering colleges in Delhi accepting JEE Main 2026. DTU Delhi, NSUT, IIIT Delhi — JEE cutoffs, fees, and admission process for Delhi colleges.",
   path: "/jee-colleges-delhi",
   keywords: ["jee colleges Delhi", "jee main colleges Delhi 2026", "engineering colleges Delhi jee main", "jee cutoff Delhi colleges"],

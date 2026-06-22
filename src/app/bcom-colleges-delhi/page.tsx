@@ -3,8 +3,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
-  title: "Best B.Com Colleges in Delhi 2026 | Top Commerce Colleges Delhi",
-  description: "Complete list of best B.Com colleges in Delhi 2026. SRCC, LSR, Hansraj, Shri Ram, Kamala Nehru — compare CUET cutoffs, fees, CA placements. Top 20 B.Com colleges Delhi ranked.",
+  title: "Best B.Com Colleges in Delhi 2026",
+  description: "Complete list of best B.Com colleges in Delhi 2026. SRCC, LSR, Hansraj, Shri Ram, Kamala Nehru — compare CUET cutoffs, fees, CA placements",
   path: "/bcom-colleges-delhi",
   keywords: ["bcom colleges Delhi", "best commerce colleges Delhi 2026", "BCom admission Delhi 2026", "CUET commerce cutoff DU", "top BCom college Delhi"],
 })

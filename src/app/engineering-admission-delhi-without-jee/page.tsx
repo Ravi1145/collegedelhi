@@ -6,9 +6,9 @@ import { CheckCircle, BookOpen } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Engineering Admission in Delhi Without JEE 2026 | JEE Main Only Colleges",
+  title: "Engineering Admission in Delhi Without JEE 2026",
   description:
-    "Get B.Tech admission in Delhi without JEE Main score in 2026. 80%+ of Delhi engineering colleges accept JEE Main only. List of top colleges, lateral entry, and management quota options.",
+    "Get B.Tech admission in Delhi without JEE Main score in 2026. 80%+ of Delhi engineering colleges accept JEE Main only",
   path: "/engineering-admission-delhi-without-jee",
   keywords: [
     "engineering admission without jee Delhi",

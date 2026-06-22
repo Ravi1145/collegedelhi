@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "Colleges in Gurugram (Gurgaon) 2026 | MDI, GD Goenka, BML Munjal & More",
-  description: "Top colleges in Gurugram 2026 — MDI Gurgaon (NIRF #17), GD Goenka University, BML Munjal University, K.R. Mangalam, Amity Gurugram. Engineering, MBA, BBA, BCA. Fees, courses & admission guide.",
+  title: "Colleges in Gurugram (Gurgaon) 2026",
+  description: "Top colleges in Gurugram 2026 — MDI Gurgaon (NIRF #17), GD Goenka University, BML Munjal University, K.R. Mangalam, Amity Gurugram. Engineering, MBA, BBA, BCA",
   path: "/colleges-gurugram",
   keywords: [
     "colleges in gurugram", "colleges in gurgaon 2026",

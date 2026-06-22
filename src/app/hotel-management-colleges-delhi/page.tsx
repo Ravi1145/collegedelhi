@@ -5,7 +5,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Hotel Management Colleges in Delhi 2026 | BHM Fees, Placements & Admission",
+  title: "Best Hotel Management Colleges in Delhi 2026",
   description: "Top hotel management colleges in Delhi 2026 — IHM Delhi, Amity, IIHM. Compare BHM fees ₹80K–₹4L/yr, NCHMCT JEE cutoffs, placement packages up to ₹8 LPA.",
   path: "/hotel-management-colleges-delhi",
   keywords: [

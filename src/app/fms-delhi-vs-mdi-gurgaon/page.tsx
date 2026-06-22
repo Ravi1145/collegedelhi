@@ -4,7 +4,7 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 
 export const metadata: Metadata = genMeta({
   title: "FMS Delhi vs MDI Gurgaon 2026 — Which MBA is Better?",
-  description: "FMS Delhi vs MDI Gurgaon detailed comparison: CAT cutoff, fees, average placement, ROI, campus culture. Which is the better MBA college near Delhi? Honest 2026 verdict.",
+  description: "FMS Delhi vs MDI Gurgaon detailed comparison: CAT cutoff, fees, average placement, ROI, campus culture. Which is the better MBA college near Delhi",
   path: "/fms-delhi-vs-mdi-gurgaon",
   keywords: [
     "FMS Delhi vs MDI Gurgaon",

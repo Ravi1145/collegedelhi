@@ -6,9 +6,9 @@ import { CheckCircle } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Engineering vs MBA in Delhi 2026 | Fees, Salary & Career Comparison",
+  title: "Engineering vs MBA in Delhi 2026",
   description:
-    "Should you choose Engineering (B.Tech) or MBA in Delhi 2026? Compare fees, starting salary, top colleges, entrance exams, and 10-year career paths. Detailed side-by-side comparison.",
+    "Should you choose Engineering (B.Tech) or MBA in Delhi 2026? Compare fees, starting salary, top colleges, entrance exams, and 10-year career paths",
   path: "/delhi-colleges-comparison-engineering-mba",
   keywords: [
     "engineering colleges comparison Delhi",

@@ -3,8 +3,8 @@ import Link from "next/link"
 import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
 
 export const metadata: Metadata = genMeta({
-  title: "IMT Ghaziabad vs BIMTECH 2026 — Fees, Placements, CAT Cutoff & Which is Better",
-  description: "IMT Ghaziabad vs BIMTECH (Birla Institute of Management Technology) 2026: NIRF rank, fees (₹19L vs ₹13L), CAT cutoff, placements (₹19 LPA vs ₹12 LPA), campus, specialisations.",
+  title: "IMT Ghaziabad vs BIMTECH 2026",
+  description: "IMT Ghaziabad vs BIMTECH (Birla Institute of Management Technology) 2026: NIRF rank, fees (₹19L vs ₹13L), CAT cutoff, placements (₹19 LPA vs ₹12 LPA), campus",
   path: "/imt-vs-bimtech",
   keywords: ["IMT vs BIMTECH","IMT Ghaziabad vs BIMTECH 2026","IMT BIMTECH comparison MBA","BIMTECH vs IMT Ghaziabad placements","BIMTECH Greater Noida CAT cutoff","which is better IMT or BIMTECH"],
 })
