@@ -18,7 +18,7 @@ export const metadata: Metadata = genMeta({
 })
 
 const listingFaqs = [
-  { question: "How many colleges are there in Delhi?", answer: "Delhi has over 800 colleges including 400+ engineering colleges, 100+ MBA institutes, and 50+ medical colleges. CollegeDelhi profiles 103+ top colleges with verified fees, placements, and NAAC data." },
+  { question: "How many colleges are there in Delhi?", answer: "Delhi NCR has hundreds of colleges across engineering, management, medical, arts, and commerce streams. CollegeDelhi profiles verified colleges with fees, placements, and NAAC data — see the listings on this page for current coverage." },
   { question: "Which is the best government college in Delhi?", answer: "DTU (Delhi Technological University) is a top government engineering college — NIRF #49, NAAC A+, government fee structure. For medical: AIIMS Delhi (NIRF #1, NAAC A++). For arts/commerce: Miranda House and Shri Ram College of Commerce (SRCC), both constituent colleges of University of Delhi." },
   { question: "Which Delhi college has the best placements?", answer: "For MBA: FMS Delhi has strong placements with top recruiters including McKinsey and BCG. For engineering: IIT Delhi and DTU have strong placement records. Always check each college's official placement report for current-year statistics." },
   { question: "What is the fee range for engineering colleges in Delhi?", answer: "Engineering fees in Delhi vary by institution type: Government colleges (DTU, NSUT, IIIT Delhi) have regulated, lower fee structures than private/deemed universities. SC/ST students typically get fee waivers at government colleges. Always check the official college admission portal for the current year's exact fee notification." },

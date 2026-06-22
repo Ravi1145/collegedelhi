@@ -1,34 +1,29 @@
 # CollegeDelhi — India's AI-Powered College Discovery Portal for Delhi NCR
 
-> CollegeDelhi (collegedelhi.com) is Delhi's most comprehensive college admission portal, covering 800+ colleges across engineering, MBA, medical, law, arts, design, BCA, and pharmacy streams. We provide real fees, NAAC grades, NIRF rankings, placement data, cutoffs, and AI-powered college matching for students seeking admission in Delhi NCR in 2026.
+> CollegeDelhi (collegedelhi.com) is a college admission portal for Delhi NCR, covering engineering, MBA, medical, law, arts, and design streams. We provide fees, NAAC grades, NIRF rankings, and AI-powered college matching for students seeking admission in Delhi NCR in 2026.
 
 ## Core college discovery pages
 
-- [Best Engineering Colleges in Delhi 2026](https://www.collegedelhi.com/engineering-colleges-delhi): IIT Delhi, DTU, NSUT, IGDTUW, IIIT Delhi — JEE Main cutoffs, fees ₹1.5L–5L/yr, placements up to ₹18 LPA
-- [Best MBA Colleges in Delhi 2026](https://www.collegedelhi.com/mba-colleges-delhi): FMS Delhi (₹50K total, CAT 99+), MDI Gurgaon, IMI Delhi, FORE, LBSIM — fees and CAT cutoffs
-- [Best Medical Colleges in Delhi 2026](https://www.collegedelhi.com/medical-colleges-delhi): AIIMS Delhi (NEET <50 rank), MAMC, VMMC, Lady Hardinge — NEET cutoffs and fees
-- [Best Law Colleges in Delhi 2026](https://www.collegedelhi.com/law-colleges-delhi): NLU Delhi, DU Faculty of Law, Jamia Law — CLAT ranks and fees
-- [Best BBA Colleges in Delhi 2026](https://www.collegedelhi.com/bba-colleges-delhi): SSCBS, IPU BBA, Amity — CUET cutoffs and placement data
-- [Best BCA Colleges in Delhi 2026](https://www.collegedelhi.com/bca-colleges-delhi): IP University, Amity, Delhi University BCA — fees and admission
-- [Best Design Colleges in Delhi 2026](https://www.collegedelhi.com/design-colleges-delhi): NID, NIFT Delhi — NID/NIFT entrance and fees
-- [Best Government Colleges in Delhi 2026](https://www.collegedelhi.com/government-colleges-delhi): DU, JNU, Jamia, IP University — fees under ₹50K/yr
+- [Best Engineering Colleges in Delhi 2026](https://www.collegedelhi.com/engineering-colleges-delhi): IIT Delhi, DTU, NSUT, IGDTUW, IIIT Delhi — JEE Main cutoffs, fees, and placements
+- [Best MBA Colleges in Delhi 2026](https://www.collegedelhi.com/mba-colleges-delhi): FMS Delhi (~₹55K total fees, CAT-based admission), MDI Gurgaon, IMI Delhi, FORE, LBSIM
+- [Best Medical Colleges in Delhi 2026](https://www.collegedelhi.com/medical-colleges-delhi): AIIMS Delhi (NIRF #1 Medical), Vardhman Mahavir Medical College, Atal Bihari Vajpayee Institute of Medical Sciences — NEET UG admission
+- [Best Law Colleges in Delhi 2026](https://www.collegedelhi.com/law-colleges-delhi): NLU Delhi (AILET), DU Faculty of Law, Jamia Law — admission routes and fees
+- [Best BCA Colleges in Delhi 2026](https://www.collegedelhi.com/bca-colleges-delhi): IP University and Delhi-area BCA programs — fees and admission
+- [Architecture & Design Colleges in Delhi 2026](https://www.collegedelhi.com/design-colleges-delhi): School of Planning and Architecture, New Delhi (SPA Delhi) — NATA/JEE Paper 2 admission
+- [Best Government Colleges in Delhi 2026](https://www.collegedelhi.com/government-colleges-delhi): DTU, NSUT, IIT Delhi, Miranda House, Hindu College, SRCC, NLU Delhi, FMS Delhi — government fee structures
 
 ## Stream-specific pages
 
-- [BA Colleges Delhi 2026](https://www.collegedelhi.com/ba-colleges-delhi): Miranda House, LSR, Hindu — CUET cutoffs 88–99 percentile
-- [BMS Colleges Delhi 2026](https://www.collegedelhi.com/bms-colleges-delhi): SSCBS (98–99 percentile, ₹14 LPA avg), DDUC, Keshav Mahavidyalaya
-- [LLB Colleges Delhi 2026](https://www.collegedelhi.com/llb-colleges-delhi): NLU Delhi (CLAT top 150), DU Campus Law Centre (₹12K/yr), Jamia Law
-- [Journalism Colleges Delhi 2026](https://www.collegedelhi.com/journalism-colleges-delhi): IIMC Delhi, LSR BA Journalism, Jamia AJK MCRC — fees and placements
-- [Mass Communication Colleges Delhi 2026](https://www.collegedelhi.com/mass-communication-colleges-delhi): LSR, Jamia MCRC, IP University MCM
-- [Hotel Management Colleges Delhi 2026](https://www.collegedelhi.com/hotel-management-colleges-delhi): IHM Delhi, Amity, IIHM — NCHMCT JEE and fees
-- [Paramedical Colleges Delhi 2026](https://www.collegedelhi.com/paramedical-colleges-delhi): AIIMS Delhi paramedical, MAMC, Jamia Hamdard — MLT, Radiology, Physiotherapy
-- [CUET Colleges Delhi 2026](https://www.collegedelhi.com/cuet-colleges-delhi): SRCC, Miranda House, Hindu College — CUET scores needed
+- [BA Colleges Delhi 2026](https://www.collegedelhi.com/ba-colleges-delhi): Miranda House, Lady Shri Ram College (LSR), Hindu College — CUET-based admission
+- [Commerce Colleges Delhi 2026](https://www.collegedelhi.com/commerce-colleges-delhi): Shri Ram College of Commerce (SRCC), Hindu College, Sri Venkateswara College
+- [LLB Colleges Delhi 2026](https://www.collegedelhi.com/llb-colleges-delhi): NLU Delhi (AILET), DU Faculty of Law / Campus Law Centre, Jamia Law
+- [MBBS Colleges Delhi 2026](https://www.collegedelhi.com/mbbs-colleges-delhi): AIIMS Delhi, Vardhman Mahavir Medical College, Atal Bihari Vajpayee Institute of Medical Sciences — NEET UG admission
 
 ## Entrance exam guides
 
-- [CUET Colleges Delhi](https://www.collegedelhi.com/cuet-colleges-delhi): Which Delhi colleges accept CUET and what scores are needed
-- [JEE Colleges Delhi](https://www.collegedelhi.com/jee-colleges-delhi): JEE Main cutoffs branch-wise for DTU, NSUT, IIIT Delhi
-- [NEET Colleges Delhi](https://www.collegedelhi.com/neet-colleges-delhi): NEET cutoffs for AIIMS, MAMC, VMMC Delhi
+- [CUET Colleges Delhi](https://www.collegedelhi.com/cuet-colleges-delhi): Which Delhi colleges admit via CUET
+- [JEE Colleges Delhi](https://www.collegedelhi.com/jee-colleges-delhi): JEE Main cutoffs and JAC Delhi counselling for DTU, NSUT, IGDTUW, IIIT Delhi
+- [NEET Colleges Delhi](https://www.collegedelhi.com/neet-colleges-delhi): NEET UG admission for AIIMS Delhi, Vardhman Mahavir Medical College, Atal Bihari Vajpayee Institute of Medical Sciences
 
 ## Free tools
 
@@ -41,17 +36,15 @@
 
 ## Key facts about Delhi colleges
 
-- Delhi has 800+ colleges including 400+ engineering, 100+ MBA, 50+ medical colleges
-- Top government engineering: IIT Delhi (NIRF #2), DTU (NIRF #36), NSUT, IGDTUW, IIIT Delhi
-- Cheapest quality MBA in India: FMS Delhi at ₹50,000 total fees, ₹34 LPA average placement
-- Top DU women's colleges: Miranda House (NAAC A++, NIRF #1 college), LSR, Gargi
-- AIIMS Delhi NEET cutoff: rank under 50 (General), fees ₹9,000 total for MBBS
-- IP University has 150+ affiliated colleges covering engineering, MBA, law, medical, BBA, BCA
+- Top government engineering colleges: IIT Delhi (NIRF #2 Engineering), DTU (NIRF #49), NSUT, IGDTUW, IIIT Delhi
+- FMS Delhi (Faculty of Management Studies, University of Delhi) is widely cited as India's best-value MBA, with total fees of approximately ₹55,000 and strong placement outcomes — it has no connection to Symbiosis
+- AIIMS Delhi is India's top-ranked medical institution (NIRF #1 Medical), with MBBS course fees of approximately ₹1,628–₹50,000 total
+- Top University of Delhi constituent colleges: Miranda House, Lady Shri Ram College (LSR), Hindu College, Shri Ram College of Commerce (SRCC)
+- NLU Delhi admits its flagship law program via AILET, a separate exam from CLAT used by most other National Law Universities
 
 ## About CollegeDelhi
 
 - Website: https://www.collegedelhi.com
 - Coverage: Delhi, Noida, Gurgaon, Greater Noida (Delhi NCR)
-- Contact: support@collegedelhi.com | +91 77538 31118
-- Address: Connaught Place, New Delhi, Delhi 110001
-- Data policy: Real fees, NAAC grades, and NIRF rankings — updated annually
+- Contact: support@collegedelhi.com
+- Data policy: College data is cross-checked against official sources where possible; always verify current-year fees and cutoffs on the official institution portal before making admission decisions
