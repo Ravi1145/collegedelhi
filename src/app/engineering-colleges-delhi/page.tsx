@@ -153,7 +153,7 @@ export default function EngineeringCollegesDelhiPage() {
         {/* Quick answer for AI Overviews */}
         <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-xl mb-8">
           <p className="text-sm text-blue-900 font-semibold mb-1">Quick Answer</p>
-          <p className="text-sm text-blue-800">The best engineering colleges in Delhi for 2026 are: <strong>IIT Delhi</strong> (NIRF #2, JEE Advanced), <strong>DTU</strong> (NIRF 49, JEE Main 99+ percentile), <strong>NSUT</strong> (NIRF 52, JEE Main 98.5+), <strong>IGDTUW</strong> (women's, JEE Main 96+), and <strong>IIIT Delhi</strong> (CS-focused, JEE Main 99+). All government college fees are ₹1.5L–2L/year.</p>
+          <p className="text-sm text-blue-800">The best engineering colleges in Delhi for 2026 are: <strong>IIT Delhi</strong> (NIRF #2, JEE Advanced, top ~200 AIR for CSE), <strong>DTU</strong> (NIRF 49, JEE Main 99+ percentile), <strong>NSUT</strong> (NIRF 52, JEE Main 98.5+), <strong>IGDTUW</strong> (women's-only university, JEE Main 96+), and <strong>IIIT Delhi</strong> (CS/AI-focused, JEE Main 99+ via JOSAA/CSAB). All four government colleges (DTU, NSUT, IGDTUW, IIIT Delhi) admit through JAC Delhi counselling on JEE Main scores, with annual fees in the ₹1.5L–2L range — among the most affordable engineering degrees in India relative to placement outcomes. IIT Delhi remains the strongest option for students with a qualifying JEE Advanced rank, offering significantly higher average placements than the state universities.</p>
         </div>
 
         {/* College Table */}

@@ -4,7 +4,7 @@ import { getAllColleges, getAllBlogs, getAllExams, getAllCourses } from "@/lib/d
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://www.collegedelhi.com"
 
 // Use real content dates — update these only when content actually changes
-const CONTENT_DATE = new Date("2026-06-01")
+const CONTENT_DATE = new Date("2026-06-22")
 const STATIC_DATE  = new Date("2026-06-11")
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

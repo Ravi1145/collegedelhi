@@ -176,8 +176,8 @@ export default function MBACollegesDELHIPage() {
           <div className="bg-green-50 border-l-4 border-green-500 rounded-xl p-5 sm:p-6">
             <h2 className="text-lg font-bold text-green-800 mb-2">Quick Answer: Best MBA College in Delhi 2026</h2>
             <p className="text-green-900 text-sm leading-relaxed">
-              <strong>FMS Delhi</strong> (Faculty of Management Studies, NIRF Rank 13) is the best MBA college in Delhi in 2026 with ₹32 LPA average placement, recruiters McKinsey/BCG/Goldman Sachs, and total fees of just ₹55,000. Admission via CAT 2025 (98+ percentile).{" "}
-              <strong>Best premium option:</strong> MDI Gurgaon (NIRF #9, ₹24 LPA avg, ₹22L fees). <strong>Best budget:</strong> DSM DTU (₹2.8L fees, government college).
+              <strong>FMS Delhi</strong> (Faculty of Management Studies, NIRF Rank 13) is the best MBA college in Delhi in 2026 with ₹32 LPA average placement, recruiters McKinsey/BCG/Goldman Sachs, and total fees of just ₹55,000 — widely cited as the best ROI MBA in India. Admission is via CAT (98+ percentile) followed by Written Ability Test and Personal Interview.{" "}
+              <strong>Best premium option:</strong> MDI Gurgaon (NIRF #9, ₹24 LPA avg, ₹22L fees, CAT 99+ percentile). <strong>Best budget government option:</strong> DSM DTU (₹2.8L total fees). <strong>Other strong choices:</strong> IMI Delhi, FORE School, and LBSIM Delhi, which accept CAT, XAT, and CMAT scores at varying cutoffs and offer specializations across Finance, Marketing, and Operations.
             </p>
           </div>
         </section>

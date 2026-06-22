@@ -1,7 +1,10 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateArticleSchema } from "@/lib/seo"
 import { CheckCircle, MapPin, ExternalLink, BookOpen } from "lucide-react"
+import ReviewedByline from "@/components/seo/ReviewedByline"
+
+const LAST_UPDATED = "June 2026"
 
 export const revalidate = 300
 
@@ -335,11 +338,22 @@ export default function Top10EngineeringCollegesDELHIPage() {
     })),
   }
 
+  const articleSchema = generateArticleSchema({
+    title: "Top 10 Engineering Colleges in Delhi 2026 (NIRF Ranked)",
+    description: "NIRF-ranked engineering colleges in Delhi 2026 — JEE cutoffs, fees, and placements compared",
+    author: "CollegeDelhi Editorial Team",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-01",
+    url: "/top-10-engineering-colleges-in-delhi",
+    category: "Engineering",
+  })
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <div className="bg-surface min-h-screen">
         {/* Hero */}
@@ -352,6 +366,7 @@ export default function Top10EngineeringCollegesDELHIPage() {
               <span>›</span>
               <span className="text-white">Top 10 Engineering colleges in Delhi</span>
             </nav>
+            <ReviewedByline lastUpdated={LAST_UPDATED} />
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight">
               Top 10 Engineering colleges in Delhi 2026 (NIRF Ranked)
             </h1>

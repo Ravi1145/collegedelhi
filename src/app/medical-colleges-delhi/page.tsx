@@ -147,8 +147,8 @@ const articleSchema = generateArticleSchema({
           <div className="bg-green-50 border-l-4 border-green-500 rounded-xl p-5 sm:p-6">
             <h2 className="text-lg font-bold text-green-800 mb-2">Quick Answer: Best Medical College in Delhi 2026</h2>
             <p className="text-green-900 text-sm leading-relaxed">
-              <strong>AIIMS Delhi</strong> (NIRF #1 Medical, NAAC A++) is the best medical college in Delhi — among the most affordable MBBS programs in India (₹1,628–₹50,000 total course) but requires one of the highest NEET AIQ ranks in the country.{" "}
-              <strong>Other Delhi government options:</strong> Vardhman Mahavir Medical College (attached to Safdarjung Hospital) and Atal Bihari Vajpayee Institute of Medical Sciences (attached to Dr. RML Hospital) — both admit through NEET government quota.
+              <strong>AIIMS Delhi</strong> (NIRF #1 Medical, NAAC A++) is the best medical college in Delhi — among the most affordable MBBS programs in India (₹1,628–₹50,000 total course) but requires one of the highest NEET All India Quota ranks in the country, with 125 MBBS seats filled entirely through MCC counselling.{" "}
+              <strong>Other Delhi government options:</strong> Vardhman Mahavir Medical College (attached to Safdarjung Hospital, fees ₹1.15L–₹2.65L/yr) and Atal Bihari Vajpayee Institute of Medical Sciences (attached to Dr. RML Hospital, fees ₹51K–₹3.75L/yr) — both admit through NEET UG and Delhi's state quota counselling process rather than the All India Quota used by AIIMS Delhi.
             </p>
           </div>
         </section>

@@ -1,7 +1,10 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateArticleSchema } from "@/lib/seo"
 import { CheckCircle, MapPin, ExternalLink, BookOpen } from "lucide-react"
+import ReviewedByline from "@/components/seo/ReviewedByline"
+
+const LAST_UPDATED = "June 2026"
 
 export const revalidate = 300
 
@@ -95,10 +98,21 @@ export default function Top10MedicalCollegesPage() {
   ])
   const faqSchema = generateFAQSchema(faqData)
 
+  const articleSchema = generateArticleSchema({
+    title: "Top Medical Colleges in Delhi 2026",
+    description: "Top government medical colleges in Delhi 2026: AIIMS Delhi (NIRF #1), Vardhman Mahavir Medical College, ABVIMS — NEET admission, fees, and hospital",
+    author: "CollegeDelhi Editorial Team",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-01",
+    url: "/top-10-medical-colleges-in-delhi",
+    category: "Medical",
+  })
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <main className="min-h-screen bg-white">
         {/* Hero */}
@@ -111,6 +125,7 @@ export default function Top10MedicalCollegesPage() {
               <span>›</span>
               <span className="text-white/80">Top 10 Medical Colleges</span>
             </nav>
+            <ReviewedByline lastUpdated={LAST_UPDATED} />
             <h1 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
               Top Medical Colleges in Delhi 2026
             </h1>
