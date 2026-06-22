@@ -5,7 +5,7 @@ import SEOLandingPage from "@/components/seo/SEOLandingPage"
 export const metadata: Metadata = genMeta({
   title: "JEE Main colleges in Delhi 2026",
   description: "Best colleges in Delhi accepting JEE Main 2026. Compare JEE Main cutoffs (percentile-wise), seats, fees, and admission process for engineering colleges via JAC",
-  path: "/JEE Main-colleges-delhi",
+  path: "/cet-colleges-delhi",
   keywords: ["jee main colleges Delhi", "jac delhi admission 2026", "jac delhi cutoff 2026", "JAC Delhi Round 2026", "ipu cet engineering colleges Delhi"],
 })
 
@@ -34,7 +34,7 @@ export default function MhtCetCollegesDELHIPage() {
   const faqSchema = generateFAQSchema(faqs.map(f => ({ question: f.q, answer: f.a })))
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "/" },
-    { name: "JEE Main colleges in Delhi", url: "/JEE Main-colleges-Delhi" },
+    { name: "JEE Main colleges in Delhi", url: "/jee-colleges-delhi" },
   ])
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -55,7 +55,7 @@ export default function MhtCetCollegesDELHIPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <SEOLandingPage
-        breadcrumb={[{ label: "JEE Main colleges in Delhi", href: "/JEE Main-colleges-Delhi" }]}
+        breadcrumb={[{ label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi" }]}
         h1="JEE Main colleges in Delhi 2026"
         subtitle="Complete guide to Delhi engineering colleges accepting JEE Main scores. Includes percentile-wise cutoffs for DTU Delhi, NSUT, IIIT Delhi and the full JAC Delhi Round process."
         heroStats={[

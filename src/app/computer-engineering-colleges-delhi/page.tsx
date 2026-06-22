@@ -96,7 +96,7 @@ export default function ComputerEngineeringCollegesDELHIPage() {
         { label: "Placement Stats — Avg & Highest LPA", href: "/engineering-colleges-delhi-placement", icon: "" },
         { label: "Low Fees Engineering Colleges", href: "/low-fees-engineering-colleges-delhi", icon: "" },
         { label: "Engineering Scholarships in Delhi", href: "/engineering-colleges-delhi-scholarship", icon: "" },
-        { label: "JEE Main Colleges & Cutoffs 2026", href: "/JEE Main-colleges-Delhi", icon: "" },
+        { label: "JEE Main Colleges & Cutoffs 2026", href: "/jee-colleges-delhi", icon: "" },
         { label: "JEE Main colleges in Delhi", href: "/jee-colleges-delhi", icon: "" },
         { label: "Government colleges in Delhi", href: "/government-colleges-delhi", icon: "" },
       ]}

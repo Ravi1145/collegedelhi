@@ -187,19 +187,22 @@ export default function Top10MedicalCollegesPage() {
             </div>
           </section>
 
-          {/* Info Cards */}
-          <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {[
-              { icon: CheckCircle, title: "NEET is Mandatory", desc: "NEET-UG is the only entrance exam for all MBBS admissions in India since 2020. No college can admit students without a valid NEET score." },
-              { icon: BookOpen, title: "State vs All-India Quota", desc: "85% of government MBBS seats are filled via state quota (NEET state counselling). 15% are All-India Quota filled by MCC at mcc.nic.in." },
-              { icon: ExternalLink, title: "AIIMS Delhi: All India Quota", desc: "AIIMS Delhi MBBS seats are filled entirely through NEET UG All India Quota counselling conducted by the Medical Counselling Committee (MCC) — no separate entrance test is required." },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
-                <Icon className="w-6 h-6 text-red-600 mb-3" />
-                <h3 className="font-bold text-gray-900 text-sm mb-2">{title}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
-              </div>
-            ))}
+          {/* How Ranking & Quotas Work */}
+          <section>
+            <h2 className="text-xl font-extrabold text-gray-900 mb-5">How NIRF Ranking and NEET Quotas Work</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { icon: CheckCircle, title: "NEET is Mandatory", desc: "NEET-UG is the only entrance exam for all MBBS admissions in India since 2020. No college can admit students without a valid NEET score." },
+                { icon: BookOpen, title: "State vs All-India Quota", desc: "Government MBBS seats are split between state quota (state-level counselling) and All-India Quota (AIQ), filled by MCC at mcc.nic.in." },
+                { icon: ExternalLink, title: "AIIMS Delhi: All India Quota", desc: "AIIMS Delhi MBBS seats are filled entirely through NEET UG All India Quota counselling conducted by the Medical Counselling Committee (MCC) — no separate entrance test is required." },
+              ].map(({ icon: Icon, title, desc }) => (
+                <div key={title} className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
+                  <Icon className="w-6 h-6 text-red-600 mb-3" />
+                  <h3 className="font-bold text-gray-900 text-sm mb-2">{title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
           </section>
 
           {/* FAQ */}
@@ -214,6 +217,25 @@ export default function Top10MedicalCollegesPage() {
                   </summary>
                   <p className="text-sm text-gray-600 mt-3 leading-relaxed">{faq.answer}</p>
                 </details>
+              ))}
+            </div>
+          </section>
+
+          {/* Related Guides */}
+          <section>
+            <h2 className="text-lg font-bold text-gray-900 mb-4">Related Medical College Guides</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {[
+                { label: "All Medical Colleges in Delhi", href: "/medical-colleges-delhi" },
+                { label: "MBBS Colleges — NEET Admission Guide", href: "/mbbs-colleges-delhi" },
+                { label: "NEET Colleges & Counselling Routes", href: "/neet-colleges-delhi" },
+                { label: "NAAC A+ Colleges in Delhi", href: "/naac-a-plus-colleges-delhi" },
+                { label: "Pharmacy Colleges in Delhi", href: "/pharmacy-colleges-delhi" },
+                { label: "Free Medical Counselling", href: "/counselling" },
+              ].map(({ label, href }) => (
+                <Link key={href} href={href} className="flex items-center gap-3 bg-white rounded-xl border border-gray-100 shadow-sm px-4 py-3 hover:border-red-200 hover:shadow transition-all">
+                  <span className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors">{label}</span>
+                </Link>
               ))}
             </div>
           </section>
