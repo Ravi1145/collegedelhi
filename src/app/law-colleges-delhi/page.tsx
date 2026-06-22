@@ -1,8 +1,11 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema, generateArticleSchema } from "@/lib/seo"
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
+import ReviewedByline from "@/components/seo/ReviewedByline"
+
+const LAST_UPDATED = "June 2026"
 
 export const metadata: Metadata = genMeta({
   title: "Best Law Colleges in Delhi 2026",
@@ -129,6 +132,16 @@ export default function LawCollegesDELHI() {
     })),
   }
 
+  const articleSchema = generateArticleSchema({
+    title: "Best Law Colleges in Delhi 2026",
+    description: "Top law colleges in Delhi 2026 — NLU Delhi, DU Law Faculty, Campus Law Centre, Jamia Law, IP University",
+    author: "CollegeDelhi Editorial Team",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-01",
+    url: "/law-colleges-delhi",
+    category: "Law",
+  })
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -137,6 +150,7 @@ export default function LawCollegesDELHI() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}
@@ -148,6 +162,7 @@ export default function LawCollegesDELHI() {
             <span>›</span>
             <span className="text-white">Law Colleges Delhi</span>
           </nav>
+          <ReviewedByline lastUpdated={LAST_UPDATED} center />
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">Best Law Colleges in Delhi 2026</h1>
           <p className="text-blue-200 max-w-2xl mx-auto text-base mb-6">
             Compare top LLB &amp; BA LLB colleges in Delhi — NLU Delhi, DU Law Faculty, Campus Law Centre, Jamia Law. Government fees, AILET &amp; DU Entrance cutoffs, placement data.

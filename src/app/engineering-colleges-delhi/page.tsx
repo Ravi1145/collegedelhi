@@ -1,8 +1,11 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema, generateSpeakableSchema, generateCourseSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateItemListSchema, generateSpeakableSchema, generateCourseSchema, generateArticleSchema } from "@/lib/seo"
 import TopicalHub from "@/components/seo/TopicalHub"
+import ReviewedByline from "@/components/seo/ReviewedByline"
 import { CheckCircle, TrendingUp, Award, MapPin, ExternalLink, BookOpen } from "lucide-react"
+
+const LAST_UPDATED = "June 2026"
 
 export const metadata: Metadata = genMeta({
   title: "Best Engineering Colleges in Delhi 2026",
@@ -94,6 +97,16 @@ export default function EngineeringCollegesDelhiPage() {
     ],
   }
 
+  const articleSchema = generateArticleSchema({
+    title: "Best Engineering Colleges in Delhi 2026",
+    description: "Top 12 engineering colleges in Delhi 2026 — DTU (NIRF 49), NSUT, IGDTUW, IIT Delhi, Amity, Jamia Millia",
+    author: "CollegeDelhi Editorial Team",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-01",
+    url: "/engineering-colleges-delhi",
+    category: "Engineering",
+  })
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -102,6 +115,7 @@ export default function EngineeringCollegesDelhiPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <div className="bg-[#0A1628] py-12 px-4">
         <div className="max-w-5xl mx-auto">
@@ -112,6 +126,7 @@ export default function EngineeringCollegesDelhiPage() {
             <span>/</span>
             <span className="text-white">Engineering Colleges Delhi</span>
           </nav>
+          <ReviewedByline lastUpdated={LAST_UPDATED} />
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
             Best Engineering Colleges in Delhi 2026
           </h1>

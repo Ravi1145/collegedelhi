@@ -1,7 +1,10 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateArticleSchema } from "@/lib/seo"
 import { Award, BookOpen, TrendingUp, Users, ShieldCheck } from "lucide-react"
+import ReviewedByline from "@/components/seo/ReviewedByline"
+
+const LAST_UPDATED = "June 2026"
 
 export const metadata: Metadata = genMeta({
   title: "Government Colleges in Delhi 2026 | DTU, AIIMS, NLU & More",
@@ -109,10 +112,21 @@ const breadcrumb = [
 export const revalidate = 86400
 
 export default function GovernmentCollegesDELHI() {
+  const articleSchema = generateArticleSchema({
+    title: "Government Colleges in Delhi 2026",
+    description: "Top government colleges in Delhi 2026: DTU, NSUT, IIT Delhi (engineering), AIIMS Delhi (medical), Miranda House, Hindu College (arts), NLU Delhi (law)",
+    author: "CollegeDelhi Editorial Team",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-01",
+    url: "/government-colleges-delhi",
+    category: "Government Colleges",
+  })
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQSchema(faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumb)) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <div className="min-h-screen bg-surface">
         {/* Hero */}
@@ -124,6 +138,7 @@ export default function GovernmentCollegesDELHI() {
             <span>›</span>
             <span className="text-white">Government Colleges Delhi</span>
           </nav>
+          <ReviewedByline lastUpdated={LAST_UPDATED} center />
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">Government Colleges in Delhi 2026</h1>
           <p className="text-blue-200 max-w-2xl mx-auto text-base mb-6">
             Real, verified government colleges in Delhi — engineering, medical, arts, commerce, law &amp; management. Government fee structures with scholarship options.

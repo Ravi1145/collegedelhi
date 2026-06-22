@@ -1,11 +1,14 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema, generateCourseSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema, generateCourseSchema, generateArticleSchema } from "@/lib/seo"
 import TopicalHub from "@/components/seo/TopicalHub"
+import ReviewedByline from "@/components/seo/ReviewedByline"
 import { CheckCircle, TrendingUp, Award, BookOpen, Users, Star } from "lucide-react"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
 import { getCutoff } from "@/data/cutoffs"
 import GatedCutoffChartClient from "@/components/ui/GatedCutoffChartClient"
+
+const LAST_UPDATED = "June 2026"
 
 export const metadata: Metadata = genMeta({
   title: "Best MBA Colleges in Delhi 2026 | CAT Cutoff & Fees",
@@ -110,6 +113,16 @@ export default function MBACollegesDELHIPage() {
     ],
   }
 
+  const articleSchema = generateArticleSchema({
+    title: "Best MBA Colleges in Delhi 2026",
+    description: "Top MBA colleges in Delhi 2026. FMS Delhi, MDI Gurgaon, IMI Delhi, FORE School — CAT cutoffs, fees, and placements compared.",
+    author: "CollegeDelhi Editorial Team",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-01",
+    url: "/mba-colleges-delhi",
+    category: "MBA",
+  })
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -118,6 +131,7 @@ export default function MBACollegesDELHIPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <main className="bg-white min-h-screen">
         {/* Breadcrumb */}
@@ -141,6 +155,7 @@ export default function MBACollegesDELHIPage() {
                 <Award className="w-4 h-4" />
                 Updated for 2026 Admissions
               </div>
+              <ReviewedByline lastUpdated={LAST_UPDATED} />
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
                 Best MBA colleges in Delhi 2026
               </h1>

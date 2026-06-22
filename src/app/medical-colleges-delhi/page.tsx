@@ -1,11 +1,14 @@
 ﻿import { Metadata } from "next"
 import Link from "next/link"
 import StreamCollegesTable from "@/components/colleges/StreamCollegesTable"
-import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema, generateCourseSchema } from "@/lib/seo"
+import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchema, generateSpeakableSchema, generateCourseSchema, generateArticleSchema } from "@/lib/seo"
 import { CheckCircle, TrendingUp, Award, BookOpen, Users, AlertCircle } from "lucide-react"
 import { getCutoff } from "@/data/cutoffs"
 import GatedCutoffChartClient from "@/components/ui/GatedCutoffChartClient"
 import TopicalHub from "@/components/seo/TopicalHub"
+import ReviewedByline from "@/components/seo/ReviewedByline"
+
+const LAST_UPDATED = "June 2026"
 
 export const metadata: Metadata = genMeta({
   title: "Best Medical colleges in Delhi 2026",
@@ -82,13 +85,24 @@ export default function MedicalCollegesDELHIPage() {
   offers: { '@type': 'Offer', priceCurrency: 'INR', price: 1628, priceSpecification: { '@type': 'PriceSpecification', minPrice: 1628, maxPrice: 1200000, priceCurrency: 'INR' } },
 }
 
-return (
+const articleSchema = generateArticleSchema({
+    title: "Best Medical Colleges in Delhi 2026",
+    description: "Top government medical colleges in Delhi 2026: AIIMS Delhi (NIRF #1), Vardhman Mahavir Medical College, ABVIMS — NEET admission, fees, and hospital",
+    author: "CollegeDelhi Editorial Team",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-01",
+    url: "/medical-colleges-delhi",
+    category: "Medical",
+  })
+
+  return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <main className="bg-white min-h-screen">
         {/* Breadcrumb */}
@@ -112,6 +126,7 @@ return (
                 <Award className="w-4 h-4" />
                 NEET 2026 — Updated Cutoffs
               </div>
+              <ReviewedByline lastUpdated={LAST_UPDATED} />
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
                 Best Medical colleges in Delhi 2026
               </h1>
