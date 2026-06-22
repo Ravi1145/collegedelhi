@@ -12,22 +12,18 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
-  { name: "Symbiosis Institute of Technology (SIT)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg", slug: "nit-delhi-national-institute-of-technology" },
-  { name: "Amity University Delhi (Amity University Delhi)", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "amity-university-noida-delhi-ncr" },
-  { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
-  { name: "Amity University Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.45L-1.95L/yr", placement: "₹5.6 LPA avg", slug: "bharati-vidyapeeth-college-engineering-Delhi" },
-  { name: "IGDTUW Delhi", location: "Janakpuri", naac: "A+", fees: "₹1.3L-1.75L/yr", placement: "₹6.8 LPA avg", slug: "igdtuw-delhi-indira-gandhi-technical-university" },
-  { name: "Delhi Institute of Computer Technology (NSUT)", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg", slug: "nsut-delhi" },
-  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida" },
+  { name: "Delhi Technological University (DTU)", location: "Rohini, Delhi", naac: "A+", fees: "Government fee structure", placement: "Strong placement record", slug: "dtu-delhi" },
+  { name: "Netaji Subhas University of Technology (NSUT)", location: "Dwarka, Delhi", naac: "A+", fees: "Government fee structure", placement: "Strong placement record", slug: "nsut-delhi" },
+  { name: "Indraprastha Institute of Information Technology Delhi (IIIT Delhi)", location: "Okhla, Delhi", naac: "A", fees: "Government fee structure", placement: "Strong placement record", slug: "indraprastha-institute-of-information-technology-delhi" },
+  { name: "Indira Gandhi Delhi Technical University for Women (IGDTUW)", location: "Kashmere Gate, Delhi", naac: "A", fees: "Government fee structure", placement: "Strong placement record", slug: "igdtuw-delhi" },
+  { name: "Amity University", location: "Noida", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹7.2 LPA avg", slug: "amity-university-noida-delhi-ncr" },
 ]
 
 const faqs = [
-  { q: "Which Delhi engineering colleges accept JEE Main?", a: "Most Delhi engineering colleges accept JEE Main: DTU Delhi (state quota), IMI Delhi, Amity University Delhi, IIIT Delhi, NSUT, Bharati Vidyapeeth, and IGDTUW Delhi. JEE scores are used for management quota seats and some all-India quota seats at government-aided colleges." },
-  { q: "What JEE Main percentile is needed for DTU Delhi?", a: "DTU Delhi's All India Quota seats require JEE Main 95+ percentile for Computer Engineering. For Mechanical and Electronics at DTU Delhi, 85-90 percentile suffices. DTU Delhi state quota seats are allotted via JEE Main CAP, not directly through JEE." },
-  { q: "Is JEE Main required for admission in Delhi?", a: "No. JEE Main is the primary exam for Delhi engineering colleges. JEE Main is an alternative accepted at many private colleges. Government college state quota seats exclusively use JEE Main. JEE is required for All India Quota (AIQ) seats at DTU Delhi and for direct admission at deemed universities." },
-  { q: "What JEE score is needed for IMI Delhi?", a: "IMI Delhi (Symbiosis Institute of Technology) accepts JEE Main 75+ percentile for most branches and 85+ for CS Engineering. They also conduct their own SET (Symbiosis Entrance Test). JEE Main is not mandatory - SET scores alone can qualify you for admission." },
-  { q: "Can Out-of-State students use JEE Main for Delhi college admission?", a: "Yes. Out-of-Delhi students can use JEE Main for management quota seats at private Delhi engineering colleges. For state quota seats in government colleges, Delhi domicile is required. Deemed universities (SIT, Amity University Delhi) welcome students from all states via JEE/SET." },
+  { q: "Which Delhi engineering colleges accept JEE Main?", a: "DTU, NSUT, IGDTUW, and IIIT Delhi all accept JEE Main scores through JAC Delhi counselling for their respective seats. Amity University and other private/deemed universities also accept JEE Main scores for direct admission." },
+  { q: "What JEE Main percentile is needed for DTU?", a: "DTU's seats require very high JEE Main percentiles, typically 97+ for Computer Science and somewhat lower for other branches — exact cutoffs vary by year and category. Check the official JAC Delhi counselling cutoff data for the current year." },
+  { q: "Is JEE Main required for admission to engineering colleges in Delhi?", a: "Yes, JEE Main is the primary entrance exam for government engineering colleges in Delhi (DTU, NSUT, IGDTUW) via JAC Delhi counselling, and is also accepted by many private/deemed universities for direct admission." },
+  { q: "Can out-of-state students use JEE Main for Delhi college admission?", a: "Yes. Government colleges (DTU, NSUT, IGDTUW, IIIT Delhi) reserve a portion of seats for All India Quota / outside-Delhi candidates via JAC Delhi counselling, alongside Delhi-domicile state quota seats. Private/deemed universities accept students from all states via JEE Main or their own entrance criteria." },
 ]
 
 export default function JeeCollegesDELHIPage() {
@@ -59,21 +55,21 @@ export default function JeeCollegesDELHIPage() {
         h1="JEE Main colleges in Delhi 2026"
         subtitle="Explore Delhi engineering colleges accepting JEE Main scores for 2026 admission. State quota vs management quota options, JEE cutoffs, fees, and direct admission guidance."
         heroStats={[
-          { value: "25+", label: "JEE Accepting Colleges" },
-          { value: "75%ile+", label: "Min JEE (SIT/Amity University Delhi)" },
-          { value: "95%ile+", label: "JEE for DTU Delhi AIQ" },
+          { value: "Verified", label: "Govt & Private Colleges" },
+          { value: "75%ile+", label: "Min JEE (Amity and similar)" },
+          { value: "97%ile+", label: "JEE for DTU/NSUT CSE" },
           { value: "Jan & Apr", label: "JEE Main Sessions" },
         ]}
         introHeading="JEE Main colleges in Delhi: Your Options for 2026"
         introParagraphs={[
           "JEE Main (Joint Entrance Examination Main) is accepted by a wide range of Delhi engineering colleges for management quota admissions, All India Quota (AIQ) seats, and direct admissions at deemed universities. While JEE Main is the primary route for Delhi state quota seats, JEE Main opens additional pathways - especially for students from outside Delhi or those seeking premium deemed university seats.",
-          "For 2026, JEE Main will be conducted in two sessions: January and April. The best of two session scores is used for admission. NTA (National Testing Agency) conducts JEE Main, and scores are accepted by DTU Delhi (AIQ seats), IMI Delhi, Amity University Delhi, Bharati Vidyapeeth, and many other Delhi engineering colleges.",
+          "For 2026, JEE Main will be conducted in two sessions: January and April. The best of two session scores is used for admission. NTA (National Testing Agency) conducts JEE Main, and scores are accepted by DTU, NSUT, IGDTUW, IIIT Delhi (via JAC Delhi), and many private/deemed universities for direct admission.",
           "A strategic advantage of strong JEE Main performance is access to management quota seats at autonomous colleges and deemed universities, bypassing the JEE Main CAP queue. Students who did not perform well in JEE Main can use JEE Main scores to secure admissions at IIIT Delhi, Amity University Delhi, or IMI Delhi directly through college-level admissions.",
         ]}
         colleges={colleges}
         whyHeading="JEE Main Advantages for Delhi College Admission"
         whyPoints={[
-          { title: "Access to Premium Deemed Universities", description: "IMI Delhi, Amity University Delhi, and DY Patil University accept JEE Main for direct admission without JEE Main. These institutions offer excellent placement at ₹7-10 LPA average for qualified JEE students." },
+          { title: "Access to Deemed Universities", description: "IMI Delhi and Amity University Delhi accept JEE Main scores for direct admission. These institutions offer competitive placement for qualified JEE students." },
           { title: "Management Quota Flexibility", description: "Private engineering colleges in Delhi fill management quota seats based on JEE Main scores (and sometimes direct payment). This provides a parallel admission route alongside JEE Main CAP." },
           { title: "All India Quota at DTU Delhi", description: "DTU Delhi (India's #49 engineering college) reserves seats for All India Quota filled through JoSAA counselling based on JEE Main scores - giving non-Delhi students access to DTU Delhi's exceptional education." },
           { title: "Two Attempts Per Year", description: "JEE Main in January and April allows students to improve scores. The better of two scores is used. This gives an advantage over JEE Main (one attempt per year) for strategic test-takers." },

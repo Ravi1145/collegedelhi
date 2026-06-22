@@ -22,11 +22,9 @@ export const metadata: Metadata = genMeta({
 })
 
 const exams = [
-  { key: "JEE Main", label: "JEE Main", desc: "State-level CET for Engineering — most Delhi colleges", icon: "", stream: "Engineering" },
-  { key: "jee",     label: "JEE Main", desc: "National entrance for DTU Delhi, SIT, Amity University Delhi (state quota)", icon: "", stream: "Engineering" },
-  { key: "neet",    label: "NEET UG",  desc: "For MBBS/BDS — AFMC, BJ Medical, Lady Hardinge Medical", icon: "", stream: "Medical" },
-  { key: "snap",    label: "SNAP",     desc: "Symbiosis entrance — Symbiosis Institute Noida, SIBM, SCIT", icon: "", stream: "MBA" },
-  { key: "cat",     label: "CAT",      desc: "Top MBA colleges — IIM Delhi, FMS Delhi, MDI Gurgaon (CAT route)", icon: "", stream: "MBA" },
+  { key: "jee",     label: "JEE Main", desc: "National entrance for DTU, NSUT, IGDTUW, IIIT Delhi (JAC Delhi counselling)", icon: "", stream: "Engineering" },
+  { key: "neet",    label: "NEET UG",  desc: "For MBBS — AIIMS Delhi, Vardhman Mahavir Medical College, ABVIMS", icon: "", stream: "Medical" },
+  { key: "cat",     label: "CAT",      desc: "Top MBA colleges — FMS Delhi, MDI Gurgaon (CAT route)", icon: "", stream: "MBA" },
 ]
 
 const faqs = [
@@ -35,16 +33,16 @@ const faqs = [
     answer: "DTU Delhi JEE Main cutoff 2026 (estimated): Open — 99.8 percentile, OBC — 98.7 percentile, SC — 95.5 percentile, ST — 93.0 percentile. DTU Delhi consistently has the highest JEE Main cutoff among Delhi engineering colleges. Apply early for CAP registration.",
   },
   {
-    question: "Can I get admission in Delhi engineering college with 90 percentile JEE Main?",
-    answer: "With 90 percentile JEE Main, you can get: IIIT Delhi (CSE/IT — 2nd round), Amity University Delhi (most branches), IMI Delhi (Civil, Mechanical), GL Bajaj Narhe (CSE/IT), Sharda Institute of Technology. DTU Delhi (97+) and NSUT (97+) are out of range. Use CollegeDelhi's College Predictor for a personalized list.",
+    question: "Can I get admission in a Delhi engineering college with 90 percentile JEE Main?",
+    answer: "With 90 percentile JEE Main, options narrow considerably — DTU and NSUT typically require 97+ percentile for most branches. Use CollegeDelhi's College Predictor for a personalized list of realistic options based on your exact percentile and category.",
   },
   {
     question: "What NEET score is needed for AIIMS Delhi?",
-    answer: "AIIMS Delhi requires 665+ NEET score in 2026 (Open category estimate). AFMC also conducts its own entrance + SSB interview. Free education + ₹21,000/month stipend makes it extremely competitive. Maulana Azad Medical College Delhi requires 625+ marks.",
+    answer: "AIIMS Delhi's NEET cutoff is among the highest in India and varies each year — check the official MCC All India Quota cutoff data for the current year rather than relying on past-year estimates. Admission is entirely through NEET UG; there is no separate entrance test.",
   },
   {
-    question: "What is SNAP cutoff for FMS Delhi MBA 2026?",
-    answer: "FMS Delhi SNAP 2026 cutoff is approximately 99+ percentile (Open category). SNAP score + GDPI (Group Discussion + Personal Interview) determines final admission. Fees: ₹16–22L for 2-year MBA. Average placement: ₹28 LPA.",
+    question: "What is the CAT cutoff for FMS Delhi MBA?",
+    answer: "FMS Delhi admits through CAT, typically requiring 98+ percentile for a shortlist, followed by Written Ability Test (WAT) and Personal Interview (PI). FMS Delhi's total MBA fees are approximately ₹55,000 — among the best ROI MBA programs in India.",
   },
   {
     question: "Are 2026 cutoffs available or just estimates?",

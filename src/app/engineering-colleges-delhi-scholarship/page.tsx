@@ -41,13 +41,13 @@ const collegeScholarships = [
     slug: "iiit-delhi-indraprastha-institute-of-information-technology",
   },
   {
-    name: "Symbiosis Institute of Technology (IMI Delhi)",
+    name: "IMI Delhi",
     type: "Deemed",
     naac: "A+",
-    scheme: "Symbiosis Scholarship & Merit Fellowship",
-    eligibility: "Top 10 rank in SET exam or JEE Main 95+ percentile",
-    amount: "₹50,000–₹2L/year",
-    slug: "nit-delhi-national-institute-of-technology",
+    scheme: "Merit Fellowship",
+    eligibility: "Top rank in entrance exam or JEE Main 95+ percentile",
+    amount: "Check official IMI Delhi notification",
+    slug: "imi-delhi",
   },
   {
     name: "NSUT Delhi",
@@ -335,8 +335,8 @@ export default function EngineeringCollegesDELHIScholarshipPage() {
                   badge: "Autonomous",
                 },
                 {
-                  college: "Symbiosis (IMI Delhi) Scholarship",
-                  detail: "Symbiosis merit fellowship of ₹50,000–₹2L/year for top 10 SET rankers or JEE Main 95+ percentile. Renewable annually based on performance.",
+                  college: "IMI Delhi Merit Scholarship",
+                  detail: "Merit-based fellowship for top entrance exam rankers or JEE Main 95+ percentile. Check the official IMI Delhi notification for current-year amounts. Renewable annually based on performance.",
                   badge: "Deemed",
                 },
               ].map(({ college, detail, badge }) => (

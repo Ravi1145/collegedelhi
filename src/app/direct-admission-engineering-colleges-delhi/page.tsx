@@ -37,7 +37,7 @@ const managementQuotaColleges = [
     note: "Deemed University — higher MQ %",
   },
   {
-    name: "IMI Delhi (Symbiosis Institute of Technology)",
+    name: "IMI Delhi",
     quota: "~15%",
     regularFees: "₹3.6L–₹4.8L/yr",
     mgmtFees: "₹5L–₹6L/yr",
@@ -134,7 +134,7 @@ const faqs = [
   {
     question: "What is the NRI quota in Delhi engineering colleges?",
     answer:
-      "NRI (Non-Resident Indian) quota is typically 5–15% of seats reserved for NRI students or those sponsored by NRI relatives. Fees are charged in USD and are significantly higher (often $4,000–$8,000/year). Deemed universities like Amity University Delhi, IMI Delhi, and Symbiosis institutions are popular for NRI quota admissions. You need a valid NRI/OCI status and sponsorship letter.",
+      "NRI (Non-Resident Indian) quota is typically 5–15% of seats reserved for NRI students or those sponsored by NRI relatives. Fees are charged in USD and are significantly higher (often $4,000–$8,000/year). Deemed and private universities like Amity University Delhi and IMI Delhi are popular for NRI quota admissions. You need a valid NRI/OCI status and sponsorship letter.",
   },
   {
     question: "When does management quota admission process start in Delhi?",

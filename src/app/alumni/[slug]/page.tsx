@@ -60,21 +60,6 @@ const allAlumni = [
     ],
   },
   {
-    slug: "sneha-patil-afmc-2021",
-    name: "Sneha Patil",
-    college: "AFMC Delhi",
-    course: "MBBS",
-    year: 2021,
-    company: "Army Medical Corps",
-    package: "—",
-    bio: "Served at forward military hospitals. Specialist in emergency medicine.",
-    highlights: [
-      "Gold Medal AFMC 2021",
-      "Sena Medal for Gallantry",
-      "TEDx speaker on rural healthcare",
-    ],
-  },
-  {
     slug: "karan-mehta-vit-2023",
     name: "Karan Mehta",
     college: "VIT Delhi",

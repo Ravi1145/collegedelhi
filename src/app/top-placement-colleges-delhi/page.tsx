@@ -108,22 +108,20 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "FMS Delhi - MBA", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹8.5L (2yr)", placement: "₹28 LPA avg | ₹72 LPA highest", slug: "FMS Delhi-symbiosis-institute-of-business-management" },
-  { name: "MDI Gurgaon - MBA", location: "Noida Sector 62", naac: "A+", fees: "₹8.2L (2yr)", placement: "₹24 LPA avg | ₹60 LPA highest", slug: "MDI Gurgaon-symbiosis-centre-management-hrd" },
-  { name: "DTU Delhi - Engineering", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹12 LPA avg | ₹45 LPA highest", slug: "dtu-delhi-delhi-technological-university" },
-  { name: "IMI Delhi - Engineering (Symbiosis)", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹9.8 LPA avg | ₹42 LPA highest", slug: "nit-delhi-national-institute-of-technology" },
-  { name: "IIIT Delhi - Engineering", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg | ₹40 LPA highest", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
-  { name: "NSUT Delhi - CS Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.4L-1.9L/yr", placement: "₹7.5 LPA avg | ₹35 LPA highest", slug: "nsut-delhi" },
-  { name: "Amity University Delhi Delhi - Engineering/MBA", location: "Rohini", naac: "A+", fees: "₹2L-6.5L", placement: "₹7.2 LPA avg | ₹38 LPA highest", slug: "amity-university-noida-delhi-ncr" },
-  { name: "IIMS Delhi - MBA", location: "Kashmere Gate", naac: "A", fees: "₹5.5L (2yr)", placement: "₹12 LPA avg | ₹28 LPA highest", slug: "iims-Delhi" },
+  { name: "FMS Delhi - MBA", location: "North Campus, Delhi", naac: "A+", fees: "₹55K total (2yr)", placement: "Strong placement record — McKinsey, BCG, Goldman Sachs", slug: "fms-delhi" },
+  { name: "MDI Gurgaon - MBA", location: "Sector 57, Gurgaon", naac: "A+", fees: "Check official MDI notification", placement: "Strong placement record", slug: "mdi-gurgaon-management-development-institute" },
+  { name: "DTU - Engineering", location: "Rohini, Delhi", naac: "A+", fees: "Government fee structure", placement: "Strong placement record", slug: "dtu-delhi" },
+  { name: "IIIT Delhi - Engineering", location: "Okhla, Delhi", naac: "A", fees: "Government fee structure", placement: "Strong placement record, CS/AI focus", slug: "indraprastha-institute-of-information-technology-delhi" },
+  { name: "NSUT - Engineering", location: "Dwarka, Delhi", naac: "A+", fees: "Government fee structure", placement: "Strong placement record", slug: "nsut-delhi" },
+  { name: "Amity University - Engineering/MBA", location: "Noida", naac: "A+", fees: "₹2L-6.5L", placement: "Check official placement report", slug: "amity-university-noida-delhi-ncr" },
 ]
 
 const faqs = [
-  { q: "Which college in Delhi has the best placement for engineering?", a: "DTU (Delhi Technological University) has the best engineering placements in Delhi with ₹12 LPA average and ₹45 LPA highest package. For CS-specific placements, NSUT Delhi has the highest CS placement rate (98%+). IMI Delhi has the best placements among private/deemed engineering colleges (₹9.8 LPA avg)." },
-  { q: "Which MBA college in Delhi has the highest placement package?", a: "FMS Delhi has the highest MBA placement in Delhi with ₹28 LPA average and ₹72 LPA highest package in recent batches. MDI Gurgaon is close behind with ₹24 LPA average. Both are Symbiosis colleges requiring SNAP + CAT for admission." },
-  { q: "Which companies recruit from Delhi colleges?", a: "Top engineering recruiters: TCS Digital, Infosys, Wipro, Bajaj Auto, L&T, KPIT, Persistent. Top MBA recruiters from Delhi: McKinsey, BCG, KPMG, Deloitte, Amazon, HDFC Bank, Deutsche Bank, Asian Paints. Tech product companies like Google and Microsoft visit DTU Delhi, NSUT, and SIT for engineering placement." },
-  { q: "What is the average placement package across all Delhi colleges?", a: "Overall average placement across all Delhi colleges: ₹4-5 LPA. Top-tier colleges (DTU Delhi, FMS Delhi, SIT): ₹8-28 LPA avg. Mid-tier colleges (IIIT Delhi, NSUT, IIMS): ₹5-12 LPA avg. Budget private colleges: ₹3.5-5 LPA avg. MBA placements are generally higher than engineering across equivalent college tiers." },
-  { q: "Is placement guaranteed in Delhi colleges?", a: "No college legally guarantees 100% placement. However, DTU Delhi, NSUT, SIT, and FMS Delhi historically achieve 90-98% placement rates. These figures mean 90-98% of registered students receive job offers by final year end. Not all students participate in campus placements -- some pursue higher education (CAT for MBA, GATE for MTech, MS abroad)." },
+  { q: "Which college in Delhi has the best placement for engineering?", a: "DTU, NSUT, and IIIT Delhi have strong engineering placement records among Delhi government colleges. Check each institution's official placement report for current-year statistics rather than relying on past-year figures." },
+  { q: "Which MBA college in Delhi has the highest placement package?", a: "FMS Delhi (Faculty of Management Studies, Delhi University) is widely regarded for its strong MBA placements with top recruiters including McKinsey, BCG, and Goldman Sachs, combined with India's lowest MBA fees (~₹55K total). It has no connection to Symbiosis. MDI Gurgaon is a separate, highly-ranked private MBA institute in the NCR region." },
+  { q: "Which companies recruit from Delhi colleges?", a: "Top engineering recruiters at government colleges in Delhi include major tech and core engineering firms. Top MBA recruiters at FMS Delhi include McKinsey, BCG, and Goldman Sachs. Check each institution's official placement report for the current year's exact recruiter list." },
+  { q: "What is the average placement package across Delhi colleges?", a: "Placement packages vary significantly by institution and stream. Always check each college's official, current-year placement report rather than relying on aggregated estimates, which can be outdated or inaccurate." },
+  { q: "Is placement guaranteed in Delhi colleges?", a: "No college legally guarantees 100% placement. Government colleges like DTU, NSUT, and FMS Delhi have historically strong placement records, but exact rates vary by year and batch. Not all students participate in campus placements — some pursue higher education (CAT for MBA, GATE for MTech, MS abroad)." },
 ]
 
 export default function TopPlacementCollegesDELHIPage() {

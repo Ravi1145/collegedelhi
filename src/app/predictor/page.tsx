@@ -273,7 +273,7 @@ export default function PredictorPage() {
             {[
               { title: "JEE Main / Advanced 2026", desc: "99+ percentile for DTU/NSIT top branches. 95+ for good branches in IP Univ colleges. JEE Advanced rank under 5000 for premium engineering." },
               { title: "NEET 2026", desc: "690+ for AIIMS Delhi. 650+ (Open) for MAMC / LHMC. 580+ for IP University medical colleges. 500+ for private medical colleges." },
-              { title: "CAT / SNAP 2026", desc: "99+ CAT percentile for FMS Delhi. 95+ for MDI Gurgaon. 85+ for IMI Delhi and Fore School. SNAP 70+ for Symbiosis Delhi programs." },
+              { title: "CAT 2026", desc: "98+ CAT percentile for FMS Delhi. 99+ for MDI Gurgaon. 85+ for IMI Delhi and Fore School. Check official notifications for current-year exact cutoffs." },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-gray-50 rounded-xl p-4 border border-gray-100">
                 <h3 className="font-bold text-gray-900 text-sm mb-1">{title}</h3>

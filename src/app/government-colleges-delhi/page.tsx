@@ -4,8 +4,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users, ShieldCheck } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Government colleges in Delhi 2026",
-  description: "Top govt colleges in Delhi 2026: DTU Delhi (NIRF #49, ₹80K/yr), AFMC (NIRF #4, free MBBS), BJ Medical (NIRF #18). Fees ₹8K–₹1.8L/yr. CAP/NEET/JEE Main cutoffs",
+  title: "Government Colleges in Delhi 2026 | DTU, AIIMS, NLU & More",
+  description: "Top government colleges in Delhi 2026: DTU, NSUT, IIT Delhi (engineering), AIIMS Delhi (medical), Miranda House, Hindu College (arts), NLU Delhi (law)",
   path: "/government-colleges-delhi",
   keywords: [
     "government colleges in Delhi 2026",
@@ -14,13 +14,11 @@ export const metadata: Metadata = genMeta({
     "DTU Delhi government college",
     "Miranda House College government aided",
     "government medical College Delhi",
-    "Maulana Azad Medical College Delhi government",
+    "AIIMS Delhi government",
     "free government College Delhi",
     "low fee government College Delhi",
     "DU government affiliated colleges",
-    "autonomous government colleges Delhi",
-    "Delhi municipal corporation colleges",
-    "state government colleges Delhi Delhi",
+    "National Law University Delhi",
   ],
 })
 
@@ -29,48 +27,52 @@ const categories = [
     type: "Government Engineering",
     emoji: "",
     colleges: [
-      { name: "DTU Delhi Technological University", fees: "₹80K–₹1.8L/yr", naac: "A+", nirf: 49, program: "BTech, MTech, PhD", slug: "dtu-delhi-delhi-technological-university", note: "Best Govt Engineering | Est. 1854 | NIRF #49" },
-      { name: "Army Institute of Technology (AIT)", fees: "₹1.5L–₹2L/yr", naac: "A", nirf: null, program: "BTech (4 branches)", slug: "army-institute-of-technology-Delhi", note: "Defence-backed | Delhi Cantonment | Very selective" },
-      { name: "Government Polytechnic, Delhi", fees: "₹15K–₹25K/yr", naac: "–", nirf: null, program: "Diploma Engineering", slug: "government-polytechnic-Delhi", note: "Cheapest Technical | JEE Main Diploma" },
+      { name: "IIT Delhi", fees: "Government IIT fee structure", naac: "A++", nirf: 2, program: "BTech, MTech, PhD", slug: "iit-delhi", note: "NIRF #2 Engineering | JEE Advanced" },
+      { name: "Delhi Technological University (DTU)", fees: "Government fee structure", naac: "A+", nirf: 49, program: "BTech, MTech, PhD", slug: "dtu-delhi", note: "Best Govt State Engineering | NIRF #49" },
+      { name: "Netaji Subhas University of Technology (NSUT)", fees: "Government fee structure", naac: "A+", nirf: null, program: "BTech, MTech", slug: "nsut-delhi", note: "Top Govt Engineering | JAC Delhi" },
+      { name: "Indira Gandhi Delhi Technical University for Women (IGDTUW)", fees: "Government fee structure", naac: "A", nirf: null, program: "BTech (Women)", slug: "igdtuw-delhi", note: "Govt Women's Engineering University" },
+      { name: "Indraprastha Institute of Information Technology Delhi (IIIT Delhi)", fees: "Government fee structure", naac: "A", nirf: null, program: "BTech, MTech, PhD (CS/IT focus)", slug: "indraprastha-institute-of-information-technology-delhi", note: "Govt | CS/AI Focused" },
     ],
   },
   {
     type: "Government Arts & Science",
     emoji: "",
     colleges: [
-      { name: "Miranda House College", fees: "₹10K–₹30K/yr", naac: "A+", nirf: null, program: "BA, BSc, BCom, BCA", slug: "miranda-house-college-delhi", note: "Est. 1885 | Most Prestigious Arts College Delhi" },
-      { name: "Hindu College (Sir Parashurambhau)", fees: "₹12K–₹28K/yr", naac: "A+", nirf: null, program: "BA, BSc, BCom", slug: "sp-college-delhi-sir-parashurambhau-college", note: "Top Science Stream | NAAC A+" },
-      { name: "BMCC — Brihan Delhi College of Commerce", fees: "₹8K–₹20K/yr", naac: "A", nirf: null, program: "BCom, MCom, BBA", slug: "bmcc-brihan-Delhi-college-of-commerce-Delhi", note: "Cheapest BCom in Delhi | Govt-aided" },
-      { name: "Kirori Mal College of Arts, Science & Commerce", fees: "₹10K–₹25K/yr", naac: "A", nirf: null, program: "BA, BSc, BCom", slug: "modern-college-of-arts-science-commerce-Delhi", note: "Connaught Place | Large intake" },
-      { name: "Nowrosjee Wadia College", fees: "₹10K–₹22K/yr", naac: "A", nirf: null, program: "BA, BSc, BCom", slug: "nowrosjee-wadia-college-delhi", note: "Est. 1832 | Heritage campus" },
+      { name: "Miranda House", fees: "DU government fee structure", naac: "A+", nirf: null, program: "BA, BSc", slug: "miranda-house", note: "Est. 1948 | Top Women's College, University of Delhi" },
+      { name: "Hindu College, University of Delhi", fees: "DU government fee structure", naac: "A+", nirf: null, program: "BA, BSc", slug: "hindu-college-university-of-delhi", note: "Premier DU Constituent College" },
+      { name: "Lady Shri Ram College for Women (LSR)", fees: "DU government fee structure", naac: "A+", nirf: null, program: "BA, BSc", slug: "lsr-delhi", note: "Top Women's College, University of Delhi" },
+      { name: "Sri Venkateswara College", fees: "DU government fee structure", naac: "A", nirf: null, program: "BSc, BA", slug: "sri-venkateswara-college", note: "DU Constituent College" },
+    ],
+  },
+  {
+    type: "Government Commerce",
+    emoji: "",
+    colleges: [
+      { name: "Shri Ram College of Commerce (SRCC)", fees: "DU government fee structure", naac: "A+", nirf: null, program: "BCom (Hons), Economics", slug: "shri-ram-college-of-commerce", note: "India's Top Commerce College, University of Delhi" },
     ],
   },
   {
     type: "Government Medical",
     emoji: "",
     colleges: [
-      { name: "AFMC — AIIMS Delhi", fees: "₹50,000 (total 4.5 yrs)", naac: "A++", nirf: 4, program: "MBBS (Defence)", slug: "afmc-armed-forces-medical-college-delhi", note: "NIRF #4 | Free for Defence | 650+ NEET" },
-      { name: "Maulana Azad Medical College, Delhi (MAMC)", fees: "₹60K–₹1.2L/yr", naac: "A+", nirf: 18, program: "MBBS, MD, MS", slug: "bj-medical-college-delhi", note: "NIRF #18 | Best Govt for Open Category | 625+ NEET" },
-      { name: "Byramjee Jeejeebhoy Government Medical College (BJGMC)", fees: "₹50K–₹80K/yr", naac: "A", nirf: null, program: "MBBS", slug: "byramjee-jeejeebhoy-government-medical-college", note: "Govt Medical | Delhi City Centre" },
-      { name: "Delhi Dental College & Hospital", fees: "₹1.5L–₹2.5L/yr", naac: "A", nirf: null, program: "BDS, MDS", slug: "Delhi-dental-college-delhi", note: "Best Govt Dental College Delhi | 500+ NEET BDS" },
+      { name: "AIIMS Delhi", fees: "₹1,628–₹50,000 total course", naac: "A++", nirf: 1, program: "MBBS, MD, MS", slug: "aiims-delhi", note: "NIRF #1 Medical | NEET UG All India Quota" },
+      { name: "Vardhman Mahavir Medical College (Safdarjung Hospital)", fees: "₹1.15L–₹2.65L/yr", naac: "A", nirf: null, program: "MBBS", slug: "vardhman-mahavir-medical-college", note: "Govt | Attached to Safdarjung Hospital" },
+      { name: "Atal Bihari Vajpayee Institute of Medical Sciences (Dr. RML Hospital)", fees: "₹51K–₹3.75L/yr", naac: "A", nirf: null, program: "MBBS", slug: "atal-bihari-vajpayee-institute-of-medical-sciences-and-dr-ram-manohar-lohia-hospital", note: "Govt | Attached to RML Hospital" },
     ],
   },
   {
     type: "Government Law",
     emoji: "",
     colleges: [
-      { name: "ILS Law College", fees: "₹20K–₹40K/yr", naac: "A", nirf: null, program: "BA LLB (5yr), LLM", slug: "ils-law-college-delhi", note: "Est. 1924 | Most Prestigious Law College Delhi" },
-      { name: "New Law College (BMCC Road)", fees: "₹15K–₹25K/yr", naac: "B+", nirf: null, program: "LLB (3yr)", slug: "new-law-college-delhi", note: "Cheapest LLB Delhi | 360 seats | DU" },
+      { name: "National Law University, Delhi (NLU Delhi)", fees: "Government NLU fee structure", naac: "A", nirf: null, program: "BA LLB (5yr), LLM", slug: "national-law-university-delhi", note: "Top Law School in India | CLAT/AILET" },
     ],
   },
   {
-    type: "Government Research & Specialised",
+    type: "Government Management & Design",
     emoji: "",
     colleges: [
-      { name: "IISER Delhi (Indian Institute of Science Education & Research)", fees: "₹15K–₹30K/yr", naac: "–", nirf: null, program: "BS-MS (5yr), PhD", slug: "iiser-Delhi-indian-institute-science-education-research", note: "National Institute | IAT + JEE Advanced | Research excellence" },
-      { name: "DIAT (Defence Institute of Advanced Technology)", fees: "₹50K–₹80K/yr", naac: "–", nirf: null, program: "MTech, PhD (Defence)", slug: "diat-defence-institute-advanced-technology-Delhi", note: "Defence University | GATE required | PG only" },
-      { name: "Gokhale Institute of Politics & Economics", fees: "₹25K–₹50K/yr", naac: "A", nirf: null, program: "MA Economics, MBA", slug: "gokhale-institute-politics-economics-Delhi", note: "Deemed | Economics research | MPSC alumni" },
-      { name: "Delhi School of Management (DSM) — DTU MBA", fees: "₹60K–₹90K/yr", naac: "A+", nirf: null, program: "MBA (2yr)", slug: "delhi-school-of-management-dtu", note: "Best Govt MBA Delhi | IPU CET / CAT" },
+      { name: "Faculty of Management Studies (FMS), Delhi", fees: "Government DU fee structure", naac: "A+", nirf: 13, program: "MBA (2yr)", slug: "fms-delhi", note: "NIRF #13 Management | Best MBA Value in India" },
+      { name: "School of Planning and Architecture, New Delhi (SPA Delhi)", fees: "Government fee structure", naac: "A", nirf: null, program: "B.Arch, M.Arch, Planning", slug: "school-of-planning-and-architecture-new-delhi", note: "Institute of National Importance" },
     ],
   },
 ]
@@ -78,23 +80,23 @@ const categories = [
 const faqs = [
   {
     question: "Which are the best government colleges in Delhi?",
-    answer: "The best government colleges in Delhi are: (1) DTU Delhi Technological University — best government engineering college (NIRF #49), (2) AFMC — best government medical college (NIRF #4, nearly free), (3) Maulana Azad Medical College (NIRF #18), (4) ILS Law College — most prestigious government law college (est. 1924), (5) Miranda House College — best government arts college (est. 1885, NAAC A+), (6) DSM DTU — best government MBA.",
+    answer: "The best government colleges in Delhi by stream: Engineering — IIT Delhi (NIRF #2) and DTU (NIRF #49); Medical — AIIMS Delhi (NIRF #1); Arts — Miranda House, Hindu College, and Lady Shri Ram College, all constituent colleges of University of Delhi; Commerce — Shri Ram College of Commerce (SRCC); Law — National Law University, Delhi (NLU Delhi); Management — Faculty of Management Studies, Delhi (FMS Delhi, NIRF #13).",
   },
   {
     question: "What is the fee for government colleges in Delhi?",
-    answer: "Government college fees in Delhi are the most affordable in Delhi: Government arts/commerce colleges charge just ₹8,000–₹30,000/year. DTU Delhi engineering charges ₹80K–₹1.8L/year. Maulana Azad Medical College MBBS costs ₹60K–₹1.2L/year. AFMC MBBS is effectively free at ₹50,000 for the entire 4.5-year course. Government law colleges charge ₹15,000–₹40,000/year.",
+    answer: "Government colleges in Delhi follow regulated, low fee structures. AIIMS Delhi's entire MBBS course costs roughly ₹1,628–₹50,000. DU constituent colleges (Miranda House, Hindu College, SRCC) charge government-regulated annual fees, among the lowest in the country for their tier. FMS Delhi's MBA is widely cited as the best ROI MBA in India at roughly ₹55,000 total. Always check the official college or DU admission portal for the current year's exact fee notification.",
   },
   {
     question: "How to get admission in government colleges in Delhi?",
-    answer: "Government college admissions in Delhi go through centralized processes: Engineering — JEE Main + JAC Delhi Rounds by Delhi State CET Cell; Medical — NEET + State CET counselling; Arts/Commerce/Science — DU CAP (Class 12 merit); Law — MH-CET Law + CAP; MBA — MAH-MBA CET + CAP. DTU Delhi and IISER have separate entrance tests. All processes are online through respective state portals.",
+    answer: "Admission routes vary by stream: Engineering colleges (IIT Delhi, DTU, NSUT, IGDTUW) admit via JEE Advanced or JEE Main through JoSAA/JAC Delhi counselling. AIIMS Delhi admits via NEET UG All India Quota. DU constituent colleges (Miranda House, Hindu College, SRCC, LSR) admit via CUET. NLU Delhi admits via AILET. FMS Delhi admits via CAT. Always confirm current-year exam and counselling dates on official portals.",
   },
   {
-    question: "Are government college degrees respected for jobs and higher studies?",
-    answer: "Yes, government college degrees from Delhi are highly respected. DTU Delhi graduates get placed in top MNCs like TCS, Infosys, Mahindra, and L&T. AFMC and MAMC doctors are among India's most respected medical professionals. ILS Law College alumni include High Court judges and senior advocates. Miranda House College alumni include IAS/IPS officers and entrepreneurs. Government degrees from DU-affiliated autonomous colleges are accepted for UPSC, MPSC, and all government exams.",
+    question: "Are government college degrees from Delhi respected for jobs and higher studies?",
+    answer: "Yes. IIT Delhi and DTU graduates are recruited by top global tech and engineering firms. AIIMS Delhi is India's top-ranked medical institution. DU constituent colleges like Miranda House, Hindu College, and SRCC are nationally recognized for academics and have strong alumni in civil services, academia, and industry. NLU Delhi and FMS Delhi are top-ranked in law and management respectively. Degrees from all these institutions are fully recognized for further study and competitive exams in India and abroad.",
   },
   {
-    question: "Can I get scholarship in government colleges in Delhi?",
-    answer: "Yes, government colleges in Delhi offer multiple scholarships: (1) GOI Post-Matric Scholarship for SC/ST students (full fee waiver + stipend), (2) EBC (Economically Backward Class) scholarship — family income < ₹8L, (3) OBC scholarship — government-funded, (4) Rajarshri Shahu Maharaj Scholarship for OBC girls, (5) DU merit scholarships for top 3 rank holders. Students at AFMC, IISER, and DIAT get full stipend from the Government of India.",
+    question: "Can I get a scholarship at government colleges in Delhi?",
+    answer: "Yes. Government colleges in Delhi offer multiple scholarship routes, including the GOI Post-Matric Scholarship for SC/ST students, EBC (Economically Backward Class) scholarships, OBC scholarships, and merit-based scholarships from University of Delhi for top-ranking students in each faculty. Check each institution's official scholarship cell for current eligibility and amounts.",
   },
 ]
 
@@ -122,16 +124,16 @@ export default function GovernmentCollegesDELHI() {
             <span>›</span>
             <span className="text-white">Government Colleges Delhi</span>
           </nav>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">Best Government colleges in Delhi 2026</h1>
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">Government Colleges in Delhi 2026</h1>
           <p className="text-blue-200 max-w-2xl mx-auto text-base mb-6">
-            Complete list of top government &amp; government-aided colleges in Delhi — engineering, medical, arts, law &amp; research. Fees from ₹8K/year with full scholarship options.
+            Real, verified government colleges in Delhi — engineering, medical, arts, commerce, law &amp; management. Government fee structures with scholarship options.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             {[
-              { icon: ShieldCheck, text: "20+ Govt Colleges" },
+              { icon: ShieldCheck, text: "Verified Govt Colleges" },
               { icon: BookOpen, text: "All Streams" },
               { icon: Award, text: "NIRF + NAAC Ranked" },
-              { icon: TrendingUp, text: "Fees from ₹8K/yr" },
+              { icon: TrendingUp, text: "Affordable Govt Fees" },
               { icon: Users, text: "Scholarships Available" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2 text-blue-200">
@@ -147,9 +149,9 @@ export default function GovernmentCollegesDELHI() {
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-10">
             <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Best Government Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
-              <strong>Engineering:</strong> DTU (NIRF #49) · <strong>Medical:</strong> AFMC (NIRF #4, free!) / BJ Medical (NIRF #18) ·{" "}
-              <strong>Arts:</strong> Miranda House College · <strong>Commerce:</strong> SRCC · <strong>MBA:</strong> DSM DTU ·{" "}
-              <strong>Law:</strong> ILS Law College · <strong>Research:</strong> IISER Delhi
+              <strong>Engineering:</strong> IIT Delhi (NIRF #2) / DTU (NIRF #49) · <strong>Medical:</strong> AIIMS Delhi (NIRF #1) ·{" "}
+              <strong>Arts:</strong> Miranda House, Hindu College, LSR · <strong>Commerce:</strong> SRCC · <strong>MBA:</strong> FMS Delhi (NIRF #13) ·{" "}
+              <strong>Law:</strong> NLU Delhi
             </p>
           </div>
 
@@ -203,7 +205,7 @@ export default function GovernmentCollegesDELHI() {
                 "OBC Scholarship — Government funded, applicable all streams",
                 "Rajarshri Shahu Maharaj Scholarship — OBC girls",
                 "DU Merit Scholarship — Top 3 rank holders in each faculty",
-                "IISER / AFMC / DIAT — Full stipend from Govt of India",
+                "AIIMS Delhi — Stipend for select categories per Govt of India norms",
               ].map(s => (
                 <div key={s} className="flex items-start gap-2">
                   <span className="text-green-600 mt-0.5"></span>
@@ -216,7 +218,7 @@ export default function GovernmentCollegesDELHI() {
           {/* CTA */}
           <div className="rounded-2xl p-6 text-center mb-10" style={{ background: "linear-gradient(135deg,#0A1628,#1E3A5F)" }}>
             <p className="text-white font-bold text-lg mb-2">Which government college can you get with your score?</p>
-            <p className="text-blue-200 text-sm mb-4">Our JEE Main / NEET predictor tells you your chances at DTU Delhi, MAMC, AFMC and all government colleges in seconds.</p>
+            <p className="text-blue-200 text-sm mb-4">Our JEE Main / NEET predictor tells you your chances at DTU, NSUT, AIIMS Delhi and other government colleges in seconds.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/predictor" className="inline-flex items-center justify-center gap-2 font-bold text-white px-6 py-3 rounded-xl text-sm hover:opacity-90 transition-all" style={{ background: "linear-gradient(90deg,var(--color-accent),color-mix(in srgb, var(--color-accent) 70%, #FFD000))" }}>
                 College Predictor

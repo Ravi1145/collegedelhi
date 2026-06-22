@@ -215,8 +215,8 @@ export default function PrivateMBACollegesDELHIPage() {
           {/* Info Cards */}
           <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { icon: CheckCircle, title: "SNAP for Symbiosis", desc: "FMS Delhi and MDI Gurgaon require SNAP score. SNAP is held in December — register at snaptest.org before October." },
-              { icon: BookOpen, title: "CAT for Others", desc: "IMI Delhi, Fore School, Jaipuria, and other private MBA colleges accept CAT/MAT/CMAT. SNAP is NOT required for non-Symbiosis colleges." },
+              { icon: CheckCircle, title: "CAT for FMS Delhi & MDI Gurgaon", desc: "FMS Delhi and MDI Gurgaon both require CAT scores — neither has any connection to Symbiosis or SNAP." },
+              { icon: BookOpen, title: "CAT/MAT/CMAT for Others", desc: "IMI Delhi, Fore School, Jaipuria, and other private MBA colleges accept CAT/MAT/CMAT. SNAP is not required at any Delhi NCR MBA college." },
               { icon: ExternalLink, title: "AICTE Approved PGDM", desc: "Most autonomous private colleges offer PGDM (Post Graduate Diploma in Management) which is AICTE-approved and equivalent to MBA." },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">

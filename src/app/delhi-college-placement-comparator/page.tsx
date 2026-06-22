@@ -59,7 +59,7 @@ const faqs = [
   },
   {
     question: "Which Delhi MBA college has the best placement?",
-    answer: "FMS Delhi (Symbiosis Institute of Business Management) has the best MBA placement in Delhi with ₹28 LPA average and ₹65 LPA highest package. Top recruiters include McKinsey, BCG, Goldman Sachs, and P&G. MDI Gurgaon is second with ₹22 LPA avg. For best ROI: IMI Delhi gives ₹12 LPA avg at only ₹7–11L total fees.",
+    answer: "FMS Delhi has the best MBA placement in Delhi with ₹28 LPA average and ₹65 LPA highest package. Top recruiters include McKinsey, BCG, Goldman Sachs, and P&G. MDI Gurgaon is second with ₹22 LPA avg. For best ROI: IMI Delhi gives ₹12 LPA avg at only ₹7–11L total fees.",
   },
   {
     question: "What is the average package at IIIT Delhi for engineering?",

@@ -6,7 +6,7 @@ import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
   title: "Best Arts & Science colleges in Delhi 2026",
-  description: "Top arts, science and commerce colleges in Delhi 2026. Compare Miranda House College, Hindu College, BMCC, Symbiosis College and more",
+  description: "Top arts, science and commerce colleges in Delhi 2026. Compare Miranda House, Hindu College, Lady Shri Ram College, SRCC and more",
   path: "/arts-colleges-delhi",
   keywords: [
     "arts colleges in Delhi 2026",
@@ -17,8 +17,7 @@ export const metadata: Metadata = genMeta({
     "bcom colleges Delhi",
     "Miranda House College Delhi 2026",
     "Hindu College Delhi admission",
-    "bmcc Delhi bcom fees",
-    "symbiosis College Delhi",
+    "SRCC Delhi bcom fees",
     "best arts College Delhi",
     "DU affiliated arts colleges Delhi",
     "humanities colleges Delhi",
@@ -29,142 +28,82 @@ export const metadata: Metadata = genMeta({
 const colleges = [
   {
     rank: 1,
-    name: "Miranda House College, Delhi",
-    type: "Government-aided (Autonomous)",
-    naac: "A+",
-    fees: "₹10K–₹30K/yr",
-    programs: "BA, BSc, BCom, BCA",
-    seats: 2400,
-    highlight: "Est. 1885 | Most Prestigious | NAAC A+",
-    slug: "miranda-house-college-delhi",
-    strengths: ["Heritage campus", "Affordable fees", "Strong alumni", "150+ years"],
+    name: "Miranda House",
+    type: "Government (University of Delhi)",
+    naac: "A++",
+    fees: "DU government fee structure",
+    programs: "BA, BSc",
+    seats: null,
+    highlight: "Top Women's College | University of Delhi",
+    slug: "miranda-house",
+    strengths: ["Heritage campus", "Affordable government fees", "Strong alumni network"],
   },
   {
     rank: 2,
-    name: "Hindu College (Sir Parashurambhau College)",
-    type: "Government-aided (Autonomous)",
+    name: "Hindu College, University of Delhi",
+    type: "Government (University of Delhi)",
     naac: "A+",
-    fees: "₹12K–₹28K/yr",
-    programs: "BA, BSc, BCom",
-    seats: 1800,
-    highlight: "NAAC A+ | Strong Science dept",
-    slug: "sp-college-delhi-sir-parashurambhau-college",
-    strengths: ["Best Science stream", "Research programs", "Central location", "Low fees"],
+    fees: "DU government fee structure",
+    programs: "BA, BSc",
+    seats: null,
+    highlight: "Premier DU Constituent College",
+    slug: "hindu-college-university-of-delhi",
+    strengths: ["Strong science and humanities", "Central campus location", "Affordable government fees"],
   },
   {
     rank: 3,
-    name: "BMCC — Brihan Delhi College of Commerce",
-    type: "Government-aided",
-    naac: "A",
-    fees: "₹8K–₹20K/yr",
-    programs: "BCom, MCom, BBA",
-    seats: 3000,
-    highlight: "Best BCom College Delhi | Lowest Fees",
-    slug: "bmcc-brihan-Delhi-college-of-commerce-Delhi",
-    strengths: ["Commerce focus", "Cheapest BCom", "Good placements", "DU top rank"],
+    name: "Lady Shri Ram College for Women (LSR)",
+    type: "Government (University of Delhi)",
+    naac: "A+",
+    fees: "DU government fee structure",
+    programs: "BA, BSc",
+    seats: null,
+    highlight: "Top Women's College | University of Delhi",
+    slug: "lsr-delhi",
+    strengths: ["Strong humanities programs", "Prestigious alumni network", "Affordable government fees"],
   },
   {
     rank: 4,
-    name: "Symbiosis College of Arts & Commerce",
-    type: "Private (Deemed)",
-    naac: "A",
-    fees: "₹40K–₹80K/yr",
-    programs: "BA, BCom, BBA, BCA",
-    seats: 1200,
-    highlight: "Symbiosis Brand | Best Private Arts",
-    slug: "symbiosis-college-of-arts-commerce-Delhi",
-    strengths: ["Modern campus", "Industry interface", "International exposure", "Strong brand"],
+    name: "Shri Ram College of Commerce (SRCC)",
+    type: "Government (University of Delhi)",
+    naac: "A+",
+    fees: "DU government fee structure",
+    programs: "BCom (Hons), Economics",
+    seats: null,
+    highlight: "India's Top Commerce College",
+    slug: "shri-ram-college-of-commerce",
+    strengths: ["India's leading commerce college", "Strong placement record", "Affordable government fees"],
   },
   {
     rank: 5,
-    name: "Kirori Mal College of Arts, Science & Commerce",
-    type: "Government-aided",
+    name: "Sri Venkateswara College",
+    type: "Government (University of Delhi)",
     naac: "A",
-    fees: "₹10K–₹25K/yr",
-    programs: "BA, BSc, BCom",
-    seats: 2200,
-    highlight: "Connaught Place | Strong Faculty",
-    slug: "modern-college-of-arts-science-commerce-Delhi",
-    strengths: ["Central location", "Experienced faculty", "Research programs", "Affordable"],
-  },
-  {
-    rank: 6,
-    name: "Gargi College of Commerce",
-    type: "Government-aided",
-    naac: "A",
-    fees: "₹8K–₹18K/yr",
-    programs: "BCom, MCom, BBA",
-    seats: 1600,
-    highlight: "Best for Commerce | Economics strength",
-    slug: "garware-college-of-commerce-Delhi",
-    strengths: ["Commerce specialization", "Affordable", "Good network", "Delhi University top"],
-  },
-  {
-    rank: 7,
-    name: "Nowrosjee Wadia College",
-    type: "Government-aided",
-    naac: "A",
-    fees: "₹10K–₹22K/yr",
-    programs: "BA, BSc, BCom",
-    seats: 1500,
-    highlight: "Heritage | Strong in Arts & Languages",
-    slug: "nowrosjee-wadia-college-delhi",
-    strengths: ["1832 est.", "Language programs", "Cultural events", "Historic campus"],
-  },
-  {
-    rank: 8,
-    name: "MES Abasaheb Gargi College",
-    type: "Government-aided",
-    naac: "A",
-    fees: "₹12K–₹24K/yr",
-    programs: "BA, BSc, BCom",
-    seats: 1400,
-    highlight: "Kashmere Gate | Good Science Labs",
-    slug: "mes-abasaheb-garware-college-delhi",
-    strengths: ["Science labs", "Library resources", "Sports facilities", "Affordable"],
-  },
-  {
-    rank: 9,
-    name: "Poona College of Arts, Science & Commerce",
-    type: "Government-aided",
-    naac: "A",
-    fees: "₹8K–₹16K/yr",
-    programs: "BA, BSc, BCom",
-    seats: 1800,
-    highlight: "Camp Area | Affordable & Accessible",
-    slug: "poona-college-of-arts-science-commerce-Delhi",
-    strengths: ["Central location", "Camp area", "Diverse student body", "Low fees"],
-  },
-  {
-    rank: 10,
-    name: "Sharda College of Arts, Commerce & Science",
-    type: "Private",
-    naac: "A",
-    fees: "₹20K–₹40K/yr",
-    programs: "BA, BSc, BCom, BCA",
-    seats: 1200,
-    highlight: "Sharda Group | Modern Infrastructure",
-    slug: "Sharda-college-arts-commerce-science-Delhi",
-    strengths: ["Modern labs", "IT facilities", "Sports complex", "Placement assistance"],
+    fees: "DU government fee structure",
+    programs: "BSc, BA",
+    seats: null,
+    highlight: "DU Constituent College",
+    slug: "sri-venkateswara-college",
+    strengths: ["Strong science programs", "Affordable government fees"],
   },
 ]
 
 const faqs = [
   {
     question: "Which is the best arts college in Delhi 2026?",
-    answer: "Miranda House College is the most prestigious arts college in Delhi, established in 1885 with NAAC A+ grade and the lowest fees (₹10–30K/yr). Hindu College is best for BSc programs, BMCC is the top choice for BCom, and Symbiosis College of Arts & Commerce is the best private option with modern infrastructure and a Symbiosis brand advantage.",
+    answer: "Miranda House is widely regarded as the top women's arts college in Delhi, a constituent college of University of Delhi with NAAC A++ grade. Hindu College and Lady Shri Ram College (LSR) are also top-tier DU constituent colleges for arts and science. Shri Ram College of Commerce (SRCC) is India's leading commerce college.",
   },
   {
     question: "What is the fee for arts and science colleges in Delhi?",
-    answer: "Arts and science college fees in Delhi range from ₹8,000 to ₹80,000 per year. Government-aided autonomous colleges like Fergusson (₹10–30K), Hindu College (₹12–28K), and BMCC (₹8–20K/yr) are the most affordable. Private colleges like Symbiosis charge ₹40–80K/yr. Total 3-year BA/BSc/BCom costs ₹24,000 to ₹2.4 lakh.",
+    answer: "Government-aided and central University of Delhi constituent colleges like Miranda House, Hindu College, LSR, and SRCC follow a regulated, low DU fee structure — among the most affordable in the country for their academic tier. Always check the official DU admission portal for the current year's exact fee notification.",
   },
   {
-    question: "How to get admission in Miranda House College Delhi 2026?",
-    answer: "Miranda House College admissions are based on HSC (Class 12) merit through the Centralised Admission Process (CAP) by DU. You need 70%+ in HSC for Science, 60%+ for Commerce, and 55%+ for Arts. Apply online at the DU admission portal (admission.DU.ac.in). Forms open in June 2026. There are no entrance tests — pure merit-based.",
+    question: "How to get admission in DU arts colleges like Miranda House?",
+    answer: "Admission to University of Delhi constituent colleges, including Miranda House, Hindu College, LSR, and SRCC, is through CUET (Common University Entrance Test) merit. Apply through the official DU admission portal during the announced application window — check du.ac.in for current-year dates and the exact process.",
   },
   {
-    question: "Is BCom from BMCC Delhi good for placements?",
-    answer: "Yes, BCom from BMCC (Brihan Delhi College of Commerce) is well-respected in Delhi's corporate and banking sector. BMCC graduates get placed in banks (HDFC, ICICI), accounting firms (Deloitte, EY), and companies like Infosys and TCS via campus recruitment. Average starting salary is ₹3–5 LPA. Many students pursue CA/CMA/MBA after BCom from BMCC.",
+    question: "Is BCom from SRCC good for placements?",
+    answer: "Yes, SRCC (Shri Ram College of Commerce) is widely regarded as India's top commerce college, with strong placement outcomes and a reputation that supports careers in finance, consulting, and further study (CA, MBA). Check SRCC's official placement report for current-year statistics.",
   },
   {
     question: "What career can I do after BA/BSc from Delhi colleges?",
@@ -200,14 +139,14 @@ export default function ArtsCollegesDELHI() {
             Best Arts &amp; Science colleges in Delhi 2026
           </h1>
           <p className="text-blue-200 max-w-2xl mx-auto text-base mb-6">
-            Compare top BA, BSc &amp; BCom colleges in Delhi — fees from ₹8K to ₹80K/year, NAAC grades, DU CAP admissions &amp; career outcomes.
+            Compare top BA, BSc &amp; BCom colleges in Delhi — University of Delhi government fee structures, NAAC grades, CUET admissions &amp; career outcomes.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             {[
-              { icon: BookOpen, text: "10 Top Colleges" },
-              { icon: TrendingUp, text: "Fees from ₹8K/yr" },
-              { icon: Award, text: "NAAC A+ Ranked" },
-              { icon: Users, text: "BA · BSc · BCom · BCA" },
+              { icon: BookOpen, text: "Verified DU Colleges" },
+              { icon: TrendingUp, text: "Affordable Govt Fees" },
+              { icon: Award, text: "NAAC A+ / A++ Ranked" },
+              { icon: Users, text: "BA · BSc · BCom" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2 text-blue-200">
                 <Icon className="w-4 h-4 text-red-400" />
@@ -222,9 +161,8 @@ export default function ArtsCollegesDELHI() {
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
             <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Arts &amp; Science Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
-              <strong>Best Arts:</strong> Miranda House College · <strong>Best Science:</strong> Hindu College ·{" "}
-              <strong>Best Commerce (BCom):</strong> BMCC · <strong>Best Private:</strong> Symbiosis College ·{" "}
-              <strong>Cheapest:</strong> BMCC &amp; Poona College (₹8K/yr)
+              <strong>Best Arts (Women's):</strong> Miranda House &amp; LSR · <strong>Best Science:</strong> Hindu College ·{" "}
+              <strong>Best Commerce (BCom):</strong> SRCC · <strong>Lowest fees:</strong> All DU constituent colleges follow the same government-regulated fee structure
             </p>
           </div>
           {/* College table — live from backend */}
@@ -233,19 +171,19 @@ export default function ArtsCollegesDELHI() {
           <div className="grid sm:grid-cols-3 gap-4 mb-10">
             {[
               {
-                stream: "BA (Arts)", emoji: "", best: "Miranda House College", why: "Heritage, affordable, best humanities faculty in Delhi",
-                also: ["Hindu College", "Kirori Mal College", "Nowrosjee Wadia"],
-                fees: "₹10K–₹30K/yr",
+                stream: "BA (Arts)", emoji: "", best: "Miranda House", why: "Heritage, affordable government fees, top humanities faculty",
+                also: ["Hindu College", "Lady Shri Ram College (LSR)"],
+                fees: "DU government fee structure",
               },
               {
-                stream: "BSc (Science)", emoji: "", best: "Hindu College (Parashurambhau)", why: "NAAC A+, strong Physics/Chemistry/Biology labs",
-                also: ["Miranda House College", "Kirori Mal College", "Gargi College"],
-                fees: "₹12K–₹28K/yr",
+                stream: "BSc (Science)", emoji: "", best: "Hindu College", why: "NAAC A+, strong science departments",
+                also: ["Miranda House", "Sri Venkateswara College"],
+                fees: "DU government fee structure",
               },
               {
-                stream: "BCom (Commerce)", emoji: "", best: "BMCC Delhi", why: "Cheapest fees, best commerce network, CA/CMA prep",
-                also: ["Gargi College", "Poona College", "Symbiosis College"],
-                fees: "₹8K–₹20K/yr",
+                stream: "BCom (Commerce)", emoji: "", best: "SRCC", why: "India's top commerce college, strong placement network, CA/CMA prep",
+                also: ["Hindu College", "Sri Venkateswara College"],
+                fees: "DU government fee structure",
               },
             ].map(({ stream, emoji, best, why, also, fees }) => (
               <div key={stream} className="bg-white rounded-xl border border-gray-100 shadow-sm p-5">

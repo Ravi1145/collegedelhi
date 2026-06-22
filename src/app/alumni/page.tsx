@@ -20,7 +20,6 @@ const featuredAlumni = [
   { slug: "rahul-sharma-DTU Delhi-2023", name: "Rahul Sharma", college: "DTU Delhi", course: "B.Tech CSE", year: 2023, company: "Google", package: "₹32 LPA", avatar: null },
   { slug: "priya-desai-FMS Delhi-2022",  name: "Priya Desai",  college: "FMS Delhi", course: "MBA", year: 2022, company: "McKinsey & Co.", package: "₹28 LPA", avatar: null },
   { slug: "aditya-kulkarni-NSUT-2023", name: "Aditya Kulkarni", college: "NSUT Delhi", course: "B.Tech IT", year: 2023, company: "Microsoft", package: "₹25 LPA", avatar: null },
-  { slug: "sneha-patil-afmc-2021",  name: "Sneha Patil",  college: "AIIMS Delhi", course: "MBBS", year: 2021, company: "Army Medical Corps", package: "—", avatar: null },
   { slug: "karan-mehta-vit-2023",   name: "Karan Mehta",  college: "IIIT Delhi", course: "B.Tech Mechanical", year: 2023, company: "Cummins India", package: "₹9.5 LPA", avatar: null },
   { slug: "ananya-joshi-Amity University Delhi-2022", name: "Ananya Joshi", college: "Amity University Delhi Delhi", course: "B.Tech CSE", year: 2022, company: "Persistent Systems", package: "₹8 LPA", avatar: null },
 ]
@@ -47,7 +46,7 @@ export default function AlumniPage() {
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-4">Real Questions. Real Answers.</h1>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Connect with verified graduates from DTU Delhi, FMS Delhi, AFMC, NSUT, IIIT Delhi and 20+ colleges. Get honest answers before you decide.
+            Connect with verified graduates from DTU, FMS Delhi, AIIMS Delhi, NSUT, IIIT Delhi and more colleges. Get honest answers before you decide.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-6 text-sm">
             <span className="bg-white/10 px-4 py-2 rounded-full">500+ verified alumni</span>

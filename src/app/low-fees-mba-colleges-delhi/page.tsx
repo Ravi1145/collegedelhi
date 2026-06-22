@@ -8,7 +8,7 @@ export const revalidate = 300
 export const metadata: Metadata = genMeta({
   title: "Low Fees MBA colleges in Delhi 2026",
   description:
-    "Affordable MBA colleges in Delhi 2026 with fees under ₹5 lakh and ₹10 lakh. Suryadatta ₹2.8L, GL Bajaj ₹3.8L, Indira Institute ₹4.2L total",
+    "Affordable MBA colleges in Delhi NCR 2026 with fees under ₹5 lakh. IMS Ghaziabad, GL Bajaj, and Jaipuria Noida compared by fees and admission",
   path: "/low-fees-mba-colleges-delhi",
   keywords: [
     "low fees mba colleges in Delhi",
@@ -23,69 +23,38 @@ export const metadata: Metadata = genMeta({
 
 const under5LMBAColleges = [
   {
-    name: "IMS Ghaziabad of Management & Mass Communication",
+    name: "IMS Ghaziabad",
     type: "Private",
-    feesTotal: "₹2.8L (2 years)",
-    feesPerYear: "~₹1.4L/yr",
+    feesTotal: "₹2.8L–₹4.5L (2 years)",
+    feesPerYear: "~₹1.4L–2.3L/yr",
     naac: "A",
-    exam: "IPU CET / CAT",
-    slug: "suryadatta-institute-management-Delhi",
-    note: "Most affordable MBA in Delhi",
+    exam: "MAT / CMAT / XAT",
+    slug: null,
+    note: "Affordable MBA option",
   },
   {
-    name: "Indian Institute of Management & Commerce (GL Bajaj Noida)",
+    name: "GL Bajaj Institute of Technology and Management",
     type: "Private",
     feesTotal: "₹3.8L (2 years)",
     feesPerYear: "~₹1.9L/yr",
     naac: "A",
-    exam: "IPU CET / CAT / XAT",
-    slug: "delhi-school-of-management-dtu",
+    exam: "MAT / CMAT / CAT",
+    slug: "gl-bajaj-institute-of-technology-and-management",
     note: "Affordable & NAAC accredited",
   },
   {
-    name: "Jaipuria Institute of Management Noida (GL Bajaj) Delhi",
+    name: "Jaipuria Institute of Management, Noida",
     type: "Private",
     feesTotal: "₹4.2L (2 years)",
     feesPerYear: "~₹2.1L/yr",
     naac: "A+",
-    exam: "IPU CET / CAT",
-    slug: "indira-institute-of-management-Delhi",
+    exam: "MAT / CMAT",
+    slug: null,
     note: "Best value NAAC A+",
-  },
-  {
-    name: "Balaji Institute of Modern Management (Fore School Delhi)",
-    type: "Private",
-    feesTotal: "₹5L (2 years)",
-    feesPerYear: "~₹2.5L/yr",
-    naac: "A",
-    exam: "IPU CET / CAT / XAT",
-    slug: "balaji-institute-of-modern-management-Delhi",
-    note: "Strong alumni network",
   },
 ]
 
-const under10LMBAColleges = [
-  {
-    name: "MIT School of Management (IMI Delhi)",
-    type: "Deemed",
-    feesTotal: "₹7–11L (2 years)",
-    feesPerYear: "~₹3.5–5.5L/yr",
-    naac: "A+",
-    exam: "IPU CET / CAT / XAT / CMAT",
-    slug: "mit-school-of-management-Delhi",
-    note: "NAAC A+ deemed university",
-  },
-  {
-    name: "Symbiosis Centre for Management Studies (SCMS)",
-    type: "Deemed",
-    feesTotal: "₹8–10L (2 years)",
-    feesPerYear: "~₹4–5L/yr",
-    naac: "A+",
-    exam: "SNAP",
-    slug: "MDI Gurgaon-symbiosis-centre-management-hrd",
-    note: "Symbiosis group",
-  },
-]
+const under10LMBAColleges: typeof under5LMBAColleges = []
 
 const faqs = [
   {
@@ -101,7 +70,7 @@ const faqs = [
   {
     question: "What is the fee for MBA at IMI Delhi?",
     answer:
-      "MIT School of Management (IMI Delhi) in Delhi charges ₹7–11 lakh for the full 2-year MBA program depending on the specialization and batch. The MBA fee at IMI Delhi is approximately ₹3.5–5.5L per year. It is a deemed university with NAAC A+ grade and accepts IPU CET, CAT, XAT, and CMAT scores. Average placement is ₹7–9 LPA.",
+      "IMI Delhi's total MBA fees are approximately ₹17.5L–₹22L for the full 2-year program — check the official IMI Delhi notification for current-year exact figures. It is a deemed university with NAAC A+ grade and accepts CAT, XAT, and CMAT scores.",
   },
   {
     question: "What is the ROI on an affordable MBA from Delhi?",
@@ -121,7 +90,7 @@ const faqs = [
   {
     question: "Are MBA colleges in Delhi under 5 lakh worth it?",
     answer:
-      "Yes, affordable MBA colleges in Delhi under ₹5 lakh are worth it if you have clear career goals and leverage networking opportunities. Colleges like Jaipuria Institute of Management Noida, GL Bajaj Noida, and Suryadatta are NAAC accredited and AICTE approved. They offer placements in reputed companies in the ₹4–7 LPA range. For banking, finance, or marketing careers in Delhi/Delhi, these colleges provide good value compared to taking ₹20L+ loans for tier-2 national MBA colleges.",
+      "Yes, affordable MBA colleges in Delhi NCR under ₹5 lakh can be worth it if you have clear career goals and leverage networking opportunities. Colleges like Jaipuria Institute of Management Noida, GL Bajaj, and IMS Ghaziabad are NAAC accredited and AICTE approved. Check each college's official placement report for current-year statistics before deciding.",
   },
 ]
 
@@ -202,7 +171,7 @@ export default function LowFeesMBACollegesDELHIPage() {
                 </thead>
                 <tbody className="divide-y divide-gray-50">
                   {under5LMBAColleges.map((c) => (
-                    <tr key={c.slug} className="hover:bg-red-50/30 transition-colors">
+                    <tr key={c.name} className="hover:bg-red-50/30 transition-colors">
                       <td className="px-4 py-3">
                         <p className="font-semibold text-gray-900">{c.name}</p>
                         <div className="flex flex-wrap gap-1 mt-0.5">
@@ -218,7 +187,7 @@ export default function LowFeesMBACollegesDELHIPage() {
                       <td className="px-4 py-3 text-right text-xs text-gray-700">{c.feesPerYear}</td>
                       <td className="px-4 py-3 text-right text-xs font-semibold text-green-700 hidden md:table-cell">{c.feesTotal}</td>
                       <td className="px-4 py-3 text-center">
-                        <Link href={`/colleges/${c.slug}`} className="inline-flex items-center gap-1 text-xs bg-red-600 hover:bg-red-700 text-white px-2.5 py-1.5 rounded-lg">
+                        <Link href={c.slug ? `/colleges/${c.slug}` : "/colleges"} className="inline-flex items-center gap-1 text-xs bg-red-600 hover:bg-red-700 text-white px-2.5 py-1.5 rounded-lg">
                           View →
                         </Link>
                       </td>
@@ -248,7 +217,7 @@ export default function LowFeesMBACollegesDELHIPage() {
                 </thead>
                 <tbody className="divide-y divide-gray-50">
                   {under10LMBAColleges.map((c) => (
-                    <tr key={c.slug} className="hover:bg-red-50/30 transition-colors">
+                    <tr key={c.name} className="hover:bg-red-50/30 transition-colors">
                       <td className="px-4 py-3">
                         <p className="font-semibold text-gray-900">{c.name}</p>
                         <div className="flex flex-wrap gap-1 mt-0.5">
@@ -264,7 +233,7 @@ export default function LowFeesMBACollegesDELHIPage() {
                       <td className="px-4 py-3 text-right text-xs text-gray-700">{c.feesPerYear}</td>
                       <td className="px-4 py-3 text-right text-xs font-semibold text-blue-700 hidden md:table-cell">{c.feesTotal}</td>
                       <td className="px-4 py-3 text-center">
-                        <Link href={`/colleges/${c.slug}`} className="inline-flex items-center gap-1 text-xs bg-red-600 hover:bg-red-700 text-white px-2.5 py-1.5 rounded-lg">
+                        <Link href={c.slug ? `/colleges/${c.slug}` : "/colleges"} className="inline-flex items-center gap-1 text-xs bg-red-600 hover:bg-red-700 text-white px-2.5 py-1.5 rounded-lg">
                           View →
                         </Link>
                       </td>
@@ -305,9 +274,9 @@ export default function LowFeesMBACollegesDELHIPage() {
                 <h3 className="font-semibold text-gray-900 mb-3 text-sm">ROI Comparison — MBA Fees vs Salary</h3>
                 <div className="space-y-3">
                   {[
-                    { college: "Suryadatta / GL Bajaj", fees: "₹2.8–3.8L", placement: "₹4–5 LPA", recovery: "< 1 year" },
-                    { college: "Indira / Fore School Delhi", fees: "₹4.2–5L", placement: "₹5–6 LPA", recovery: "~1 year" },
-                    { college: "IMI Delhi", fees: "₹7–11L", placement: "₹7–9 LPA", recovery: "1.5–2 years" },
+                    { college: "GL Bajaj / IMS Ghaziabad", fees: "₹2.8–3.8L", placement: "Check official placement report", recovery: "Varies" },
+                    { college: "Jaipuria Noida / Fore School Delhi", fees: "₹4.2–5L", placement: "Check official placement report", recovery: "Varies" },
+                    { college: "IMI Delhi", fees: "₹17.5–22L total", placement: "Check official placement report", recovery: "Varies" },
                   ].map(({ college, fees, placement, recovery }) => (
                     <div key={college} className="bg-gray-50 rounded-xl p-3">
                       <p className="font-semibold text-gray-900 text-sm">{college}</p>

@@ -15,11 +15,9 @@ const colleges = [
   { name: "Delhi Technological University (DTU) - Mech", location: "Connaught Place", naac: "A+", fees: "₹80K-1.8L/yr", placement: "₹10 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
   { name: "Indraprastha Institute of Information Technology (IIIT Delhi)", location: "Dwarka Sector 3", naac: "A+", fees: "₹1.6L-2.2L/yr", placement: "₹8.5 LPA avg", slug: "iiit-delhi-indraprastha-institute-of-information-technology" },
   { name: "Amity University Delhi - Mech", location: "Rohini", naac: "A+", fees: "₹2.0L-3.8L/yr", placement: "₹6.8 LPA avg", slug: "amity-university-noida-delhi-ncr" },
-  { name: "Symbiosis Institute of Technology - Mech", location: "Knowledge Park Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹7.5 LPA avg", slug: "nit-delhi-national-institute-of-technology" },
-  { name: "GL Bajaj Delhi Merit College of Engineering", location: "Knowledge Park", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "GL Bajaj-gl-bajaj-institute-technology-management-noida" },
-  { name: "Sharda University Engineering - Mech", location: "Vadgaon", naac: "A", fees: "₹1.15L-1.6L/yr", placement: "₹4.5 LPA avg", slug: "Sharda-college-of-engineering-Delhi" },
-  { name: "Amity University Engineering", location: "Rohini Sector 17", naac: "A", fees: "₹1.45L-1.95L/yr", placement: "₹5.2 LPA avg", slug: "bharati-vidyapeeth-college-engineering-Delhi" },
-  { name: "Bennett University Delhi Dwarka", location: "Dwarka", naac: "A", fees: "₹1.05L-1.55L/yr", placement: "₹4.8 LPA avg", slug: "dy-patil-college-engineering-Dwarka-Delhi" },
+  { name: "Sharda University - Mechanical Engineering", location: "Knowledge Park, Greater Noida", naac: "A+", fees: "₹3.6L-4.8L/yr", placement: "₹7.5 LPA avg", slug: "sharda-university" },
+  { name: "GL Bajaj Institute of Technology and Management", location: "Knowledge Park, Greater Noida", naac: "A", fees: "₹1.2L-1.7L/yr", placement: "₹5.2 LPA avg", slug: "gl-bajaj-institute-of-technology-and-management" },
+  { name: "Galgotias University - Mechanical Engineering", location: "Greater Noida", naac: "A", fees: "₹1.45L-1.95L/yr", placement: "₹5.2 LPA avg", slug: "galgotias-university" },
 ]
 
 const faqs = [

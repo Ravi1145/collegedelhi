@@ -112,7 +112,7 @@ const faqs = [
   },
   {
     question: "What is the AICTE Pragati Scholarship for MBA women students in Delhi?",
-    answer: "AICTE Pragati Scholarship provides ₹50,000/year + ₹2,000/month contingency allowance to women MBA students whose family income is below ₹8 lakh/year. Available at all AICTE-approved MBA colleges in Delhi including IMI Delhi, Fore School Delhi, Indira Institute, and Symbiosis institutes. Apply via scholarships.gov.in.",
+    answer: "AICTE Pragati Scholarship provides ₹50,000/year + ₹2,000/month contingency allowance to women MBA students whose family income is below ₹8 lakh/year. Available at all AICTE-approved MBA colleges, including IMI Delhi and Fore School Delhi. Apply via scholarships.gov.in.",
   },
   {
     question: "Is there a scholarship for MBA without CAT in Delhi?",

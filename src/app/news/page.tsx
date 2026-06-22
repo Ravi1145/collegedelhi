@@ -67,12 +67,12 @@ const latestNews = [
   },
   {
     id: "n3",
-    title: "SNAP 2025 Results Declared — FMS Delhi GE-PI-WAT Registration Opens",
-    excerpt: "SNAP 2025 results are out. FMS Delhi GE-PI shortlist cutoff: 98+ percentile. Registration for GE-PI-WAT at siu.edu.in closes February 15, 2026.",
+    title: "CAT 2025 Results Declared — FMS Delhi WAT-PI Shortlist Registration Opens",
+    excerpt: "CAT 2025 results are out. FMS Delhi shortlist cutoff: 98+ percentile. Check the official FMS Delhi admission portal for WAT-PI registration deadlines.",
     date: "2026-01-08",
     category: "MBA",
-    source: "Symbiosis University",
-    link: "/colleges/FMS Delhi-symbiosis-institute-business-management-Delhi",
+    source: "FMS Delhi",
+    link: "/colleges/fms-delhi",
     urgent: true,
   },
   {

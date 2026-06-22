@@ -106,7 +106,7 @@ const faqs = [
   {
     question: "Can I get direct MBA admission in Delhi without SNAP or CAT?",
     answer:
-      "Yes, for most non-Symbiosis MBA colleges in Delhi. FMS Delhi (Symbiosis) mandates SNAP and does not offer management quota. However, colleges like IMI Delhi, Fore School Delhi, Indira Institute, and GL Bajaj Noida offer direct admission through management quota based on graduation marks and an interview. No SNAP, CAT, or any entrance exam is strictly required for MQ seats at these colleges.",
+      "Yes, at several Delhi NCR MBA colleges. FMS Delhi requires CAT (not SNAP — FMS Delhi has no connection to Symbiosis) and does not offer management quota. However, colleges like IMI Delhi, Fore School Delhi, and GL Bajaj Noida offer direct admission through management quota based on graduation marks and an interview at some of their seats. Check each college's official admission policy for current-year details.",
   },
   {
     question: "Does FMS Delhi have management quota or direct admission?",
@@ -270,7 +270,7 @@ export default function DirectAdmissionMBAPage() {
           {/* Info Cards */}
           <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { icon: BookOpen, title: "No SNAP for Non-Symbiosis", desc: "SNAP is only for Symbiosis colleges (FMS Delhi). For all other MBA colleges in Delhi, CAT/MAT/CMAT is accepted — or MQ seats require no exam at all." },
+              { icon: BookOpen, title: "CAT/MAT/CMAT, Not SNAP", desc: "SNAP is only for Symbiosis colleges, which are not located in Delhi. For MBA colleges in Delhi NCR, CAT/MAT/CMAT is accepted — or MQ seats require no exam at all." },
               { icon: Users, title: "MQ Seat Limit", desc: "Management quota is capped at 15-30% of total seats by AICTE. These seats cost 20-50% more than regular seats but skip entrance exam requirements." },
               { icon: Phone, title: "Contact Directly", desc: "MQ seat availability changes each year. Always call the college admission office directly in April-June for accurate seat availability and fee information." },
             ].map(({ icon: Icon, title, desc }) => (

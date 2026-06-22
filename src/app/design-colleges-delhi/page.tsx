@@ -5,8 +5,8 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Design colleges in Delhi 2026",
-  description: "Top design & architecture colleges in Delhi 2026. Compare MIT ID, Symbiosis School of Design, MAEER's MIT AOA, and more",
+  title: "Design & Architecture Colleges in Delhi 2026",
+  description: "Top design and architecture colleges in Delhi 2026. School of Planning and Architecture (SPA Delhi) and NIFT/NID entrance guidance",
   path: "/design-colleges-delhi",
   keywords: [
     "design colleges in Delhi 2026",
@@ -15,28 +15,17 @@ export const metadata: Metadata = genMeta({
     "best design College Delhi",
     "nata cutoff Delhi 2026",
     "nid prep Delhi",
-    "mit institute of design Delhi",
-    "symbiosis school of design Delhi",
+    "SPA Delhi admission",
     "b arch colleges Delhi fees",
     "interior design colleges Delhi",
   ],
 })
 
-const colleges = [
-  { rank: 1, name: "MIT Institute of Design (MIT-ID)", type: "Private", naac: "A+", fees: "₹3.5L–₹5L/yr", program: "B.Des, M.Des", seats: 120, nata: "Not required", slug: "mit-id-mit-institute-of-design-Delhi", highlight: "No. 1 Design School Delhi | Industry tie-ups" },
-  { rank: 2, name: "Symbiosis School of Design (SSD)", type: "Deemed", naac: "A+", fees: "₹4L–₹5.5L/yr", program: "B.Des", seats: 60, nata: "Portfolio + interview", slug: "ssd-symbiosis-school-of-design-Delhi", highlight: "Top Deemed | Excellent placement" },
-  { rank: 3, name: "MAEER's MIT College of Engineering — Architecture", type: "Private", naac: "A+", fees: "₹1.8L–₹2.5L/yr", program: "B.Arch", seats: 40, nata: "NATA 80+", slug: "mit-college-engineering-Delhi", highlight: "Best B.Arch | NATA approved" },
-  { rank: 4, name: "HMR Institute Delhi — Architecture", type: "Private", naac: "A", fees: "₹1.2L–₹1.8L/yr", program: "B.Arch", seats: 40, nata: "NATA 70+", slug: "indira-college-architecture-Delhi", highlight: "Affordable B.Arch option" },
-  { rank: 5, name: "Sharda Institute of Design (SID)", type: "Private", naac: "A", fees: "₹2.5L–₹3.5L/yr", program: "B.Des", seats: 60, nata: "Portfolio based", slug: "sid-Sharda-institute-design-Delhi", highlight: "Growing design school | Strong faculty" },
-  { rank: 6, name: "Miranda House College — Fine Arts & Design", type: "Government", naac: "A+", fees: "₹15K–₹30K/yr", program: "B.A. Fine Arts", seats: 60, nata: "Merit based", slug: "miranda-house-college-delhi", highlight: "Heritage college | Lowest fees" },
-]
-
 const faqs = [
-  { question: "Which is the best design college in Delhi 2026?", answer: "MIT Institute of Design (MIT-ID) is the top design college in Delhi offering B.Des and M.Des programs with strong industry connections and placements up to ₹12 LPA. Symbiosis School of Design (SSD) is a close second, especially for fashion and communication design." },
-  { question: "What is the fee for design colleges in Delhi?", answer: "Design college fees in Delhi range from ₹15,000/year at government colleges like Miranda House College to ₹5.5 lakh/year at premium institutes like Symbiosis School of Design. MIT-ID charges ₹3.5–5 lakh/year. Total 4-year course cost ranges from ₹60,000 to ₹22 lakh." },
-  { question: "Is NATA required for architecture colleges in Delhi?", answer: "Yes, NATA (National Aptitude Test in Architecture) is mandatory for B.Arch admissions at most architecture colleges in Delhi. A score of 70+ is required for private colleges, while government-aided institutions may require 80+. NATA 2026 exams are held in March and April." },
-  { question: "What are placements like at design colleges in Delhi?", answer: "MIT-ID graduates get placed at companies like Titan, Mahindra, Godrej, and international studios with average packages of ₹6–8 LPA and top offers up to ₹12 LPA. Symbiosis School of Design has placements averaging ₹5–7 LPA in product design, UX, and fashion firms." },
-  { question: "Which design entrance exams are accepted in Delhi?", answer: "Delhi design colleges accept NID DAT (National Institute of Design), NIFT entrance test, CEED (for M.Des), NATA (for B.Arch), and JEE Main for architecture. MIT-ID and SSD conduct their own portfolio-based aptitude tests and studio interviews." },
+  { question: "Which is the best design/architecture college in Delhi 2026?", answer: "School of Planning and Architecture, New Delhi (SPA Delhi) is India's premier government institute for architecture and planning, and the primary standalone option for B.Arch within Delhi. For B.Des, NIFT and NID have campuses across India — check their official admission portals for the Delhi-area campus details." },
+  { question: "What is the fee for design and architecture colleges in Delhi?", answer: "SPA Delhi follows a government fee structure, among the lowest for B.Arch in India given its status as an Institute of National Importance. Always check the official admission portal for the current year's exact fee notification." },
+  { question: "Is NATA required for architecture colleges in Delhi?", answer: "NATA (National Aptitude Test in Architecture) or JEE Main Paper 2 are the standard national exams for B.Arch admission in India, including at SPA Delhi. Confirm the current year's accepted exam and cutoff on the official admission portal, as policies can change." },
+  { question: "Which design entrance exams are relevant for Delhi-area design colleges?", answer: "NID DAT (National Institute of Design), NIFT entrance test, CEED (for M.Des), and UCEED are the standard national design entrance exams in India. Check each institute's official portal for which exam applies to their specific campus and program." },
 ]
 
 const breadcrumb = [
@@ -75,16 +64,15 @@ return (
             <span>›</span>
             <span className="text-white">Design Colleges Delhi</span>
           </nav>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">Best Design colleges in Delhi 2026</h1>
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-3">Design &amp; Architecture Colleges in Delhi 2026</h1>
           <p className="text-blue-200 max-w-2xl mx-auto text-base mb-6">
-            Compare top design, architecture & fashion colleges in Delhi — fees from ₹15K to ₹5.5L/year, NATA cutoffs, NID prep, and real placement data.
+            School of Planning and Architecture, New Delhi (SPA Delhi) — India's premier government B.Arch institute. NATA/JEE Paper 2 admission and NID/NIFT design entrance guidance.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             {[
-              { icon: BookOpen, text: "6 Design Colleges" },
-              { icon: TrendingUp, text: "Up to ₹12 LPA" },
-              { icon: Award, text: "NAAC Accredited" },
-              { icon: Users, text: "B.Des / B.Arch / M.Des" },
+              { icon: BookOpen, text: "Institute of National Importance" },
+              { icon: Award, text: "Government Fee Structure" },
+              { icon: Users, text: "B.Arch / B.Des / M.Des" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-2 text-blue-200">
                 <Icon className="w-4 h-4 text-red-400" />
@@ -97,10 +85,9 @@ return (
         <div className="max-w-5xl mx-auto px-4 py-10">
           {/* Quick Answer */}
           <div className="bg-red-50 border border-red-200 rounded-xl p-5 mb-8">
-            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Top Design Colleges Delhi 2026</p>
+            <p className="text-sm font-bold text-red-800 mb-1">Quick Answer — Design &amp; Architecture Colleges Delhi 2026</p>
             <p className="text-sm text-gray-700">
-              <strong>Best overall:</strong> MIT Institute of Design (MIT-ID) · <strong>Best deemed:</strong> Symbiosis School of Design · <strong>Best B.Arch:</strong> MIT AOA ·{" "}
-              <strong>Lowest fees:</strong> Miranda House College (₹15K/yr) · <strong>Highest placement:</strong> MIT-ID (₹12 LPA top offer)
+              <strong>Best B.Arch:</strong> School of Planning and Architecture, New Delhi (SPA Delhi) — India's premier government architecture institute with government fee structure and NATA/JEE Paper 2 admission.
             </p>
           </div>
           {/* College table — live from backend */}

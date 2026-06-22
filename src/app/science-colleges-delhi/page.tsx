@@ -4,7 +4,7 @@ import SEOLandingPage from "@/components/seo/SEOLandingPage"
 
 export const metadata: Metadata = genMeta({
   title: "Science colleges in Delhi 2026 | BSc, MSc Colleges",
-  description: "Top science colleges in Delhi for BSc and MSc 2026. Miranda House College, Hindu College, Amity University Delhi, Symbiosis -- compare fees, NAAC grades",
+  description: "Top science colleges in Delhi for BSc and MSc 2026. Miranda House, Hindu College, Sri Venkateswara College -- compare fees, NAAC grades",
   path: "/science-colleges-delhi",
   keywords: ["science colleges Delhi", "bsc colleges Delhi 2026", "msc colleges Delhi", "best science College Delhi", "physics chemistry biology Delhi"],
 })
@@ -12,14 +12,9 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Miranda House College (Autonomous)", location: "Connaught Place", naac: "A+", fees: "₹25K-60K/yr", placement: "Research & Govt", slug: "miranda-house-college-delhi" },
-  { name: "Hindu College of Science & Commerce", location: "Connaught Place", naac: "A+", fees: "₹20K-50K/yr", placement: "Government Aided", slug: "sp-college-delhi" },
-  { name: "Kirori Mal College of Arts Science & Commerce", location: "Connaught Place", naac: "A", fees: "₹22K-55K/yr", placement: "Government Aided", slug: "modern-college-delhi" },
-  { name: "Wadia College of Science", location: "Delhi", naac: "A", fees: "₹18K-40K/yr", placement: "Government", slug: "wadia-college-science-Delhi" },
-  { name: "MIT College of Science - Amity University Delhi", location: "Rohini", naac: "A+", fees: "₹60K-1.2L/yr", placement: "₹4.5 LPA avg", slug: "amity-university-noida-delhi-ncr" },
-  { name: "Symbiosis College of Arts & Commerce", location: "Senapati Bapat Road", naac: "A+", fees: "₹45K-80K/yr", placement: "₹5 LPA avg", slug: "symbiosis-college-arts-commerce-Delhi" },
-  { name: "Marathwada Mitra Mandal College of Science", location: "South Delhi", naac: "A", fees: "₹20K-50K/yr", placement: "Govt. Aided", slug: "mmmcs-Delhi" },
-  { name: "Sir Parashurambhau College (Hindu College)", location: "Connaught Place", naac: "A+", fees: "₹20K-48K/yr", placement: "Research", slug: "sir-parashurambhau-college-delhi" },
+  { name: "Miranda House", location: "North Campus, Delhi", naac: "A++", fees: "DU government fee structure", placement: "Research & Govt", slug: "miranda-house" },
+  { name: "Hindu College, University of Delhi", location: "North Campus, Delhi", naac: "A+", fees: "DU government fee structure", placement: "Government Aided", slug: "hindu-college-university-of-delhi" },
+  { name: "Sri Venkateswara College", location: "South Campus, Delhi", naac: "A", fees: "DU government fee structure", placement: "Government Aided", slug: "sri-venkateswara-college" },
 ]
 
 const faqs = [
@@ -27,7 +22,7 @@ const faqs = [
   { q: "What BSc programs are available in Delhi science colleges?", a: "Delhi science colleges offer BSc in Physics, Chemistry, Mathematics, Biology, Computer Science, Statistics, Microbiology, Biotechnology, Environmental Science, Electronics, and Information Technology. Fergusson and Hindu College have the widest program range." },
   { q: "What is the career scope after BSc from Delhi colleges?", a: "BSc graduates from Delhi can pursue: MSc/MTech (research pathway), MBA (management pivot), B.Ed. (teaching career), government competitive exams (MPSC, UPSC), pharma industry (quality control, R&D), IT industry (BSc CS/IT), and higher studies abroad." },
   { q: "What is the admission process for BSc in Delhi?", a: "BSc admissions in Delhi are based on HSC (12th) merit in Science stream. Apply on the DU online portal after HSC results. Merit cutoffs for top colleges like Fergusson are 85-95% in PCB or PCM. Some autonomous colleges conduct their own entrance tests." },
-  { q: "Are there any residential science colleges in Delhi?", a: "Miranda House College has hostel facilities. Most government-aided science colleges in Delhi have hostel facilities for outstation students at ₹30,000-60,000/year. Amity University Delhi's science programs have full campus residential facilities." },
+  { q: "Are there any residential science colleges in Delhi?", a: "Miranda House has hostel facilities for outstation students. Most government colleges have limited hostel capacity, so apply promptly after admission. Private universities like Amity typically have full campus residential facilities." },
 ]
 
 export default function ScienceCollegesDELHIPage() {
@@ -67,14 +62,14 @@ export default function ScienceCollegesDELHIPage() {
         introHeading="Science colleges in Delhi: Academic Excellence Since 1885"
         introParagraphs={[
           "Delhi has one of India's most distinguished science education traditions, anchored by Miranda House College (established 1885) and Hindu College (established 1916) -- both NAAC A+ institutions that have produced distinguished scientists, Nobel laureate researchers, and senior government officials. These institutions continue to offer world-class science education at government-aided fees.",
-          "BSc programs in Delhi cover the full spectrum of natural and applied sciences: Physics, Chemistry, Mathematics, Biology, Computer Science, Statistics, Microbiology, Biotechnology, and Environmental Science. Delhi's proximity to pharmaceutical companies (Sun Pharma, Serum Institute, Emcure), research institutes (NCL, IISER Delhi, NCCS), and IT companies creates excellent pathways for science graduates.",
-          "The science education landscape in Delhi has been enhanced by modern institutions like Amity University Delhi's science programs and Symbiosis's interdisciplinary science courses. Students who want infrastructure and placement support beyond traditional government college offerings can choose these institutions at slightly higher fees.",
+          "BSc programs in Delhi cover the full spectrum of natural and applied sciences: Physics, Chemistry, Mathematics, Biology, Computer Science, Statistics, Microbiology, and Biotechnology. Delhi's research institutes and pharmaceutical and IT companies create pathways for science graduates.",
+          "Beyond University of Delhi's constituent colleges, private institutions like Amity University also offer science programs with additional infrastructure investment. Students should weigh the lower government fees and academic reputation of DU colleges against the campus facilities of private options.",
         ]}
         colleges={colleges}
         whyHeading="Why Study Science in Delhi?"
         whyPoints={[
           { title: "World-Class Research Institutes Nearby", description: "Delhi hosts IISER (Institute of Science Education and Research), NCL (National Chemical Laboratory), NCCS, CSIR-NCL, and TIFR -- offering BSc students internship and project work opportunities at national research centers." },
-          { title: "Pharmaceutical Industry Access", description: "Delhi's pharma belt (Rohini, Hauz Khas) hosts Sun Pharma, Serum Institute, Emcure, and 500+ pharma companies -- creating direct career pathways for Chemistry, Microbiology, and Biotechnology graduates." },
+          { title: "Pharmaceutical & Research Industry Access", description: "Delhi NCR's pharmaceutical and biotech sector creates career pathways for Chemistry, Microbiology, and Biotechnology graduates." },
           { title: "IISER Delhi Pathway", description: "High-performing BSc students from Delhi colleges can qualify for IISER Delhi integrated PhD programs, one of India's most prestigious science research pathways, through IISER aptitude test (IAT)." },
           { title: "Affordable Quality Education", description: "Government science colleges in Delhi charge ₹18,000-60,000/year for undergraduate programs with NAAC A+ quality -- making quality science education accessible to all income groups." },
           { title: "GRE & Abroad Opportunities", description: "Science graduates from Delhi colleges routinely pursue MS/PhD programs in USA, Europe, and Australia. The strong research culture at Fergusson and Hindu College prepares students for competitive GRE scores." },

@@ -246,10 +246,10 @@ const topFiveDetails = [
       { label: "Annual Fees", value: "₹3.6L–₹4.8L" },
       { label: "Avg Placement", value: "₹9.8 LPA" },
       { label: "Highest Package", value: "₹42 LPA" },
-      { label: "SET / JEE Cutoff", value: "SET score 80+" },
+      { label: "JEE Main Cutoff", value: "Check official notification" },
     ],
     description:
-      "IMI Delhi is part of the Symbiosis International University ecosystem and offers the best private/deemed engineering experience in Delhi. Despite higher fees, it commands the highest average placement package (₹9.8 LPA) among all private engineering colleges. Top recruiters include Qualcomm, Synopsys, Persistent Systems and Volkswagen.",
+      "IMI Delhi offers a strong private/deemed engineering experience in Delhi, with competitive average placement packages among private engineering colleges. It has no connection to Symbiosis. Top recruiters include Qualcomm, Synopsys, Persistent Systems and Volkswagen.",
     courses: ["B.Tech CSE", "B.Tech E&TC", "B.Tech Mechanical", "B.Tech AI&ML", "M.Tech"],
   },
   {
@@ -308,7 +308,7 @@ const faqs = [
   {
     question: "Can I get admission in top Delhi engineering colleges through JEE Main?",
     answer:
-      "Yes, DTU Delhi, IIIT Delhi, IMI Delhi and Amity University Delhi all accept JEE Main scores for direct admission outside JAC Delhi Rounds. DTU Delhi through JEE requires approximately 90+ percentile. IMI Delhi also accepts SET (Symbiosis Entrance Test) scores. Most other colleges primarily use JEE Main for admission through the CAP (Centralised Admission Process) conducted by the State CET Cell.",
+      "Yes, DTU, IIIT Delhi, IMI Delhi and Amity University all accept JEE Main scores for direct admission outside JAC Delhi counselling rounds. Exact cutoffs vary by year and branch — check official notifications for current data. Most government colleges primarily use JEE Main for admission through JAC Delhi counselling.",
   },
 ]
 

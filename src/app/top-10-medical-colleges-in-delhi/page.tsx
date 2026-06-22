@@ -6,182 +6,84 @@ import { CheckCircle, MapPin, ExternalLink, BookOpen } from "lucide-react"
 export const revalidate = 300
 
 export const metadata: Metadata = genMeta({
-  title: "Top 10 Medical colleges in Delhi 2026 (NIRF Ranked)",
+  title: "Top Medical Colleges in Delhi 2026 (NIRF Ranked)",
   description:
-    "Ranked list of top 10 medical colleges in Delhi 2026 by NIRF rank, NAAC grade, NEET cutoff & fees. AFMC #4, BJ Medical #18 — compare all data in one place.",
+    "Top government medical colleges in Delhi 2026: AIIMS Delhi (NIRF #1), Vardhman Mahavir Medical College, ABVIMS — NEET admission, fees, and hospital attachments",
   path: "/top-10-medical-colleges-in-delhi",
   keywords: [
-    "top 10 medical colleges in Delhi",
     "top medical colleges in Delhi",
     "best medical colleges in Delhi",
     "best mbbs colleges Delhi ranking",
     "neet colleges Delhi 2026",
+    "AIIMS Delhi NIRF rank",
   ],
 })
 
 const colleges = [
   {
     rank: 1,
-    name: "AIIMS Delhi (AFMC)",
-    type: "Government (Defence)",
-    nirf: 4,
+    name: "AIIMS Delhi",
+    type: "Government (Central)",
+    nirf: 1,
     naac: "A++",
-    fees: "₹50K (total)",
-    neetCutoff: "655+",
-    seats: 150,
-    exam: "NEET + AFMC Entrance",
-    slug: "afmc-armed-forces-medical-college-delhi",
-    highlight: "Best NIRF | Near-Zero Fees",
-    location: "Delhi Cantonment, Delhi",
+    fees: "₹1,628–₹50,000 (total course)",
+    neetCutoff: "Among the highest in India (AIQ)",
+    seats: 125,
+    exam: "NEET UG (All India Quota)",
+    slug: "aiims-delhi",
+    highlight: "NIRF #1 Medical | Near-Zero Fees",
+    location: "Ansari Nagar, New Delhi",
   },
   {
     rank: 2,
-    name: "BJ Government Medical College (MAMC)",
-    type: "Government",
-    nirf: 18,
+    name: "Vardhman Mahavir Medical College (Safdarjung Hospital)",
+    type: "Government (Delhi)",
+    nirf: null,
     naac: "A",
-    fees: "₹60K–₹1.2L/yr",
-    neetCutoff: "625+",
-    seats: 200,
-    exam: "NEET (State Quota)",
-    slug: "bj-medical-college-delhi",
-    highlight: "Best Govt. MBBS | NIRF #18",
-    location: "Sassoon Road, Delhi",
+    fees: "₹1.15L–₹2.65L/yr",
+    neetCutoff: "Competitive — Delhi govt quota",
+    seats: null,
+    exam: "NEET UG (Delhi state quota)",
+    slug: "vardhman-mahavir-medical-college",
+    highlight: "Govt | Attached to Safdarjung Hospital",
+    location: "Safdarjung, New Delhi",
   },
   {
     rank: 3,
-    name: "Dr. Lady Hardinge Medical College",
-    type: "Deemed University",
-    nirf: null,
-    naac: "A+",
-    fees: "₹12L–₹18L/yr",
-    neetCutoff: "550+",
-    seats: 250,
-    exam: "NEET",
-    slug: "dy-patil-medical-college-delhi",
-    highlight: "Best Private | Strong Placements",
-    location: "Pitampura, Delhi",
-  },
-  {
-    rank: 4,
-    name: "Maulana Azad Medical College",
-    type: "Deemed University",
+    name: "Atal Bihari Vajpayee Institute of Medical Sciences (Dr. RML Hospital)",
+    type: "Government (Delhi)",
     nirf: null,
     naac: "A",
-    fees: "₹10L–₹14L/yr",
-    neetCutoff: "540+",
-    seats: 200,
-    exam: "NEET",
-    slug: "bharati-vidyapeeth-medical-college-delhi",
-    highlight: "Established 1989 | Strong Alumni",
-    location: "Rohini Sector 17, Delhi",
-  },
-  {
-    rank: 5,
-    name: "Seth GS Medical College (KEM Hospital)",
-    type: "Government",
-    nirf: null,
-    naac: "A",
-    fees: "₹80K–₹1.5L/yr",
-    neetCutoff: "615+",
-    seats: 180,
-    exam: "NEET (MCC Quota)",
-    slug: "seth-gs-medical-college-delhi",
-    highlight: "Government | 800-Bed Hospital",
-    location: "Kashmere Gate, Delhi",
-  },
-  {
-    rank: 6,
-    name: "Smt Kashibai Navale Medical College",
-    type: "Private",
-    nirf: null,
-    naac: "A",
-    fees: "₹8L–₹12L/yr",
-    neetCutoff: "520+",
-    seats: 150,
-    exam: "NEET",
-    slug: "sknmc-kashibai-navale-medical-college-delhi",
-    highlight: "Affordable Private | Good Infrastructure",
-    location: "Narhe, Delhi",
-  },
-  {
-    rank: 7,
-    name: "Delhi Institute of Medical Sciences (MIMS)",
-    type: "Private",
-    nirf: null,
-    naac: "B++",
-    fees: "₹9L–₹13L/yr",
-    neetCutoff: "500+",
-    seats: 100,
-    exam: "NEET",
-    slug: "mims-medical-college-delhi",
-    highlight: "Growing Campus | Modern Labs",
-    location: "Okhla Phase III, Delhi",
-  },
-  {
-    rank: 8,
-    name: "Ruby Hall Clinic Medical College",
-    type: "Private",
-    nirf: null,
-    naac: "B+",
-    fees: "₹10L–₹15L/yr",
-    neetCutoff: "490+",
-    seats: 100,
-    exam: "NEET",
-    slug: "ruby-hall-clinic-medical-college-delhi",
-    highlight: "Top-Tier Hospital Training",
-    location: "Rohini, Delhi",
-  },
-  {
-    rank: 9,
-    name: "Dr. Vithalrao Vikhe Patil Foundation Medical College",
-    type: "Private",
-    nirf: null,
-    naac: "A",
-    fees: "₹7L–₹11L/yr",
-    neetCutoff: "510+",
-    seats: 150,
-    exam: "NEET",
-    slug: "dvvpf-medical-college-ahmednagar-Delhi",
-    highlight: "Affordable | Rural Exposure",
-    location: "Ahmednagar (near Delhi)",
-  },
-  {
-    rank: 10,
-    name: "Symbiosis Medical College for Women (SMCW)",
-    type: "Deemed University",
-    nirf: null,
-    naac: "A",
-    fees: "₹13L–₹17L/yr",
-    neetCutoff: "530+",
-    seats: 100,
-    exam: "NEET",
-    slug: "smcw-symbiosis-medical-college-delhi",
-    highlight: "Women Only | Knowledge Park Greater Noida Campus",
-    location: "Knowledge Park Greater Noida, Delhi",
+    fees: "₹51K–₹3.75L/yr",
+    neetCutoff: "Competitive — Delhi govt quota",
+    seats: null,
+    exam: "NEET UG (Delhi state quota)",
+    slug: "atal-bihari-vajpayee-institute-of-medical-sciences-and-dr-ram-manohar-lohia-hospital",
+    highlight: "Govt | Attached to RML Hospital",
+    location: "New Delhi",
   },
 ]
 
 const faqData = [
   {
     question: "Which is the best medical college in Delhi in 2026?",
-    answer: "AIIMS Delhi is ranked #4 by NIRF nationally and is the best medical college in Delhi with near-zero fees (₹50,000 total). For civilian government MBBS, Maulana Azad Medical College (NIRF #18) is the top choice with NEET cutoff 625+.",
+    answer: "AIIMS Delhi is ranked NIRF #1 in Medical nationally and is the best medical college in Delhi, with among the most affordable MBBS fees in India (₹1,628–₹50,000 total course). Admission is through NEET UG All India Quota and requires one of the highest NEET ranks in the country.",
   },
   {
-    question: "What NEET score is required for MBBS in Delhi?",
-    answer: "AFMC requires 655+ NEET score plus an AFMC entrance exam. Maulana Azad Medical College requires 625+ for open category (state quota). Private deemed universities in Delhi (DY Patil, Bharati Vidyapeeth) accept NEET scores from 500–550.",
+    question: "What NEET score is required for MBBS in Delhi government colleges?",
+    answer: "NEET cutoffs for AIIMS Delhi, Vardhman Mahavir Medical College, and Atal Bihari Vajpayee Institute of Medical Sciences vary each year and are among the most competitive in India. Check the official MCC (All India Quota, for AIIMS Delhi) and Delhi DGHS (state quota) cutoff data for the current year rather than relying on past-year estimates.",
   },
   {
-    question: "What is the MBBS fee in Delhi medical colleges 2026?",
-    answer: "AFMC: ₹50,000 total; BJ Govt Medical: ₹60K–1.2L/year; Private deemed (DY Patil, Bharati Vidyapeeth): ₹10L–18L/year. SC/ST students at government colleges receive full fee waiver.",
+    question: "What is the MBBS fee at Delhi's government medical colleges?",
+    answer: "AIIMS Delhi's entire MBBS course costs approximately ₹1,628–₹50,000 — among the most affordable in India. Vardhman Mahavir Medical College charges roughly ₹1.15L–₹2.65L/year, and Atal Bihari Vajpayee Institute of Medical Sciences charges roughly ₹51K–₹3.75L/year.",
   },
   {
-    question: "Is AFMC better than Maulana Azad Medical College Delhi?",
-    answer: "AFMC has a higher NIRF rank (#4 vs BJ at #18) and near-zero fees, but requires a separate AFMC entrance test and a commitment to military service post-graduation. Maulana Azad Medical College has a larger intake, better state quota access, and no bond requirements.",
+    question: "What hospitals are Delhi's government medical colleges attached to?",
+    answer: "AIIMS Delhi has its own dedicated hospital campus. Vardhman Mahavir Medical College is attached to Safdarjung Hospital, one of Delhi's largest hospitals. Atal Bihari Vajpayee Institute of Medical Sciences is attached to Dr. Ram Manohar Lohia (RML) Hospital.",
   },
   {
-    question: "Which Delhi medical college has the most seats?",
-    answer: "Dr. Lady Hardinge Medical College has the highest intake at 250 MBBS seats per year, followed by BJ Government Medical College (200 seats) and Maulana Azad Medical College (200 seats).",
+    question: "How many MBBS seats does AIIMS Delhi have?",
+    answer: "AIIMS Delhi has approximately 125 MBBS seats per year, filled entirely through NEET UG All India Quota counselling. Seat counts at Vardhman Mahavir Medical College and Atal Bihari Vajpayee Institute of Medical Sciences are set annually — check official NMC/MCC notifications for current numbers.",
   },
 ]
 
@@ -210,16 +112,16 @@ export default function Top10MedicalCollegesPage() {
               <span className="text-white/80">Top 10 Medical Colleges</span>
             </nav>
             <h1 className="text-3xl sm:text-4xl font-extrabold mb-4 leading-tight">
-              Top 10 Medical Colleges in Delhi 2026
+              Top Medical Colleges in Delhi 2026
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mb-6">
-              NIRF-ranked top medical colleges in Delhi for MBBS 2026. Compare NEET cutoffs, fees, seats, and career outcomes.
+              Delhi's verified government medical colleges for MBBS 2026. Compare NIRF rank, fees, hospital attachments, and admission routes.
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "", label: "10 Medical Colleges" },
-                { icon: "", label: "NEET 490–655+" },
-                { icon: "", label: "Fees ₹50K–₹18L/yr" },
+                { icon: "", label: "Verified Govt Colleges" },
+                { icon: "", label: "NEET UG Only" },
+                { icon: "", label: "Fees from ₹1,628" },
                 { icon: "", label: "NIRF Ranked" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
@@ -233,7 +135,7 @@ export default function Top10MedicalCollegesPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
           {/* Colleges Table */}
           <section>
-            <h2 className="text-2xl font-extrabold text-gray-900 mb-6">Top 10 Medical Colleges in Delhi 2026 — NEET Cutoff & Fees</h2>
+            <h2 className="text-2xl font-extrabold text-gray-900 mb-6">Top Medical Colleges in Delhi 2026 — NIRF Rank & Fees</h2>
             <div className="space-y-4">
               {colleges.map((c) => (
                 <div key={c.rank} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 hover:shadow-md transition-shadow">
@@ -275,7 +177,7 @@ export default function Top10MedicalCollegesPage() {
             {[
               { icon: CheckCircle, title: "NEET is Mandatory", desc: "NEET-UG is the only entrance exam for all MBBS admissions in India since 2020. No college can admit students without a valid NEET score." },
               { icon: BookOpen, title: "State vs All-India Quota", desc: "85% of government MBBS seats are filled via state quota (NEET state counselling). 15% are All-India Quota filled by MCC at mcc.nic.in." },
-              { icon: ExternalLink, title: "AFMC Requires Separate Test", desc: "AFMC Delhi requires NEET score + AFMC screening test + SSB interview. Successful candidates get near-zero fees but must serve in the Armed Forces for 7 years post-MBBS." },
+              { icon: ExternalLink, title: "AIIMS Delhi: All India Quota", desc: "AIIMS Delhi MBBS seats are filled entirely through NEET UG All India Quota counselling conducted by the Medical Counselling Committee (MCC) — no separate entrance test is required." },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
                 <Icon className="w-6 h-6 text-red-600 mb-3" />

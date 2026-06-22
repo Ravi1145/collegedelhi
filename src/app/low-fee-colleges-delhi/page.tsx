@@ -12,14 +12,10 @@ export const metadata: Metadata = genMeta({
 export const revalidate = 300
 
 const colleges = [
-  { name: "Delhi Technological University (DTU)", location: "Connaught Place", naac: "A+", fees: "₹80K/yr", placement: "₹12 LPA avg", slug: "dtu-delhi-delhi-technological-university" },
-  { name: "Miranda House College (Autonomous)", location: "Connaught Place", naac: "A+", fees: "₹25K-60K/yr", placement: "Govt. College", slug: "miranda-house-college-delhi" },
-  { name: "Hindu College of Science & Commerce", location: "Connaught Place", naac: "A+", fees: "₹20K-50K/yr", placement: "Govt. Aided", slug: "sp-college-delhi" },
-  { name: "Gargi College of Commerce", location: "Azadpur, Delhi", naac: "A", fees: "₹15K-40K/yr", placement: "Govt. Aided", slug: "garware-college-of-commerce-Delhi" },
-  { name: "BMCC (Brihan Delhi College of Commerce)", location: "Connaught Place", naac: "A+", fees: "₹18K-45K/yr", placement: "₹5.5 LPA avg", slug: "bmcc-Delhi" },
-  { name: "Kirori Mal College of Arts Science & Commerce", location: "Connaught Place", naac: "A", fees: "₹22K-55K/yr", placement: "Govt. Aided", slug: "modern-college-delhi" },
-  { name: "Wadia College of Science", location: "Delhi", naac: "A", fees: "₹18K-40K/yr", placement: "Government", slug: "wadia-college-science-Delhi" },
-  { name: "Sharda University Engineering (State Quota Seats)", location: "Vadgaon", naac: "A", fees: "₹1.15L/yr", placement: "₹4.9 LPA avg", slug: "Sharda-college-of-engineering-Delhi" },
+  { name: "Delhi Technological University (DTU)", location: "Rohini, Delhi", naac: "A+", fees: "Government fee structure", placement: "Strong placement record", slug: "dtu-delhi" },
+  { name: "Miranda House", location: "North Campus, Delhi", naac: "A++", fees: "DU government fee structure", placement: "Govt. College", slug: "miranda-house" },
+  { name: "Hindu College, University of Delhi", location: "North Campus, Delhi", naac: "A+", fees: "DU government fee structure", placement: "Govt. College", slug: "hindu-college-university-of-delhi" },
+  { name: "Shri Ram College of Commerce (SRCC)", location: "North Campus, Delhi", naac: "A+", fees: "DU government fee structure", placement: "Strong placement record", slug: "shri-ram-college-of-commerce" },
 ]
 
 const faqs = [
@@ -66,7 +62,7 @@ export default function LowFeeCollegesDELHIPage() {
         ]}
         introHeading="Low Fee colleges in Delhi: Quality Education at Minimal Cost"
         introParagraphs={[
-          "Delhi has a remarkable advantage for budget-conscious students: the city's strong network of government-aided colleges delivers world-class education at a fraction of private college costs. Miranda House College, Hindu College, Gargi College, and BMCC -- all with NAAC A or A+ grades -- charge ₹15,000-60,000 per year for undergraduate programs in arts, science, and commerce.",
+          "Delhi has a remarkable advantage for budget-conscious students: the city's University of Delhi constituent colleges deliver world-class education at government-regulated fees. Miranda House, Hindu College, and Shri Ram College of Commerce (SRCC) -- all NAAC A+ or higher -- offer some of the most affordable undergraduate programs in arts, science, and commerce in the country.",
           "For engineering, DTU (Delhi Technological University) is the crown jewel of low-fee technical education -- with fees around ₹80,000/year, it delivers NIRF #49 ranked education with ₹12 LPA average placements. For budget-conscious engineering students, state-quota seats at private colleges via JEE Main also offer subsidized fees under government regulation.",
           "Financial constraints should never stop you from accessing quality education. In addition to inherently low fees at government colleges, Delhi's scholarship ecosystem -- including EBC scholarships, OBC scholarships, and NSP (National Scholarship Portal) schemes -- can reduce effective fees to near-zero for eligible students at any NAAC-accredited institution.",
         ]}

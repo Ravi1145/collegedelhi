@@ -145,7 +145,7 @@ export default function AskPage() {
                     type="text"
                     value={form.college}
                     onChange={(e) => setForm({ ...form, college: e.target.value })}
-                    placeholder="e.g. DTU Delhi, FMS Delhi, AFMC"
+                    placeholder="e.g. DTU, FMS Delhi, AIIMS Delhi"
                     className="w-full px-4 py-2.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-red-400 focus:ring-2 focus:ring-red-100"
                   />
                 </div>
@@ -200,7 +200,7 @@ export default function AskPage() {
                 {[
                   "DTU Delhi JEE Main cutoff 2026?",
                   "FMS Delhi CAT cutoff 2026?",
-                  "AFMC NEET eligibility?",
+                  "AIIMS Delhi NEET eligibility?",
                   "Direct admission engineering Delhi?",
                 ].map((q) => (
                   <button

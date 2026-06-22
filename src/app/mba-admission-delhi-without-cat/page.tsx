@@ -8,7 +8,7 @@ export const revalidate = 300
 export const metadata: Metadata = genMeta({
   title: "MBA Admission in Delhi Without CAT 2026",
   description:
-    "Get MBA admission in Delhi without CAT 2026. Colleges accepting MAT, CMAT, SNAP, XAT, ATMA",
+    "Get MBA admission in Delhi NCR without CAT 2026. Colleges accepting MAT, CMAT, XAT, ATMA",
   path: "/mba-admission-delhi-without-cat",
   keywords: [
     "mba admission without cat Delhi",
@@ -27,7 +27,7 @@ const examColleges = [
     frequency: "5 times a year (Feb, May, Jun, Sep, Dec)",
     difficulty: "Easy–Moderate",
     colleges: [
-      { name: "MIT School of Management (IMI Delhi)", fees: "₹7L–₹11L", cutoff: "500+ score (650 = good)" },
+      { name: "IMI Delhi", fees: "₹17.5L–₹22L total", cutoff: "Check official IMI Delhi notification" },
       { name: "Fore School Delhi", fees: "₹5L–₹7.5L", cutoff: "450+ score" },
       { name: "Jaipuria Institute of Management Noida", fees: "₹4.2L–₹6.5L", cutoff: "400+ score" },
       { name: "IMS Ghaziabad of Management", fees: "₹2.8L–₹4.5L", cutoff: "400+ score" },
@@ -39,28 +39,16 @@ const examColleges = [
     frequency: "Once a year (January)",
     difficulty: "Moderate",
     colleges: [
-      { name: "MIT School of Management (IMI Delhi)", fees: "₹7L–₹11L", cutoff: "200+ out of 400" },
+      { name: "IMI Delhi", fees: "₹17.5L–₹22L total", cutoff: "Check official IMI Delhi notification" },
       { name: "Fore School Delhi", fees: "₹5L–₹7.5L", cutoff: "180+ score" },
       { name: "Jaipuria Institute of Management Noida", fees: "₹4.2L–₹6.5L", cutoff: "160+ score" },
       { name: "IMS Ghaziabad", fees: "₹2.8L–₹4.5L", cutoff: "150+ score" },
-      { name: "BATU (Bharati Vidyapeeth)", fees: "₹4L–₹6.8L", cutoff: "180+ score" },
-    ],
-  },
-  {
-    exam: "SNAP (Symbiosis National Aptitude Test)",
-    frequency: "3 times a year (December)",
-    difficulty: "Moderate–Hard",
-    colleges: [
-      { name: "FMS Delhi", fees: "₹16L–₹22L", cutoff: "60+ percentile" },
-      { name: "MDI Gurgaon", fees: "₹12L–₹16L", cutoff: "55+ percentile" },
-      { name: "BIMTECH Delhi", fees: "₹14L–₹18L", cutoff: "50+ percentile" },
     ],
   },
 ]
 
 const difficultyComparison = [
   { exam: "CAT", difficulty: "Very Hard", attempts: "Once/year (Nov)", score: "Percentile (99+ for IIM)", DELHIMBA: "Accepted but not required" },
-  { exam: "SNAP", difficulty: "Moderate", attempts: "3 times (Dec)", score: "Percentile (60+ for FMS Delhi)", DELHIMBA: "Mandatory for Symbiosis only" },
   { exam: "XAT", difficulty: "Hard", attempts: "Once/year (Jan)", score: "Percentile (90+ for XLRI)", DELHIMBA: "Accepted at select colleges" },
   { exam: "CMAT", difficulty: "Moderate", attempts: "Once/year (Jan)", score: "Score out of 400", DELHIMBA: "Accepted at 5+ Delhi colleges" },
   { exam: "MAT", difficulty: "Easy–Moderate", attempts: "5 times/year", score: "Score (500+ good)", DELHIMBA: "Accepted at 7+ Delhi colleges" },
@@ -70,7 +58,7 @@ const difficultyComparison = [
 const faqs = [
   {
     question: "Which MBA colleges in Delhi don't require CAT?",
-    answer: "Most Delhi MBA colleges don't require CAT. Colleges accepting alternatives: IMI Delhi (MAT/CMAT/CAT), Fore School Delhi (MAT/CMAT/XAT), Jaipuria Institute of Management Noida (MAT/CMAT), GL Bajaj Noida (MAT/CMAT/CAT), IMS Ghaziabad (MAT/CMAT/XAT), Bharati Vidyapeeth (BVP-CET/MAT). Only Symbiosis colleges (FMS Delhi, MDI Gurgaon, BIMTECH) mandate SNAP — not CAT.",
+    answer: "Most Delhi NCR MBA colleges accept alternatives to CAT: IMI Delhi (MAT/CMAT/CAT), Fore School Delhi (MAT/CMAT/XAT), Jaipuria Institute of Management Noida (MAT/CMAT), IMS Ghaziabad (MAT/CMAT/XAT). FMS Delhi and MDI Gurgaon are not Symbiosis institutions and primarily require CAT — they are not part of the no-CAT alternative pathway.",
   },
   {
     question: "Is MAT easier than CAT for MBA admission in Delhi?",
@@ -78,19 +66,19 @@ const faqs = [
   },
   {
     question: "Can I get MBA admission in Delhi without any entrance exam?",
-    answer: "Yes — through management quota / direct admission. Private MBA colleges like IMI Delhi, Fore School Delhi, Indira Institute, and Suryadatta offer direct admission in the management quota. No entrance exam is required — only a graduation degree is needed. Management quota fees are typically 20–30% higher than regular fees.",
+    answer: "Yes — through management quota / direct admission at select private MBA colleges. Check each institution's official admission portal for current-year management quota policy, as it varies and not all colleges offer this route. Management quota fees are typically higher than regular fees.",
   },
   {
     question: "What is the CMAT cutoff for IMI Delhi?",
-    answer: "The expected CMAT cutoff for IMI Delhi (MIT School of Management) is 200+ out of 400 for the general category. For MBA Finance and Marketing specializations, the cutoff can be 220+. CMAT is conducted once a year in January by the National Testing Agency (NTA). Applications open October–December.",
+    answer: "CMAT cutoffs for IMI Delhi vary by year — check the official IMI Delhi admission notification for current-year cutoff data rather than relying on past-year estimates. CMAT is conducted once a year in January by the National Testing Agency (NTA).",
   },
   {
-    question: "Does FMS Delhi accept CAT score instead of SNAP?",
-    answer: "No — FMS Delhi (Symbiosis Institute of Business Management) is a Symbiosis institute and mandatorily requires SNAP score. CAT score alone is NOT accepted for FMS Delhi admission. You must appear for SNAP 2026 (December 6, 13, 20) and score 60+ percentile to be eligible for FMS Delhi's selection process (WAT + PI).",
+    question: "Does FMS Delhi require CAT?",
+    answer: "Yes — FMS Delhi (Faculty of Management Studies, Delhi University) requires CAT, typically 98+ percentile for a shortlist, followed by Written Ability Test (WAT) and Personal Interview (PI). It has no connection to Symbiosis or SNAP. FMS Delhi is not part of the no-CAT alternative pathway covered on this page.",
   },
   {
-    question: "Which is the best MBA college in Delhi that accepts MAT?",
-    answer: "MIT School of Management (IMI Delhi) Delhi is the best MBA college accepting MAT, with NAAC A+ grade, ₹12 LPA average placement, and fees of ₹7–11L total. Fore School Delhi is the best budget option accepting MAT (₹5–7.5L, ₹8.5 LPA avg). Both accept MAT, CMAT, and CAT — giving you multiple chances to qualify.",
+    question: "Which is the best MBA college in Delhi NCR that accepts MAT?",
+    answer: "IMI Delhi and Fore School Delhi both accept MAT, CMAT, and CAT — giving applicants multiple ways to qualify. Check each institution's official admission portal for current fees, placement statistics, and exact cutoffs rather than relying on past-year figures.",
   },
   {
     question: "Can I get MBA admission in Delhi after scoring 50 percentile in MAT?",
@@ -130,12 +118,12 @@ export default function MBAAdmissionWithoutCATPage() {
               MBA Admission in Delhi Without CAT 2026
             </h1>
             <p className="text-blue-200 text-base max-w-3xl mb-6">
-              Get MBA admission at top Delhi colleges using MAT, CMAT, SNAP, or direct management quota — CAT is optional. Complete list of colleges, cutoffs, and fees.
+              Get MBA admission at Delhi NCR colleges using MAT, CMAT, or direct management quota — CAT is optional at several institutions. Complete list of colleges, cutoffs, and fees.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-2xl p-5 max-w-3xl">
               <p className="text-green-300 text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
               <p className="text-white text-sm leading-relaxed">
-                <strong>CAT is NOT compulsory for MBA in Delhi.</strong> Most colleges — IMI Delhi, Fore School Delhi, Indira Institute, GL Bajaj, Suryadatta — accept <strong>MAT</strong> (5 times/year, easy), <strong>CMAT</strong> (January), or <strong>direct admission</strong>. Only Symbiosis institutes (FMS Delhi, MDI Gurgaon, BIMTECH) require <strong>SNAP</strong> — not CAT. The easiest path: MAT score + direct apply to IMI Delhi or Fore School Delhi.
+                <strong>CAT is NOT compulsory for MBA in Delhi NCR.</strong> Colleges like IMI Delhi, Fore School Delhi, Jaipuria Noida, and IMS Ghaziabad accept <strong>MAT</strong> (5 times/year, easy) or <strong>CMAT</strong> (January) as alternatives. FMS Delhi and MDI Gurgaon are separate, CAT-focused institutions unrelated to this alternative pathway.
               </p>
             </div>
           </div>
@@ -233,7 +221,7 @@ export default function MBAAdmissionWithoutCATPage() {
               {[
                 "Only graduation degree required (any stream, 50%+ marks)",
                 "No entrance exam score needed",
-                "Colleges: IMI Delhi, Fore School Delhi, Indira Institute, Suryadatta, GL Bajaj",
+                "Check each college's official admission portal for current management quota availability",
                 "Fees 20–30% higher than merit quota",
                 "AICTE-approved, legally valid MBA degree",
                 "Contact colleges directly — admissions open till September 2026",

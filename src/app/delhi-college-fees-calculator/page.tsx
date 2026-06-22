@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     question: "What is the total MBA fee at FMS Delhi?",
-    answer: "The total 2-year MBA fee at FMS Delhi (Symbiosis Institute of Business Management) is ₹16L–₹22L for the complete program (2026–27 batch). This includes tuition, hostel, and other charges. With a merit scholarship (top SNAP scorers), you can get ₹1–3L off. FMS Delhi's ROI is strong — average placement is ₹28 LPA.",
+    answer: "The total 2-year MBA fee at FMS Delhi is ₹16L–₹22L for the complete program (2026–27 batch). This includes tuition, hostel, and other charges. With a merit scholarship (top SNAP scorers), you can get ₹1–3L off. FMS Delhi's ROI is strong — average placement is ₹28 LPA.",
   },
   {
     question: "Which is the cheapest engineering college in Delhi with good placements?",

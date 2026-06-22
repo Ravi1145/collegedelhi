@@ -4,21 +4,19 @@ import { generateMetadata as genMeta, generateFAQSchema, generateBreadcrumbSchem
 import { Award, BookOpen, TrendingUp, Users } from "lucide-react"
 
 export const metadata: Metadata = genMeta({
-  title: "Best Architecture Colleges Delhi 2026",
-  description: "Top B.Arch colleges in Delhi 2026 — SPA, MIT-ADT, DY Patil, MAEER",
+  title: "Architecture Colleges in Delhi 2026 | B.Arch at SPA Delhi",
+  description: "B.Arch in Delhi 2026: School of Planning and Architecture (SPA Delhi), India's top government architecture college",
   path: "/architecture-colleges-delhi",
   keywords: [
     "architecture colleges in Delhi 2026",
     "best architecture College Delhi",
     "b.arch colleges Delhi",
-    "b arch fees Delhi 2026",
+    "SPA Delhi admission 2026",
+    "School of Planning and Architecture Delhi",
     "nata cutoff Delhi 2026",
-    "mit adt architecture Delhi",
-    "dy patil architecture Delhi",
     "architecture admission Delhi",
     "architecture placement Delhi",
     "b arch vs b des Delhi",
-    "arch colleges Delhi 2026",
   ],
 })
 export const revalidate = 300
@@ -26,98 +24,34 @@ export const revalidate = 300
 const colleges = [
   {
     rank: 1,
-    name: "MIT-ADT University — Faculty of Architecture",
-    type: "Deemed University",
-    naac: "A+",
-    fees: "₹2.2L–₹2.8L/yr",
-    placement: "₹5–10 LPA",
-    seats: 60,
-    cutoff: "NATA 130+ / JEE Paper 2",
-    highlight: "Top Architecture Brand | Modern Design Studios | Industry Exposure",
-    slug: "mit-adt-university-Delhi",
-  },
-  {
-    rank: 2,
-    name: "DY Patil College of Architecture, Delhi",
-    type: "Private",
+    name: "School of Planning and Architecture, New Delhi (SPA Delhi)",
+    type: "Government (Institute of National Importance)",
     naac: "A",
-    fees: "₹1.8L–₹2.4L/yr",
-    placement: "₹4.5–8 LPA",
-    seats: 40,
-    cutoff: "NATA 120+ / JEE Main",
-    highlight: "NAAC A | Experienced Faculty | Strong Portfolio Training",
-    slug: "dy-patil-college-engineering-Dwarka-Delhi",
-  },
-  {
-    rank: 3,
-    name: "MAEER's MIT College of Architecture, Delhi",
-    type: "Private (Autonomous)",
-    naac: "A",
-    fees: "₹1.5L–₹2L/yr",
-    placement: "₹4–7 LPA",
-    seats: 40,
-    cutoff: "NATA 115+ / JEE Main",
-    highlight: "Affordable Fees | Strong Alumni Network | Design-First Approach",
-    slug: "amity-university-noida-delhi-ncr",
-  },
-  {
-    rank: 4,
-    name: "Indira College of Architecture and Design",
-    type: "Private",
-    naac: "B+",
-    fees: "₹1.2L–₹1.6L/yr",
-    placement: "₹3.5–6 LPA",
-    seats: 40,
-    cutoff: "NATA 110+",
-    highlight: "Budget Option | Good Infrastructure | Practical Training",
-    slug: "indira-college-of-engineering-management-Delhi",
-  },
-  {
-    rank: 5,
-    name: "Sharda College of Architecture, Delhi",
-    type: "Private",
-    naac: "B+",
-    fees: "₹1.1L–₹1.5L/yr",
-    placement: "₹3–5.5 LPA",
-    seats: 40,
-    cutoff: "NATA 105+",
-    highlight: "Sharda Group | Decent Facilities | Affordable",
-    slug: "Sharda-college-of-engineering-Delhi",
-  },
-  {
-    rank: 6,
-    name: "Vivekanand Education Society's College of Architecture",
-    type: "Private",
-    naac: "B+",
-    fees: "₹1.3L–₹1.8L/yr",
-    placement: "₹3.5–6 LPA",
-    seats: 40,
-    cutoff: "NATA 110+",
-    highlight: "Design Focus | Industry Partnerships | Good Faculty",
-    slug: "government-college-of-engineering-Delhi",
+    fees: "Government fee structure — among the lowest for B.Arch in India",
+    placement: "Strong — leading recruiter for architecture and planning firms",
+    seats: null,
+    cutoff: "JEE Main Paper 2 / NATA",
+    highlight: "India's Premier Government Architecture College",
+    slug: "school-of-planning-and-architecture-new-delhi",
   },
 ]
 
 const faqs = [
   {
-    question: "What is the eligibility for B.Arch in Delhi 2026?",
-    answer: "For B.Arch admission in Delhi 2026: 10+2 with Physics, Chemistry, Mathematics (PCM) with minimum 50% marks (45% for SC/ST). Must qualify NATA (National Aptitude Test in Architecture) with 120+ score or JEE Main Paper 2. Some colleges also accept JEE Main Architecture score.",
+    question: "What is the best architecture college in Delhi?",
+    answer: "School of Planning and Architecture, New Delhi (SPA Delhi) is India's premier government institute for architecture and planning, and the primary standalone B.Arch option within Delhi. It is an Institute of National Importance with government fees, making it significantly more affordable than private architecture colleges elsewhere in the country.",
   },
   {
-    question: "What is the NATA cutoff for Delhi architecture colleges in 2026?",
-    answer: "NATA cutoffs for Delhi architecture colleges 2026: MIT-ADT University (130+), DY Patil College of Architecture (120+), MAEER MIT College of Architecture (115+), Indira College of Architecture (110+), Sharda College of Architecture (105+). NATA is conducted by Council of Architecture (CoA) twice a year.",
+    question: "What is the eligibility for B.Arch admission in Delhi 2026?",
+    answer: "For B.Arch admission, candidates need 10+2 with Physics, Chemistry, and Mathematics (PCM). Admission to SPA Delhi is through JEE Main Paper 2 (B.Arch paper) or NATA (National Aptitude Test in Architecture), depending on the year's admission policy — check the official SPA Delhi and JoSAA/CSAB notifications for the current process.",
   },
   {
-    question: "What are the fees for B.Arch in Delhi?",
-    answer: "B.Arch fees in Delhi 2026: Government colleges ₹25K–50K/yr, Autonomous private colleges ₹1.5L–2.8L/yr, Deemed universities ₹2L–4.5L/yr. Total 5-year cost: ₹6L–22L approximately. MIT-ADT is the most premium at ₹2.2L–2.8L/yr.",
+    question: "What exam is required for B.Arch in Delhi?",
+    answer: "NATA, conducted by the Council of Architecture, and JEE Main Paper 2 (B.Arch) are the two standard national-level exams for B.Arch admission in India, including at SPA Delhi. Always confirm the current year's accepted exam and cutoff on the official admission portal, as policies can change year to year.",
   },
   {
-    question: "What is the scope of architecture after B.Arch from Delhi?",
-    answer: "After B.Arch from Delhi: Architecture firms (₹4–10 LPA starting), Interior design (₹3.5–8 LPA), Urban planning, Real estate development, M.Arch (PG degree), Teaching. Top recruiters include L&T Construction, Tata Housing, Lodha Group, Godrej Properties, and boutique architecture firms. Many graduates start their own practice after 3–5 years.",
-  },
-  {
-    question: "Is B.Arch a good career in 2026?",
-    answer: "B.Arch is excellent in 2026 with India's real estate sector booming. The construction market is ₹80,000 crore+ with massive demand for architects. Average starting salary ₹4–6 LPA; 5 years experience: ₹10–25 LPA; own practice: unlimited. B.Arch from Delhi gives exposure to Delhi's infrastructure boom — smart cities, Metro projects, and IT park construction.",
+    question: "What is the scope after B.Arch from Delhi?",
+    answer: "After B.Arch, career paths include architecture firms, interior design, urban planning, real estate development, and pursuing M.Arch for further specialization. SPA Delhi graduates are well placed in both government planning bodies and private architecture firms given the institute's national reputation.",
   },
 ]
 
@@ -146,14 +80,13 @@ export default function ArchitectureCollegesDELHIPage() {
               Best Architecture colleges in Delhi 2026
             </h1>
             <p className="text-gray-300 text-lg max-w-2xl mb-6">
-              Top B.Arch colleges in Delhi with NATA cutoffs, fees, placements, and admission details. Compare MIT-ADT, DY Patil, MAEER and more.
+              School of Planning and Architecture, New Delhi (SPA Delhi) — India's premier government B.Arch institute, with NATA / JEE Paper 2 admission and government fee structure.
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { icon: "", label: "6 Top Colleges" },
+                { icon: "", label: "Institute of National Importance" },
                 { icon: "", label: "NATA / JEE Paper 2" },
-                { icon: "", label: "Fees ₹1.1L–₹2.8L/yr" },
-                { icon: "", label: "Avg Placement ₹3.5–10 LPA" },
+                { icon: "", label: "Government Fee Structure" },
               ].map(({ icon, label }) => (
                 <div key={label} className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-white text-sm">
                   <span>{icon}</span><span>{label}</span>
@@ -225,7 +158,7 @@ export default function ArchitectureCollegesDELHIPage() {
               {[
                 { step: "1", title: "Register for NATA", desc: "Apply at nata.in before February 2026. Exam conducted in April & May 2026." },
                 { step: "2", title: "Appear for NATA", desc: "Score 120+ for top colleges. Exam tests drawing, aesthetic sensitivity, and math." },
-                { step: "3", title: "Apply to Colleges", desc: "Fill college applications via MAHA-ARCH CAP (for state colleges) or direct for private." },
+                { step: "3", title: "Apply to SPA Delhi", desc: "Fill the application via the relevant counselling body (JoSAA/CSAB for JEE Paper 2, or direct NATA-based admission per the current year's policy)." },
                 { step: "4", title: "Document Verification", desc: "Submit 10+2 marksheet, NATA scorecard, caste certificate (if applicable)." },
               ].map(({ step, title, desc }) => (
                 <div key={step} className="flex gap-3">

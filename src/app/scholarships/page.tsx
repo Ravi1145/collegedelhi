@@ -170,7 +170,7 @@ const faqs = [
   },
   {
     question: "What scholarships are available for MBA students in Delhi?",
-    answer: "Scholarships for MBA students in Delhi 2026: (1) Symbiosis Scholarship — 25%–100% fee waiver for top SNAP ranks. (2) Aditya Birla Scholarship — ₹1 LPA for CAT top 20 rankers. (3) NSP Delhi Scholarship OBC/SC/ST — available for MBA courses too. (4) Many Delhi MBA colleges like Fore School Delhi and MAEER's offer need-based freeships internally. Contact your college's scholarship cell after admission.",
+    answer: "Scholarships for MBA students in Delhi NCR: (1) Aditya Birla Scholarship — for top CAT rankers nationally. (2) NSP (National Scholarship Portal) scholarships for OBC/SC/ST students — available for MBA courses too. (3) Many MBA colleges like Fore School Delhi offer need-based freeships internally. Contact your specific college's scholarship cell after admission for current-year details.",
   },
   {
     question: "What documents are needed for NSP Delhi Scholarship scholarship?",
